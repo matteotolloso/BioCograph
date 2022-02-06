@@ -61,7 +61,7 @@ def parse_dataset(datasetPath : str) -> dict:
 def main():
 
     if(len(sys.argv) < 2):
-        print("Usage: python3", sys.argv[0], "<path_dataset_pubmed")
+        print("Usage: $ python3", sys.argv[0], "<path_dataset_pubmed>")
         return
     
     path = sys.argv[1]
