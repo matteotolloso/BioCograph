@@ -1,6 +1,8 @@
 from builtins import dict, print
 import sys
 import re
+import networkx as nx
+from itertools import combinations
 
 """
 Dataset ottenuto dalla query:
@@ -20,7 +22,7 @@ def parse_dataset(datasetPath : str) -> dict:
     
     articlesStr : list[str] = []
     
-    with open(sys.argv[1]) as file:
+    with open(sys.argv[1],'r') as file:
         articlesStr = list(map(lambda x: x.replace('\n      ', ' '), file.read().split("\n\n")))
 
     dict = {}
@@ -46,6 +48,8 @@ def parse_dataset(datasetPath : str) -> dict:
 
         # NLM Medical Subject Headings (MeSH) controlled vocabulary
         mh = re.findall('^MH  - (.*)$', art, re.MULTILINE)
+        if not mh:
+            continue
         
         # Includes chemical, protocol or disease terms. May also a number assigned by the Enzyme Commission or by the Chemical Abstracts Service.
         rn = re.findall('^RN  - (.*)$', art, re.MULTILINE)
@@ -64,6 +68,20 @@ def extract_mesh(articles : dict) -> set:
         if local_mesh is not None:
             mesh_terms.update(local_mesh)
     return mesh_terms
+
+
+def build_cooccurrences_graph(mesh_terms : set, articles : dict) -> nx.Graph:
+    graph = nx.Graph()
+    graph.add_nodes_from(mesh_terms)
+
+    for art in articles.values():
+        for a, b in list(combinations(art.get('MeSH'), 2)):
+            if graph.has_edge(a, b):
+                graph[a][b]['weight'] += 1
+            else:
+                graph.add_edge(a, b, weight=1)
+    
+    return graph
         
 
 def main():
@@ -77,9 +95,20 @@ def main():
     print('Numero di articoli: ', len(articles.keys()))
 
     mesh_terms : set = extract_mesh(articles)
-    print('Numero di MeSH diversi: ', len(mesh_terms))
+    print('Numero di MeSH diversi (nodi): ', len(mesh_terms))
 
-        
+    cooccurrences_graph = build_cooccurrences_graph(mesh_terms, articles)
+    print('Grafo delle co-occorrenze:\n\tNodi: ', len(cooccurrences_graph.nodes), '\n\tArchi: ', len(cooccurrences_graph.edges))
+
+    cooccurrences_list = list(cooccurrences_graph.edges.data('weight'))
+
+    cooccurrences_list.sort(key = lambda x:x[2], reverse=True)
+    
+    with open('cooccurrences.txr', 'w') as file:
+        for (u, v, wt) in cooccurrences_list:
+            file.write(f"({u}, {v}, {wt})\n")
+
+
 
 if __name__ == "__main__":
     main()
