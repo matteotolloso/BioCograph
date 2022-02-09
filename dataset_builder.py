@@ -4,6 +4,8 @@ import re
 import networkx as nx
 from itertools import combinations
 
+from numpy import gradient
+
 """
 Dataset ottenuto dalla query:
 
@@ -48,8 +50,6 @@ def parse_dataset(datasetPath : str) -> dict:
 
         # NLM Medical Subject Headings (MeSH) controlled vocabulary
         mh = re.findall('^MH  - (.*)$', art, re.MULTILINE)
-        if not mh:
-            continue
         
         # Includes chemical, protocol or disease terms. May also a number assigned by the Enzyme Commission or by the Chemical Abstracts Service.
         rn = re.findall('^RN  - (.*)$', art, re.MULTILINE)
@@ -70,12 +70,26 @@ def extract_mesh(articles : dict) -> set:
     return mesh_terms
 
 
-def build_cooccurrences_graph(mesh_terms : set, articles : dict) -> nx.Graph:
+def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True) -> nx.Graph:
     graph = nx.Graph()
-    graph.add_nodes_from(mesh_terms)
 
     for art in articles.values():
-        for a, b in list(combinations(art.get('MeSH'), 2)):
+        terms = []
+        if mh:
+            terms += art.get('MeSH')
+        if rn:
+            terms += art.get('RNnumber')
+        if ot:
+            terms += art.get('OtherTerm')
+        if not terms:
+            continue
+        
+        for a, b in list(combinations(terms, 2)):
+            if not graph.has_node(a):
+                graph.add_node(a)
+            if not graph.has_node(b):
+                graph.add_node(b)
+            
             if graph.has_edge(a, b):
                 graph[a][b]['weight'] += 1
             else:
@@ -94,10 +108,10 @@ def main():
     articles : dict = parse_dataset(path)
     print('Numero di articoli: ', len(articles.keys()))
 
-    mesh_terms : set = extract_mesh(articles)
-    print('Numero di MeSH diversi (nodi): ', len(mesh_terms))
+    #mesh_terms : set = extract_mesh(articles)
+    #print('Numero di MeSH diversi: ', len(mesh_terms))
 
-    cooccurrences_graph = build_cooccurrences_graph(mesh_terms, articles)
+    cooccurrences_graph = build_cooccurrences_graph(articles)
     print('Grafo delle co-occorrenze:\n\tNodi: ', len(cooccurrences_graph.nodes), '\n\tArchi: ', len(cooccurrences_graph.edges))
 
     cooccurrences_list = list(cooccurrences_graph.edges.data('weight'))
@@ -106,8 +120,7 @@ def main():
     
     with open('cooccurrences.txr', 'w') as file:
         for (u, v, wt) in cooccurrences_list:
-            file.write(f"({u}, {v}, {wt})\n")
-
+            file.write(f"<<{u}>>\t<<{v}>>\t<<{wt}>>\n")
 
 
 if __name__ == "__main__":
