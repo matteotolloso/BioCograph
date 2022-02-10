@@ -70,7 +70,7 @@ def extract_mesh(articles : dict) -> set:
     return mesh_terms
 
 
-def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True) -> nx.Graph:
+def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True, check_tags=[]) -> nx.Graph:
     graph = nx.Graph()
 
     for art in articles.values():
@@ -81,9 +81,13 @@ def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True) 
             terms += art.get('RNnumber')
         if ot:
             terms += art.get('OtherTerm')
+        
+        terms = list(filter(lambda x: x not in check_tags, terms))
+        
         if not terms:
             continue
         
+
         for a, b in list(combinations(terms, 2)):
             if not graph.has_node(a):
                 graph.add_node(a)
@@ -111,7 +115,9 @@ def main():
     #mesh_terms : set = extract_mesh(articles)
     #print('Numero di MeSH diversi: ', len(mesh_terms))
 
-    cooccurrences_graph = build_cooccurrences_graph(articles)
+    ct = ['Humans', 'Animals']
+
+    cooccurrences_graph = build_cooccurrences_graph(articles, check_tags=ct)
     print('Grafo delle co-occorrenze:\n\tNodi: ', len(cooccurrences_graph.nodes), '\n\tArchi: ', len(cooccurrences_graph.edges))
 
     cooccurrences_list = list(cooccurrences_graph.edges.data('weight'))
