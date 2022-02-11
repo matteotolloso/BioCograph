@@ -24,7 +24,7 @@ def parse_dataset(datasetPath : str) -> dict:
     
     articlesStr : list[str] = []
     
-    with open(sys.argv[1],'r') as file:
+    with open(datasetPath,'r') as file:
         articlesStr = list(map(lambda x: x.replace('\n      ', ' '), file.read().split("\n\n")))
 
     dict = {}
@@ -87,7 +87,6 @@ def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True, 
         if not terms:
             continue
         
-
         for a, b in list(combinations(terms, 2)):
             if not graph.has_node(a):
                 graph.add_node(a)
@@ -117,7 +116,7 @@ def main():
 
     ct = ['Humans', 'Animals']
 
-    cooccurrences_graph = build_cooccurrences_graph(articles, check_tags=ct)
+    cooccurrences_graph = build_cooccurrences_graph(articles, check_tags=ct, ot=False)
     print('Grafo delle co-occorrenze:\n\tNodi: ', len(cooccurrences_graph.nodes), '\n\tArchi: ', len(cooccurrences_graph.edges))
 
     cooccurrences_list = list(cooccurrences_graph.edges.data('weight'))
@@ -127,6 +126,12 @@ def main():
     with open('cooccurrences.txr', 'w') as file:
         for (u, v, wt) in cooccurrences_list:
             file.write(f"<<{u}>>\t<<{v}>>\t<<{wt}>>\n")
+
+    print('Il grafo ha: ', nx.number_connected_components(cooccurrences_graph), ' componenti connesse')
+
+    print('Coefficiente di clustering: ', nx.average_clustering(cooccurrences_graph))
+
+    print('Diametro: ', nx.diameter(cooccurrences_graph))
 
 
 if __name__ == "__main__":
