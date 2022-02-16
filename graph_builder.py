@@ -123,7 +123,7 @@ def main():
 
     cooccurrences_list.sort(key = lambda x:x[2], reverse=True)
     
-    with open('cooccurrences.txr', 'w') as file:
+    with open('cooccurrences.txt', 'w') as file:
         for (u, v, wt) in cooccurrences_list:
             file.write(f"<<{u}>>\t<<{v}>>\t<<{wt}>>\n")
 
