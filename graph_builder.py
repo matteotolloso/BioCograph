@@ -1,10 +1,9 @@
-from builtins import dict, print
+from builtins import dict
 import sys
 import re
 import networkx as nx
 from itertools import combinations
 
-from numpy import gradient
 
 """
 Dataset ottenuto dalla query:
