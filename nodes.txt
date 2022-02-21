@@ -1,0 +1,1700 @@
+<<SON>>	<<1884>>
+<<0 (RNA, Messenger)>>	<<1561>>
+<<EC 3.6.4.13 (DEAD-box RNA Helicases)>>	<<1296>>
+<<0 (Nucleocytoplasmic Transport Proteins)>>	<<1285>>
+<<0 (DNA-Binding Proteins)>>	<<1248>>
+<<0 (Saccharomyces cerevisiae Proteins)>>	<<1093>>
+<<0 (Minor Histocompatibility Antigens)>>	<<1007>>
+<<Molecular Sequence Data>>	<<743>>
+<<0 (RNA-Binding Proteins)>>	<<732>>
+<<0 (Nuclear Pore Complex Proteins)>>	<<717>>
+<<0 (Nuclear Proteins)>>	<<717>>
+<<Protein Binding>>	<<534>>
+<<EC 3.6.4.13 (RNA Helicases)>>	<<533>>
+<<Amino Acid Sequence>>	<<526>>
+<<RNA, Messenger/*metabolism>>	<<497>>
+<<Male>>	<<480>>
+<<Mutation>>	<<478>>
+<<Mice>>	<<475>>
+<<Female>>	<<462>>
+<<Minor Histocompatibility Antigens>>	<<460>>
+<<RNA, Messenger/metabolism>>	<<429>>
+<<0 (GLE1 protein, S cerevisiae)>>	<<415>>
+<<0 (Carrier Proteins)>>	<<412>>
+<<HeLa Cells>>	<<411>>
+<<EC 3.6.1.- (DDX19B protein, human)>>	<<410>>
+<<0 (Ribonucleoproteins)>>	<<407>>
+<<Cell Nucleus/metabolism>>	<<402>>
+<<Active Transport, Cell Nucleus>>	<<402>>
+<<Base Sequence>>	<<400>>
+<<0 (messenger ribonucleoprotein)>>	<<368>>
+<<DEAD-box RNA Helicases>>	<<356>>
+<<7IGF0S7R8I (Phytic Acid)>>	<<344>>
+<<Cell Nucleus/*metabolism>>	<<312>>
+<<Cloning, Molecular>>	<<304>>
+<<0 (Transcription Factors)>>	<<288>>
+<<Saccharomyces cerevisiae Proteins/genetics/*metabolism>>	<<287>>
+<<EC 3.6.1.- (Adenosine Triphosphatases)>>	<<285>>
+<<Cell Line>>	<<279>>
+<<Sequence Homology, Amino Acid>>	<<267>>
+<<Models, Biological>>	<<253>>
+<<Binding Sites>>	<<252>>
+<<Nucleocytoplasmic Transport Proteins/genetics/*metabolism>>	<<251>>
+<<Protein Structure, Tertiary>>	<<246>>
+<<0 (MEX67 protein, S cerevisiae)>>	<<244>>
+<<Cytoplasm/metabolism>>	<<243>>
+<<Adolescent>>	<<243>>
+<<Phytic Acid/*metabolism>>	<<242>>
+<<Phenotype>>	<<229>>
+<<DEAD-box RNA Helicases/genetics/*metabolism>>	<<217>>
+<<0 (NUP159 protein, S cerevisiae)>>	<<217>>
+<<Nuclear Pore/metabolism>>	<<213>>
+<<0 (RNA, Fungal)>>	<<212>>
+<<RNA, Messenger/genetics/metabolism>>	<<207>>
+<<0 (Membrane Proteins)>>	<<205>>
+<<DNA-Binding Proteins/genetics>>	<<204>>
+<<Rats>>	<<193>>
+<<DNA-Binding Proteins/*genetics>>	<<191>>
+<<Nucleocytoplasmic Transport Proteins/genetics/metabolism>>	<<186>>
+<<Cell Line, Tumor>>	<<184>>
+<<Active Transport, Cell Nucleus/physiology>>	<<183>>
+<<Sequence Alignment>>	<<182>>
+<<Saccharomyces cerevisiae/genetics/*metabolism>>	<<181>>
+<<0 (RNA Precursors)>>	<<177>>
+<<0 (Recombinant Proteins)>>	<<176>>
+<<Signal Transduction>>	<<175>>
+<<DNA-Binding Proteins/metabolism>>	<<174>>
+<<Child, Preschool>>	<<173>>
+<<RNA Helicases/genetics/*metabolism>>	<<172>>
+<<63231-63-0 (RNA)>>	<<171>>
+<<Nuclear Proteins/*metabolism>>	<<168>>
+<<Child>>	<<166>>
+<<147336-22-9 (Green Fluorescent Proteins)>>	<<165>>
+<<0 (Fungal Proteins)>>	<<165>>
+<<Syndrome>>	<<164>>
+<<Models, Molecular>>	<<162>>
+<<Minor Histocompatibility Antigens/*genetics>>	<<161>>
+<<*Gene Expression Regulation>>	<<160>>
+<<RNA-Binding Proteins/*metabolism>>	<<160>>
+<<8L70Q75FXE (Adenosine Triphosphate)>>	<<157>>
+<<RNA Interference>>	<<155>>
+<<Nuclear Pore/*metabolism>>	<<155>>
+<<0 (RNA, Small Interfering)>>	<<154>>
+<<Protein Conformation>>	<<152>>
+<<Saccharomyces cerevisiae/metabolism>>	<<151>>
+<<RNA Transport>>	<<147>>
+<<DEAD-box RNA Helicases/metabolism>>	<<147>>
+<<RNA-Binding Proteins/genetics/*metabolism>>	<<146>>
+<<Mutagenesis, Site-Directed>>	<<146>>
+<<Cell Differentiation>>	<<145>>
+<<0 (Intracellular Signaling Peptides and Proteins)>>	<<145>>
+<<Nuclear Proteins/genetics/metabolism>>	<<145>>
+<<0 (Nerve Tissue Proteins)>>	<<142>>
+<<Promoter Regions, Genetic>>	<<142>>
+<<0 (DNA Primers)>>	<<142>>
+<<RNA, Messenger/genetics/*metabolism>>	<<140>>
+<<RNA-Binding Proteins/genetics/metabolism>>	<<140>>
+<<*Nucleocytoplasmic Transport Proteins>>	<<139>>
+<<Transcription, Genetic>>	<<139>>
+<<Biological Transport>>	<<137>>
+<<Cytoplasm/*metabolism>>	<<136>>
+<<Nucleocytoplasmic Transport Proteins/*metabolism>>	<<136>>
+<<Nuclear Pore Complex Proteins/genetics/*metabolism>>	<<135>>
+<<0 (Peptide Termination Factors)>>	<<132>>
+<<Nucleocytoplasmic Transport Proteins/metabolism>>	<<132>>
+<<Crystallography, X-Ray>>	<<132>>
+<<Kinetics>>	<<130>>
+<<*RNA Transport>>	<<129>>
+<<HEK293 Cells>>	<<129>>
+<<Saccharomyces cerevisiae Proteins/*metabolism>>	<<128>>
+<<0 (DNA, Complementary)>>	<<128>>
+<<DEAD-box RNA Helicases/genetics/metabolism>>	<<128>>
+<<0 (Recombinant Fusion Proteins)>>	<<127>>
+<<Saccharomyces cerevisiae Proteins/genetics/metabolism>>	<<126>>
+<<Ribonucleoproteins/metabolism>>	<<126>>
+<<0 (Repressor Proteins)>>	<<126>>
+<<Green Fluorescent Proteins>>	<<126>>
+<<0 (Luminescent Proteins)>>	<<126>>
+<<0 (Trans-Activators)>>	<<125>>
+<<Exome/genetics>>	<<123>>
+<<Time Factors>>	<<119>>
+<<Chromosome Mapping>>	<<119>>
+<<Adult>>	<<118>>
+<<0 (Gle1 protein, human)>>	<<116>>
+<<RNA Splicing/*genetics>>	<<114>>
+<<Plasmids/metabolism>>	<<113>>
+<<Alleles>>	<<113>>
+<<*RNA Helicases>>	<<111>>
+<<Genotype>>	<<111>>
+<<DNA Primers>>	<<110>>
+<<DNA-Binding Proteins/*genetics/metabolism>>	<<109>>
+<<0 (Proto-Oncogene Proteins)>>	<<109>>
+<<0 (RNA Splicing Factors)>>	<<108>>
+<<RNA Splicing>>	<<108>>
+<<0 (Codon, Terminator)>>	<<107>>
+<<Gene Expression Regulation>>	<<105>>
+<<Membrane Proteins/genetics>>	<<105>>
+<<Intracellular Signaling Peptides and Proteins/genetics>>	<<105>>
+<<DEAD-box RNA Helicases/*metabolism>>	<<105>>
+<<0 (NAB2 protein, S cerevisiae)>>	<<104>>
+<<0 (Receptors, Cell Surface)>>	<<104>>
+<<0 (Karyopherins)>>	<<103>>
+<<Ribonucleoproteins/*metabolism>>	<<103>>
+<<0 (Heterogeneous-Nuclear Ribonucleoproteins)>>	<<102>>
+<<EC 2.7.7.- (Eukaryotic Initiation Factor-4A)>>	<<102>>
+<<Gene Deletion>>	<<102>>
+<<Saccharomyces cerevisiae/genetics/metabolism>>	<<101>>
+<<170974-22-8 (Serine-Arginine Splicing Factors)>>	<<100>>
+<<Minor Histocompatibility Antigens/genetics>>	<<100>>
+<<*Saccharomyces cerevisiae Proteins>>	<<100>>
+<<Membrane Proteins/*metabolism>>	<<100>>
+<<*Nuclear Pore Complex Proteins>>	<<100>>
+<<Adenosine Triphosphatases/genetics/*metabolism>>	<<99>>
+<<Cytoplasm/enzymology>>	<<99>>
+<<0 (beta Karyopherins)>>	<<98>>
+<<Exons>>	<<97>>
+<<Saccharomyces cerevisiae Proteins/*genetics/*metabolism>>	<<96>>
+<<Mutation/*genetics>>	<<95>>
+<<0 (SUP45 protein, S cerevisiae)>>	<<95>>
+<<Nuclear Proteins/metabolism>>	<<94>>
+<<Carrier Proteins/genetics/*metabolism>>	<<93>>
+<<Adenosine Triphosphate/metabolism>>	<<93>>
+<<Microscopy, Fluorescence>>	<<93>>
+<<0 (Adaptor Proteins, Vesicular Transport)>>	<<93>>
+<<Adaptor Proteins, Vesicular Transport/genetics>>	<<93>>
+<<Ribonucleoproteins/genetics/*metabolism>>	<<92>>
+<<Saccharomyces cerevisiae/*metabolism>>	<<92>>
+<<In Situ Hybridization>>	<<90>>
+<<Adenosine Triphosphatases/*metabolism>>	<<89>>
+<<EC 2.7.1.- (Phosphotransferases (Alcohol Group Acceptor))>>	<<89>>
+<<Conserved Sequence>>	<<89>>
+<<*gene expression>>	<<88>>
+<<*Transcription, Genetic>>	<<88>>
+<<0 (NUP42 protein, S cerevisiae)>>	<<87>>
+<<Immunohistochemistry>>	<<87>>
+<<Evolution, Molecular>>	<<87>>
+<<DNA-Binding Proteins/genetics/*metabolism>>	<<86>>
+<<Pedigree>>	<<86>>
+<<Intellectual Disability/*genetics>>	<<86>>
+<<Nuclear Proteins/genetics>>	<<86>>
+<<9007-49-2 (DNA)>>	<<86>>
+<<Nuclear Pore Complex Proteins>>	<<85>>
+<<Mice, Inbred C57BL>>	<<85>>
+<<0 (Proteins)>>	<<84>>
+<<Protein Biosynthesis>>	<<84>>
+<<0 (Chromatin)>>	<<83>>
+<<Recombinant Fusion Proteins/genetics/metabolism>>	<<82>>
+<<Young Adult>>	<<82>>
+<<Gene Expression>>	<<82>>
+<<Carrier Proteins/genetics>>	<<81>>
+<<Species Specificity>>	<<80>>
+<<Amino Acid Motifs>>	<<80>>
+<<Temperature>>	<<79>>
+<<RNA, Small Interfering/genetics/metabolism>>	<<79>>
+<<Infant>>	<<79>>
+<<Nuclear Pore Complex Proteins/*metabolism>>	<<78>>
+<<Gene Expression Regulation, Fungal>>	<<78>>
+<<mRNA export>>	<<77>>
+<<Phytic Acid/metabolism>>	<<76>>
+<<Protein Binding/genetics>>	<<76>>
+<<Cell Survival>>	<<76>>
+<<Genetic Complementation Test>>	<<76>>
+<<Cell Proliferation>>	<<75>>
+<<RNA, Fungal/*metabolism>>	<<75>>
+<<Two-Hybrid System Techniques>>	<<75>>
+<<Carrier Proteins/*metabolism>>	<<75>>
+<<RNA-Binding Proteins/metabolism>>	<<73>>
+<<In Situ Hybridization, Fluorescence>>	<<73>>
+<<Nucleocytoplasmic Transport Proteins/*genetics/*metabolism>>	<<73>>
+<<Genetic Vectors>>	<<73>>
+<<K562 Cells>>	<<73>>
+<<EC 3.5.1.98 (Histone Deacetylases)>>	<<73>>
+<<Immunoprecipitation>>	<<73>>
+<<EC 2.7.- (Protein Kinases)>>	<<72>>
+<<Heterozygote>>	<<71>>
+<<0 (Zebrafish Proteins)>>	<<71>>
+<<Sequence Analysis, DNA>>	<<71>>
+<<Fungal Proteins/genetics/metabolism>>	<<71>>
+<<Zinc Fingers>>	<<71>>
+<<0 (Son protein, mouse)>>	<<70>>
+<<Transfection>>	<<70>>
+<<EC 2.7.7.- (RNA Nucleotidyltransferases)>>	<<70>>
+<<RNA Helicases>>	<<70>>
+<<Glutathione Transferase/metabolism>>	<<69>>
+<<EC 2.5.1.18 (Glutathione Transferase)>>	<<69>>
+<<0 (Muscle Proteins)>>	<<69>>
+<<Muscle Proteins/genetics>>	<<69>>
+<<0 (RCAN1 protein, human)>>	<<69>>
+<<Cytoplasm/genetics/metabolism>>	<<68>>
+<<Luminescent Proteins/metabolism>>	<<68>>
+<<0 (exportin 1 protein)>>	<<68>>
+<<0 (Receptors, Cytoplasmic and Nuclear)>>	<<68>>
+<<0 (Membrane Transport Proteins)>>	<<67>>
+<<0 (Mtr2 protein, S cerevisiae)>>	<<67>>
+<<*Gene Expression Regulation, Viral>>	<<67>>
+<<Minor Histocompatibility Antigens/*genetics/metabolism>>	<<66>>
+<<Polyribosomes/metabolism>>	<<66>>
+<<9014-25-9 (RNA, Transfer)>>	<<65>>
+<<Cells, Cultured>>	<<65>>
+<<Codon, Terminator>>	<<65>>
+<<Immunoblotting>>	<<65>>
+<<*Peptide Chain Termination, Translational>>	<<64>>
+<<Protein Processing, Post-Translational>>	<<64>>
+<<*Active Transport, Cell Nucleus>>	<<64>>
+<<Proteins/genetics>>	<<64>>
+<<Asians/*genetics>>	<<64>>
+<<Interleukin-1 Receptor-Like 1 Protein>>	<<64>>
+<<0 (TMC6 protein, human)>>	<<64>>
+<<EC 3.4.21.- (Serine Endopeptidases)>>	<<64>>
+<<0 (Interleukin-1 Receptor-Like 1 Protein)>>	<<64>>
+<<0 (Receptors, Interferon)>>	<<64>>
+<<0 (ZNF143 protein, human)>>	<<64>>
+<<0 (Receptors, Calcium-Sensing)>>	<<64>>
+<<Microfilament Proteins/genetics>>	<<64>>
+<<Cornified Envelope Proline-Rich Proteins/genetics>>	<<64>>
+<<EC 1.5.1.20 (MTHFR protein, human)>>	<<64>>
+<<Genetic Predisposition to Disease>>	<<64>>
+<<Serine Endopeptidases/genetics>>	<<64>>
+<<Interleukin-12 Subunit p40/genetics>>	<<64>>
+<<0 (IL1RL1 protein, human)>>	<<64>>
+<<0 (Cornified Envelope Proline-Rich Proteins)>>	<<64>>
+<<Trans-Activators/genetics>>	<<64>>
+<<Polymorphism, Single Nucleotide>>	<<64>>
+<<0 (Interleukin-12 Subunit p40)>>	<<64>>
+<<Receptors, Cell Surface/genetics>>	<<64>>
+<<0 (TNIP1 protein, human)>>	<<64>>
+<<0 (LCE3D protein, human)>>	<<64>>
+<<0 (CASR protein, human)>>	<<64>>
+<<EC 1.5.1.20 (Methylenetetrahydrofolate Reductase (NADPH2))>>	<<64>>
+<<Nerve Tissue Proteins/genetics>>	<<64>>
+<<Receptors, Calcium-Sensing/genetics>>	<<64>>
+<<0 (IFNGR2 protein, human)>>	<<64>>
+<<NF-KappaB Inhibitor alpha>>	<<64>>
+<<Methylenetetrahydrofolate Reductase (NADPH2)/genetics>>	<<64>>
+<<0 (Microfilament Proteins)>>	<<64>>
+<<139874-52-5 (NF-KappaB Inhibitor alpha)>>	<<64>>
+<<Case-Control Studies>>	<<64>>
+<<Middle Aged>>	<<64>>
+<<Receptors, Interferon/genetics>>	<<64>>
+<<0 (I-kappa B Proteins)>>	<<64>>
+<<0 (IL12B protein, human)>>	<<64>>
+<<0 (SYNE2 protein, human)>>	<<64>>
+<<0 (NFKBIA protein, human)>>	<<64>>
+<<I-kappa B Proteins/genetics>>	<<64>>
+<<Psoriasis/*genetics>>	<<64>>
+<<EC 3.4.21- (ZFYVE16 protein, human)>>	<<64>>
+<<0 (AIM2 protein, human)>>	<<64>>
+<<0 (AP5B1 protein, human)>>	<<64>>
+<<Ribosomes/metabolism>>	<<63>>
+<<RNA Helicases/metabolism>>	<<63>>
+<<EC 2.7.7.- (RNA Polymerase II)>>	<<63>>
+<<Protein Structure, Secondary>>	<<63>>
+<<RNA, Messenger/genetics>>	<<63>>
+<<Cytosol/metabolism>>	<<63>>
+<<Genes, Fungal>>	<<63>>
+<<Sequence Deletion>>	<<63>>
+<<Introns>>	<<62>>
+<<RNA, Messenger/*genetics>>	<<62>>
+<<Dose-Response Relationship, Drug>>	<<62>>
+<<Fungal Proteins/*metabolism>>	<<62>>
+<<Genes, Reporter>>	<<62>>
+<<Chromosomes, Human, Pair 21/genetics>>	<<62>>
+<<RNA Nucleotidyltransferases/chemistry/*genetics/*metabolism>>	<<62>>
+<<Nuclear Envelope/enzymology>>	<<62>>
+<<Nuclear Proteins>>	<<62>>
+<<Macromolecular Substances>>	<<61>>
+<<0 (Macromolecular Substances)>>	<<61>>
+<<Phylogeny>>	<<60>>
+<<61D2G4IYVH (Adenosine Diphosphate)>>	<<60>>
+<<*RNA Splicing>>	<<60>>
+<<Age Factors>>	<<60>>
+<<Jurkat Cells>>	<<60>>
+<<*Dbp5>>	<<59>>
+<<Promoter Regions, Genetic/genetics>>	<<59>>
+<<Saccharomyces cerevisiae/*enzymology/*genetics>>	<<59>>
+<<Recombinant Proteins/biosynthesis>>	<<59>>
+<<Organ Specificity>>	<<59>>
+<<Nucleocytoplasmic Transport Proteins/*chemistry/*metabolism>>	<<58>>
+<<Luminescent Proteins/genetics/metabolism>>	<<58>>
+<<*Protein Biosynthesis>>	<<58>>
+<<0 (Drosophila Proteins)>>	<<58>>
+<<EC 2.7.7.49 (Telomerase)>>	<<57>>
+<<RNA Precursors/*metabolism>>	<<57>>
+<<Gene Expression Regulation, Neoplastic>>	<<57>>
+<<Nuclear Pore Complex Proteins/metabolism>>	<<57>>
+<<Spliceosomes/*metabolism>>	<<57>>
+<<Gene Expression Regulation/*physiology>>	<<57>>
+<<Minor Histocompatibility Antigens/metabolism>>	<<56>>
+<<EC 3.6.1.- (DED1 protein, S cerevisiae)>>	<<56>>
+<<*Chromosomes, Human, Pair 21>>	<<56>>
+<<Enzyme Activation/physiology>>	<<55>>
+<<Binding Sites/physiology>>	<<55>>
+<<Cell Cycle/genetics>>	<<55>>
+<<RNA, Fungal/metabolism>>	<<55>>
+<<RNA Stability>>	<<54>>
+<<*Gle1>>	<<54>>
+<<Crystallization>>	<<54>>
+<<Transcription Factors/*physiology>>	<<54>>
+<<Plasmids>>	<<54>>
+<<0 (RNA, Long Noncoding)>>	<<54>>
+<<0 (MALAT1 long non-coding RNA, human)>>	<<54>>
+<<0 (NUP116 protein, S cerevisiae)>>	<<54>>
+<<Recombinant Proteins/metabolism>>	<<54>>
+<<Transcription Factors/*metabolism>>	<<54>>
+<<Cell Nucleus/genetics/*metabolism>>	<<53>>
+<<Chromatography, Gel>>	<<53>>
+<<DNA, Complementary>>	<<53>>
+<<*Models, Biological>>	<<52>>
+<<DNA-Binding Proteins/*physiology>>	<<52>>
+<<U937 Cells>>	<<52>>
+<<RNA, Fungal/genetics/metabolism>>	<<51>>
+<<RNA Precursors/genetics/metabolism>>	<<51>>
+<<Saccharomyces cerevisiae/*genetics/metabolism>>	<<51>>
+<<0 (Core Binding Factor Alpha 2 Subunit)>>	<<51>>
+<<RNA, Messenger/analysis>>	<<50>>
+<<Chromosomes, Human, Pair 21/*genetics>>	<<50>>
+<<Peptide Termination Factors/genetics/metabolism>>	<<50>>
+<<Genes/*genetics>>	<<50>>
+<<*Alternative Splicing>>	<<49>>
+<<RNA/genetics>>	<<49>>
+<<RNA/metabolism>>	<<49>>
+<<Karyopherins/metabolism>>	<<49>>
+<<RNA/*metabolism>>	<<49>>
+<<Saccharomyces cerevisiae/*enzymology>>	<<49>>
+<<Nuclear Envelope/metabolism>>	<<49>>
+<<0 (Schizosaccharomyces pombe Proteins)>>	<<49>>
+<<Saccharomyces cerevisiae Proteins/metabolism>>	<<49>>
+<<0 (peptide-chain-release factor 3)>>	<<48>>
+<<Eukaryotic Initiation Factor-4A/chemistry/metabolism>>	<<48>>
+<<Trans-Activators/*metabolism>>	<<48>>
+<<DEAD-box RNA Helicases/chemistry/*metabolism>>	<<47>>
+<<0 (Protein Isoforms)>>	<<47>>
+<<*Repetitive Sequences, Nucleic Acid>>	<<47>>
+<<*Regulatory Sequences, Nucleic Acid>>	<<47>>
+<<Mammary Tumor Virus, Mouse/*genetics/*metabolism>>	<<47>>
+<<mRNP>>	<<46>>
+<<Saccharomyces cerevisiae/genetics>>	<<46>>
+<<Saccharomyces cerevisiae Proteins/*genetics>>	<<46>>
+<<DEAD-box RNA Helicases/*genetics>>	<<46>>
+<<Nucleocytoplasmic Transport Proteins/*genetics>>	<<46>>
+<<*DEAD-box protein>>	<<46>>
+<<77238-31-4 (Interferon-beta)>>	<<46>>
+<<Serine-Arginine Splicing Factors>>	<<46>>
+<<0 (Gfd1 protein, S cerevisiae)>>	<<46>>
+<<DDX19>>	<<45>>
+<<Peptide Termination Factors/metabolism>>	<<45>>
+<<*nuclear pore complex>>	<<45>>
+<<*autophagy>>	<<45>>
+<<Hydrolysis>>	<<45>>
+<<Nuclear Pore/genetics/*metabolism>>	<<45>>
+<<*Mutation>>	<<45>>
+<<Exome>>	<<45>>
+<<*Phenotype>>	<<45>>
+<<Frameshift Mutation>>	<<45>>
+<<*intellectual disability>>	<<45>>
+<<EC 3.6.1.- (RNA-dependent ATPase)>>	<<44>>
+<<Body Mass Index>>	<<44>>
+<<beta Karyopherins>>	<<44>>
+<<NMD>>	<<43>>
+<<Dbp5>>	<<43>>
+<<Nucleocytoplasmic Transport Proteins/chemistry/*metabolism>>	<<43>>
+<<0 (Zbtb7a protein, mouse)>>	<<43>>
+<<DNA-Binding Proteins/*biosynthesis/*genetics>>	<<43>>
+<<Chondrosarcoma/embryology/metabolism>>	<<43>>
+<<3X2S926L3Z (trichostatin A)>>	<<43>>
+<<Chromatin/metabolism>>	<<43>>
+<<Alcian Blue/pharmacology>>	<<43>>
+<<Cartilage/*metabolism>>	<<43>>
+<<Hydroxamic Acids/pharmacology>>	<<43>>
+<<Magnetics>>	<<43>>
+<<0 (Hydroxamic Acids)>>	<<43>>
+<<Mice, Inbred C3H>>	<<43>>
+<<Histone Deacetylases/*metabolism>>	<<43>>
+<<P4448TJR7J (Alcian Blue)>>	<<43>>
+<<Transcription Factors/*biosynthesis/*genetics>>	<<43>>
+<<Chromatin Immunoprecipitation>>	<<43>>
+<<Gene Silencing>>	<<43>>
+<<Codon, Terminator/genetics>>	<<42>>
+<<DEAD-box RNA Helicases/*genetics/*metabolism>>	<<42>>
+<<0 (Vitamin D-Binding Protein)>>	<<42>>
+<<Heterogeneous-Nuclear Ribonucleoproteins/genetics>>	<<41>>
+<<0 (RAC1 protein, human)>>	<<41>>
+<<EC 3.1.3.16 (Protein Phosphatase 2C)>>	<<41>>
+<<Protein Phosphatase 2C/genetics>>	<<41>>
+<<0 (TCF20 protein, human)>>	<<41>>
+<<Transcription Factors/genetics>>	<<41>>
+<<0 (Disks Large Homolog 4 Protein)>>	<<41>>
+<<rac1 GTP-Binding Protein/genetics>>	<<41>>
+<<0 (SOX5 protein, human)>>	<<41>>
+<<Disks Large Homolog 4 Protein>>	<<41>>
+<<Ubiquitin-Protein Ligases/genetics>>	<<41>>
+<<Protein Kinases/genetics>>	<<41>>
+<<Smad6 Protein/genetics>>	<<41>>
+<<SOXD Transcription Factors/genetics>>	<<41>>
+<<0 (DLG4 protein, human)>>	<<41>>
+<<0 (SOXD Transcription Factors)>>	<<41>>
+<<0 (Smad6 Protein)>>	<<41>>
+<<EC 2.3.2.26 (TRIP12 protein, human)>>	<<41>>
+<<0 (SMAD6 protein, human)>>	<<41>>
+<<EC 2.7.1.- (protein kinase U)>>	<<41>>
+<<EC 3.1.3.16 (PPM1D protein, human)>>	<<41>>
+<<0 (SYNCRIP protein, human)>>	<<41>>
+<<EC 2.3.2.27 (Ubiquitin-Protein Ligases)>>	<<41>>
+<<EC 3.6.5.2 (rac1 GTP-Binding Protein)>>	<<41>>
+<<0 (Eukaryotic Initiation Factor-3)>>	<<41>>
+<<Nuclear Pore Complex Proteins/genetics/metabolism>>	<<41>>
+<<Tumor Cells, Cultured>>	<<41>>
+<<Hybrid Cells>>	<<41>>
+<<*Biological Transport>>	<<40>>
+<<Cell Differentiation/drug effects>>	<<40>>
+<<0 (Inflammasomes)>>	<<40>>
+<<0 (golgicide A)>>	<<40>>
+<<Macrophages/*immunology/metabolism/microbiology>>	<<40>>
+<<Host-Pathogen Interactions/*genetics/immunology>>	<<40>>
+<<Pyridines/pharmacology>>	<<40>>
+<<0 (Quinolines)>>	<<40>>
+<<0 (GBF1 protein, human)>>	<<40>>
+<<*inflammasome>>	<<40>>
+<<Golgi Apparatus/*immunology/metabolism/microbiology>>	<<40>>
+<<NI40JAQ945 (Tetradecanoylphorbol Acetate)>>	<<40>>
+<<Guanine Nucleotide Exchange Factors/antagonists & inhibitors/*genetics/immunology>>	<<40>>
+<<Cell Death>>	<<40>>
+<<THP-1 Cells>>	<<40>>
+<<Gene Expression Profiling>>	<<40>>
+<<0 (Interferon Regulatory Factor-3)>>	<<40>>
+<<*host-pathogen interactions>>	<<40>>
+<<*interferon response>>	<<40>>
+<<Autophagy/drug effects/*genetics>>	<<40>>
+<<0 (IRF3 protein, human)>>	<<40>>
+<<Inflammasomes/immunology/metabolism>>	<<40>>
+<<Francisella tularensis/genetics/immunology/*pathogenicity>>	<<40>>
+<<DNA-Binding Proteins/antagonists & inhibitors/*genetics/immunology>>	<<40>>
+<<Tetradecanoylphorbol Acetate/pharmacology>>	<<40>>
+<<0 (Pyridines)>>	<<40>>
+<<* Francisella tularensis>>	<<40>>
+<<0 (Guanine Nucleotide Exchange Factors)>>	<<40>>
+<<Minor Histocompatibility Antigens/*genetics/immunology>>	<<40>>
+<<Interferon Regulatory Factor-3/genetics/immunology>>	<<40>>
+<<Quinolines/pharmacology>>	<<40>>
+<<Repetitive Sequences, Nucleic Acid>>	<<40>>
+<<Polymers/*chemistry>>	<<40>>
+<<0 (Polymers)>>	<<40>>
+<<*Promoter Regions, Genetic>>	<<40>>
+<<0 (NXF1 protein, human)>>	<<40>>
+<<*Receptors, G-Protein-Coupled>>	<<40>>
+<<Receptors, Cell Surface/metabolism>>	<<40>>
+<<Caenorhabditis elegans/cytology/*genetics/growth & development/metabolism>>	<<40>>
+<<0 (High Mobility Group Proteins)>>	<<40>>
+<<High Mobility Group Proteins/*metabolism>>	<<40>>
+<<Animals, Genetically Modified/metabolism>>	<<40>>
+<<0 (LIN-17 protein, C elegans)>>	<<40>>
+<<Models, Genetic>>	<<40>>
+<<Neurons/metabolism>>	<<40>>
+<<0 (Receptors, G-Protein-Coupled)>>	<<40>>
+<<*Zebrafish Proteins>>	<<40>>
+<<0 (pop-1 protein, C elegans)>>	<<40>>
+<<0 (Wnt Proteins)>>	<<40>>
+<<Proto-Oncogene Proteins/*metabolism>>	<<40>>
+<<*Caenorhabditis elegans Proteins>>	<<40>>
+<<Cell Lineage>>	<<40>>
+<<0 (Caenorhabditis elegans Proteins)>>	<<40>>
+<<Wnt Proteins>>	<<40>>
+<<Peptides>>	<<40>>
+<<Protein Biosynthesis/*genetics>>	<<40>>
+<<0 (Trefoil Factor-3)>>	<<40>>
+<<Reproducibility of Results>>	<<40>>
+<<0 (Mucins)>>	<<40>>
+<<Codon, Initiator/*genetics>>	<<40>>
+<<0 (Codon, Initiator)>>	<<40>>
+<<Sequence Analysis, DNA/methods/standards>>	<<40>>
+<<0 (5' Untranslated Regions)>>	<<40>>
+<<DNA, Complementary/chemistry/genetics>>	<<40>>
+<<Intracellular Signaling Peptides and Proteins>>	<<40>>
+<<0 (Peptides)>>	<<40>>
+<<0 (URB1 protein, human)>>	<<40>>
+<<5' Untranslated Regions/genetics>>	<<40>>
+<<Mucins/genetics>>	<<40>>
+<<0 (DIP2A protein, human)>>	<<40>>
+<<0 (TFF3 protein, human)>>	<<40>>
+<<Trefoil Factor-3>>	<<40>>
+<<Point Mutation>>	<<39>>
+<<Heterogeneous-Nuclear Ribonucleoproteins/*genetics/metabolism>>	<<39>>
+<<0 (RBFOX2 protein, human)>>	<<39>>
+<<Spheroids, Cellular/metabolism/pathology>>	<<39>>
+<<Repressor Proteins/*genetics/metabolism>>	<<39>>
+<<139076-35-0 (Polypyrimidine Tract-Binding Protein)>>	<<39>>
+<<Polypyrimidine Tract-Binding Protein/*genetics/metabolism>>	<<39>>
+<<RNA Splicing Factors/*genetics/metabolism>>	<<39>>
+<<Brain Neoplasms/*genetics/metabolism/mortality/pathology>>	<<39>>
+<<Heterografts>>	<<39>>
+<<0 (Heterogeneous-Nuclear Ribonucleoprotein Group A-B)>>	<<39>>
+<<Nerve Tissue Proteins/*genetics/metabolism>>	<<39>>
+<<Heterogeneous-Nuclear Ribonucleoprotein Group A-B/genetics/metabolism>>	<<39>>
+<<Neurons/metabolism/pathology>>	<<39>>
+<<Neuroglia/metabolism/pathology>>	<<39>>
+<<0 (PTBP2 protein, human)>>	<<39>>
+<<Survival Analysis>>	<<39>>
+<<DNA-Binding Proteins/antagonists & inhibitors/*genetics/metabolism>>	<<39>>
+<<0 (PTBP1 protein, human)>>	<<39>>
+<<Glioblastoma/*genetics/metabolism/mortality/pathology>>	<<39>>
+<<RNA Splicing Factors/metabolism>>	<<39>>
+<<Ribonucleoproteins, Small Nuclear/genetics/*metabolism>>	<<39>>
+<<Nerve Tissue Proteins/genetics/*metabolism>>	<<39>>
+<<0 (Ribonucleoprotein, U4-U6 Small Nuclear)>>	<<39>>
+<<0 (RNA, Small Nuclear)>>	<<39>>
+<<0 (PRPF6 protein, human)>>	<<39>>
+<<Eye Proteins/metabolism>>	<<39>>
+<<Phosphoproteins/metabolism>>	<<39>>
+<<Gene Knockdown Techniques>>	<<39>>
+<<Spliceosomes/genetics/*metabolism>>	<<39>>
+<<RNA, Small Nuclear/genetics/metabolism>>	<<39>>
+<<0 (PRPF31 protein, human)>>	<<39>>
+<<0 (SF3B1 protein, human)>>	<<39>>
+<<Transcription Factors/metabolism>>	<<39>>
+<<Coiled Bodies/metabolism>>	<<39>>
+<<0 (Eye Proteins)>>	<<39>>
+<<0 (Ribonucleoproteins, Small Nuclear)>>	<<39>>
+<<Proteomics>>	<<39>>
+<<RNA Precursors/genetics/*metabolism>>	<<39>>
+<<Cell Proliferation/genetics>>	<<39>>
+<<0 (USH1G protein, human)>>	<<39>>
+<<Ribonucleoprotein, U4-U6 Small Nuclear/metabolism>>	<<39>>
+<<0 (Phosphoproteins)>>	<<39>>
+<<Microscopy, Electron, Transmission>>	<<39>>
+<<Alternative Splicing/*genetics>>	<<39>>
+<<Mass Spectrometry>>	<<39>>
+<<Usher Syndromes/genetics/*metabolism>>	<<39>>
+<<Fluorescent Antibody Technique>>	<<39>>
+<<*Transcriptional Activation>>	<<39>>
+<<Gene Expression Regulation, Developmental/drug effects>>	<<39>>
+<<Chromosomes/metabolism>>	<<39>>
+<<0 (Salivary Proteins and Peptides)>>	<<39>>
+<<Hot Temperature>>	<<39>>
+<<0 (Insect Proteins)>>	<<39>>
+<<X2RN3Q8DNE (Galactose)>>	<<39>>
+<<Transcription, Genetic/drug effects>>	<<39>>
+<<Chironomidae/genetics/growth & development/*metabolism>>	<<39>>
+<<Salivary Proteins and Peptides/genetics/*metabolism>>	<<39>>
+<<Larva>>	<<39>>
+<<Galactose/pharmacology>>	<<39>>
+<<Stress, Physiological/metabolism>>	<<39>>
+<<Insect Proteins/genetics/*metabolism>>	<<39>>
+<<Salivary Glands/drug effects/metabolism>>	<<39>>
+<<Genomic Instability>>	<<39>>
+<<Apoptosis/genetics>>	<<39>>
+<<Electrophoretic Mobility Shift Assay>>	<<39>>
+<<0 (alpha-Fetoproteins)>>	<<39>>
+<<Saccharomyces cerevisiae Proteins/metabolism/*physiology>>	<<39>>
+<<EC 2.7.1.- (IPK1 protein, S cerevisiae)>>	<<39>>
+<<Cell Membrane/metabolism>>	<<39>>
+<<EC 2.7.1.68 (MSS4 protein, S cerevisiae)>>	<<39>>
+<<Carrier Proteins/*physiology>>	<<39>>
+<<Phosphotransferases/metabolism>>	<<39>>
+<<EC 2.7.1.- (ARG82 protein, S cerevisiae)>>	<<39>>
+<<Chromatography, High Pressure Liquid>>	<<39>>
+<<Cryoelectron Microscopy>>	<<39>>
+<<Green Fluorescent Proteins/chemistry/metabolism>>	<<39>>
+<<EC 2.7.- (Phosphotransferases)>>	<<39>>
+<<Nuclear Pore Complex Proteins/chemistry>>	<<39>>
+<<Phosphotransferases (Alcohol Group Acceptor)/metabolism>>	<<39>>
+<<RNA Polymerase II/metabolism>>	<<38>>
+<<Hep G2 Cells>>	<<38>>
+<<Tissue Distribution>>	<<38>>
+<<Mutagenesis>>	<<38>>
+<<*Karyopherins>>	<<38>>
+<<Saccharomyces cerevisiae/genetics/growth & development/*metabolism>>	<<38>>
+<<Biological Transport, Active>>	<<38>>
+<<*Receptors, Cytoplasmic and Nuclear>>	<<38>>
+<<DEAD-box RNA Helicases/*chemistry/metabolism>>	<<37>>
+<<86-01-1 (Guanosine Triphosphate)>>	<<37>>
+<<RNA, Messenger/*genetics/*metabolism>>	<<37>>
+<<*Blood Pressure>>	<<37>>
+<<0 (Viral Regulatory and Accessory Proteins)>>	<<37>>
+<<Conserved Sequence/*genetics>>	<<37>>
+<<0 (Xenopus Proteins)>>	<<37>>
+<<*Schizosaccharomyces pombe Proteins>>	<<37>>
+<<Cell Cycle Proteins/genetics/metabolism>>	<<37>>
+<<*RNA-Binding Proteins>>	<<37>>
+<<Spores, Fungal/genetics/growth & development>>	<<37>>
+<<0 (Cell Cycle Proteins)>>	<<37>>
+<<EC 3.6.1.- (DHH1 protein, S cerevisiae)>>	<<37>>
+<<EC 2.7.7.-. (sum3 protein, S pombe)>>	<<37>>
+<<Saccharomyces cerevisiae/*enzymology/genetics/physiology>>	<<37>>
+<<Xenopus Proteins/genetics>>	<<37>>
+<<Ribonucleoproteins/genetics/metabolism>>	<<36>>
+<<Cell Survival/genetics>>	<<36>>
+<<*Zhu-Tokita-Takenouchi-Kim syndrome>>	<<36>>
+<<Abnormalities, Multiple/*genetics>>	<<35>>
+<<Active Transport, Cell Nucleus/*physiology>>	<<34>>
+<<*Nuclear speckles>>	<<34>>
+<<Developmental Disabilities/*genetics>>	<<34>>
+<<Systole>>	<<34>>
+<<Diastole>>	<<34>>
+<<Skinfold Thickness>>	<<34>>
+<<Nuclear Envelope/*metabolism>>	<<34>>
+<<DEAD-box protein>>	<<34>>
+<<Membrane Transport Proteins/genetics/metabolism>>	<<34>>
+<<nucleoporin>>	<<34>>
+<<nuclear pore complex>>	<<34>>
+<<nuclear transport>>	<<34>>
+<<DNA-Binding Proteins/*metabolism>>	<<34>>
+<<RNA Helicases/physiology>>	<<33>>
+<<Dimerization>>	<<33>>
+<<Membrane Transport Proteins/metabolism>>	<<33>>
+<<DEAD-box RNA Helicases/physiology>>	<<33>>
+<<Saccharomyces cerevisiae Proteins/metabolism/physiology>>	<<33>>
+<<Carrier Proteins/physiology>>	<<33>>
+<<Nuclear Pore Complex Proteins/physiology>>	<<33>>
+<<Nucleocytoplasmic Transport Proteins/metabolism/physiology>>	<<33>>
+<<Cytokinesis>>	<<33>>
+<<Spindle Apparatus/metabolism>>	<<33>>
+<<Binding Sites/genetics>>	<<32>>
+<<Nucleocytoplasmic Transport Proteins/chemistry/genetics/*metabolism>>	<<32>>
+<<DEAD-box RNA Helicases/chemistry/genetics/*metabolism>>	<<32>>
+<<Saccharomyces cerevisiae Proteins/chemistry/genetics/*metabolism>>	<<32>>
+<<Catalysis>>	<<32>>
+<<Longitudinal Studies>>	<<32>>
+<<0 (Peptide Initiation Factors)>>	<<32>>
+<<Eukaryotic Initiation Factor-4A>>	<<32>>
+<<Peptide Initiation Factors/chemistry>>	<<32>>
+<<Recombinant Proteins/chemistry/metabolism>>	<<32>>
+<<Schizosaccharomyces/enzymology>>	<<32>>
+<<0 (Peptide Library)>>	<<32>>
+<<Peptide Library>>	<<32>>
+<<Databases, Factual>>	<<32>>
+<<Fungal Proteins/chemistry/genetics/metabolism>>	<<32>>
+<<DNA Primers/genetics>>	<<32>>
+<<0 (Receptors, Notch)>>	<<32>>
+<<Winged-Helix Transcription Factors/genetics/metabolism>>	<<32>>
+<<Animals, Genetically Modified>>	<<32>>
+<<*Genes, Insect>>	<<32>>
+<<0 (Wnt1 Protein)>>	<<32>>
+<<0 (N protein, Drosophila)>>	<<32>>
+<<Drosophila Proteins/genetics/metabolism>>	<<32>>
+<<Body Patterning/genetics>>	<<32>>
+<<0 (wg protein, Drosophila)>>	<<32>>
+<<0 (Homeodomain Proteins)>>	<<32>>
+<<Proto-Oncogene Proteins/genetics/metabolism>>	<<32>>
+<<Wings, Animal/*growth & development>>	<<32>>
+<<Enhancer Elements, Genetic>>	<<32>>
+<<Transcription Factors/genetics/metabolism>>	<<32>>
+<<0 (Winged-Helix Transcription Factors)>>	<<32>>
+<<Gene Expression Regulation, Developmental>>	<<32>>
+<<Homeodomain Proteins/genetics/metabolism>>	<<32>>
+<<Receptors, Notch/genetics/metabolism>>	<<32>>
+<<Wnt1 Protein>>	<<32>>
+<<0 (ct protein, Drosophila)>>	<<32>>
+<<Drosophila melanogaster/*genetics/*growth & development/metabolism>>	<<32>>
+<<Intellectual Disability/*genetics/pathology>>	<<32>>
+<<Developmental Disabilities/*genetics/pathology>>	<<32>>
+<<Luciferases/biosynthesis>>	<<32>>
+<<Lung/metabolism>>	<<32>>
+<<Dexamethasone/pharmacology>>	<<32>>
+<<Mammary Glands, Animal/metabolism>>	<<32>>
+<<Epithelium/metabolism>>	<<32>>
+<<0 (DNA, Viral)>>	<<32>>
+<<7S5I7G3JQL (Dexamethasone)>>	<<32>>
+<<DNA, Viral/metabolism>>	<<32>>
+<<Gene Expression/drug effects>>	<<32>>
+<<EC 1.13.12.- (Luciferases)>>	<<32>>
+<<T-Lymphocytes/metabolism>>	<<32>>
+<<Adenosine Triphosphatases/chemistry>>	<<31>>
+<<Saccharomyces cerevisiae Proteins/*chemistry/genetics/*metabolism/*physiology>>	<<31>>
+<<Nuclear Pore Complex Proteins/*chemistry/genetics/*physiology>>	<<31>>
+<<Recombinant Proteins/chemistry>>	<<31>>
+<<RNA Helicases/*chemistry/*metabolism>>	<<31>>
+<<Transcription Factor TFIIH>>	<<31>>
+<<0 (Transcription Factors, TFII)>>	<<31>>
+<<148710-81-0 (Transcription Factor TFIIH)>>	<<31>>
+<<*TATA-Binding Protein Associated Factors>>	<<31>>
+<<Transcription Factors, TFII/chemistry/*genetics/*metabolism>>	<<31>>
+<<RNA, Fungal/*genetics/*metabolism>>	<<31>>
+<<EC 2.7.1.- (carboxy-terminal domain kinase)>>	<<31>>
+<<0 (Transcription Factor TFIID)>>	<<31>>
+<<Protein Kinases/chemistry/genetics/metabolism>>	<<31>>
+<<RNA Helicases/*genetics/*metabolism>>	<<31>>
+<<Genes, Suppressor>>	<<31>>
+<<0 (TAF6 protein, S cerevisiae)>>	<<31>>
+<<*Transcription Factor TFIID>>	<<31>>
+<<0 (TATA-Binding Protein Associated Factors)>>	<<31>>
+<<Fertility>>	<<31>>
+<<EC 3.6.1.- (LOS4 protein, Arabidopsis)>>	<<31>>
+<<Arabidopsis/genetics/*growth & development/*metabolism>>	<<31>>
+<<EC 2.7.1.- (inositol 1,3,4,5,6-pentakisphosphate 2-kinase, Arabidopsis)>>	<<31>>
+<<0 (Gle1 protein, Arabidopsis)>>	<<31>>
+<<Amino Acids/metabolism>>	<<31>>
+<<Seeds/growth & development>>	<<31>>
+<<Tobacco>>	<<31>>
+<<0 (Arabidopsis Proteins)>>	<<31>>
+<<Arabidopsis Proteins/genetics/*metabolism>>	<<31>>
+<<Phosphotransferases (Alcohol Group Acceptor)/*metabolism>>	<<31>>
+<<Plants, Genetically Modified>>	<<31>>
+<<0 (Amino Acids)>>	<<31>>
+<<Subcellular Fractions/metabolism>>	<<31>>
+<<*human>>	<<30>>
+<<*cell biology>>	<<30>>
+<<Antibodies, Monoclonal>>	<<30>>
+<<Gene Knock-In Techniques>>	<<30>>
+<<*biochemistry>>	<<30>>
+<<0 (Antibodies, Monoclonal)>>	<<30>>
+<<0 (SRRM2 protein, human)>>	<<30>>
+<<0 (SRSF7 protein, human)>>	<<30>>
+<<*chemical biology>>	<<30>>
+<<0 (Antibodies)>>	<<30>>
+<<*RNA>>	<<30>>
+<<Minor Histocompatibility Antigens/genetics/*metabolism>>	<<30>>
+<<Blotting, Western>>	<<30>>
+<<*nuclear speckles>>	<<30>>
+<<*LLPS>>	<<30>>
+<<Serine-Arginine Splicing Factors/genetics/metabolism>>	<<30>>
+<<*SRSF2>>	<<30>>
+<<*SRRM2>>	<<30>>
+<<Antibodies>>	<<30>>
+<<Hematopoietic Stem Cells/cytology>>	<<30>>
+<<Protein-Tyrosine Kinases/genetics>>	<<30>>
+<<RNA, Small Interfering/genetics>>	<<30>>
+<<EC 2.7.10.1 (Protein-Tyrosine Kinases)>>	<<30>>
+<<RNA, Long Noncoding/genetics>>	<<30>>
+<<EC 2.7.11.1 (Protein Serine-Threonine Kinases)>>	<<30>>
+<<Introns/genetics>>	<<30>>
+<<RNA Precursors/genetics>>	<<30>>
+<<beta Karyopherins/genetics>>	<<30>>
+<<0 (TNPO3 protein, human)>>	<<30>>
+<<Protein Serine-Threonine Kinases/genetics>>	<<30>>
+<<Gene Expression Regulation/genetics>>	<<30>>
+<<EC 2.7.1.- (Clk dual-specificity kinases)>>	<<30>>
+<<Phosphorylation>>	<<30>>
+<<RNA Splicing Factors/*genetics>>	<<30>>
+<<helicase>>	<<30>>
+<<0 (MIRN24 microRNA, human)>>	<<30>>
+<<0 (MicroRNAs)>>	<<30>>
+<<3' Untranslated Regions>>	<<30>>
+<<0 (Mirn23b microRNA, mouse)>>	<<30>>
+<<0 (MIRN27 microRNA, human)>>	<<30>>
+<<0 (GATA2 Transcription Factor)>>	<<30>>
+<<Hematopoiesis>>	<<30>>
+<<GATA2 Transcription Factor/*metabolism>>	<<30>>
+<<0 (Mirn24 microRNA, mouse)>>	<<30>>
+<<Leukemia, Myeloid, Acute/metabolism>>	<<30>>
+<<Up-Regulation>>	<<30>>
+<<0 (MIRN23a microRNA, human)>>	<<30>>
+<<DNA-Binding Proteins/genetics/*physiology>>	<<30>>
+<<MicroRNAs/*metabolism>>	<<30>>
+<<0 (3' Untranslated Regions)>>	<<30>>
+<<0 (Mirn27 microRNA, mouse)>>	<<30>>
+<<0 (Transcription Factor 4)>>	<<30>>
+<<0 (Interleukin-2 Receptor alpha Subunit)>>	<<30>>
+<<Transcription Factor 4>>	<<30>>
+<<TCF Transcription Factors>>	<<30>>
+<<0 (TCF4 protein, human)>>	<<30>>
+<<0 (TCF Transcription Factors)>>	<<30>>
+<<0 (Basic Helix-Loop-Helix Leucine Zipper Transcription Factors)>>	<<30>>
+<<Transcription Factor 7-Like 2 Protein>>	<<30>>
+<<0 (IL2RA protein, human)>>	<<30>>
+<<Basic Helix-Loop-Helix Leucine Zipper Transcription Factors>>	<<30>>
+<<0 (TCF7L2 protein, human)>>	<<30>>
+<<Receptors, Interleukin/*genetics>>	<<30>>
+<<Blotting, Southern>>	<<30>>
+<<HIV Long Terminal Repeat>>	<<30>>
+<<Interleukin-2 Receptor alpha Subunit>>	<<30>>
+<<0 (Transcription Factor 7-Like 2 Protein)>>	<<30>>
+<<Lymphocyte Activation>>	<<30>>
+<<0 (Receptors, Interleukin)>>	<<30>>
+<<Embryo, Nonmammalian/enzymology>>	<<30>>
+<<Genomic Library>>	<<30>>
+<<Dictyostelium/enzymology>>	<<30>>
+<<Schizosaccharomyces/*enzymology>>	<<30>>
+<<Xenopus>>	<<30>>
+<<Oocytes/physiology>>	<<30>>
+<<PC12 Cells>>	<<30>>
+<<Subcellular Fractions/enzymology>>	<<30>>
+<<Drosophila/embryology/enzymology>>	<<30>>
+<<Telomerase/*metabolism>>	<<30>>
+<<Receptors, Cytoplasmic and Nuclear/metabolism>>	<<30>>
+<<EC 3.6.5.2 (ran GTP-Binding Protein)>>	<<30>>
+<<Telomere/*metabolism>>	<<30>>
+<<ran GTP-Binding Protein/metabolism>>	<<30>>
+<<0 (telomerase RNA)>>	<<30>>
+<<Repressor Proteins/genetics/metabolism>>	<<29>>
+<<Mutation/physiology>>	<<29>>
+<<Signal Transduction/physiology>>	<<29>>
+<<Protein Structure, Tertiary/physiology>>	<<29>>
+<<Facies>>	<<29>>
+<<Thrombocytopenia/congenital/diagnosis>>	<<29>>
+<<Pierre Robin Syndrome/diagnosis>>	<<29>>
+<<Infant, Newborn>>	<<29>>
+<<Growth Disorders/diagnosis>>	<<29>>
+<<Thrombocytopenia Robin sequence>>	<<29>>
+<<Intellectual Disability/*diagnosis/*genetics>>	<<29>>
+<<*Braddock-Carey syndrome>>	<<29>>
+<<*21q22>>	<<29>>
+<<*thrombocytopenia>>	<<29>>
+<<Agenesis of Corpus Callosum/diagnosis>>	<<29>>
+<<High-Throughput Nucleotide Sequencing>>	<<29>>
+<<Down Syndrome Critical Region>>	<<29>>
+<<Genetic Association Studies>>	<<29>>
+<<Chromosomes, Human/*genetics>>	<<29>>
+<<Down Syndrome/*genetics/physiopathology>>	<<29>>
+<<Gene Dosage/genetics>>	<<29>>
+<<Chromosome Aberrations>>	<<29>>
+<<Comparative Genomic Hybridization/methods>>	<<29>>
+<<Superoxide Dismutase-1/genetics>>	<<29>>
+<<Whole Genome Sequencing>>	<<29>>
+<<0 (ITSN1 protein, human)>>	<<29>>
+<<Microarray Analysis/methods>>	<<29>>
+<<In Situ Hybridization, Fluorescence/methods>>	<<29>>
+<<0 (SOD1 protein, human)>>	<<29>>
+<<Core Binding Factor Alpha 2 Subunit/genetics>>	<<29>>
+<<0 (RUNX1 protein, human)>>	<<29>>
+<<EC 1.15.1.1 (Superoxide Dismutase-1)>>	<<29>>
+<<Eukaryotic Initiation Factor-4G/chemistry/metabolism>>	<<28>>
+<<Saccharomyces cerevisiae/cytology/enzymology/genetics/*metabolism>>	<<28>>
+<<Enzyme Activation>>	<<28>>
+<<0 (Eukaryotic Initiation Factor-4G)>>	<<28>>
+<<Adenosine Triphosphatases/chemistry/*metabolism>>	<<28>>
+<<Nuclear Pore Complex Proteins/chemistry/genetics/*metabolism>>	<<28>>
+<<Saccharomyces cerevisiae Proteins/chemistry/genetics/metabolism>>	<<28>>
+<<RNA-Binding Proteins/*chemistry/genetics/metabolism>>	<<28>>
+<<Surface Properties>>	<<28>>
+<<30143-02-3 (polyadenosine)>>	<<28>>
+<<Adenosine/*chemistry>>	<<28>>
+<<Nucleocytoplasmic Transport Proteins/*chemistry/genetics/metabolism>>	<<28>>
+<<K72T3FS567 (Adenosine)>>	<<28>>
+<<RNA, Messenger/*chemistry>>	<<28>>
+<<Saccharomyces cerevisiae Proteins/*chemistry/genetics/metabolism>>	<<28>>
+<<Thermodynamics>>	<<28>>
+<<Amino Acid Substitution>>	<<28>>
+<<Saccharomyces cerevisiae/genetics/growth & development>>	<<28>>
+<<Nuclear Magnetic Resonance, Biomolecular>>	<<28>>
+<<*Mitosis>>	<<28>>
+<<Repetitive Sequences, Amino Acid>>	<<28>>
+<<0 (NUP100 protein, S cerevisiae)>>	<<28>>
+<<Oligopeptides/*metabolism>>	<<28>>
+<<0 (Oligopeptides)>>	<<28>>
+<<Antibody Specificity>>	<<28>>
+<<EC 2.7.7.49 (TERT protein, human)>>	<<27>>
+<<*alternative splicing>>	<<27>>
+<<Pluripotent Stem Cells/metabolism/pathology>>	<<27>>
+<<Primary Cell Culture>>	<<27>>
+<<Human Embryonic Stem Cells/metabolism/pathology>>	<<27>>
+<<*Enhancer Elements, Genetic>>	<<27>>
+<<DNA-Binding Proteins/deficiency/*genetics>>	<<27>>
+<<Telomere/*metabolism/pathology>>	<<27>>
+<<*telomeres>>	<<27>>
+<<*Telomere Homeostasis>>	<<27>>
+<<*pluripotent cells>>	<<27>>
+<<*telomerase>>	<<27>>
+<<Blastocyst/metabolism/pathology>>	<<27>>
+<<Telomerase/deficiency/*genetics>>	<<27>>
+<<*hTERT>>	<<27>>
+<<DEAD-box RNA Helicases/*chemistry/*metabolism>>	<<27>>
+<<Ultraviolet Rays>>	<<27>>
+<<Cross-Linking Reagents>>	<<27>>
+<<Nuclear Pore/metabolism/ultrastructure>>	<<27>>
+<<0 (Cross-Linking Reagents)>>	<<27>>
+<<*DEAD-box RNA Helicases/genetics/metabolism>>	<<27>>
+<<*Nucleocytoplasmic Transport Proteins/genetics/metabolism>>	<<27>>
+<<0 (Nucleotides)>>	<<27>>
+<<Adenosine Diphosphate/metabolism>>	<<27>>
+<<Nucleotides/*metabolism>>	<<27>>
+<<*pre-mRNA splicing>>	<<27>>
+<<0 (TRPP Cation Channels)>>	<<27>>
+<<Genetic Testing/*methods>>	<<27>>
+<<Urogenital Abnormalities/diagnosis/*genetics>>	<<27>>
+<<Vesico-Ureteral Reflux/diagnosis/*genetics>>	<<27>>
+<<*genetic mutations>>	<<27>>
+<<*Haploinsufficiency>>	<<27>>
+<<0 (polycystic kidney disease 1 protein)>>	<<27>>
+<<0 (polycystic kidney disease 2 protein)>>	<<27>>
+<<TRPP Cation Channels/genetics>>	<<27>>
+<<Cakut>>	<<27>>
+<<*pediatric nephrology>>	<<27>>
+<<EC 3.6.1.- (NAM7 protein, S cerevisiae)>>	<<27>>
+<<Poly(A)-Binding Proteins/genetics/metabolism>>	<<27>>
+<<0 (Poly(A)-Binding Proteins)>>	<<27>>
+<<0 (pab1 protein, S cerevisiae)>>	<<27>>
+<<0 (NF-kappa B)>>	<<27>>
+<<0 (NKRF protein, human)>>	<<27>>
+<<Interferon-beta/biosynthesis/*genetics>>	<<27>>
+<<NF-kappa B/*antagonists & inhibitors>>	<<27>>
+<<Repressor Proteins/*metabolism>>	<<27>>
+<<60108-77-2 (involucrin)>>	<<27>>
+<<Keratinocytes/*chemistry>>	<<27>>
+<<Protein Precursors/genetics>>	<<27>>
+<<0 (Protein Precursors)>>	<<27>>
+<<beta-Galactosidase/genetics>>	<<27>>
+<<Recombinant Fusion Proteins/analysis/genetics>>	<<27>>
+<<EC 3.2.1.23 (beta-Galactosidase)>>	<<27>>
+<<0 (Liposomes)>>	<<27>>
+<<Liver/metabolism/*physiology>>	<<27>>
+<<0 (Oligonucleotides)>>	<<27>>
+<<Renin/blood/*genetics/metabolism>>	<<27>>
+<<Respirovirus>>	<<27>>
+<<Oligonucleotides/pharmacokinetics>>	<<27>>
+<<Fluorescent Dyes>>	<<27>>
+<<Liposomes>>	<<27>>
+<<I223NX31W9 (Fluorescein-5-isothiocyanate)>>	<<27>>
+<<Rats, Wistar>>	<<27>>
+<<Fluorescein-5-isothiocyanate>>	<<27>>
+<<EC 3.4.23.15 (Renin)>>	<<27>>
+<<Base Sequence/genetics>>	<<27>>
+<<0 (Fluorescent Dyes)>>	<<27>>
+<<Up-Regulation/physiology>>	<<26>>
+<<Nuclear Pore/*metabolism/ultrastructure>>	<<26>>
+<<Saccharomyces cerevisiae Proteins/*chemistry/metabolism>>	<<26>>
+<<4L6452S749 (Inositol)>>	<<26>>
+<<Phytic Acid/*chemistry>>	<<26>>
+<<Inositol/metabolism>>	<<26>>
+<<Nuclear Pore Complex Proteins/*chemistry>>	<<26>>
+<<0 (RNA, Antisense)>>	<<26>>
+<<RNA, Antisense>>	<<26>>
+<<RNA, Small Interfering>>	<<26>>
+<<Drosophila melanogaster>>	<<26>>
+<<Drosophila Proteins/*metabolism>>	<<26>>
+<<EC 2.7.7.- (Hel25E protein, Drosophila)>>	<<26>>
+<<Heat-Shock Response>>	<<26>>
+<<RNA Transport/*genetics>>	<<25>>
+<<Nuclear Pore/genetics>>	<<25>>
+<<RNA-Binding Proteins/*genetics>>	<<25>>
+<<Ribonucleoproteins/genetics>>	<<25>>
+<<Nuclear Pore Complex Proteins/genetics>>	<<25>>
+<<Nuclear Proteins/*genetics>>	<<25>>
+<<Active Transport, Cell Nucleus/genetics>>	<<25>>
+<<Cell Nucleus/genetics>>	<<25>>
+<<ortho-Aminobenzoates/metabolism>>	<<25>>
+<<0 (ortho-Aminobenzoates)>>	<<25>>
+<<*kinetics>>	<<25>>
+<<Magnesium/metabolism>>	<<25>>
+<<Adenosine Diphosphate/analogs & derivatives/*metabolism>>	<<25>>
+<<Adenosine Triphosphate/analogs & derivatives/metabolism>>	<<25>>
+<<85287-56-5 (3'-O-(N-methylanthraniloyl) ATP)>>	<<25>>
+<<*Nup159>>	<<25>>
+<<85287-55-4 (3'-O-(N-methylanthraniloyl)adenosine 5'-diphosphate)>>	<<25>>
+<<I38ZP9992A (Magnesium)>>	<<25>>
+<<Saccharomyces cerevisiae/*genetics/growth & development/*metabolism>>	<<25>>
+<<Saccharomyces cerevisiae/*genetics/*metabolism>>	<<25>>
+<<Transcription Factors/genetics/*metabolism>>	<<25>>
+<<RNA Polymerase II/genetics/metabolism>>	<<25>>
+<<Ribonucleoproteins/*genetics/metabolism>>	<<25>>
+<<Nuclear pore complex>>	<<24>>
+<<Gene expression>>	<<24>>
+<<RNA/genetics/metabolism>>	<<24>>
+<<NUP159>>	<<24>>
+<<GLE1>>	<<24>>
+<<RNPase>>	<<24>>
+<<* mRNP remodeling>>	<<24>>
+<<Nuclear Pore Complex Proteins/chemistry/*metabolism>>	<<24>>
+<<* mRNA export>>	<<24>>
+<<*Nup42>>	<<24>>
+<<*inositol hexakisphosphate>>	<<24>>
+<<Hepatitis B virus/genetics>>	<<24>>
+<<EC 2.1.1.37 (DNA (Cytosine-5-)-Methyltransferases)>>	<<24>>
+<<8J337D1HZY (Cytosine)>>	<<24>>
+<<Cytosine/metabolism>>	<<24>>
+<<0 (hepatitis B virus X protein)>>	<<24>>
+<<DNA methylation>>	<<24>>
+<<Virus Replication/*physiology>>	<<24>>
+<<Viral Regulatory and Accessory Proteins>>	<<24>>
+<<0 (DNA, Circular)>>	<<24>>
+<<HBx>>	<<24>>
+<<covalently closed circular DNA>>	<<24>>
+<<DNA, Circular/*metabolism>>	<<24>>
+<<hepatitis B virus>>	<<24>>
+<<Genome, Viral>>	<<24>>
+<<DNA (Cytosine-5-)-Methyltransferases>>	<<24>>
+<<DNA Methylation/*genetics>>	<<24>>
+<<negative regulatory region binding protein>>	<<24>>
+<<Neoplasm Proteins/genetics/metabolism>>	<<24>>
+<<Cell Nucleus/*metabolism/ultrastructure>>	<<24>>
+<<0 (CASC3 protein, human)>>	<<24>>
+<<Cell Cycle/*physiology>>	<<24>>
+<<0 (Neoplasm Proteins)>>	<<24>>
+<<RNA, Small Nucleolar/genetics>>	<<24>>
+<<RNA, Long Noncoding/*genetics>>	<<24>>
+<<Sub-nuclear compartmentalization>>	<<24>>
+<<Serine-Arginine Splicing Factors/*genetics>>	<<24>>
+<<Long noncoding RNA>>	<<24>>
+<<Cell Nucleus/*genetics/ultrastructure>>	<<24>>
+<<147153-65-9 (SRSF2 protein, human)>>	<<24>>
+<<Nuclear domain>>	<<24>>
+<<0 (RNA, Small Nucleolar)>>	<<24>>
+<<Organelles/*genetics/ultrastructure>>	<<24>>
+<<Splicing factor>>	<<24>>
+<<0 (KPNB1 protein, human)>>	<<24>>
+<<0 (DDX19 protein, mouse)>>	<<24>>
+<<beta Karyopherins/metabolism>>	<<24>>
+<<0 (MRTFA protein, human)>>	<<24>>
+<<NIH 3T3 Cells>>	<<24>>
+<<0 (Mrtfa protein, mouse)>>	<<24>>
+<<Homeostasis>>	<<24>>
+<<Protein Isoforms/metabolism>>	<<24>>
+<<Eukaryotic Initiation Factor-3/metabolism>>	<<24>>
+<<Adenoviridae Infections/metabolism>>	<<24>>
+<<Globins/genetics/metabolism>>	<<24>>
+<<9004-22-2 (Globins)>>	<<24>>
+<<Adenoviridae/metabolism>>	<<24>>
+<<Carrier Proteins/metabolism>>	<<24>>
+<<*RNA Processing, Post-Transcriptional>>	<<24>>
+<<0 (RNA Splice Sites)>>	<<24>>
+<<*RNA Splice Sites>>	<<24>>
+<<0 (NXT1 protein, human)>>	<<24>>
+<<0 (Enzyme Inhibitors)>>	<<24>>
+<<E0399OZS9N (Cyclic AMP)>>	<<24>>
+<<0 (Receptors, Interleukin-4)>>	<<24>>
+<<Receptors, Interleukin-2/genetics>>	<<24>>
+<<0 (Receptors, Interleukin-2)>>	<<24>>
+<<0 (Isoquinolines)>>	<<24>>
+<<Colforsin/pharmacology>>	<<24>>
+<<Cyclic AMP/*metabolism>>	<<24>>
+<<1F7A44V6OU (Colforsin)>>	<<24>>
+<<207137-56-2 (Interleukin-4)>>	<<24>>
+<<Cyclic AMP-Dependent Protein Kinases/metabolism>>	<<24>>
+<<Palatine Tonsil/immunology>>	<<24>>
+<<B-Lymphocytes/drug effects/*physiology>>	<<24>>
+<<*Sulfonamides>>	<<24>>
+<<Interleukin-4/*pharmacology>>	<<24>>
+<<Enzyme Inhibitors/pharmacology>>	<<24>>
+<<Receptors, Interleukin-4/*physiology>>	<<24>>
+<<M876330O56 (N-(2-(4-bromocinnamylamino)ethyl)-5-isoquinolinesulfonamide)>>	<<24>>
+<<0 (Sulfonamides)>>	<<24>>
+<<EC 2.7.11.11 (Cyclic AMP-Dependent Protein Kinases)>>	<<24>>
+<<Gene Expression Regulation/drug effects>>	<<24>>
+<<Isoquinolines/pharmacology>>	<<24>>
+<<Minor Histocompatibility Antigens/analysis/*genetics/metabolism>>	<<23>>
+<<Brain/abnormalities/*embryology/*metabolism/pathology>>	<<23>>
+<<Head/abnormalities>>	<<23>>
+<<Metabolic Diseases/genetics/metabolism>>	<<23>>
+<<Developmental Disabilities/genetics/pathology/physiopathology>>	<<23>>
+<<Intellectual Disability/*genetics/pathology/physiopathology>>	<<23>>
+<<Spine/abnormalities>>	<<23>>
+<<DNA-Binding Proteins/analysis/*genetics/metabolism>>	<<23>>
+<<Haploinsufficiency/genetics>>	<<23>>
+<<Zebrafish/abnormalities/embryology/genetics>>	<<23>>
+<<Genes, Essential/*genetics>>	<<23>>
+<<Eye Abnormalities/genetics>>	<<23>>
+<<Hypothalamus/cytology/*metabolism>>	<<23>>
+<<Nuclear Proteins/chemistry/*genetics/metabolism>>	<<23>>
+<<DNA-Binding Proteins/chemistry/*genetics/metabolism>>	<<23>>
+<<Neurons/*metabolism>>	<<23>>
+<<0 (Receptors, Ghrelin)>>	<<23>>
+<<0 (Ghrelin)>>	<<23>>
+<<Mice, Obese>>	<<23>>
+<<0 (Leptin)>>	<<23>>
+<<*Signal Transduction>>	<<23>>
+<<Leptin/genetics/*metabolism>>	<<23>>
+<<Ghrelin/genetics/*metabolism>>	<<23>>
+<<Receptors, Ghrelin/genetics/metabolism>>	<<23>>
+<<Myeloid-Lymphoid Leukemia Protein/*biosynthesis/genetics>>	<<23>>
+<<Alternative Splicing/genetics>>	<<23>>
+<<Chromatin/genetics>>	<<23>>
+<<Leukemia, Myeloid, Acute/*genetics/pathology>>	<<23>>
+<<Protein Isoforms/genetics>>	<<23>>
+<<EC 2.1.1.43 (Histone-Lysine N-Methyltransferase)>>	<<23>>
+<<DNA-Binding Proteins/biosynthesis/*genetics>>	<<23>>
+<<0 (KMT2A protein, human)>>	<<23>>
+<<Gene Expression Regulation, Leukemic>>	<<23>>
+<<0 (MEN1 protein, human)>>	<<23>>
+<<Histone-Lysine N-Methyltransferase/*biosynthesis/genetics>>	<<23>>
+<<149025-06-9 (Myeloid-Lymphoid Leukemia Protein)>>	<<23>>
+<<Proto-Oncogene Proteins/*genetics/metabolism>>	<<23>>
+<<Methylation>>	<<23>>
+<<Computer Simulation>>	<<23>>
+<<Eukaryotic Initiation Factor-2/genetics/metabolism>>	<<23>>
+<<0 (Eukaryotic Initiation Factor-2)>>	<<23>>
+<<Ribosome Subunits, Small, Eukaryotic/genetics/metabolism>>	<<23>>
+<<Saccharomyces cerevisiae/genetics/growth & development/metabolism>>	<<23>>
+<<0 (Eukaryotic Initiation Factor-4F)>>	<<23>>
+<<RNA, Transfer/genetics/metabolism>>	<<23>>
+<<Eukaryotic Initiation Factor-4F/genetics/metabolism>>	<<23>>
+<<Gene Duplication>>	<<23>>
+<<EC 2.1.2.2 (Phosphoribosylglycinamide Formyltransferase)>>	<<23>>
+<<Phosphoribosylglycinamide Formyltransferase>>	<<23>>
+<<EC 2.1.2.- (Hydroxymethyl and Formyl Transferases)>>	<<23>>
+<<DNA/chemistry/genetics>>	<<23>>
+<<Hydroxymethyl and Formyl Transferases/*genetics>>	<<23>>
+<<Mice, Inbred Strains>>	<<23>>
+<<0 (Genetic Markers)>>	<<23>>
+<<Albumins/*genetics>>	<<23>>
+<<Serum Albumin/genetics>>	<<23>>
+<<Transcription, Genetic/genetics>>	<<23>>
+<<Chromosomes, Human, Pair 4/*genetics>>	<<23>>
+<<Meiosis/*genetics>>	<<23>>
+<<Genetic Markers/genetics>>	<<23>>
+<<alpha-Fetoproteins/genetics>>	<<23>>
+<<0 (AFM protein, human)>>	<<23>>
+<<Serum Albumin, Human>>	<<23>>
+<<*Carrier Proteins>>	<<23>>
+<<Physical Chromosome Mapping/*methods>>	<<23>>
+<<0 (Serum Albumin)>>	<<23>>
+<<0 (Albumins)>>	<<23>>
+<<ZIF514RVZR (Serum Albumin, Human)>>	<<23>>
+<<0 (Glycoproteins)>>	<<23>>
+<<*Glycoproteins>>	<<23>>
+<<Multigene Family/*genetics>>	<<23>>
+<<Vitamin D-Binding Protein/*genetics>>	<<23>>
+<<0 (SLC2A1 protein, human)>>	<<22>>
+<<*epigenetics>>	<<22>>
+<<*promoter>>	<<22>>
+<<Enhancer Elements, Genetic/genetics>>	<<22>>
+<<IY9XDZ35W2 (Glucose)>>	<<22>>
+<<*metabolism>>	<<22>>
+<<*chromosome interaction>>	<<22>>
+<<Human Embryonic Stem Cells/cytology/*metabolism>>	<<22>>
+<<*pluripotency factors>>	<<22>>
+<<*human embryonic stem cell>>	<<22>>
+<<Minor Histocompatibility Antigens/*physiology>>	<<22>>
+<<Glucose Transporter Type 1/genetics/*metabolism>>	<<22>>
+<<*enhancer>>	<<22>>
+<<0 (Glucose Transporter Type 1)>>	<<22>>
+<<Glycolysis>>	<<22>>
+<<*Glut1>>	<<22>>
+<<Glucose/metabolism>>	<<22>>
+<<mRNA-export>>	<<22>>
+<<nucleocytoplasmic trafficking>>	<<22>>
+<<cytoplasmic probing>>	<<22>>
+<<mRNA labelling>>	<<22>>
+<<Salivary Glands/cytology>>	<<22>>
+<<light sheet microscope>>	<<22>>
+<<nuclear pore complex nuclear retention>>	<<22>>
+<<nuclear probing>>	<<22>>
+<<Chironomidae/metabolism>>	<<22>>
+<<Heterogeneous-Nuclear Ribonucleoproteins/*metabolism>>	<<22>>
+<<RNA-Binding Proteins/genetics>>	<<22>>
+<<Saccharomyces cerevisiae Proteins/chemistry/*genetics/isolation &  purification/metabolism>>	<<22>>
+<<0 (NAB3 protein, S cerevisiae)>>	<<22>>
+<<Magnetic Resonance Spectroscopy>>	<<22>>
+<<Saccharomyces cerevisiae/*genetics>>	<<22>>
+<<Carrier Proteins/chemistry/*genetics/isolation & purification/metabolism>>	<<22>>
+<<0 (Peptide Elongation Factor 1)>>	<<22>>
+<<0 (Peptide Elongation Factor 2)>>	<<22>>
+<<0 (tRNA, peptidyl-)>>	<<22>>
+<<Peptide Elongation Factor 1/metabolism>>	<<22>>
+<<Peptide Elongation Factor 2/metabolism>>	<<22>>
+<<0 (RNA, Transfer, Amino Acyl)>>	<<22>>
+<<RNA, Transfer, Amino Acyl/metabolism>>	<<22>>
+<<Peptide Chain Termination, Translational/*physiology>>	<<22>>
+<<Peptide Chain Elongation, Translational/*physiology>>	<<22>>
+<<Ribosomes/*metabolism>>	<<22>>
+<<Nucleocytoplasmic Transport Proteins/genetics/*physiology>>	<<22>>
+<<Saccharomyces cerevisiae Proteins/genetics/*physiology>>	<<22>>
+<<RNA-Binding Proteins/*physiology>>	<<22>>
+<<RNA Helicases/genetics/*physiology>>	<<22>>
+<<Nuclear Proteins/*physiology>>	<<22>>
+<<0 (Tropomyosin)>>	<<22>>
+<<Tropomyosin/genetics>>	<<22>>
+<<Nuclear Proteins/antagonists & inhibitors/chemistry/*physiology>>	<<22>>
+<<RNA-Binding Proteins/antagonists & inhibitors/chemistry/*physiology>>	<<22>>
+<<Metaphase>>	<<22>>
+<<DNA-Binding Proteins/antagonists & inhibitors/chemistry/*physiology>>	<<22>>
+<<Spindle Apparatus/ultrastructure>>	<<22>>
+<<Leukemia, Myeloid, Acute/genetics/*metabolism>>	<<22>>
+<<Core Binding Factor Alpha 2 Subunit/*chemistry/genetics/metabolism>>	<<22>>
+<<0 (Oncogene Proteins, Fusion)>>	<<22>>
+<<RUNX1 Translocation Partner 1 Protein>>	<<22>>
+<<DNA-Binding Proteins/analysis/genetics/*metabolism>>	<<22>>
+<<Chromosomes, Human, Pair 8/genetics>>	<<22>>
+<<0 (AML1-ETO fusion protein, human)>>	<<22>>
+<<0 (RUNX1 Translocation Partner 1 Protein)>>	<<22>>
+<<Oncogene Proteins, Fusion/*chemistry/genetics/metabolism>>	<<22>>
+<<DEAD-box RNA Helicases/*chemistry>>	<<22>>
+<<EC 5.2.1.8 (Peptidylprolyl Isomerase)>>	<<22>>
+<<Multiprotein Complexes/*chemistry>>	<<22>>
+<<0 (Multiprotein Complexes)>>	<<22>>
+<<Eukaryotic Initiation Factor-4A/*chemistry>>	<<22>>
+<<Escherichia coli>>	<<22>>
+<<Peptidylprolyl Isomerase>>	<<22>>
+<<RNA-Binding Proteins>>	<<22>>
+<<0 (CWC22 protein, human)>>	<<22>>
+<<*Models, Molecular>>	<<22>>
+<<*Protein Interaction Domains and Motifs>>	<<22>>
+<<Carrier Proteins/*chemistry>>	<<22>>
+<<Spain>>	<<22>>
+<<translation termination>>	<<21>>
+<<translation>>	<<21>>
+<<Codon, Nonsense/*genetics>>	<<21>>
+<<0 (Codon, Nonsense)>>	<<21>>
+<<Nucleocytoplasmic Transport Proteins/*genetics/metabolism>>	<<21>>
+<<Rat8>>	<<21>>
+<<DEAD-box RNA Helicases/*genetics/metabolism>>	<<21>>
+<<mRNA quality control>>	<<21>>
+<<Nonsense Mediated mRNA Decay/*genetics>>	<<21>>
+<<mRNA degradation>>	<<21>>
+<<Peptide Chain Termination, Translational/*genetics>>	<<21>>
+<<*chromosomes>>	<<21>>
+<<*S. cerevisiae>>	<<21>>
+<<*RNA export>>	<<21>>
+<<RNA, Transfer/*metabolism>>	<<21>>
+<<0 (Mutant Proteins)>>	<<21>>
+<<Mutant Proteins/genetics/metabolism>>	<<21>>
+<<DNA Mutational Analysis>>	<<21>>
+<<Peptide Termination Factors/*genetics>>	<<21>>
+<<RNA, Transfer/genetics>>	<<21>>
+<<Guanosine Triphosphate/genetics>>	<<21>>
+<<Ribosomes/genetics>>	<<21>>
+<<Protein Biosynthesis/genetics>>	<<21>>
+<<Saccharomyces cerevisiae/cytology/genetics/*metabolism>>	<<21>>
+<<Ribosome Subunits/metabolism>>	<<21>>
+<<Internet>>	<<21>>
+<<DNA, Complementary/chemistry/genetics/*isolation & purification>>	<<21>>
+<<COS Cells>>	<<21>>
+<<Open Reading Frames/*genetics>>	<<21>>
+<<Down Syndrome/genetics>>	<<21>>
+<<Expressed Sequence Tags>>	<<21>>
+<<Genes/genetics>>	<<21>>
+<<Chromosome Segregation>>	<<21>>
+<<Microtubules/metabolism>>	<<21>>
+<<Cell Cycle/*genetics>>	<<21>>
+<<*Genes, cdc>>	<<21>>
+<<Analysis of Variance>>	<<21>>
+<<Transplantation, Heterologous>>	<<21>>
+<<Cell Growth Processes/genetics>>	<<21>>
+<<Cell Cycle Checkpoints/genetics>>	<<21>>
+<<Gene Knockdown Techniques/*methods>>	<<21>>
+<<Mice, Nude>>	<<21>>
+<<Carcinoma, Pancreatic Ductal/enzymology/genetics/pathology/*therapy>>	<<21>>
+<<Cell Nucleus/chemistry/metabolism>>	<<21>>
+<<EC 2.7.11.24 (Mitogen-Activated Protein Kinases)>>	<<21>>
+<<Mitogen-Activated Protein Kinases/*genetics/metabolism>>	<<21>>
+<<Pancreatic Neoplasms/enzymology/genetics/pathology/*therapy>>	<<21>>
+<<Cytoplasm/chemistry/metabolism>>	<<21>>
+<<RNA Transport/*physiology>>	<<20>>
+<<*Sequence Homology, Nucleic Acid>>	<<20>>
+<<*Intellectual disability>>	<<20>>
+<<*Brain malformation>>	<<20>>
+<<Brain/metabolism>>	<<20>>
+<<Mutation/genetics>>	<<20>>
+<<Nuclear Proteins/*genetics/metabolism>>	<<20>>
+<<*Cell Movement>>	<<20>>
+<<*Gene Knockdown Techniques>>	<<20>>
+<<*Spinogenesis>>	<<20>>
+<<Pyramidal Cells/metabolism>>	<<20>>
+<<Dendritic Spines/*pathology>>	<<20>>
+<<*Neuronal migration>>	<<20>>
+<<Virus Replication>>	<<20>>
+<<Hepatitis B virus/*genetics>>	<<20>>
+<<Repressor Proteins/genetics/physiology>>	<<20>>
+<<Consensus Sequence>>	<<20>>
+<<RNA, Messenger/biosynthesis>>	<<20>>
+<<Response Elements>>	<<20>>
+<<DNA-Binding Proteins/*genetics/*physiology>>	<<20>>
+<<Exons/*physiology>>	<<20>>
+<<Adenosine Triphosphatases/antagonists & inhibitors/*chemistry/metabolism>>	<<20>>
+<<Adenosine Triphosphate/*metabolism>>	<<20>>
+<<Nuclear Proteins/chemistry/metabolism>>	<<20>>
+<<0 (Octamer Transcription Factor-3)>>	<<20>>
+<<Cell Differentiation/physiology>>	<<20>>
+<<Cellular Reprogramming Techniques/*methods>>	<<20>>
+<<Pluripotent Stem Cells/*cytology/metabolism>>	<<20>>
+<<0 (DPPA3 protein, human)>>	<<20>>
+<<*OCT4>>	<<20>>
+<<Proteins/*metabolism>>	<<20>>
+<<HEK293 Cells/*cytology/*metabolism>>	<<20>>
+<<0 (POU5F1 protein, human)>>	<<20>>
+<<Chromosomal Proteins, Non-Histone>>	<<20>>
+<<*NANOS2>>	<<20>>
+<<0 (NANOS2 protein, human)>>	<<20>>
+<<*Reprogramming>>	<<20>>
+<<*Starvation>>	<<20>>
+<<Octamer Transcription Factor-3/*metabolism>>	<<20>>
+<<0 (Chromosomal Proteins, Non-Histone)>>	<<20>>
+<<*STELLA>>	<<20>>
+<<*Stra8>>	<<20>>
+<<Open Reading Frames>>	<<20>>
+<<Adenosine Triphosphate/genetics/metabolism>>	<<19>>
+<<Gene Expression Regulation/physiology>>	<<19>>
+<<*mRNA export>>	<<19>>
+<<Cytoskeleton/metabolism>>	<<19>>
+<<mantATP>>	<<19>>
+<<RNA helicase>>	<<19>>
+<<0 (Phosphates)>>	<<19>>
+<<Phosphates/*metabolism>>	<<19>>
+<<kinetics>>	<<19>>
+<<thermodynamics>>	<<19>>
+<<*G1 Phase>>	<<19>>
+<<Phosphotransferases (Alcohol Group Acceptor)/genetics/*metabolism>>	<<19>>
+<<*S Phase>>	<<19>>
+<<EC 2.7.1.- (inositol pentakisphosphate kinase)>>	<<19>>
+<<Biological Transport, Active/genetics>>	<<19>>
+<<Interferon-beta/genetics/metabolism>>	<<19>>
+<<Gene Expression Regulation, Fungal/*physiology>>	<<19>>
+<<Biological Transport, Active/physiology>>	<<19>>
+<<Peptide Chain Initiation, Translational/*physiology>>	<<19>>
+<<Blood Pressure/*physiology>>	<<19>>
+<<Sex Factors>>	<<19>>
+<<Adipose Tissue/physiology>>	<<19>>
+<<Models, Statistical>>	<<19>>
+<<Adiposity/*physiology>>	<<19>>
+<<Follow-Up Studies>>	<<19>>
+<<Waist Circumference>>	<<19>>
+<<Blacks/statistics & numerical data>>	<<19>>
+<<Whites/statistics & numerical data>>	<<19>>
+<<Texas>>	<<19>>
+<<Cell Nucleus/*enzymology>>	<<19>>
+<<*Gene Expression Regulation, Enzymologic>>	<<19>>
+<<Radius Fractures/diagnostic imaging/*drug therapy/physiopathology>>	<<19>>
+<<Bone Regeneration/drug effects>>	<<19>>
+<<0 (Bone Morphogenetic Protein 2)>>	<<19>>
+<<Disease Models, Animal>>	<<19>>
+<<Vitamin D-Binding Protein/*administration & dosage>>	<<19>>
+<<Bone Marrow Transplantation>>	<<19>>
+<<Pseudarthrosis/physiopathology>>	<<19>>
+<<Bony Callus/drug effects/physiopathology>>	<<19>>
+<<Bone Morphogenetic Protein 2/administration & dosage>>	<<19>>
+<<Pilot Projects>>	<<19>>
+<<Fracture Healing/*drug effects>>	<<19>>
+<<Rats, Sprague-Dawley>>	<<19>>
+<<Radiography>>	<<19>>
+<<Radius/diagnostic imaging/*drug effects/physiopathology/surgery>>	<<19>>
+<<Gelatin Sponge, Absorbable>>	<<19>>
+<<Histone Deacetylase 6>>	<<19>>
+<<Histone Deacetylases/chemistry/*genetics/metabolism>>	<<19>>
+<<DNA-Binding Proteins/antagonists & inhibitors/genetics/*metabolism>>	<<19>>
+<<EC 3.5.1.98 (Histone Deacetylase 6)>>	<<19>>
+<<RNA, Small Interfering/metabolism>>	<<19>>
+<<EC 3.5.1.98 (HDAC6 protein, human)>>	<<19>>
+<<Peptide Chain Termination, Translational>>	<<18>>
+<<Adenosine Triphosphatases/genetics/metabolism>>	<<18>>
+<<Saccharomyces cerevisiae/enzymology/genetics/metabolism>>	<<18>>
+<<Cell Nucleus/enzymology/genetics/*metabolism>>	<<18>>
+<<0 (RBM15 protein, human)>>	<<18>>
+<<0 (RBM15B protein, human)>>	<<18>>
+<<RNA-Binding Proteins/antagonists & inhibitors/chemistry/genetics/*metabolism>>	<<18>>
+<<Carcinogenesis/*genetics>>	<<18>>
+<<Neoplasms/*genetics/therapy>>	<<18>>
+<<Molecular Targeted Therapy>>	<<18>>
+<<CANCER>>	<<18>>
+<<RNA SPLICING>>	<<18>>
+<<GENE EXPRESSION>>	<<18>>
+<<TRANSCRIPTION>>	<<18>>
+<<RNA Splicing/*physiology>>	<<18>>
+<<Sequence Deletion/*genetics>>	<<18>>
+<<Congenital Abnormalities/*genetics>>	<<18>>
+<<Brain/abnormalities>>	<<18>>
+<<Minor Histocompatibility Antigens/chemistry/*genetics>>	<<18>>
+<<Failure to Thrive/*genetics>>	<<18>>
+<<DNA-Binding Proteins/chemistry/*genetics>>	<<18>>
+<<Cafe au lait spots, multiple>>	<<18>>
+<<*Cancer syndrome>>	<<18>>
+<<Fatal Outcome>>	<<18>>
+<<Cafe-au-Lait Spots/*genetics>>	<<18>>
+<<Cerebellar Neoplasms/*genetics>>	<<18>>
+<<Medulloblastoma/*genetics>>	<<18>>
+<<Consanguinity>>	<<18>>
+<<*Medulloblastoma>>	<<18>>
+<<*Skin alteration>>	<<18>>
+<<DNA-Binding Proteins/*genetics/immunology/metabolism>>	<<18>>
+<<DNA Probes>>	<<18>>
+<<0 (DNA Probes)>>	<<18>>
+<<Nuclear Proteins/*genetics/immunology/metabolism>>	<<18>>
+<<DNA/*genetics/metabolism>>	<<18>>
+<<Recombinant Fusion Proteins/genetics/immunology/metabolism>>	<<18>>
+<<RNA-Binding Proteins/*chemistry/metabolism>>	<<17>>
+<<Zebrafish Proteins/*chemistry/metabolism>>	<<17>>
+<<0 (SLBP protein, zebrafish)>>	<<17>>
+<<Nucleocytoplasmic Transport Proteins/*chemistry/metabolism>>	<<17>>
+<<Protein Multimerization>>	<<17>>
+<<Eukaryotic Initiation Factor-3/chemistry/metabolism>>	<<17>>
+<<Protein Interaction Domains and Motifs>>	<<17>>
+<<0 (Phosphatidylinositol Phosphates)>>	<<17>>
+<<*Cell nucleus>>	<<17>>
+<<*STORM>>	<<17>>
+<<Phosphatidylinositol Phosphates/*metabolism>>	<<17>>
+<<*Nucleolus>>	<<17>>
+<<Microscopy>>	<<17>>
+<<*Phosphatidylinositol phosphates>>	<<17>>
+<<Cell Nucleolus/*metabolism>>	<<17>>
+<<*RNA polymerase II>>	<<17>>
+<<Cricetulus>>	<<17>>
+<<*Nuclear bodies>>	<<17>>
+<<Chromatin/genetics/metabolism>>	<<17>>
+<<*Interchromatin granule clusters>>	<<17>>
+<<Actins/chemistry/metabolism>>	<<17>>
+<<Intranuclear Inclusion Bodies/*metabolism>>	<<17>>
+<<DNA-Binding Proteins/genetics/metabolism>>	<<17>>
+<<CHO Cells>>	<<17>>
+<<*Heat-Shock Response>>	<<17>>
+<<0 (Actins)>>	<<17>>
+<<Minor Histocompatibility Antigens/genetics/metabolism>>	<<17>>
+<<*Transgenes>>	<<17>>
+<<*Genes, Fungal>>	<<17>>
+<<Oligonucleotide Array Sequence Analysis>>	<<17>>
+<<Genes, Synthetic>>	<<17>>
+<<DNA>>	<<17>>
+<<Plants/*metabolism>>	<<16>>
+<<0 (RNA, Nuclear)>>	<<16>>
+<<Plant Physiological Phenomena>>	<<16>>
+<<Nuclear Pore>>	<<16>>
+<<Salinity>>	<<16>>
+<<Disasters>>	<<16>>
+<<RNA, Plant/*metabolism>>	<<16>>
+<<0 (RNA, Plant)>>	<<16>>
+<<RNA, Nuclear/*metabolism>>	<<16>>
+<<Nucleocytoplasmic Transport Proteins>>	<<16>>
+<<Neoplasms/genetics>>	<<16>>
+<<Embryonic Stem Cells/cytology>>	<<16>>
+<<Hepatitis B/genetics>>	<<16>>
+<<RNA, Messenger/biosynthesis/*genetics>>	<<16>>
+<<*mutation>>	<<16>>
+<<Chromosomes, Human, Pair 21>>	<<16>>
+<<*ZTTK syndrome>>	<<16>>
+<<*gene>>	<<16>>
+<<Guanosine Triphosphate/metabolism>>	<<16>>
+<<Eukaryota/metabolism>>	<<16>>
+<<Peptide Termination Factors/*metabolism>>	<<16>>
+<<0 (ZDS1 protein, S cerevisiae)>>	<<16>>
+<<0 (Adaptor Proteins, Signal Transducing)>>	<<16>>
+<<Genome, Fungal>>	<<16>>
+<<Adaptor Proteins, Signal Transducing>>	<<16>>
+<<9002-72-6 (Growth Hormone)>>	<<16>>
+<<Growth Hormone/deficiency>>	<<16>>
+<<Hand Deformities, Congenital/*genetics/pathology>>	<<16>>
+<<Estrogens/*metabolism>>	<<16>>
+<<Ovary/*metabolism>>	<<16>>
+<<0 (Estrogens)>>	<<16>>
+<<0 (estrophilin)>>	<<16>>
+<<*Receptors, Estrogen>>	<<16>>
+<<Molecular Weight>>	<<16>>
+<<0 (Receptors, Estrogen)>>	<<16>>
+<<alpha-Fetoproteins/*analysis/metabolism>>	<<16>>
+<<In Vitro Techniques>>	<<16>>
+<<Cytoplasm/genetics/*metabolism>>	<<16>>
+<<*psychomotor delay>>	<<16>>
+<<Abnormalities, Multiple/*genetics/pathology>>	<<16>>
+<<Saccharomyces cerevisiae/*cytology/genetics/metabolism>>	<<16>>
+<<Karyopherins/genetics/*metabolism>>	<<16>>
+<<Protein Transport>>	<<16>>
+<<0 (KAP104 protein, S cerevisiae)>>	<<16>>
+<<*Protein Structure, Quaternary>>	<<15>>
+<<Nuclear Pore Complex Proteins/*chemistry/*metabolism>>	<<15>>
+<<25612-73-1 (Adenylyl Imidodiphosphate)>>	<<15>>
+<<Adenylyl Imidodiphosphate/chemistry/metabolism>>	<<15>>
+<<0 (NUP214 protein, human)>>	<<15>>
+<<Asia, Southeastern/epidemiology>>	<<15>>
+<<*Data Interpretation, Statistical>>	<<15>>
+<<Africa/epidemiology>>	<<15>>
+<<Americas/epidemiology>>	<<15>>
+<<Blood Pressure Determination>>	<<15>>
+<<Europe/epidemiology>>	<<15>>
+<<Far East/epidemiology>>	<<15>>
+<<*Pattern Recognition, Automated>>	<<15>>
+<<Gene Products, gag/physiology>>	<<15>>
+<<Nucleocytoplasmic Transport Proteins/*physiology>>	<<15>>
+<<Sarcoma, Avian/metabolism/virology>>	<<15>>
+<<RNA, Viral/*metabolism>>	<<15>>
+<<0 (Gene Products, gag)>>	<<15>>
+<<0 (RNA, Viral)>>	<<15>>
+<<Repetitive Sequences, Nucleic Acid/*genetics>>	<<15>>
+<<Rous sarcoma virus/*genetics/physiology>>	<<15>>
+<<0 (Insulin)>>	<<15>>
+<<0 (Glucocorticoids)>>	<<15>>
+<<Insulin/metabolism>>	<<15>>
+<<Receptor, Insulin/*genetics/*metabolism/ultrastructure>>	<<15>>
+<<Transcriptional Activation>>	<<15>>
+<<Cell Division>>	<<15>>
+<<Cells/metabolism>>	<<15>>
+<<Glucocorticoids/metabolism>>	<<15>>
+<<EC 2.7.10.1 (Receptor, Insulin)>>	<<15>>
+<<Zhu-Tokita-Takenouchi-Kim syndrome>>	<<15>>
+<<psychomotor development>>	<<15>>
+<<Karyotyping>>	<<15>>
+<<Frameshift Mutation/*genetics>>	<<15>>
+<<intellectual disability>>	<<15>>
+<<Whole Exome Sequencing>>	<<15>>
+<<Intellectual Disability/genetics>>	<<15>>
+<<Blood Pressure/*drug effects>>	<<15>>
+<<Body Weight>>	<<15>>
+<<Obesity/*complications>>	<<15>>
+<<Sodium/urine>>	<<15>>
+<<Hypertension/chemically induced/complications>>	<<15>>
+<<Boston>>	<<15>>
+<<Epidemiologic Methods>>	<<15>>
+<<Energy Intake>>	<<15>>
+<<451W47IQ8X (Sodium Chloride)>>	<<15>>
+<<Sodium Chloride/*pharmacology>>	<<15>>
+<<*Diet>>	<<15>>
+<<9NEZ333N27 (Sodium)>>	<<15>>
+<<0 (MNBP-1 protein, human)>>	<<15>>
+<<Proviruses/genetics/metabolism>>	<<15>>
+<<*Terminal Repeat Sequences>>	<<15>>
+<<L Cells>>	<<15>>
+<<Sequence Homology, Nucleic Acid>>	<<15>>
+<<*Hematopoiesis>>	<<14>>
+<<Embryo, Nonmammalian/*cytology>>	<<14>>
+<<Animals, Genetically Modified/embryology>>	<<14>>
+<<Zebrafish/*embryology>>	<<14>>
+<<Minor Histocompatibility Antigens/physiology>>	<<14>>
+<<Hematologic Diseases/metabolism>>	<<14>>
+<<DNA-Binding Proteins/physiology>>	<<14>>
+<<Zebrafish Proteins/genetics/physiology>>	<<14>>
+<<*Base Sequence>>	<<14>>
+<<Proto-Oncogene Proteins/genetics>>	<<14>>
+<<DNA/genetics>>	<<14>>
+<<Proto-Oncogene Mas>>	<<14>>
+<<0 (MAS1 protein, human)>>	<<14>>
+<<0 (Proto-Oncogene Mas)>>	<<14>>
+<<Drug Screening Assays, Antitumor>>	<<14>>
+<<0 (Benzothiazoles)>>	<<14>>
+<<Glutathione/metabolism>>	<<14>>
+<<Pyrazoles/chemistry/*toxicity>>	<<14>>
+<<EC 3.4.22.- (Caspase 9)>>	<<14>>
+<<Caspase 9/metabolism>>	<<14>>
+<<0 (3-(4-(benzo(d)thiazol-2-yl)-1-phenyl-1H-pyrazol-3-yl)phenyl acetate)>>	<<14>>
+<<Membrane Potential, Mitochondrial/drug effects>>	<<14>>
+<<Benzothiazoles/chemistry/*toxicity>>	<<14>>
+<<Reactive Oxygen Species/*metabolism>>	<<14>>
+<<0 (Reactive Oxygen Species)>>	<<14>>
+<<0 (Pyrazoles)>>	<<14>>
+<<*Apoptosis>>	<<14>>
+<<GAN16C9B8O (Glutathione)>>	<<14>>
+<<Brain/embryology/*metabolism>>	<<14>>
+<<*Chromosome Mapping>>	<<14>>
+<<Enzyme-Linked Immunosorbent Assay>>	<<14>>
+<<*Gene Expression>>	<<14>>
+<<DNA, Complementary/*genetics>>	<<14>>
+<<Reverse Transcriptase Polymerase Chain Reaction>>	<<14>>
+<<*Sequence Analysis>>	<<14>>
+<<Fetus/metabolism>>	<<14>>
+<<Computational Biology>>	<<14>>
+<<Rodentia>>	<<14>>
+<<Forensic Anthropology>>	<<14>>
+<<Cricetinae>>	<<14>>
+<<Chlorocebus aethiops>>	<<14>>
+<<Mammals/*genetics>>	<<14>>
+<<Polymerase Chain Reaction>>	<<14>>
+<<Dogs>>	<<14>>
+<<Cats>>	<<14>>
+<<DNA/*genetics>>	<<14>>
+<<Mothers>>	<<13>>
+<<Fathers>>	<<13>>
+<<*Family Health>>	<<13>>
+<<Cohort Studies>>	<<13>>
+<<Obesity/*epidemiology/genetics/prevention & control>>	<<13>>
+<<Weight Gain/genetics/*physiology>>	<<13>>
+<<United Kingdom/epidemiology>>	<<13>>
+<<Herpesvirus 1, Equid/*genetics>>	<<13>>
+<<Viral Regulatory and Accessory Proteins/*genetics>>	<<13>>
+<<Rabbits>>	<<13>>
+<<Trans-Activators/*genetics>>	<<13>>
+<<Saccharomyces cerevisiae>>	<<12>>
+<<*Nuclear Pore/chemistry/genetics/metabolism>>	<<12>>
+<<*RNA, Messenger/biosynthesis/chemistry/genetics>>	<<12>>
+<<Cell Nucleus/genetics/metabolism>>	<<12>>
+<<EC 2.7.7.- (Dbp5 protein, S pombe)>>	<<12>>
+<<Schizosaccharomyces pombe Proteins/*chemistry/*metabolism>>	<<12>>
+<<0 (Membranes, Artificial)>>	<<12>>
+<<0 (Organophosphates)>>	<<12>>
+<<0 (Phthalic Acids)>>	<<12>>
+<<Organophosphates/chemistry>>	<<12>>
+<<6O7F7IX66E (phthalic acid)>>	<<12>>
+<<Phthalic Acids/*chemistry>>	<<12>>
+<<107-66-4 (di-n-butylphosphoric acid)>>	<<12>>
+<<Plasticizers/*chemistry>>	<<12>>
+<<UF064M00AF (diethyl phthalate)>>	<<12>>
+<<0 (Plasticizers)>>	<<12>>
+<<*Membranes, Artificial>>	<<12>>
+<<*Nuclear Proteins/chemistry/metabolism>>	<<12>>
+<<*Interphase>>	<<12>>
+<<Tandem Mass Spectrometry>>	<<12>>
+<<Chromatography, Liquid>>	<<12>>
+<<Spectrometry, Mass, Electrospray Ionization>>	<<12>>
+<<0 (Proteome)>>	<<12>>
+<<Subcellular Fractions/chemistry/metabolism>>	<<12>>
+<<*Proteome>>	<<12>>
+<<Solubility>>	<<12>>
+<<Cell Nucleus/chemistry/*metabolism>>	<<12>>
+<<Sexual Maturation/physiology>>	<<12>>
+<<Anthropometry>>	<<12>>
+<<*Rural Population/statistics & numerical data>>	<<12>>
+<<Cross-Sectional Studies>>	<<12>>
+<<Sex Characteristics>>	<<12>>
+<<Aging/physiology>>	<<12>>
+<<Embryonic Stem Cells/*physiology>>	<<11>>
+<<Transcriptome>>	<<11>>
+<<*Gene Regulatory Networks>>	<<11>>
+<<Electrophoresis, Polyacrylamide Gel>>	<<11>>
+<<*Transfection>>	<<11>>
+<<Cell Line, Transformed>>	<<11>>
+<<Cell Transformation, Viral>>	<<11>>
+<<Mammals>>	<<11>>
+<<Adenoviridae>>	<<11>>
+<<3T3 Cells>>	<<11>>
+<<Repressor Proteins/*genetics>>	<<11>>
+<<Brachydactyly/*genetics>>	<<11>>
+<<Comparative Genomic Hybridization>>	<<11>>
+<<EC 3.5.1.98 (HDAC4 protein, human)>>	<<11>>
+<<Histone Deacetylases/*genetics>>	<<11>>
+<<*NPC kinetics>>	<<10>>
+<<*Single molecule microscopy>>	<<10>>
+<<*Nucleo-cytoplasmic transport>>	<<10>>
+<<*Importin β>>	<<10>>
+<<Arthrogryposis/genetics/*metabolism>>	<<10>>
+<<Nucleocytoplasmic Transport Proteins/*chemistry/genetics/*metabolism>>	<<10>>
+<<Motor Neuron Disease/genetics/*metabolism>>	<<10>>
+<<Lethal Arthrogryposis With Anterior Horn Cell Disease>>	<<10>>
+<<Lethal congenital contracture syndrome 1>>	<<10>>
+<<Blood-Brain Barrier>>	<<10>>
+<<Astrocytoma/*immunology>>	<<10>>
+<<Blotting, Northern>>	<<10>>
+<<Antigens, Neoplasm/analysis/*immunology>>	<<10>>
+<<0 (Antibodies, Neoplasm)>>	<<10>>
+<<0 (Glial Fibrillary Acidic Protein)>>	<<10>>
+<<0 (Antigens, Neoplasm)>>	<<10>>
+<<Glioma/*immunology>>	<<10>>
+<<Antibodies, Neoplasm/immunology>>	<<10>>
+<<Glial Fibrillary Acidic Protein/immunology>>	<<10>>
+<<Reference Values>>	<<10>>
+<<United States>>	<<10>>
+<<*mRNP remodeling>>	<<9>>
+<<*structural biology>>	<<9>>
+<<*export receptor>>	<<9>>
+<<*DEAD-box ATPase>>	<<9>>
+<<Plasmodium falciparum/*enzymology/*genetics>>	<<9>>
+<<DEAD-box RNA Helicases/chemistry/*genetics/*metabolism>>	<<9>>
+<<Extracellular Matrix Proteins/*metabolism>>	<<9>>
+<<p300-CBP Transcription Factors/*physiology>>	<<9>>
+<<EC 2.3.1.48 (p300-CBP Transcription Factors)>>	<<9>>
+<<0 (Extracellular Matrix Proteins)>>	<<9>>
+<<0 (Codon)>>	<<9>>
+<<Codon>>	<<9>>
+<<malaria parasite>>	<<8>>
+<<Dictyostelium/*enzymology/genetics/growth & development>>	<<8>>
+<<RNA Nucleotidyltransferases/*genetics/physiology>>	<<8>>
+<<Nails>>	<<8>>
+<<keratosis pilaris>>	<<8>>
+<<retronychia>>	<<8>>
+<<enamel hypoplasia>>	<<8>>
+<<*Intellectual Disability/genetics>>	<<8>>
+<<*Nails, Malformed/genetics>>	<<8>>
+<<Nucleic Acid Hybridization>>	<<8>>
+<<Adenosine Diphosphate/*metabolism>>	<<8>>
+<<Microscopy, Fluorescence/*methods>>	<<7>>
+<<Pluripotent Stem Cells/*metabolism>>	<<7>>
+<<Embryonic Stem Cells/metabolism>>	<<7>>
+<<Arm/*anatomy & histology>>	<<7>>
+<<Blood Pressure>>	<<7>>
+<<Hypertension/*diagnosis>>	<<7>>
+<<Blood Pressure Determination/*instrumentation>>	<<7>>
+<<0 (Histones)>>	<<6>>
+<<0 (Oligoribonucleotides)>>	<<6>>
+<<*RNA Stability>>	<<6>>
+<<Histones/*genetics>>	<<6>>
+<<Oligoribonucleotides/*genetics/metabolism>>	<<6>>
+<<*Pseudogenes>>	<<6>>
+<<*Atg17>>	<<5>>
+<<*transcriptional regulators>>	<<5>>
+<<*selective autophagy>>	<<5>>
+<<*Ssn2/Med13>>	<<5>>
+<<DNA-binding agents>>	<<4>>
+<<ATPase>>	<<4>>
+<<Plasmodium falciparum>>	<<4>>
+<<nucleus>>	<<4>>
+<<nuclear pore>>	<<4>>
+<<RNA transport>>	<<4>>
+<<*genotype-phenotype correlation>>	<<3>>
+<<*multisystemic disorder>>	<<3>>
+<<*whole exome sequencing>>	<<3>>
+<<developmental delay>>	<<3>>
+<<ZTTK syndrome>>	<<3>>
+<<seizures>>	<<3>>
+<<chromosomes>>	<<1>>
+<<gene expression>>	<<1>>

@@ -4,6 +4,7 @@ import sys
 import re
 import networkx as nx
 from itertools import combinations
+import matplotlib.pyplot as plt
 
 
 """
@@ -102,9 +103,14 @@ def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True, 
         
         for a, b in list(combinations(terms, 2)):
             if not graph.has_node(a):
-                graph.add_node(a)
+                graph.add_node(a, weight=1)
+            else:
+                graph.nodes[a]['weight'] += 1
+            
             if not graph.has_node(b):
-                graph.add_node(b)
+                graph.add_node(b, weight=1)
+            else:
+                graph.nodes[b]['weight'] += 1
             
             if graph.has_edge(a, b):
                 graph[a][b]['weight'] += 1
@@ -128,15 +134,13 @@ def main():
     #print('Numero di MeSH diversi: ', len(mesh_terms))
 
     ct = ['Humans', 'Animals']
-    thesaurus = {'SON' : [ 'SON', 'NREBP', 'DBP-5', 'NRE-Binding Protein', 'KIAA1019', 'C21orf50', 'DBP5', 'SON3']}
+    th = {'SON' : [ 'SON', 'NREBP', 'DBP-5', 'NRE-Binding Protein', 'KIAA1019', 'C21orf50', 'DBP5', 'SON3']}
 
-    cooccurrences_graph = build_cooccurrences_graph(articles, check_tags=ct, thesaurus=thesaurus)
+    cooccurrences_graph = build_cooccurrences_graph(articles, check_tags=ct, thesaurus=th)
     print('Grafo delle co-occorrenze:\n\tNodi: ', len(cooccurrences_graph.nodes), '\n\tArchi: ', len(cooccurrences_graph.edges))
 
     cooccurrences_list = list(cooccurrences_graph.edges.data('weight'))
-
     cooccurrences_list.sort(key = lambda x:x[2], reverse=True)
-    
     with open('cooccurrences.txt', 'w') as file:
         for (u, v, wt) in cooccurrences_list:
             file.write(f"<<{u}>>\t<<{v}>>\t<<{wt}>>\n")
@@ -145,7 +149,28 @@ def main():
 
     print('Coefficiente di clustering: ', nx.average_clustering(cooccurrences_graph))
 
-    print('Diametro: ', nx.diameter(cooccurrences_graph))
+    nodes = list(cooccurrences_graph.nodes.data('weight'))
+    nodes.sort(key = lambda x:x[1], reverse=True)
+    with open('nodes.txt', 'w') as file:
+        for (u, v) in nodes:
+            file.write(f"<<{u}>>\t<<{v}>>\n")
+
+    main_nodes = []
+    for i in range(10):
+        main_nodes.append(nodes[i][0])
+    
+    
+    main_graph = cooccurrences_graph.subgraph(main_nodes)
+
+
+    #print('Diametro: ', nx.diameter(cooccurrences_graph))
+
+
+    #colors = range(20)
+    
+    nx.draw_networkx(main_graph)
+    plt.show()
+
 
 
 if __name__ == "__main__":
