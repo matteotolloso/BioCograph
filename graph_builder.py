@@ -1,4 +1,5 @@
 from builtins import dict
+from os import terminal_size
 import sys
 import re
 import networkx as nx
@@ -69,11 +70,13 @@ def extract_mesh(articles : dict) -> set:
     return mesh_terms
 
 
-def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True, check_tags=[]) -> nx.Graph:
+def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True, check_tags=[], thesaurus={}) -> nx.Graph:
     graph = nx.Graph()
 
     for art in articles.values():
         terms = []
+        
+        # extract the types of terms required
         if mh:
             terms += art.get('MeSH')
         if rn:
@@ -81,8 +84,19 @@ def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True, 
         if ot:
             terms += art.get('OtherTerm')
         
+        #remove check tags
         terms = list(filter(lambda x: x not in check_tags, terms))
         
+        # merge synonyms
+        for key in thesaurus.keys(): # for all key in thesaurus 
+            for pos, term in enumerate(terms): # for all terms in this article
+                for syn in thesaurus[key]:  # for all synonyms
+                    if syn in term: #if the target is contained in the term
+                        terms[pos] = key  #replace the term with the synonymous
+                        break
+        
+        terms = list(set(terms))
+
         if not terms:
             continue
         
@@ -114,8 +128,9 @@ def main():
     #print('Numero di MeSH diversi: ', len(mesh_terms))
 
     ct = ['Humans', 'Animals']
+    thesaurus = {'SON' : [ 'SON', 'NREBP', 'DBP-5', 'NRE-Binding Protein', 'KIAA1019', 'C21orf50', 'DBP5', 'SON3']}
 
-    cooccurrences_graph = build_cooccurrences_graph(articles, check_tags=ct, ot=False)
+    cooccurrences_graph = build_cooccurrences_graph(articles, check_tags=ct, thesaurus=thesaurus)
     print('Grafo delle co-occorrenze:\n\tNodi: ', len(cooccurrences_graph.nodes), '\n\tArchi: ', len(cooccurrences_graph.edges))
 
     cooccurrences_list = list(cooccurrences_graph.edges.data('weight'))
