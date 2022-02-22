@@ -5,6 +5,7 @@ import re
 import networkx as nx
 from itertools import combinations
 import matplotlib.pyplot as plt
+from tabulate import tabulate
 
 
 """
@@ -118,6 +119,27 @@ def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True, 
                 graph.add_edge(a, b, weight=1)
     
     return graph
+
+def draw(graph: nx.Graph):
+   
+    #layout
+    pos = nx.spring_layout(graph, pos= {'SON': [0, 0]}, fixed=['SON'], seed=1)
+    #pos = nx.spectral_layout(graph, weight='weight')
+
+    #edges
+    edgewidth = [ (graph[u][v]['weight'] * 0.8) for u, v in graph.edges()]
+    #nx.draw_networkx_edges(graph, pos, alpha=0.3, width=edgewidth, edge_color="m", edgelist=graph.edges(nbunch='SON'))
+    nx.draw_networkx_edges(graph, pos, alpha=0.3, width=edgewidth, edge_color="m")
+    
+    #nodes
+    nodesize = [ (graph.nodes[v]['weight']* 2) for v in graph.nodes()]
+    nx.draw_networkx_nodes(graph, pos, node_size=nodesize, node_color="b", alpha=0.9)
+    label_options = {"ec": "k", "fc": "white", "alpha": 0.7}
+    nx.draw_networkx_labels(graph, pos, font_size=14, bbox=label_options)
+
+
+    plt.axis("off")
+    plt.show()
         
 
 def main():
@@ -142,8 +164,7 @@ def main():
     cooccurrences_list = list(cooccurrences_graph.edges.data('weight'))
     cooccurrences_list.sort(key = lambda x:x[2], reverse=True)
     with open('cooccurrences.txt', 'w') as file:
-        for (u, v, wt) in cooccurrences_list:
-            file.write(f"<<{u}>>\t<<{v}>>\t<<{wt}>>\n")
+            file.write(tabulate(cooccurrences_list,  headers=['Entity', 'Entity', 'Number of occurrences'],  tablefmt='orgtbl'))
 
     print('Il grafo ha: ', nx.number_connected_components(cooccurrences_graph), ' componenti connesse')
 
@@ -152,25 +173,15 @@ def main():
     nodes = list(cooccurrences_graph.nodes.data('weight'))
     nodes.sort(key = lambda x:x[1], reverse=True)
     with open('nodes.txt', 'w') as file:
-        for (u, v) in nodes:
-            file.write(f"<<{u}>>\t<<{v}>>\n")
+            file.write(tabulate(nodes, headers=['Entity', 'Number of occurrences'], tablefmt='orgtbl'))
 
     main_nodes = []
-    for i in range(10):
+    for i in range(15):
         main_nodes.append(nodes[i][0])
-    
     
     main_graph = cooccurrences_graph.subgraph(main_nodes)
 
-
-    #print('Diametro: ', nx.diameter(cooccurrences_graph))
-
-
-    #colors = range(20)
-    
-    nx.draw_networkx(main_graph)
-    plt.show()
-
+    draw(main_graph)
 
 
 if __name__ == "__main__":
