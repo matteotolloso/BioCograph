@@ -135,7 +135,7 @@ def draw(graph: nx.Graph):
     nodesize = [ (graph.nodes[v]['weight']* 2) for v in graph.nodes()]
     nx.draw_networkx_nodes(graph, pos, node_size=nodesize, node_color="b", alpha=0.9)
     label_options = {"ec": "k", "fc": "white", "alpha": 0.7}
-    nx.draw_networkx_labels(graph, pos, font_size=14, bbox=label_options)
+    nx.draw_networkx_labels(graph, pos, font_size=12, bbox=label_options)
 
 
     plt.axis("off")
@@ -164,7 +164,7 @@ def main():
     cooccurrences_list = list(cooccurrences_graph.edges.data('weight'))
     cooccurrences_list.sort(key = lambda x:x[2], reverse=True)
     with open('cooccurrences.txt', 'w') as file:
-            file.write(tabulate(cooccurrences_list,  headers=['Entity', 'Entity', 'Number of occurrences'],  tablefmt='orgtbl'))
+            file.write(tabulate(cooccurrences_list,  headers=['Entity', 'Entity', 'Number of cooccurrences'],  tablefmt='orgtbl'))
 
     print('Il grafo ha: ', nx.number_connected_components(cooccurrences_graph), ' componenti connesse')
 
