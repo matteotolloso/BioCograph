@@ -120,7 +120,11 @@ def build_cooccurrences_graph(  articles : dict,
         if ot:
             terms += art.get('OtherTerm')
         if bbent:
-            terms += art.get('bioBERT_entities')
+            ents = art.get('bioBERT_entities') #list of touples (name, type)
+            for ent in ents:
+                if ent[1] in bbent_types:
+                    terms.append(ent[0])
+
         
         #remove check tags
         terms = list(filter(lambda x: x not in check_tags, terms))
@@ -195,8 +199,6 @@ def main():
         return
     
     articles : dict = json.loads(content)
-
-    #articles : dict = build_dataset(path)
     
     print('Numero di articoli: ', len(articles.keys()))
 
@@ -206,7 +208,7 @@ def main():
     ct = ['Humans', 'Animals']
     th = {'SON' : [ 'SON', 'NREBP', 'DBP-5', 'NRE-Binding Protein', 'KIAA1019', 'C21orf50', 'DBP5', 'SON3', 'Dbp5']}
 
-    cooccurrences_graph = build_cooccurrences_graph(articles, check_tags=ct, thesaurus=th, rn=False)
+    cooccurrences_graph = build_cooccurrences_graph(articles, check_tags=ct, thesaurus=th, rn=False, mh=False, ot=False)
     print('Grafo delle co-occorrenze:\n\tNodi: ', len(cooccurrences_graph.nodes), '\n\tArchi: ', len(cooccurrences_graph.edges))
 
     cooccurrences_list = list(cooccurrences_graph.edges.data('weight'))
@@ -233,13 +235,7 @@ def main():
 
 
 if __name__ == "__main__":
-    #build_dataset('pubmed-SONTitleAb-set.txt', 'dataset_SON.json')
-    f = open( 'dataset_SON.json', 'r')
-    cont = f.read()
-    articles = json.loads(cont)
-    ents = articles['32041247'].get('bioBERT_entities')[0][1]
-    print(ents)
-    #main()
+    main()
     
     
     
