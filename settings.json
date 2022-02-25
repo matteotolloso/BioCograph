@@ -1,0 +1,58 @@
+{
+    "dataset": [
+        [
+            "./annotated_dataset/dataset_SON.json",
+            true
+        ],
+        [
+            "./annotated_dataset/dataset_ZTTK.json",
+            false
+        ],
+        [
+            "./annotated_dataset/dataset_nonspecifi.json",
+            false
+        ],
+        [
+            "./annotated_dataset/dataset_brainoligo.json",
+            false
+        ]
+    ],
+    "check_tags": [
+        "Humans",
+        "Animals"
+    ],
+    "thresaurs": {
+        "SON": [
+            "SON",
+            "NREBP",
+            "DBP-5",
+            "NRE-Binding Protein",
+            "KIAA1019",
+            "C21orf50",
+            "DBP5",
+            "SON3",
+            "Dbp5"
+        ],
+        "ZTTK": [
+            "ZTTK"
+        ],
+        "oligodendroglioma": [
+            "oligodendroglioma"
+        ],
+        "tumor": [
+            "tumor",
+            "tumour"
+        ],
+        "oligoastrocytoma": [
+            "oligoastrocytoma"
+        ]
+        
+
+    },
+    "MeSH": false,
+    "RNnumber": false,
+    "OtherTerms": false,
+    "bioBERT": true,
+    "numb_graph_nodes": 30,
+    "always present" : []
+}
