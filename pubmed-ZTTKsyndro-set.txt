@@ -1,0 +1,1010 @@
+PMID- 34331327
+OWN - NLM
+STAT- In-Process
+LR  - 20211124
+IS  - 1552-4833 (Electronic)
+IS  - 1552-4825 (Print)
+IS  - 1552-4825 (Linking)
+VI  - 185
+IP  - 12
+DP  - 2021 Dec
+TI  - ZTTK syndrome: Clinical and molecular findings of 15 cases and a review of the 
+      literature.
+PG  - 3740-3753
+LID - 10.1002/ajmg.a.62445 [doi]
+AB  - Zhu-Tokita-Takenouchi-Kim (ZTTK) syndrome is caused by de novo loss-of-function 
+      variants in the SON gene (MIM #617140). This multisystemic disorder is characterized 
+      by intellectual disability, seizures, abnormal brain imaging, variable dysmorphic 
+      features, and various congenital anomalies. The wide application and increasing 
+      accessibility of whole exome sequencing (WES) has helped to identify new cases of 
+      ZTTK syndrome over the last few years. To date, there have been approximately 45 
+      cases reported in the literature. Here, we describe 15 additional individuals with 
+      variants in the SON gene, including those with missense variants bringing the total 
+      number of known cases to 60. We have reviewed the clinical and molecular data of 
+      these new cases and all previously reported cases to further delineate the most 
+      common as well as emerging clinical findings related to this syndrome. Furthermore, 
+      we aim to delineate any genotype-phenotype correlations specifically for a recurring 
+      pathogenic four base pair deletion (c.5753_5756del) along with discussing the impact 
+      of missense variants seen in the SON gene.
+CI  - © 2021 Wiley Periodicals LLC.
+FAU - Kushary, Sulagna Tina
+AU  - Kushary ST
+AUID- ORCID: 0000-0002-7728-2582
+AD  - Institute for Genomic Medicine, Columbia University Irving Medical Center, New York, 
+      New York, USA.
+FAU - Revah-Politi, Anya
+AU  - Revah-Politi A
+AUID- ORCID: 0000-0002-3328-4252
+AD  - Institute for Genomic Medicine, Columbia University Irving Medical Center, New York, 
+      New York, USA.
+AD  - Department of Pathology and Cell Biology, Columbia University Irving Medical Center, 
+      New York, New York, USA.
+FAU - Barua, Subit
+AU  - Barua S
+AD  - Department of Pathology and Cell Biology, Columbia University Irving Medical Center, 
+      New York, New York, USA.
+FAU - Ganapathi, Mythily
+AU  - Ganapathi M
+AD  - Department of Pathology and Cell Biology, Columbia University Irving Medical Center, 
+      New York, New York, USA.
+FAU - Accogli, Andrea
+AU  - Accogli A
+AUID- ORCID: 0000-0001-8724-6721
+AD  - IRCCS 'G. Gaslini' Children's Hospital, Genoa, Italy.
+FAU - Aggarwal, Vimla
+AU  - Aggarwal V
+AD  - Department of Pathology and Cell Biology, Columbia University Irving Medical Center, 
+      New York, New York, USA.
+FAU - Brunetti-Pierri, Nicola
+AU  - Brunetti-Pierri N
+AUID- ORCID: 0000-0002-6895-8819
+AD  - Telethon Institute of Genetics and Medicine, Pozzuoli, Italy.
+AD  - Department of Translational Medicine, Federico II University of Naples, Naples, 
+      Italy.
+FAU - Cappuccio, Gerarda
+AU  - Cappuccio G
+AD  - Telethon Institute of Genetics and Medicine, Pozzuoli, Italy.
+AD  - Department of Translational Medicine, Federico II University of Naples, Naples, 
+      Italy.
+FAU - Capra, Valeria
+AU  - Capra V
+AD  - IRCCS 'G. Gaslini' Children's Hospital, Genoa, Italy.
+FAU - Fagerberg, Christina R
+AU  - Fagerberg CR
+AD  - Department of Clinical Genetics, Odense University Hospital, Odense, Denmark.
+FAU - Gazdagh, Gabriella
+AU  - Gazdagh G
+AD  - West of Scotland Centre for Genomic Medicine, Laboratory Medicine Building, Queen 
+      Elizabeth University Hospital, Glasgow, UK.
+FAU - Guzman, Edwin
+AU  - Guzman E
+AD  - Division of Clinical Genetics, Department of Pediatrics, Columbia University Irving 
+      Medical Center, New York, New York, USA.
+FAU - Hadonou, Medard
+AU  - Hadonou M
+AD  - St. George's Genomics Service, St. George's University Hospitals NHS FT, London, UK.
+FAU - Harrison, Victoria
+AU  - Harrison V
+AD  - Wessex Clinical Genetics Service, Southampton, UK.
+FAU - Havelund, Kathrine
+AU  - Havelund K
+AD  - HC Andersen Children's Hospital, Odense University Hospital, Odense, Denmark.
+FAU - Iancu, Daniela
+AU  - Iancu D
+AD  - Wessex Clinical Genetics Service, Southampton, UK.
+FAU - Kraus, Alison
+AU  - Kraus A
+AD  - Department of Clinical Genetics, Odense University Hospital, Odense, Denmark.
+FAU - Lippa, Natalie C
+AU  - Lippa NC
+AD  - Institute for Genomic Medicine, Columbia University Irving Medical Center, New York, 
+      New York, USA.
+FAU - Mansukhani, Mahesh
+AU  - Mansukhani M
+AD  - Department of Pathology and Cell Biology, Columbia University Irving Medical Center, 
+      New York, New York, USA.
+FAU - McBrian, Danielle
+AU  - McBrian D
+AD  - Department of Neurology, Columbia University Irving Medical Center, New York, New 
+      York, USA.
+FAU - McEntagart, Meriel
+AU  - McEntagart M
+AD  - Department of Medical Genetics, St. George's University Hospital NHS FT, London, UK.
+FAU - Pacio-Míguez, Marta
+AU  - Pacio-Míguez M
+AUID- ORCID: 0000-0003-3751-3240
+AD  - Instituto de Genética Médica y Molecular (INGEMM), Hospital Universitario La Paz, 
+      IdiPAZ, CIBERER, ISCIII, Madrid, Spain.
+FAU - Palomares-Bralo, María
+AU  - Palomares-Bralo M
+AUID- ORCID: 0000-0002-2727-7654
+AD  - Instituto de Genética Médica y Molecular (INGEMM), Hospital Universitario La Paz, 
+      IdiPAZ, CIBERER, ISCIII, Madrid, Spain.
+FAU - Pottinger, Carrie
+AU  - Pottinger C
+AD  - Department of Clinical Genetics, All Wales Genomic Medicine Service, Maelor 
+      Hospital, Wrexham, UK.
+FAU - Ruivenkamp, Claudia A L
+AU  - Ruivenkamp CAL
+AD  - Department of Clinical Genetics, Leiden University Medical Center, Leiden, The 
+      Netherlands.
+FAU - Sacco, Oliviero
+AU  - Sacco O
+AD  - IRCCS 'G. Gaslini' Children's Hospital, Genoa, Italy.
+FAU - Santen, Gijs W E
+AU  - Santen GWE
+AD  - Department of Clinical Genetics, Leiden University Medical Center, Leiden, The 
+      Netherlands.
+FAU - Santos-Simarro, Fernando
+AU  - Santos-Simarro F
+AUID- ORCID: 0000-0002-1201-9118
+AD  - Instituto de Genética Médica y Molecular (INGEMM), Hospital Universitario La Paz, 
+      IdiPAZ, CIBERER, ISCIII, Madrid, Spain.
+FAU - Scala, Marcello
+AU  - Scala M
+AUID- ORCID: 0000-0003-2194-7239
+AD  - IRCCS 'G. Gaslini' Children's Hospital, Genoa, Italy.
+FAU - Short, John
+AU  - Short J
+AD  - St. George's Genomics Service, St. George's University Hospitals NHS FT, London, UK.
+FAU - Sørensen, Kristina P
+AU  - Sørensen KP
+AD  - HC Andersen Children's Hospital, Odense University Hospital, Odense, Denmark.
+FAU - Woods, Christopher G
+AU  - Woods CG
+AD  - Cambridge Institute for Medical Research, University of Cambridge, Addenbrooke's 
+      Hospital, Cambridge, UK.
+CN  - DDD Study
+AD  - Wellcome Trust Sanger Institute, Cambridge, UK.
+CN  - TUDP Consortium
+AD  - Telethon Institute of Genetics and Medicine, Pozzuoli, Italy.
+FAU - Anyane Yeboa, Kwame
+AU  - Anyane Yeboa K
+AUID- ORCID: 0000-0002-4977-9719
+AD  - Division of Clinical Genetics, Department of Pediatrics, Columbia University Irving 
+      Medical Center, New York, New York, USA.
+LA  - eng
+GR  - WT_/Wellcome Trust/United Kingdom
+GR  - UL1 TR001873/TR/NCATS NIH HHS/United States
+GR  - WT098051/WT_/Wellcome Trust/United Kingdom
+GR  - DH_/Department of Health/United Kingdom
+PT  - Journal Article
+PT  - Research Support, N.I.H., Extramural
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20210731
+TA  - Am J Med Genet A
+JT  - American journal of medical genetics. Part A
+JID - 101235741
+SB  - IM
+PMC - PMC8595531
+MID - NIHMS1727740
+OTO - NOTNLM
+OT  - *SON
+OT  - *genotype-phenotype correlation
+OT  - *multisystemic disorder
+OT  - *whole exome sequencing
+COIS- Conflicts of Interest There are no conflicts of interest to declare for any of the 
+      authors listed in this publication.
+EDAT- 2021/08/01 06:00
+MHDA- 2021/08/01 06:00
+PMCR- 2022/12/01
+CRDT- 2021/07/31 08:47
+PHST- 2021/05/21 00:00 [revised]
+PHST- 2021/03/01 00:00 [received]
+PHST- 2021/07/09 00:00 [accepted]
+PHST- 2022/12/01 00:00 [pmc-release]
+PHST- 2021/08/01 06:00 [pubmed]
+PHST- 2021/08/01 06:00 [medline]
+PHST- 2021/07/31 08:47 [entrez]
+AID - 10.1002/ajmg.a.62445 [doi]
+PST - ppublish
+SO  - Am J Med Genet A. 2021 Dec;185(12):3740-3753. doi: 10.1002/ajmg.a.62445. Epub 2021 
+      Jul 31.
+
+PMID- 31557424
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20200629
+LR  - 20210110
+IS  - 2324-9269 (Electronic)
+IS  - 2324-9269 (Linking)
+VI  - 7
+IP  - 11
+DP  - 2019 Nov
+TI  - Clinical and genetic analysis of ZTTK syndrome caused by SON heterozygous mutation 
+      c.394C>T.
+PG  - e953
+LID - 10.1002/mgg3.953 [doi]
+LID - e953
+AB  - BACKGROUND: The present study aims to summarize the clinical and genetic 
+      characteristics of ZTTK syndrome. METHODS: The clinical and genetic data of a 
+      Chinese girl with severe growth and development delay, intellectual disability, and 
+      facial features were analyzed. Original articles on ZTTK syndrome published up to 
+      November 20l8 were identified from PubMed, Human Gene Mutation Database, Online 
+      Mendelian Inheritance in Man, China National Knowledge Infrastructure, and WanFang 
+      databases using the keywords "ZTTK syndrome" and "SON". RESULTS: The patient was 
+      born small for gestational age, and had poor academic performance, delayed language 
+      development, and motor retardation. The patient's height was 113 cm (less than -3 
+      SD), and had moles on the back skin and possessed facial features. A novel 
+      heterozygous mutation c.394C>T (p.Q132X) of SON was found in this patient, but the 
+      parents were normal. CONCLUSION: The patient's clinical phenotype was consistent 
+      with ZTTK syndrome. The novel heterozygous mutation c.394C>T (p.Q132X) of SON was 
+      its pathogenic mutation, which has not been reported at home and abroad.
+CI  - © 2019 The Authors. Molecular Genetics & Genomic Medicine published by Wiley 
+      Periodicals, Inc.
+FAU - Yang, Yu
+AU  - Yang Y
+AUID- ORCID: 0000-0001-8335-7061
+AD  - Department of Endocrinology, Metabolism, and Genetics, Affiliated Children's 
+      Hospital of Nanchang university, Nanchang shi, Jiangxi Sheng, people's Republic of 
+      China, Nanchang, Jiangxi, China.
+FAU - Xu, Lei
+AU  - Xu L
+AUID- ORCID: 0000-0001-6408-757X
+AD  - Department of Endocrinology, Metabolism, and Genetics, Affiliated Children's 
+      Hospital of Nanchang university, Nanchang shi, Jiangxi Sheng, people's Republic of 
+      China, Nanchang, Jiangxi, China.
+FAU - Yu, Zhen
+AU  - Yu Z
+AD  - Department of Endocrinology, Metabolism, and Genetics, Affiliated Children's 
+      Hospital of Nanchang university, Nanchang shi, Jiangxi Sheng, people's Republic of 
+      China, Nanchang, Jiangxi, China.
+FAU - Huang, Hui
+AU  - Huang H
+AUID- ORCID: 0000-0003-1165-2613
+AD  - Central Laboratory, Non-directly Affiliated Hospital of Nanchang University, Jiangxi 
+      Provincial Children's Hospital, Nanchang, Jiangxi, China.
+FAU - Yang, Li
+AU  - Yang L
+AD  - Department of Endocrinology, Metabolism, and Genetics, Affiliated Children's 
+      Hospital of Nanchang university, Nanchang shi, Jiangxi Sheng, people's Republic of 
+      China, Nanchang, Jiangxi, China.
+LA  - eng
+PT  - Case Reports
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+PT  - Review
+DEP - 20190926
+TA  - Mol Genet Genomic Med
+JT  - Molecular genetics & genomic medicine
+JID - 101603758
+RN  - 0 (DNA-Binding Proteins)
+RN  - 0 (Minor Histocompatibility Antigens)
+RN  - 0 (SON protein, human)
+SB  - IM
+MH  - Adolescent
+MH  - Chromosomes, Human, Pair 21
+MH  - DNA-Binding Proteins/*genetics
+MH  - Developmental Disabilities/*genetics
+MH  - Exons
+MH  - Female
+MH  - Heterozygote
+MH  - Humans
+MH  - Intellectual Disability/*genetics
+MH  - Minor Histocompatibility Antigens/*genetics
+MH  - *Mutation
+MH  - Syndrome
+PMC - PMC6825855
+OTO - NOTNLM
+OT  - * SON
+OT  - *ZTTK syndrome
+OT  - *gene
+OT  - *mutation
+COIS- The author reports no conflicts of interest in this work.
+EDAT- 2019/09/27 06:00
+MHDA- 2020/07/01 06:00
+CRDT- 2019/09/27 06:00
+PHST- 2019/02/28 00:00 [received]
+PHST- 2019/08/11 00:00 [revised]
+PHST- 2019/08/12 00:00 [accepted]
+PHST- 2019/09/27 06:00 [pubmed]
+PHST- 2020/07/01 06:00 [medline]
+PHST- 2019/09/27 06:00 [entrez]
+AID - MGG3953 [pii]
+AID - 10.1002/mgg3.953 [doi]
+PST - ppublish
+SO  - Mol Genet Genomic Med. 2019 Nov;7(11):e953. doi: 10.1002/mgg3.953. Epub 2019 Sep 26.
+
+PMID- 34521999
+OWN - NLM
+STAT- Publisher
+LR  - 20211130
+IS  - 1476-5438 (Electronic)
+IS  - 1018-4813 (Linking)
+DP  - 2021 Sep 15
+TI  - Establishing the phenotypic spectrum of ZTTK syndrome by analysis of 52 individuals 
+      with variants in SON.
+LID - 10.1038/s41431-021-00960-4 [doi]
+AB  - Zhu-Tokita-Takenouchi-Kim (ZTTK) syndrome, an intellectual disability syndrome first 
+      described in 2016, is caused by heterozygous loss-of-function variants in SON. Its 
+      encoded protein promotes pre-mRNA splicing of many genes essential for development. 
+      Whereas individual phenotypic traits have previously been linked to erroneous 
+      splicing of SON target genes, the phenotypic spectrum and the pathogenicity of 
+      missense variants have not been further evaluated. We present the phenotypic 
+      abnormalities in 52 individuals, including 17 individuals who have not been reported 
+      before. In total, loss-of-function variants were detected in 49 individuals (de novo 
+      in 47, inheritance unknown in 2), and in 3, a missense variant was observed (2 de 
+      novo, 1 inheritance unknown). Phenotypic abnormalities, systematically collected and 
+      analyzed in Human Phenotype Ontology, were found in all organ systems. Significant 
+      inter-individual phenotypic variability was observed, even in individuals with the 
+      same recurrent variant (n = 13). SON haploinsufficiency was previously shown to lead 
+      to downregulation of downstream genes, contributing to specific phenotypic features. 
+      Similar functional analysis for one missense variant, however, suggests a different 
+      mechanism than for heterozygous loss-of-function. Although small in numbers and 
+      while pathogenicity of these variants is not certain, these data allow for 
+      speculation whether de novo missense variants cause ZTTK syndrome via another 
+      mechanism, or a separate overlapping syndrome. In conclusion, heterozygous 
+      loss-of-function variants in SON define a recognizable syndrome, ZTTK, associated 
+      with a broad, severe phenotypic spectrum, characterized by a large inter-individual 
+      variability. These observations provide essential information for affected 
+      individuals, parents, and healthcare professionals to ensure appropriate clinical 
+      management.
+CI  - © 2021. The Author(s), under exclusive licence to European Society of Human 
+      Genetics.
+FAU - Dingemans, Alexander J M
+AU  - Dingemans AJM
+AD  - Department of Human Genetics, Donders Institute for Brain, Cognition and Behaviour, 
+      Radboud University Medical Center, P.O. Box 9101, 6500 HB, Nijmegen, The 
+      Netherlands.
+FAU - Truijen, Kim M G
+AU  - Truijen KMG
+AD  - Department of Human Genetics, Donders Institute for Brain, Cognition and Behaviour, 
+      Radboud University Medical Center, P.O. Box 9101, 6500 HB, Nijmegen, The 
+      Netherlands.
+FAU - Kim, Jung-Hyun
+AU  - Kim JH
+AUID- ORCID: 0000-0001-7176-409X
+AD  - Mitchell Cancer Institute, University of South Alabama, Mobile, AL, 36604, USA.
+FAU - Alaçam, Zahide
+AU  - Alaçam Z
+AD  - Denizli State Hospital, Denizli, Turkey.
+FAU - Faivre, Laurence
+AU  - Faivre L
+AD  - Centre de Génétique, Centre de Référence Anomalies du Développement et Syndromes 
+      Malformatifs, FHU TRANSLAD, CHU de Dijon, 2 INSERM UMR1231, GAD, Université de 
+      Bourgogne Franche-Comté, Dijon, France.
+FAU - Collins, Kathleen M
+AU  - Collins KM
+AD  - Dartmouth Hitchcock Medical Centre, Lebanon, NH, USA.
+FAU - Gerkes, Erica H
+AU  - Gerkes EH
+AD  - Department of Genetics, University of Groningen, University Medical Center 
+      Groningen, Groningen, The Netherlands.
+FAU - van Haelst, Mieke
+AU  - van Haelst M
+AD  - Department of Clinical Genetics and Amsterdam Reproduction & Development Research 
+      Institute, Amsterdam UMC, University of Amsterdam, Amsterdam, The Netherlands.
+FAU - van de Laar, Ingrid M B H
+AU  - van de Laar IMBH
+AD  - Department of Clinical Genetics, Erasmus MC, University Medical Center Rotterdam, 
+      Rotterdam, The Netherlands.
+FAU - Lindstrom, Kristin
+AU  - Lindstrom K
+AD  - Division of Genetics and Metabolism, Phoenix Children's Hospital, Phoenix, AZ, USA.
+FAU - Nizon, Mathilde
+AU  - Nizon M
+AUID- ORCID: 0000-0003-2170-4210
+AD  - Service de Génétique Médicale, CHU Nantes, Nantes, France.
+FAU - Pauling, James
+AU  - Pauling J
+AD  - Arrowe Park Hospital, Wirral, UK.
+FAU - Heropolitańska-Pliszka, Edyta
+AU  - Heropolitańska-Pliszka E
+AD  - Department of Immunology, Children's Memorial Health Institute, Warsaw, Poland.
+FAU - Plomp, Astrid S
+AU  - Plomp AS
+AD  - Department of Clinical Genetics, Amsterdam UMC, University of Amsterdam, Amsterdam, 
+      The Netherlands.
+FAU - Racine, Caroline
+AU  - Racine C
+AUID- ORCID: 0000-0003-2378-5982
+AD  - Centre de Génétique, Centre de Référence Anomalies du Développement et Syndromes 
+      Malformatifs, FHU TRANSLAD, CHU de Dijon, 2 INSERM UMR1231, GAD, Université de 
+      Bourgogne Franche-Comté, Dijon, France.
+FAU - Sachdev, Rani
+AU  - Sachdev R
+AD  - Centre for Clinical Genetics, Sydney Children's Hospital Network, Sydney, Australia.
+FAU - Sinnema, Margje
+AU  - Sinnema M
+AD  - Department of Clinical Genetics, MUMC, Maastricht, The Netherlands.
+FAU - Skranes, Jon
+AU  - Skranes J
+AD  - Unit for Child Neurology and Rehabilitation, Department of Pediatrics, Sørlandet 
+      Hospital, Arendal, Norway.
+FAU - Veenstra-Knol, Hermine E
+AU  - Veenstra-Knol HE
+AD  - Department of Genetics, University of Groningen, University Medical Center 
+      Groningen, Groningen, The Netherlands.
+FAU - Verberne, Eline A
+AU  - Verberne EA
+AD  - Department of Clinical Genetics and Amsterdam Reproduction & Development Research 
+      Institute, Amsterdam UMC, University of Amsterdam, Amsterdam, The Netherlands.
+FAU - Vulto-van Silfhout, Anneke T
+AU  - Vulto-van Silfhout AT
+AD  - Department of Human Genetics, Donders Institute for Brain, Cognition and Behaviour, 
+      Radboud University Medical Center, P.O. Box 9101, 6500 HB, Nijmegen, The 
+      Netherlands.
+FAU - Wilsterman, Marlon E F
+AU  - Wilsterman MEF
+AD  - Department of Pediatrics, Nij Smellinghe, Drachten, The Netherlands.
+FAU - Ahn, Eun-Young Erin
+AU  - Ahn EE
+AUID- ORCID: 0000-0001-8795-7734
+AD  - Division of Molecular and Cellular Pathology, Department of Pathology, The 
+      University of Alabama at Birmingham, Birmingham, AL, USA.
+AD  - O'Neal Comprehensive Cancer Center, The University of Alabama at Birmingham, 
+      Birmingham, AL, USA.
+FAU - de Vries, Bert B A
+AU  - de Vries BBA
+AUID- ORCID: 0000-0002-0000-2917
+AD  - Department of Human Genetics, Donders Institute for Brain, Cognition and Behaviour, 
+      Radboud University Medical Center, P.O. Box 9101, 6500 HB, Nijmegen, The 
+      Netherlands. bert.devries@radboudumc.nl.
+FAU - Vissers, Lisenka E L M
+AU  - Vissers LELM
+AUID- ORCID: 0000-0001-6470-5497
+AD  - Department of Human Genetics, Donders Institute for Brain, Cognition and Behaviour, 
+      Radboud University Medical Center, P.O. Box 9101, 6500 HB, Nijmegen, The 
+      Netherlands. lisenka.vissers@radboudumc.nl.
+LA  - eng
+GR  - grants 912-12-109/ZonMw (Netherlands Organisation for Health Research and 
+      Development)/
+GR  - 779257/EC | Horizon 2020 Framework Programme (EU Framework Programme for Research 
+      and Innovation H2020)/
+PT  - Journal Article
+DEP - 20210915
+PL  - England
+TA  - Eur J Hum Genet
+JT  - European journal of human genetics : EJHG
+JID - 9302235
+SB  - IM
+EDAT- 2021/09/16 06:00
+MHDA- 2021/09/16 06:00
+CRDT- 2021/09/15 07:06
+PHST- 2021/05/06 00:00 [received]
+PHST- 2021/08/26 00:00 [accepted]
+PHST- 2021/07/16 00:00 [revised]
+PHST- 2021/09/16 06:00 [pubmed]
+PHST- 2021/09/16 06:00 [medline]
+PHST- 2021/09/15 07:06 [entrez]
+AID - 10.1038/s41431-021-00960-4 [pii]
+AID - 10.1038/s41431-021-00960-4 [doi]
+PST - aheadofprint
+SO  - Eur J Hum Genet. 2021 Sep 15. doi: 10.1038/s41431-021-00960-4.
+
+PMID- 32448361
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210604
+LR  - 20210610
+IS  - 1756-6606 (Electronic)
+IS  - 1756-6606 (Linking)
+VI  - 13
+IP  - 1
+DP  - 2020 May 24
+TI  - Knockdown of Son, a mouse homologue of the ZTTK syndrome gene, causes neuronal 
+      migration defects and dendritic spine abnormalities.
+PG  - 80
+LID - 10.1186/s13041-020-00622-4 [doi]
+LID - 80
+AB  - Zhu-Tokita-Takenouchi-Kim (ZTTK) syndrome, a rare congenital anomaly syndrome 
+      characterized by intellectual disability, brain malformation, facial dysmorphism, 
+      musculoskeletal abnormalities, and some visceral malformations is caused by de novo 
+      heterozygous mutations of the SON gene. The nuclear protein SON is involved in gene 
+      transcription and RNA splicing; however, the roles of SON in neural development 
+      remain undetermined. We investigated the effects of Son knockdown on neural 
+      development in mice and found that Son knockdown in neural progenitors resulted in 
+      defective migration during corticogenesis and reduced spine density on mature 
+      cortical neurons. The induction of human wild-type SON expression rescued these 
+      neural abnormalities, confirming that the abnormalities were caused by SON 
+      insufficiency. We also applied truncated SON proteins encoded by disease-associated 
+      mutant SON genes for rescue experiments and found that a truncated SON protein 
+      encoded by the most prevalent SON mutant found in ZTTK syndrome rescued the neural 
+      abnormalities while another much shorter mutant SON protein did not. These data 
+      indicate that SON insufficiency causes neuronal migration defects and dendritic 
+      spine abnormalities, which seem neuropathological bases of the neural symptoms of 
+      ZTTK syndrome. In addition, the results support that the neural abnormalities in 
+      ZTTK syndrome are caused by SON haploinsufficiency independent of the types of 
+      mutation that results in functional or dysfunctional proteins.
+FAU - Ueda, Masashi
+AU  - Ueda M
+AD  - Department of Cellular Pathology, Institute for Developmental Research, Aichi 
+      Developmental Disability Center, Kasugai, Aichi, 4800392, Japan.
+FAU - Matsuki, Tohru
+AU  - Matsuki T
+AD  - Department of Cellular Pathology, Institute for Developmental Research, Aichi 
+      Developmental Disability Center, Kasugai, Aichi, 4800392, Japan.
+FAU - Fukada, Masahide
+AU  - Fukada M
+AD  - Department of Cellular Pathology, Institute for Developmental Research, Aichi 
+      Developmental Disability Center, Kasugai, Aichi, 4800392, Japan.
+FAU - Eda, Shima
+AU  - Eda S
+AD  - Department of Cellular Pathology, Institute for Developmental Research, Aichi 
+      Developmental Disability Center, Kasugai, Aichi, 4800392, Japan.
+FAU - Toya, Akie
+AU  - Toya A
+AD  - Department of Cellular Pathology, Institute for Developmental Research, Aichi 
+      Developmental Disability Center, Kasugai, Aichi, 4800392, Japan.
+AD  - Department of Neurobiochemistry, Nagoya University School of Medicine, Nagoya, 
+      Aichi, 4668560, Japan.
+FAU - Iio, Akio
+AU  - Iio A
+AD  - Department of Cellular Pathology, Institute for Developmental Research, Aichi 
+      Developmental Disability Center, Kasugai, Aichi, 4800392, Japan.
+AD  - Biogate Co. Ltd., 331-1 Ohmori, Yamagata, Gifu, 5012123, Japan.
+FAU - Tabata, Hidenori
+AU  - Tabata H
+AD  - Department of Molecular Neurobiology, Institute for Developmental Research, Aichi 
+      Developmental Disability Center, Kasugai, Aichi, 4800392, Japan.
+FAU - Nakayama, Atsuo
+AU  - Nakayama A
+AUID- ORCID: 0000-0003-1444-0800
+AD  - Department of Cellular Pathology, Institute for Developmental Research, Aichi 
+      Developmental Disability Center, Kasugai, Aichi, 4800392, Japan. atsuon@inst-hsc.jp.
+AD  - Department of Neurobiochemistry, Nagoya University School of Medicine, Nagoya, 
+      Aichi, 4668560, Japan. atsuon@inst-hsc.jp.
+LA  - eng
+GR  - JP17K16292/Japan Society for the Promotion of Science/International
+GR  - JP16K10202/Japan Society for the Promotion of Science/International
+GR  - JP15K06795/Japan Society for the Promotion of Science/International
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20200524
+TA  - Mol Brain
+JT  - Molecular brain
+JID - 101468876
+RN  - 0 (DNA-Binding Proteins)
+RN  - 0 (Nuclear Proteins)
+RN  - 0 (Son protein, mouse)
+SB  - IM
+MH  - Abnormalities, Multiple/*genetics
+MH  - Animals
+MH  - Brain/metabolism
+MH  - *Cell Movement
+MH  - DNA-Binding Proteins/*genetics/metabolism
+MH  - Dendritic Spines/*pathology
+MH  - *Gene Knockdown Techniques
+MH  - HEK293 Cells
+MH  - Humans
+MH  - Mice
+MH  - Mutation/genetics
+MH  - Nuclear Proteins/*genetics/metabolism
+MH  - Pyramidal Cells/metabolism
+MH  - Syndrome
+PMC - PMC7245844
+OTO - NOTNLM
+OT  - *Brain malformation
+OT  - *Intellectual disability
+OT  - *Neuronal migration
+OT  - *SON
+OT  - *Spinogenesis
+OT  - *Zhu-Tokita-Takenouchi-Kim syndrome
+COIS- The authors declare that they have no competing interests.
+EDAT- 2020/05/26 06:00
+MHDA- 2021/06/05 06:00
+CRDT- 2020/05/26 06:00
+PHST- 2020/03/13 00:00 [received]
+PHST- 2020/05/12 00:00 [accepted]
+PHST- 2020/05/26 06:00 [entrez]
+PHST- 2020/05/26 06:00 [pubmed]
+PHST- 2021/06/05 06:00 [medline]
+AID - 10.1186/s13041-020-00622-4 [pii]
+AID - 622 [pii]
+AID - 10.1186/s13041-020-00622-4 [doi]
+PST - epublish
+SO  - Mol Brain. 2020 May 24;13(1):80. doi: 10.1186/s13041-020-00622-4.
+
+PMID- 34840333
+OWN - NLM
+STAT- Publisher
+LR  - 20211129
+IS  - 1476-5438 (Electronic)
+IS  - 1018-4813 (Linking)
+DP  - 2021 Nov 29
+TI  - Commentary on: Establishing the phenotypic spectrum of ZTTK syndrome by analysis of 
+      52 individuals with variants in SON.
+LID - 10.1038/s41431-021-01007-4 [doi]
+FAU - Palmer, Elizabeth Emma
+AU  - Palmer EE
+AD  - School of Women's and Children's Health, UNSW, Sydney, NSW, Australia. 
+      Elizabeth.palmer@unsw.edu.au.
+AD  - Sydney Childrens' Hospitals Network, Sydney, NSW, Australia. 
+      Elizabeth.palmer@unsw.edu.au.
+LA  - eng
+PT  - Journal Article
+DEP - 20211129
+PL  - England
+TA  - Eur J Hum Genet
+JT  - European journal of human genetics : EJHG
+JID - 9302235
+SB  - IM
+EDAT- 2021/11/30 06:00
+MHDA- 2021/11/30 06:00
+CRDT- 2021/11/29 06:20
+PHST- 2021/10/06 00:00 [received]
+PHST- 2021/11/08 00:00 [accepted]
+PHST- 2021/11/29 06:20 [entrez]
+PHST- 2021/11/30 06:00 [pubmed]
+PHST- 2021/11/30 06:00 [medline]
+AID - 10.1038/s41431-021-01007-4 [pii]
+AID - 10.1038/s41431-021-01007-4 [doi]
+PST - aheadofprint
+SO  - Eur J Hum Genet. 2021 Nov 29. doi: 10.1038/s41431-021-01007-4.
+
+PMID- 32045494
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210514
+LR  - 20210514
+IS  - 1525-1470 (Electronic)
+IS  - 0736-8046 (Linking)
+VI  - 37
+IP  - 3
+DP  - 2020 May
+TI  - Skin and nails abnormalities in a patient with ZTTK syndrome and a de novo mutation 
+      in SON.
+PG  - 517-519
+LID - 10.1111/pde.14113 [doi]
+AB  - Zhu-Tokita-Takenouchi-Kim (ZTTK) syndrome is a rare, severe, and recently described 
+      multisystem developmental disorder characterized by delayed psychomotor development 
+      and intellectual disability, characteristic facial features, hypotonia, poor overall 
+      growth, and visual abnormalities. Mucocutaneous manifestations have not been 
+      reported so far among individuals with ZTTK syndrome. Herein, we present a patient 
+      with ZTTK syndrome due to a de novo mutation in SON gene, who has dental 
+      abnormalities and retronychia of the toenails. We suggest that mucocutaneous 
+      features may be a part of the phenotype.
+CI  - © 2020 Wiley Periodicals, Inc.
+FAU - Quintana Castanedo, Lucía
+AU  - Quintana Castanedo L
+AUID- ORCID: 0000-0001-5136-841X
+AD  - Department of Dermatology, Hospital Universitario La Paz, Madrid, Spain.
+FAU - Sánchez Orta, Alba
+AU  - Sánchez Orta A
+AD  - Department of Dermatology, Hospital Universitario La Paz, Madrid, Spain.
+FAU - Maseda Pedrero, Rocío
+AU  - Maseda Pedrero R
+AD  - Department of Dermatology, Hospital Universitario La Paz, Madrid, Spain.
+FAU - Santos Simarro, Fernando
+AU  - Santos Simarro F
+AD  - Instituto de Genética Médica y Molecular (INGEMM), Hospital Universitario La Paz, 
+      IdiPaz, CIBERER, Madrid, Spain.
+FAU - Palomares Bralo, María
+AU  - Palomares Bralo M
+AD  - Instituto de Genética Médica y Molecular (INGEMM), Hospital Universitario La Paz, 
+      IdiPaz, CIBERER, Madrid, Spain.
+FAU - Feito Rodríguez, Marta
+AU  - Feito Rodríguez M
+AUID- ORCID: 0000-0002-2645-8904
+AD  - Department of Dermatology, Hospital Universitario La Paz, Madrid, Spain.
+FAU - de Lucas Laguna, Raúl
+AU  - de Lucas Laguna R
+AD  - Department of Dermatology, Hospital Universitario La Paz, Madrid, Spain.
+LA  - eng
+PT  - Case Reports
+DEP - 20200211
+PL  - United States
+TA  - Pediatr Dermatol
+JT  - Pediatric dermatology
+JID - 8406799
+SB  - IM
+MH  - Humans
+MH  - *Intellectual Disability/genetics
+MH  - Mutation
+MH  - Nails
+MH  - *Nails, Malformed/genetics
+MH  - Phenotype
+OTO - NOTNLM
+OT  - SON mutation
+OT  - enamel hypoplasia
+OT  - keratosis pilaris
+OT  - retronychia
+EDAT- 2020/02/12 06:00
+MHDA- 2021/05/15 06:00
+CRDT- 2020/02/12 06:00
+PHST- 2020/02/12 06:00 [pubmed]
+PHST- 2021/05/15 06:00 [medline]
+PHST- 2020/02/12 06:00 [entrez]
+AID - 10.1111/pde.14113 [doi]
+PST - ppublish
+SO  - Pediatr Dermatol. 2020 May;37(3):517-519. doi: 10.1111/pde.14113. Epub 2020 Feb 11.
+
+PMID- 32705777
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210531
+LR  - 20210531
+IS  - 2324-9269 (Electronic)
+IS  - 2324-9269 (Linking)
+VI  - 8
+IP  - 10
+DP  - 2020 Oct
+TI  - Phenotypic expansion in Zhu-Tokita-Takenouchi-Kim syndrome caused by de novo 
+      variants in the SON gene.
+PG  - e1432
+LID - 10.1002/mgg3.1432 [doi]
+LID - e1432
+AB  - BACKGROUND: The genetic etiology of intellectual and psychomotor disability without 
+      a defined spectrum of dysmorphic features is usually monogenic. As no diagnostic 
+      criteria for such diseases are established, the clinical diagnosis becomes to be a 
+      challenge. The object of our paper is to present two patients with non-specific 
+      clinical symptoms for whom whole-exome-sequencing identified the new SON mutations 
+      and thus allowed for establishing the diagnosis of Zhu-Tokita-Takenouchi-Kim (ZTTK) 
+      syndrome. In both patients, the same symptoms including hypotonia, developmental and 
+      speech delay, feeding difficulties as well as frequent infections of the respiratory 
+      tract and internal ear were observed. However, both cases presented also with 
+      exceptional symptoms such as in case 1 ventriculomegaly and asymmetry of ventricles, 
+      hypoplastic left heart syndrome (HLHS), intellectual disability, intestinal 
+      malrotation, gastroparesis, and duodenal atresia and in the case 2 febrile seizures 
+      and reduced IgA levels. We will be presenting the patients and comparing them to 30 
+      previously described cases. METHODS: Whole-exome sequencing (WES) was performed on 
+      the probands' DNA and paired-end sequenced (2x100 bp) on HiSeq 1500. Variants 
+      considered as disease-causing were validated in the proband and studied in all 
+      available family members by amplicon deep sequencing performed using Nextera XT Kit 
+      and sequenced on HiSeq 1500. RESULTS: We have identified two new variants in SON 
+      gene. In case 1 it has been a heterozygous frameshift variant p.(Ala1340GlnfsTer26), 
+      while in case 2 it has been a heterozygous frameshift variant, p.(Asp1640GlyfsTer7). 
+      Both variants are described for the first time and up to now, are not mentioned in 
+      any database. CONCLUSION: As there are no precise criteria established for the 
+      clinical diagnosis of ZTTK, an identification of SON gene mutation by 
+      whole-exome-sequencing is the best method that allows for a diagnosis of this 
+      syndrome.
+CI  - © 2020 The Authors. Molecular Genetics & Genomic Medicine published by Wiley 
+      Periodicals LLC.
+FAU - Slezak, Ryszard
+AU  - Slezak R
+AUID- ORCID: 0000-0001-6738-9565
+AD  - Department of Genetics, Wroclaw Medical University, Wroclaw, Poland.
+FAU - Smigiel, Robert
+AU  - Smigiel R
+AD  - Department of Pediatrics and Rare Disorders, Wroclaw Medical University, Wroclaw, 
+      Poland.
+FAU - Rydzanicz, Malgorzata
+AU  - Rydzanicz M
+AD  - Department of Medical Genetics, Medical University of Warsaw, Warsaw, Poland.
+FAU - Pollak, Agnieszka
+AU  - Pollak A
+AD  - Department of Medical Genetics, Medical University of Warsaw, Warsaw, Poland.
+FAU - Kosinska, Joanna
+AU  - Kosinska J
+AD  - Department of Medical Genetics, Medical University of Warsaw, Warsaw, Poland.
+FAU - Stawinski, Piotr
+AU  - Stawinski P
+AD  - Department of Medical Genetics, Medical University of Warsaw, Warsaw, Poland.
+FAU - Malgorzata Sasiadek, Maria
+AU  - Malgorzata Sasiadek M
+AD  - Department of Genetics, Wroclaw Medical University, Wroclaw, Poland.
+FAU - Ploski, Rafal
+AU  - Ploski R
+AUID- ORCID: 0000-0001-6286-5526
+AD  - Department of Medical Genetics, Medical University of Warsaw, Warsaw, Poland.
+LA  - eng
+PT  - Case Reports
+PT  - Journal Article
+PT  - Research Support, Non-U.S. Gov't
+DEP - 20200724
+TA  - Mol Genet Genomic Med
+JT  - Molecular genetics & genomic medicine
+JID - 101603758
+RN  - 0 (DNA-Binding Proteins)
+RN  - 0 (Minor Histocompatibility Antigens)
+RN  - 0 (SON protein, human)
+SB  - IM
+MH  - Abnormalities, Multiple/*genetics/pathology
+MH  - Child, Preschool
+MH  - DNA-Binding Proteins/*genetics
+MH  - Developmental Disabilities/*genetics/pathology
+MH  - Frameshift Mutation
+MH  - Heterozygote
+MH  - Humans
+MH  - Intellectual Disability/*genetics/pathology
+MH  - Male
+MH  - Minor Histocompatibility Antigens/*genetics
+MH  - *Phenotype
+MH  - Syndrome
+PMC - PMC7549597
+OTO - NOTNLM
+OT  - *SON gene
+OT  - *Zhu-Tokita-Takenouchi-Kim syndrome
+OT  - *intellectual disability
+OT  - *psychomotor delay
+COIS- The authors report no conflicts of interest. The authors alone are responsible for 
+      the content and writing of this article. Written informed consent was obtained from 
+      the patient for the publication of this case study and any accompanying images.
+EDAT- 2020/07/25 06:00
+MHDA- 2021/06/01 06:00
+CRDT- 2020/07/25 06:00
+PHST- 2020/04/28 00:00 [received]
+PHST- 2020/07/02 00:00 [revised]
+PHST- 2020/07/10 00:00 [accepted]
+PHST- 2020/07/25 06:00 [pubmed]
+PHST- 2021/06/01 06:00 [medline]
+PHST- 2020/07/25 06:00 [entrez]
+AID - MGG31432 [pii]
+AID - 10.1002/mgg3.1432 [doi]
+PST - ppublish
+SO  - Mol Genet Genomic Med. 2020 Oct;8(10):e1432. doi: 10.1002/mgg3.1432. Epub 2020 Jul 
+      24.
+
+PMID- 32926520
+OWN - NLM
+STAT- MEDLINE
+DCOM- 20210607
+LR  - 20210607
+IS  - 2324-9269 (Electronic)
+IS  - 2324-9269 (Linking)
+VI  - 8
+IP  - 11
+DP  - 2020 Nov
+TI  - A de novo heterozygous variant in the SON gene is associated with 
+      Zhu-Tokita-Takenouchi-Kim syndrome.
+PG  - e1496
+LID - 10.1002/mgg3.1496 [doi]
+LID - e1496
+AB  - BACKGROUND: Zhu-Tokita-Takenouchi-Kim (ZTTK, OMIM# 617140) syndrome is a rare, 
+      autosomal dominant genetic disorder caused by heterozygous variants in the SON gene 
+      (OMIM#182465, GenBank#NC_000021.9). There are only 33 cases and 26 causative SON 
+      variants reported to date since the first report in 2015. Here, we report a new case 
+      of ZTTK syndrome and a de novo disease-causing SON variant. METHODS: We conducted 
+      whole-exome sequencing (WES) to obtain genetic data of the patient. The clinical and 
+      genetic data of the patient were analyzed. RESULTS: The clinical features of our 
+      patient were strikingly similar to previously reported cases. Notably, our patient 
+      had unique presentations, including a bridged palmar crease in the left hand and 
+      growth hormone deficiency. The c.5297del de novo variant in SON causes an amino 
+      change (p.Ser1766Leufs*7). CONCLUSION: Our report expands the mutant spectrum of the 
+      SON gene and refines the genotype-phenotype map of ZTTK syndrome. Our findings also 
+      highlighted the importance of WES for early diagnosis of ZTTK syndrome, which may 
+      improve diagnostic procedures for affected individuals.
+CI  - © 2020 The Authors. Molecular Genetics & Genomic Medicine published by Wiley 
+      Periodicals LLC.
+FAU - Yang, Lianlian
+AU  - Yang L
+AUID- ORCID: 0000-0002-3399-2099
+AD  - Department of Child Health, West China Second University Hospital, Sichuan 
+      University, Chengdu, China.
+AD  - Key Laboratory of Birth Defects and Related Diseases of Women and Children, Ministry 
+      of Education, Sichuan University, Chengdu, China.
+FAU - Yang, Fan
+AU  - Yang F
+AUID- ORCID: 0000-0002-6776-6890
+AD  - Department of Child Health, West China Second University Hospital, Sichuan 
+      University, Chengdu, China.
+AD  - Key Laboratory of Birth Defects and Related Diseases of Women and Children, Ministry 
+      of Education, Sichuan University, Chengdu, China.
+LA  - eng
+PT  - Case Reports
+PT  - Journal Article
+DEP - 20200914
+TA  - Mol Genet Genomic Med
+JT  - Molecular genetics & genomic medicine
+JID - 101603758
+RN  - 0 (DNA-Binding Proteins)
+RN  - 0 (Minor Histocompatibility Antigens)
+RN  - 0 (SON protein, human)
+RN  - 9002-72-6 (Growth Hormone)
+SB  - IM
+MH  - Child
+MH  - DNA-Binding Proteins/*genetics
+MH  - Developmental Disabilities/*genetics/pathology
+MH  - Exome
+MH  - Female
+MH  - Growth Hormone/deficiency
+MH  - Hand Deformities, Congenital/*genetics/pathology
+MH  - Heterozygote
+MH  - Humans
+MH  - Intellectual Disability/*genetics/pathology
+MH  - Minor Histocompatibility Antigens/*genetics
+MH  - Mutation
+MH  - Phenotype
+MH  - Syndrome
+PMC - PMC7667370
+COIS- We declare that we have no competing interests.
+EDAT- 2020/09/15 06:00
+MHDA- 2021/06/08 06:00
+CRDT- 2020/09/14 15:51
+PHST- 2020/05/21 00:00 [received]
+PHST- 2020/07/30 00:00 [revised]
+PHST- 2020/08/21 00:00 [accepted]
+PHST- 2020/09/15 06:00 [pubmed]
+PHST- 2021/06/08 06:00 [medline]
+PHST- 2020/09/14 15:51 [entrez]
+AID - MGG31496 [pii]
+AID - 10.1002/mgg3.1496 [doi]
+PST - ppublish
+SO  - Mol Genet Genomic Med. 2020 Nov;8(11):e1496. doi: 10.1002/mgg3.1496. Epub 2020 Sep 
+      14.
+
+PMID- 35080253
+OWN - NLM
+STAT- Publisher
+LR  - 20220203
+IS  - 1873-474X (Electronic)
+IS  - 0736-5748 (Linking)
+DP  - 2022 Jan 26
+TI  - A novel de novo frameshift variation in the SON gene causing severe global 
+      developmental delay and seizures in a Chinese female.
+LID - 10.1002/jdn.10170 [doi]
+AB  - BACKGROUND: With the rapid development of genetic detection technology, especially 
+      next-generation sequencing, identification of the aetiology of unexplained 
+      intellectual disabilities accompanied by seizures and other dysmorphic features has 
+      become possible. The purpose of our paper is to make a definitive diagnosis of a 
+      girl with neonatal hypotonia, severe global developmental delay, seizures and mild 
+      facial dysmorphism. METHODS: The clinical data of the patient were retrospectively 
+      studied. Whole-exome sequencing was performed on a blood sample from the patient. 
+      Subsequently, Sanger sequencing was utilized for validation of variants and parental 
+      validation. RESULTS: The patient had hypotonia since the neonatal period. She showed 
+      a significant delay in physical and psychomotor development. She did not have any 
+      speech until the age of 2 years and 6 months. She had seizures that were easy to 
+      control with levetiracetam. The craniocerebral magnetic resonance imaging (MRI) then 
+      showed mild delayed myelination, enlarged bilateral ventricles and widened 
+      frontotemporal extracerebral space. Interictal video electroencephalogram (VEEG) was 
+      normal. She had esotropia and mild facial abnormalities with a flat nasal bridge and 
+      a short nose. She showed no abnormalities in the heart, genitourinary or skeletal 
+      systems. Whole-exome sequencing revealed a novel de novo variant c.5334_5335delAG 
+      (p. Arg1778Serfs*11) in the SON gene. CONCLUSION: Our paper reports a novel variant 
+      in the SON gene and provides a definitive diagnosis of a female with neonatal 
+      hypotonia, severe global developmental delay, seizures and mild facial 
+      abnormalities, which are symptoms consistent with Zhu-Tokita-Takenouchi-Kim syndrome 
+      (ZTTK syndrome).
+CI  - © 2022 International Society for Developmental Neuroscience.
+FAU - Yi, Zhi
+AU  - Yi Z
+AD  - Department of Pediatrics, The Affiliated Hospital of Qingdao University, Qingdao, 
+      China.
+FAU - Song, Zhenfeng
+AU  - Song Z
+AUID- ORCID: 0000-0002-7652-4893
+AD  - Department of Pediatrics, The Affiliated Hospital of Qingdao University, Qingdao, 
+      China.
+FAU - Li, Fei
+AU  - Li F
+AD  - Department of Pediatrics, The Affiliated Hospital of Qingdao University, Qingdao, 
+      China.
+FAU - Yang, Chengqing
+AU  - Yang C
+AD  - Department of Pediatrics, The Affiliated Hospital of Qingdao University, Qingdao, 
+      China.
+FAU - Xue, Jiao
+AU  - Xue J
+AD  - Department of Pediatrics, The Affiliated Hospital of Qingdao University, Qingdao, 
+      China.
+FAU - Li, Lei
+AU  - Li L
+AD  - Department of Pediatrics, The Affiliated Hospital of Qingdao University, Qingdao, 
+      China.
+FAU - Zhang, Mengxue
+AU  - Zhang M
+AD  - Department of Pediatrics, The Affiliated Hospital of Qingdao University, Qingdao, 
+      China.
+FAU - Zhang, Ying
+AU  - Zhang Y
+AUID- ORCID: 0000-0002-6360-6566
+AD  - Department of Pediatrics, The Affiliated Hospital of Qingdao University, Qingdao, 
+      China.
+LA  - eng
+GR  - tsqn201909191/Taishan Scholars Program of Shandong Province/
+PT  - Journal Article
+DEP - 20220126
+PL  - United States
+TA  - Int J Dev Neurosci
+JT  - International journal of developmental neuroscience : the official journal of the 
+      International Society for Developmental Neuroscience
+JID - 8401784
+SB  - IM
+OTO - NOTNLM
+OT  - SON
+OT  - ZTTK syndrome
+OT  - developmental delay
+OT  - seizures
+EDAT- 2022/01/27 06:00
+MHDA- 2022/01/27 06:00
+CRDT- 2022/01/26 08:38
+PHST- 2022/01/19 00:00 [revised]
+PHST- 2021/09/02 00:00 [received]
+PHST- 2022/01/21 00:00 [accepted]
+PHST- 2022/01/27 06:00 [pubmed]
+PHST- 2022/01/27 06:00 [medline]
+PHST- 2022/01/26 08:38 [entrez]
+AID - 10.1002/jdn.10170 [doi]
+PST - aheadofprint
+SO  - Int J Dev Neurosci. 2022 Jan 26. doi: 10.1002/jdn.10170.

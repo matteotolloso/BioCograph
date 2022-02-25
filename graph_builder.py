@@ -25,11 +25,11 @@ OR DBP5[Title/Abstract]'
 """
 
 
-def build_dataset(datasetPath : str) -> dict:
+def build_dataset(pubMedFilePath : str , pathToSave : str) -> dict:
     
     articlesStr : list[str] = []
     content = ''
-    with open(datasetPath,'r') as file:
+    with open(pubMedFilePath,'r') as file:
         content = file.read()
     
     articlesStr = list(map(lambda x: x.replace('\n      ', ' '), content.split("\n\n")))
@@ -77,12 +77,13 @@ def build_dataset(datasetPath : str) -> dict:
         for den in denotations:
             begin = den.get('span').get('begin')
             end = den.get('span').get('end')
-            entity = response[0].get('text')[begin:end]
-            dict[id].get('bioBERT_entities').append(entity)
+            entity_type = den.get('obj')
+            entity_name = response[0].get('text')[begin:end]
+            dict[id].get('bioBERT_entities').append((entity_name, entity_type))
         
     dataset_string_json = json.dumps(dict, indent=4)
 
-    with open('dataset.json', 'w') as file:
+    with open(pathToSave, 'w') as file:
         file.write(dataset_string_json)
         
         
@@ -97,7 +98,15 @@ def extract_mesh(articles : dict) -> set:
     return mesh_terms
 
 
-def build_cooccurrences_graph(articles : dict, mh = True, rn = True, ot = True, bbent=True, check_tags=[], thesaurus={}) -> nx.Graph:
+def build_cooccurrences_graph(  articles : dict, 
+                                mh = True, 
+                                rn = True, 
+                                ot = True, 
+                                bbent=True, 
+                                check_tags=[], 
+                                thesaurus={},
+                                bbent_types = ['disease', 'gene', 'drug', 'species']) -> nx.Graph:
+    
     graph = nx.Graph()
 
     for art in articles.values():
@@ -215,7 +224,7 @@ def main():
             file.write(tabulate(nodes, headers=['Entity', 'Number of occurrences'], tablefmt='orgtbl'))
 
     main_nodes = []
-    for i in range(15):
+    for i in range(100):
         main_nodes.append(nodes[i][0])
     
     main_graph = cooccurrences_graph.subgraph(main_nodes)
@@ -224,7 +233,13 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    #build_dataset('pubmed-SONTitleAb-set.txt', 'dataset_SON.json')
+    f = open( 'dataset_SON.json', 'r')
+    cont = f.read()
+    articles = json.loads(cont)
+    ents = articles['32041247'].get('bioBERT_entities')[0][1]
+    print(ents)
+    #main()
     
     
     
