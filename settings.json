@@ -2,19 +2,19 @@
     "dataset": [
         [
             "./annotated_dataset/dataset_SON.json",
-            true
+            false
         ],
         [
             "./annotated_dataset/dataset_ZTTK.json",
-            false
+            true
         ],
         [
             "./annotated_dataset/dataset_nonspecifi.json",
-            false
+            true
         ],
         [
             "./annotated_dataset/dataset_brainoligo.json",
-            false
+            true
         ]
     ],
     "check_tags": [
@@ -31,7 +31,8 @@
             "C21orf50",
             "DBP5",
             "SON3",
-            "Dbp5"
+            "Dbp5",
+            "Son"
         ],
         "ZTTK": [
             "ZTTK"
@@ -53,6 +54,12 @@
     "RNnumber": false,
     "OtherTerms": false,
     "bioBERT": true,
-    "numb_graph_nodes": 30,
-    "always present" : []
+    "numb_graph_nodes": 75,
+    "always_present" : ["SON"],
+    "bioBERT_entity_types" : {
+        "gene" : true, 
+        "disease" : true,
+        "species" : true,
+        "drug" : true
+    }
 }
