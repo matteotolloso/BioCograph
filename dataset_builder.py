@@ -69,4 +69,4 @@ def build_dataset(pubMedFilePath : str , pathToSave : str) -> dict:
     return dict
 
 if __name__ == "__main__":
-   build_dataset(sys.argv[0], sys.argv[1])
+   build_dataset(sys.argv[1], sys.argv[2])
