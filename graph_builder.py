@@ -104,9 +104,9 @@ def main():
         cont = f.read()
         settings = json.loads(cont)
 
-    for ds, bo in settings.get('dataset'):
-        if bo:
-            with open(ds, 'r') as f:
+    for k, v in settings.get('dataset').items():
+        if v:
+            with open(k, 'r') as f:
                 articles.update(json.loads(f.read()))
             
     print('Numero di articoli: ', len(articles.keys()))

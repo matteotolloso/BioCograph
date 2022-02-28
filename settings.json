@@ -1,26 +1,32 @@
 {
-    "dataset": [
-        [
-            "./annotated_dataset/dataset_SON.json",
-            false
-        ],
-        [
-            "./annotated_dataset/dataset_ZTTK.json",
-            true
-        ],
-        [
-            "./annotated_dataset/dataset_nonspecifi.json",
-            true
-        ],
-        [
-            "./annotated_dataset/dataset_brainoligo.json",
-            true
-        ]
-    ],
+    "dataset": {
+        "./annotated_dataset/dataset_SON.json" : false,
+        "./annotated_dataset/dataset_ZTTK.json" : true,
+        "./annotated_dataset/dataset_nonspecifi.json" : true,
+        "./annotated_dataset/dataset_brainoligo.json" : true 
+    },
+    
+    "MeSH": false,  
+    "RNnumber": false,  
+    "OtherTerms": false,  
+    "bioBERT": true, 
+    
+    "bioBERT_entity_types" : {
+        "gene" : true, 
+        "disease" : true,
+        "species" : true,
+        "drug" : true,
+        "mutation" : true
+    },
+    
+    "numb_graph_nodes": 75,  
+    "always_present" : ["SON"],
+    
     "check_tags": [
         "Humans",
         "Animals"
     ],
+    
     "thresaurs": {
         "SON": [
             "SON",
@@ -47,19 +53,5 @@
         "oligoastrocytoma": [
             "oligoastrocytoma"
         ]
-        
-
-    },
-    "MeSH": false,
-    "RNnumber": false,
-    "OtherTerms": false,
-    "bioBERT": true,
-    "numb_graph_nodes": 75,
-    "always_present" : ["SON"],
-    "bioBERT_entity_types" : {
-        "gene" : true, 
-        "disease" : true,
-        "species" : true,
-        "drug" : true
     }
 }
