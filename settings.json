@@ -1,9 +1,12 @@
 {
     "dataset": {
-        "./annotated_dataset/dataset_SON.json" : false,
+        "./annotated_dataset/dataset_SON.json" : true,
         "./annotated_dataset/dataset_ZTTK.json" : true,
         "./annotated_dataset/dataset_nonspecifi.json" : true,
-        "./annotated_dataset/dataset_brainoligo.json" : true 
+        "./annotated_dataset/dataset_brainoligo.json" : false,
+        "./annotated_dataset/dataset_Replicatio.json" : false, 
+        "./annotated_dataset/dataset_Splicingof.json" : false
+
     },
     
     "MeSH": false,  
@@ -12,15 +15,15 @@
     "bioBERT": true, 
     
     "bioBERT_entity_types" : {
-        "gene" : true, 
+        "gene" : false, 
         "disease" : true,
-        "species" : true,
-        "drug" : true,
-        "mutation" : true
+        "species" : false,
+        "drug" : false,
+        "mutation" : false
     },
     
-    "numb_graph_nodes": 75,  
-    "always_present" : ["SON"],
+    "numb_graph_nodes": 10,  
+    "always_present" : ["SON", "ZTTK", "ASD"],
     
     "check_tags": [
         "Humans",
@@ -38,10 +41,12 @@
             "DBP5",
             "SON3",
             "Dbp5",
-            "Son"
+            "Son",
+            "son"
         ],
         "ZTTK": [
-            "ZTTK"
+            "ZTTK", 
+            "Zhu-Tokita-Takenouchi-Kim syndrome"
         ],
         "oligodendroglioma": [
             "oligodendroglioma"
