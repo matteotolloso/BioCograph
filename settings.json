@@ -2,7 +2,7 @@
     "dataset": {
         "./annotated_dataset/dataset_SON.json" : true,
         "./annotated_dataset/dataset_ZTTK.json" : true,
-        "./annotated_dataset/dataset_nonspecifi.json" : true,
+        "./annotated_dataset/dataset_nonspecifi.json" : false,
         "./annotated_dataset/dataset_brainoligo.json" : false,
         "./annotated_dataset/dataset_Replicatio.json" : false, 
         "./annotated_dataset/dataset_Splicingof.json" : false
@@ -15,11 +15,11 @@
     "bioBERT": true, 
     
     "bioBERT_entity_types" : {
-        "gene" : false, 
+        "gene" : true, 
         "disease" : true,
-        "species" : false,
-        "drug" : false,
-        "mutation" : false
+        "species" : true,
+        "drug" : true,
+        "mutation" : true
     },
     
     "numb_graph_nodes": 10,  
