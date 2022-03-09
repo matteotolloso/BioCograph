@@ -6,34 +6,32 @@ import matplotlib.pyplot as plt
 from numpy import block
 from tabulate import tabulate
 import json
+from queue import PriorityQueue
 
  
 # Function to return the maximum weight
 # in the widest path of the given graph
 def widest_path(graph : nx.Graph, src, target):
-     
+    print(src, target)
     # To keep track of widest distance
     widest  = {}
     for key in graph.nodes():
         widest[key] = -10**9
     
- 
     # To get the path at the end of the algorithm
     parent = {}
  
     # Use of Minimum Priority Queue to keep track minimum
     # widest distance vertex so far in the algorithm
-    container = []
-    container.append((src, 0))
-    container.sort(key=lambda x:x[1]) # sort on second element of tuple
+    pri_queue = PriorityQueue()
+    pri_queue.put((0, src))
     widest[src] = 10**9
-    while (len(container)>0):
+    while (not pri_queue.empty()):
 
-        current_src = (container[-1])[0]
-        del container[-1]
+        current_src = pri_queue.get()[1] # second element of the tuple
+
         for vertex in graph.neighbors(current_src):
 
- 
             # Finding the widest distance to the vertex
             # using current_source vertex's widest distance
             # and its widest distance so far
@@ -49,8 +47,8 @@ def widest_path(graph : nx.Graph, src, target):
                 parent[vertex] = current_src
  
                 # Adding the relaxed edge in the priority queue
-                container.append((vertex, distance))
-                container.sort(key=lambda x:x[1])
+                pri_queue.put((distance, vertex))
+
     
     current = target
     path = []
@@ -62,7 +60,6 @@ def widest_path(graph : nx.Graph, src, target):
     return path
  
 
-
 def build_cooccurrences_graph(  articles : dict, 
                                 mh = True, 
                                 rn = True, 
@@ -70,6 +67,7 @@ def build_cooccurrences_graph(  articles : dict,
                                 bbent=True, 
                                 check_tags=[], 
                                 thesaurus={},
+                                alw_pres=[],
                                 bbent_types = {}) -> nx.Graph:
     
     graph = nx.Graph()
@@ -87,6 +85,9 @@ def build_cooccurrences_graph(  articles : dict,
         if bbent:
             ents = art.get('bioBERT_entities') #list of touples (name, type)
             for ent in ents:
+                if ent in alw_pres:
+                    terms.append(ent)
+                    continue
                 if bbent_types.get(ent[1]) :
                     terms.append(ent[0])
 
@@ -165,10 +166,9 @@ def main():
                 articles.update(json.loads(f.read()))
             
     print('Numero di articoli: ', len(articles.keys()))
-
-    #mesh_terms : set = extract_mesh(articles)
-    #print('Numero di MeSH diversi: ', len(mesh_terms))
-
+    
+    settings.get('always_present').append(settings.get('hilight_path').get('source'))
+    settings.get('always_present').append(settings.get('hilight_path').get('destination'))
 
     cooccurrences_graph = build_cooccurrences_graph(articles, 
                                                     check_tags=settings.get('check_tags'), 
@@ -176,6 +176,7 @@ def main():
                                                     mh=settings.get('MeSH'), 
                                                     ot=settings.get('OtherTerms'), 
                                                     thesaurus=settings.get('thresaurs'),
+                                                    alw_pres=settings.get('always_present'),
                                                     bbent_types=settings.get('bioBERT_entity_types')
                                                     )
 
@@ -196,7 +197,7 @@ def main():
             file.write(tabulate(nodes, headers=['Entity', 'Number of occurrences'], tablefmt='orgtbl'))
 
     main_nodes = []
-    for i in range( min(settings.get('numb_graph_nodes'), len(nodes))):
+    for i in range( min(settings.get('numb_graph_nodes'), len(cooccurrences_graph.nodes()))):
         main_nodes.append(nodes[i][0])
     
     for n in settings.get('always_present'):
@@ -205,12 +206,8 @@ def main():
 
     main_graph = cooccurrences_graph.subgraph(main_nodes)
 
-    src = "ZTTK"
-    dest = "NPC"
-    
-    res = widest_path(cooccurrences_graph, src, dest)
-
-    print("widest path from",src, "to", dest, ": ", res)
+    res = widest_path(cooccurrences_graph,  settings.get('hilight_path').get('source'),  settings.get('hilight_path').get('destination'))
+    print("widest path from", settings.get('hilight_path').get('source'), "to",  settings.get('hilight_path').get('destination'), ": ", res)
 
 
     draw(main_graph)

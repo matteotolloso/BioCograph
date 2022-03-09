@@ -2,10 +2,10 @@
     "dataset": {
         "./annotated_dataset/dataset_SON.json" : true,
         "./annotated_dataset/dataset_ZTTK.json" : true,
-        "./annotated_dataset/dataset_nonspecifi.json" : false,
-        "./annotated_dataset/dataset_brainoligo.json" : false,
-        "./annotated_dataset/dataset_Replicatio.json" : false, 
-        "./annotated_dataset/dataset_Splicingof.json" : false
+        "./annotated_dataset/dataset_nonspecifi.json" : true,
+        "./annotated_dataset/dataset_brainoligo.json" : true,
+        "./annotated_dataset/dataset_Replicatio.json" : true, 
+        "./annotated_dataset/dataset_Splicingof.json" : true
 
     },
     
@@ -16,14 +16,18 @@
     
     "bioBERT_entity_types" : {
         "gene" : true, 
-        "disease" : true,
-        "species" : true,
-        "drug" : true,
-        "mutation" : true
+        "disease" : false,
+        "species" : false,
+        "drug" : false,
+        "mutation" : false
     },
     
-    "numb_graph_nodes": 10,  
-    "always_present" : ["SON", "ZTTK", "ASD"],
+    "numb_graph_nodes": 20,  
+    "always_present" : ["SON", "ZTTK", "ASD", "mental retardation"],
+    "hilight_path": {
+        "source" : "p53",
+        "destination" : "ZTTK"
+    },
     
     "check_tags": [
         "Humans",
