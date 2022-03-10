@@ -1,18 +1,16 @@
 from builtins import dict
-from textwrap import indent
 import networkx as nx
-from itertools import combinations
+from itertools import combinations, starmap
 import matplotlib.pyplot as plt
-from numpy import block
 from tabulate import tabulate
 import json
 from queue import PriorityQueue
+import time
 
  
 # Function to return the maximum weight
 # in the widest path of the given graph
 def widest_path(graph : nx.Graph, src, target):
-    print(src, target)
     # To keep track of widest distance
     widest  = {}
     for key in graph.nodes():
@@ -35,27 +33,28 @@ def widest_path(graph : nx.Graph, src, target):
             # Finding the widest distance to the vertex
             # using current_source vertex's widest distance
             # and its widest distance so far
-            distance = max(widest[vertex], min(widest[current_src], graph[current_src][vertex]['capacity']))
+            width = max(widest[vertex], min(widest[current_src], graph[current_src][vertex]['capacity']))
  
             # Relaxation of edge and adding into Priority Queue
-            if (distance > widest[vertex]):
+            if (width > widest[vertex]):
  
                 # Updating bottle-neck distance
-                widest[vertex] = distance
+                widest[vertex] = width
  
                 # To keep track of parent
                 parent[vertex] = current_src
  
                 # Adding the relaxed edge in the priority queue
-                pri_queue.put((distance, vertex))
+                # greater width -> greater priority -> lower value
+                pri_queue.put((width * -1, vertex))
 
-    
     current = target
     path = []
     while current != src:
         path.append(current)
         current = parent[current]
     path.append(src)
+    path.reverse()
 
     return path
  
@@ -91,6 +90,7 @@ def build_cooccurrences_graph(  articles : dict,
                 if bbent_types.get(ent[1]) :
                     terms.append(ent[0])
 
+        terms = list(map(lambda x : x.lower(), terms))
         #remove check tags
         terms = list(filter(lambda x: x not in check_tags, terms))
         
@@ -125,7 +125,7 @@ def build_cooccurrences_graph(  articles : dict,
     
     return graph
 
-def draw(graph: nx.Graph):
+def draw(graph: nx.Graph, path=[]):
    
     #layout
     pos = nx.spring_layout(graph, weight='capacity', seed=1)
@@ -133,16 +133,23 @@ def draw(graph: nx.Graph):
 
     #edges
     edgewidth = [ (graph[u][v]['capacity'] * 0.8) for u, v in graph.edges()]
+    edge_colors = []
+    if len(path) <= 2:
+        edge_colors = ["r" if u in path and v in path else "m" for u, v in graph.edges()]
+    else:
+        edge_colors = ["r" if u in path and v in path and ((u, v) != (path[0], path[-1]) and (v, u) != (path[0], path[-1])) else "m" for u, v in graph.edges() ]
+
     maxi = max(edgewidth)
     edgewidth = list(map( lambda x : 50.0 * (x/float(maxi)), edgewidth))
-    #nx.draw_networkx_edges(graph, pos, alpha=0.3, width=edgewidth, edge_color="m", edgelist=graph.edges(nbunch='SON'))
-    nx.draw_networkx_edges(graph, pos, alpha=0.3, width=edgewidth, edge_color="m")
+    #edgecolor = list(map(lambda x: "m" if x not in))
+    nx.draw_networkx_edges(graph, pos, alpha=0.3, width=edgewidth, edge_color=edge_colors)
     
     #nodes
     nodesize = [ (graph.nodes[v]['weight']* 2) for v in graph.nodes()]
     maxi = max(nodesize)
     nodesize = list(map( lambda x : 7000.0 * x/float(maxi), nodesize))
-    nx.draw_networkx_nodes(graph, pos, node_size=nodesize, node_color="b", alpha=0.9)
+    node_colors = ["r" if u in path else "b" for u in graph.nodes()]
+    nx.draw_networkx_nodes(graph, pos, node_size=nodesize, node_color=node_colors, alpha=0.9)
     label_options = {"ec": "k", "fc": "white", "alpha": 0.5}
     nx.draw_networkx_labels(graph, pos, font_size=10, bbox=label_options)
 
@@ -206,11 +213,12 @@ def main():
 
     main_graph = cooccurrences_graph.subgraph(main_nodes)
 
+    start = time.time()
     res = widest_path(cooccurrences_graph,  settings.get('hilight_path').get('source'),  settings.get('hilight_path').get('destination'))
     print("widest path from", settings.get('hilight_path').get('source'), "to",  settings.get('hilight_path').get('destination'), ": ", res)
+    print("time: ", time.time() - start)
 
-
-    draw(main_graph)
+    draw(main_graph, res)
 
 
 if __name__ == "__main__":

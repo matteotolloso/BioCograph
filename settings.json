@@ -2,11 +2,10 @@
     "dataset": {
         "./annotated_dataset/dataset_SON.json" : true,
         "./annotated_dataset/dataset_ZTTK.json" : true,
-        "./annotated_dataset/dataset_nonspecifi.json" : true,
-        "./annotated_dataset/dataset_brainoligo.json" : true,
-        "./annotated_dataset/dataset_Replicatio.json" : true, 
-        "./annotated_dataset/dataset_Splicingof.json" : true
-
+        "./annotated_dataset/dataset_nonspecifi.json" : false,
+        "./annotated_dataset/dataset_brainoligo.json" : false,
+        "./annotated_dataset/dataset_Replicatio.json" : false, 
+        "./annotated_dataset/dataset_Splicingof.json" : false
     },
     
     "MeSH": false,  
@@ -16,16 +15,16 @@
     
     "bioBERT_entity_types" : {
         "gene" : true, 
-        "disease" : false,
-        "species" : false,
-        "drug" : false,
-        "mutation" : false
+        "disease" : true,
+        "species" : true,
+        "drug" : true,
+        "mutation" : true
     },
     
-    "numb_graph_nodes": 20,  
+    "numb_graph_nodes": 50,  
     "always_present" : ["SON", "ZTTK", "ASD", "mental retardation"],
     "hilight_path": {
-        "source" : "p53",
+        "source" : "developmental delay",
         "destination" : "ZTTK"
     },
     
@@ -40,6 +39,7 @@
             "NREBP",
             "DBP-5",
             "NRE-Binding Protein",
+            "NRE-binding protein",
             "KIAA1019",
             "C21orf50",
             "DBP5",
