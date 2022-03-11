@@ -2,8 +2,8 @@
     "dataset": {
         "./annotated_dataset/dataset_SON.json" : true,
         "./annotated_dataset/dataset_ZTTK.json" : true,
-        "./annotated_dataset/dataset_nonspecifi.json" : false,
-        "./annotated_dataset/dataset_brainoligo.json" : false,
+        "./annotated_dataset/dataset_nonspecifi.json" : true,
+        "./annotated_dataset/dataset_brainoligo.json" : true,
         "./annotated_dataset/dataset_Replicatio.json" : false, 
         "./annotated_dataset/dataset_Splicingof.json" : false
     },
@@ -22,10 +22,10 @@
     },
     
     "numb_graph_nodes": 50,  
-    "always_present" : ["SON", "ZTTK", "ASD", "mental retardation"],
+    "always_present" : [],
     "hilight_path": {
-        "source" : "developmental delay",
-        "destination" : "ZTTK"
+        "source" : "son",
+        "destination" : "zttk"
     },
     
     "check_tags": [
@@ -34,7 +34,7 @@
     ],
     
     "thresaurs": {
-        "SON": [
+        "son": [
             "SON",
             "NREBP",
             "DBP-5",
@@ -48,7 +48,7 @@
             "Son",
             "son"
         ],
-        "ZTTK": [
+        "zttk": [
             "ZTTK", 
             "Zhu-Tokita-Takenouchi-Kim syndrome"
         ],

@@ -6,6 +6,7 @@ from tabulate import tabulate
 import json
 from queue import PriorityQueue
 import time
+import threading
 
  
 # Function to return the maximum weight
@@ -157,26 +158,44 @@ def draw(graph: nx.Graph, path=[]):
     plt.axis("off")
     plt.show()
 
-   
+def connected_components(graph : nx.Graph):
+    con_comp = nx.number_connected_components(graph)
+    print('Il grafo ha: ',con_comp , ' componenti connesse')
+
+def clusetring(graph : nx.Graph):
+    clust = nx.average_clustering(graph)
+    print('Coefficiente di clustering: ', clust)
+
+def save_cooccurences(graph : nx.Graph):
+    cooccurrences_list = list(graph.edges.data('capacity'))
+    cooccurrences_list.sort(key = lambda x:x[2], reverse=True)
+    with open('./results/cooccurrences.txt', 'w') as file:
+            file.write(tabulate(cooccurrences_list,  headers=['Entity', 'Entity', 'Number of cooccurrences'],  tablefmt='orgtbl'))
+
 def main():
 
     settings = {}
     articles = {}
 
+    #load setting
     with open('settings.json', 'r') as f:
         cont = f.read()
         settings = json.loads(cont)
-
+   
+    #load dataset
+    print("Loading dataset...")
     for k, v in settings.get('dataset').items():
         if v:
             with open(k, 'r') as f:
                 articles.update(json.loads(f.read()))
-            
+    print("Dataset OK")
+
     print('Numero di articoli: ', len(articles.keys()))
     
     settings.get('always_present').append(settings.get('hilight_path').get('source'))
     settings.get('always_present').append(settings.get('hilight_path').get('destination'))
 
+    print("Building graph")
     cooccurrences_graph = build_cooccurrences_graph(articles, 
                                                     check_tags=settings.get('check_tags'), 
                                                     rn=settings.get('RNnumber'), 
@@ -186,18 +205,18 @@ def main():
                                                     alw_pres=settings.get('always_present'),
                                                     bbent_types=settings.get('bioBERT_entity_types')
                                                     )
-
+    print("Graph OK")
     print('Grafo delle co-occorrenze:\n\tNodi: ', len(cooccurrences_graph.nodes), '\n\tArchi: ', len(cooccurrences_graph.edges))
 
-    cooccurrences_list = list(cooccurrences_graph.edges.data('capacity'))
-    cooccurrences_list.sort(key = lambda x:x[2], reverse=True)
-    with open('./results/cooccurrences.txt', 'w') as file:
-            file.write(tabulate(cooccurrences_list,  headers=['Entity', 'Entity', 'Number of cooccurrences'],  tablefmt='orgtbl'))
+    
+    my_threads = []
+    my_threads.append(threading.Thread(target=connected_components, args=(cooccurrences_graph,)))
+    my_threads.append(threading.Thread(target=clusetring, args=(cooccurrences_graph,)))
+    my_threads.append(threading.Thread(target=save_cooccurences, args=(cooccurrences_graph,)))
+    for t in my_threads:
+        t.start()
 
-    #print('Il grafo ha: ', nx.number_connected_components(cooccurrences_graph), ' componenti connesse')
-
-    #print('Coefficiente di clustering: ', nx.average_clustering(cooccurrences_graph))
-
+ 
     nodes = list(cooccurrences_graph.nodes.data('weight'))
     nodes.sort(key = lambda x:x[1], reverse=True)
     with open('./results/nodes.txt', 'w') as file:
@@ -219,6 +238,9 @@ def main():
     print("time: ", time.time() - start)
 
     draw(main_graph, res)
+
+    for t in my_threads:
+        t.join()
 
 
 if __name__ == "__main__":
