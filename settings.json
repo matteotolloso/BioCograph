@@ -3,7 +3,7 @@
         "./annotated_dataset/dataset_SON.json" : true,
         "./annotated_dataset/dataset_ZTTK.json" : true,
         "./annotated_dataset/dataset_nonspecifi.json" : true,
-        "./annotated_dataset/dataset_brainoligo.json" : true,
+        "./annotated_dataset/dataset_brainoligo.json" : false,
         "./annotated_dataset/dataset_Replicatio.json" : false, 
         "./annotated_dataset/dataset_Splicingof.json" : false
     },
@@ -15,10 +15,10 @@
     
     "bioBERT_entity_types" : {
         "gene" : true, 
-        "disease" : true,
-        "species" : true,
-        "drug" : true,
-        "mutation" : true
+        "disease" : false,
+        "species" : false,
+        "drug" : false,
+        "mutation" : false
     },
     
     "numb_graph_nodes": 50,  
@@ -29,23 +29,19 @@
     },
     
     "check_tags": [
-        "Humans",
-        "Animals"
+        "humans",
+        "animals"
     ],
     
     "thresaurs": {
         "son": [
-            "SON",
-            "NREBP",
-            "DBP-5",
-            "NRE-Binding Protein",
-            "NRE-binding protein",
-            "KIAA1019",
-            "C21orf50",
+            "nrebp",
+            "dbp-5",
+            "nre-binding protein",
+            "kiaa1019",
+            "c21orf50",
             "DBP5",
-            "SON3",
-            "Dbp5",
-            "Son",
+            "dbp5",
             "son"
         ],
         "zttk": [

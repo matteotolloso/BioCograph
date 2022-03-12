@@ -85,10 +85,10 @@ def build_cooccurrences_graph(  articles : dict,
         if bbent:
             ents = art.get('bioBERT_entities') #list of touples (name, type)
             for ent in ents:
-                if ent in alw_pres:
-                    terms.append(ent)
-                    continue
-                if bbent_types.get(ent[1]) :
+                ent[0] = ent[0].lower()
+                if ent[0] in alw_pres:
+                    terms.append(ent[0])
+                elif bbent_types.get(ent[1]) :
                     terms.append(ent[0])
 
         terms = list(map(lambda x : x.lower(), terms))
@@ -125,6 +125,62 @@ def build_cooccurrences_graph(  articles : dict,
                 graph.add_edge(a, b, capacity=1)
     
     return graph
+
+def draw_gene_functional_association(graph : nx.Graph):
+
+    # compute centrality
+    centrality = nx.betweenness_centrality(graph, k=10, endpoints=True)
+
+    # compute community structure
+    lpc = nx.community.label_propagation_communities(graph)
+    community_index = {n: i for i, com in enumerate(lpc) for n in com}
+
+    #### draw graph ####
+    fig, ax = plt.subplots(figsize=(20, 15))
+    pos = nx.spring_layout(graph, k=0.15, seed=4572321, weight='capacity')
+    node_color = [community_index[n] for n in graph]
+    node_size = [v * 20000 for v in centrality.values()]
+    nx.draw_networkx(
+        graph,
+        pos=pos,
+        with_labels=False,
+        node_color=node_color,
+        node_size=node_size,
+        edge_color="gainsboro",
+        alpha=0.4,
+    )
+    
+    label_options = {"ec": "k", "fc": "white", "alpha": 0.5}
+    nx.draw_networkx_labels(graph, pos, font_size=10, bbox=label_options)
+
+    # Title/legend
+    font = {"color": "k", "fontweight": "bold", "fontsize": 20}
+    ax.set_title("Gene functional association network (C. elegans)", font)
+    # Change font color for legend
+    font["color"] = "r"
+
+    ax.text(
+        0.80,
+        0.10,
+        "node color = community structure",
+        horizontalalignment="center",
+        transform=ax.transAxes,
+        fontdict=font,
+    )
+    ax.text(
+        0.80,
+        0.06,
+        "node size = betweeness centrality",
+        horizontalalignment="center",
+        transform=ax.transAxes,
+        fontdict=font,
+    )
+
+    # Resize figure for label readibility
+    ax.margins(0.1, 0.05)
+    fig.tight_layout()
+    plt.axis("off")
+    plt.show()
 
 def draw(graph: nx.Graph, path=[]):
    
@@ -237,7 +293,8 @@ def main():
     print("widest path from", settings.get('hilight_path').get('source'), "to",  settings.get('hilight_path').get('destination'), ": ", res)
     print("time: ", time.time() - start)
 
-    draw(main_graph, res)
+    #draw(main_graph, res)
+    draw_gene_functional_association(main_graph)
 
     for t in my_threads:
         t.join()
