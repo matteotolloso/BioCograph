@@ -4,8 +4,8 @@
         "./annotated_dataset/dataset_ZTTK.json" : true,
         "./annotated_dataset/dataset_nonspecifi.json" : true,
         "./annotated_dataset/dataset_brainoligo.json" : false,
-        "./annotated_dataset/dataset_Replicatio.json" : true, 
-        "./annotated_dataset/dataset_Splicingof.json" : true
+        "./annotated_dataset/dataset_Replicatio.json" : false, 
+        "./annotated_dataset/dataset_Splicingof.json" : false
     },
     
     "MeSH": false,  
@@ -21,14 +21,14 @@
         "mutation" : false
     },
     
-    "numb_graph_nodes": 50,  
+    "numb_graph_nodes": 70,  
     "always_present" : [],
     "hilight_path": {
-        "source" : "",
-        "destination" : ""
+        "source" : "zttk",
+        "destination" : "son"
     },
     
-    "check_tags": [],
+    "check_tags": [ ],
     
     "thresaurs": {
         "son": [
@@ -53,6 +53,14 @@
         ],
         "oligoastrocytoma": [
             "oligoastrocytoma"
+        ],
+        "mental retardation": [
+            "mental retardation",
+            "mentally retarded"
+        ],
+        "down syndrome" : [
+            "down's syndrome",
+            "ds"
         ]
     }
 }

@@ -61,16 +61,17 @@ def widest_path(graph : nx.Graph, src, target):
     return path
  
 
-def build_cooccurrences_graph(  articles : dict, 
-                                mh = True, 
-                                rn = True, 
-                                ot = True, 
-                                bbent=True, 
-                                check_tags=[], 
-                                thesaurus={},
-                                alw_pres=[],
-                                bbent_types = {}) -> nx.Graph:
+def build_cooccurrences_graph(articles : dict, settings : dict) -> nx.Graph:
     
+    check_tags : list = settings.get('check_tags')
+    rn : bool = settings.get('RNnumber')
+    mh : bool = settings.get('MeSH')
+    ot : bool = settings.get('OtherTerms')
+    bbent : bool = settings.get('bioBERT')
+    thesaurus : dict = settings.get("thresaurs")
+    alw_pres : list = settings.get('always_present')
+    bbent_types : dict = settings.get('bioBERT_entity_types')
+
     graph = nx.Graph()
 
     for art in articles.values():
@@ -93,8 +94,12 @@ def build_cooccurrences_graph(  articles : dict,
                     terms.append(ent[0])
 
         terms = list(map(lambda x : x.lower(), terms))
+        terms = list(set(terms))
+
         #remove check tags
         terms = list(filter(lambda x: x not in check_tags, terms))
+        
+        #TODO attenzione in questo modo alcuni sinonimi vengono esclusi 
         
         # merge synonyms
         for key in thesaurus.keys(): # for all key in thesaurus 
@@ -105,7 +110,7 @@ def build_cooccurrences_graph(  articles : dict,
                         break
         
         terms = list(set(terms))
-
+        
         if not terms:
             continue
         
@@ -241,43 +246,34 @@ def save_cooccurences(graph : nx.Graph):
     with open('./results/cooccurrences.txt', 'w') as file:
             file.write(tabulate(cooccurrences_list,  headers=['Entity', 'Entity', 'Number of cooccurrences'],  tablefmt='orgtbl'))
 
-def main():
-
+def load_settings():
     settings = {}
-    articles = {}
-
-    #load setting
     with open('settings.json', 'r') as f:
         cont = f.read()
         settings = json.loads(cont)
-   
-    #load dataset
-    print("Loading dataset...")
+    settings.get('always_present').append(settings.get('hilight_path').get('source'))
+    settings.get('always_present').append(settings.get('hilight_path').get('destination'))
+    return settings
+
+def load_articles(settings : dict):
+    articles = {}
     for k, v in settings.get('dataset').items():
         if v:
             with open(k, 'r') as f:
                 articles.update(json.loads(f.read()))
-    print("Dataset OK")
+    return articles
 
-    print('Numero di articoli: ', len(articles.keys()))
-    
-    settings.get('always_present').append(settings.get('hilight_path').get('source'))
-    settings.get('always_present').append(settings.get('hilight_path').get('destination'))
 
-    print("Building graph")
-    cooccurrences_graph = build_cooccurrences_graph(articles, 
-                                                    check_tags=settings.get('check_tags'), 
-                                                    rn=settings.get('RNnumber'), 
-                                                    mh=settings.get('MeSH'), 
-                                                    ot=settings.get('OtherTerms'), 
-                                                    thesaurus=settings.get('thresaurs'),
-                                                    alw_pres=settings.get('always_present'),
-                                                    bbent_types=settings.get('bioBERT_entity_types')
-                                                    )
-    print("Graph OK")
+
+def main():
+
+    settings = load_settings()
+    articles = load_articles(settings)
+
+    cooccurrences_graph : nx.Graph = build_cooccurrences_graph(articles, settings)
+
     print('Grafo delle co-occorrenze:\n\tNodi: ', len(cooccurrences_graph.nodes), '\n\tArchi: ', len(cooccurrences_graph.edges))
 
-    
     my_threads = []
     my_threads.append(threading.Thread(target=connected_components, args=(cooccurrences_graph,)))
     my_threads.append(threading.Thread(target=clusetring, args=(cooccurrences_graph,)))
@@ -285,7 +281,6 @@ def main():
     for t in my_threads:
         t.start()
 
- 
     nodes = list(cooccurrences_graph.nodes.data('weight'))
     nodes.sort(key = lambda x:x[1], reverse=True)
     with open('./results/nodes.txt', 'w') as file:
@@ -301,19 +296,17 @@ def main():
 
     main_graph = cooccurrences_graph.subgraph(main_nodes)
 
-    start = time.time()
     path = []
     try:
         path = widest_path(cooccurrences_graph,  settings.get('hilight_path').get('source'),  settings.get('hilight_path').get('destination'))
-    except:
+    except: # there isn't a path between this two nodes (or the nodes are invalid)
         path.append("null")
         path.append("null")
 
     print("widest path from", settings.get('hilight_path').get('source'), "to",  settings.get('hilight_path').get('destination'), ": ", path)
-    print("time: ", time.time() - start)
 
     draw_force_and_path(main_graph, path)
-    draw_gene_functional_association(main_graph)
+    #draw_gene_functional_association(main_graph)
     plt.show()
 
     for t in my_threads:
