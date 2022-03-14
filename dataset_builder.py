@@ -1,12 +1,15 @@
+import typing
 import re
 import json
+import string
 from sys import argv
 import sys
+import typing
 import requests
 
 def build_dataset(pubMedFilePath : str , pathToSave : str) -> dict:
-    
-    articlesStr : list[str] = []
+
+    articlesStr : typing.List[str] = []
     content = ''
     with open(pubMedFilePath,'r') as file:
         content = file.read()
@@ -14,6 +17,7 @@ def build_dataset(pubMedFilePath : str , pathToSave : str) -> dict:
     articlesStr = list(map(lambda x: x.replace('\n      ', ' '), content.split("\n\n")))
 
     dict = {}
+
     for art in articlesStr:
 
         # PubMed ID

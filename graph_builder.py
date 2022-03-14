@@ -1,3 +1,4 @@
+import typing
 from builtins import dict
 import networkx as nx
 from itertools import combinations, starmap
@@ -128,6 +129,8 @@ def build_cooccurrences_graph(  articles : dict,
 
 def draw_gene_functional_association(graph : nx.Graph):
 
+    fig, ax = plt.subplots(figsize=(20, 15))
+
     # compute centrality
     centrality = nx.betweenness_centrality(graph, k=10, endpoints=True)
 
@@ -136,7 +139,6 @@ def draw_gene_functional_association(graph : nx.Graph):
     community_index = {n: i for i, com in enumerate(lpc) for n in com}
 
     #### draw graph ####
-    fig, ax = plt.subplots(figsize=(20, 15))
     pos = nx.spring_layout(graph, k=0.15, seed=4572321, weight='capacity')
     node_color = [community_index[n] for n in graph]
     node_size = [v * 20000 for v in centrality.values()]
@@ -155,7 +157,7 @@ def draw_gene_functional_association(graph : nx.Graph):
 
     # Title/legend
     font = {"color": "k", "fontweight": "bold", "fontsize": 20}
-    ax.set_title("Gene functional association network (C. elegans)", font)
+    ax.set_title("Gene functional association network", font)
     # Change font color for legend
     font["color"] = "r"
 
@@ -180,25 +182,25 @@ def draw_gene_functional_association(graph : nx.Graph):
     ax.margins(0.1, 0.05)
     fig.tight_layout()
     plt.axis("off")
-    plt.show()
+    plt.draw()
 
-def draw(graph: nx.Graph, path=[]):
-   
+def draw_force_and_path(graph: nx.Graph, path=[]):
+    
+    fig, ax = plt.subplots(figsize=(20, 15))
+    
     #layout
     pos = nx.spring_layout(graph, weight='capacity', seed=1)
-    #pos = nx.spectral_layout(graph, weight='weight')
 
     #edges
     edgewidth = [ (graph[u][v]['capacity'] * 0.8) for u, v in graph.edges()]
     edge_colors = []
     if len(path) <= 2:
-        edge_colors = ["r" if u in path and v in path else "m" for u, v in graph.edges()]
+        edge_colors = ["r" if u in path and v in path else "g" for u, v in graph.edges()]
     else:
         edge_colors = ["r" if u in path and v in path and ((u, v) != (path[0], path[-1]) and (v, u) != (path[0], path[-1])) else "m" for u, v in graph.edges() ]
 
     maxi = max(edgewidth)
     edgewidth = list(map( lambda x : 50.0 * (x/float(maxi)), edgewidth))
-    #edgecolor = list(map(lambda x: "m" if x not in))
     nx.draw_networkx_edges(graph, pos, alpha=0.3, width=edgewidth, edge_color=edge_colors)
     
     #nodes
@@ -209,10 +211,21 @@ def draw(graph: nx.Graph, path=[]):
     nx.draw_networkx_nodes(graph, pos, node_size=nodesize, node_color=node_colors, alpha=0.9)
     label_options = {"ec": "k", "fc": "white", "alpha": 0.5}
     nx.draw_networkx_labels(graph, pos, font_size=10, bbox=label_options)
+    
+    label_options = {"ec": "k", "fc": "white", "alpha": 0.5}
+    nx.draw_networkx_labels(graph, pos, font_size=10, bbox=label_options)
 
+    # Title/legend
+    font = {"color": "k", "fontweight": "bold", "fontsize": 20}
+    ax.set_title("Path between \""+path[0]+ "\" and \""+ path[-1] + "\"."+
+    "\nNodes position calculated using Fruchterman-Reingold force-directed algorithm.", font)
+    # Change font color for legend
+    font["color"] = "r"
 
+    # Resize figure for label readibility
+    ax.margins(0.1, 0.05)
+    fig.tight_layout()
     plt.axis("off")
-    plt.show()
 
 def connected_components(graph : nx.Graph):
     con_comp = nx.number_connected_components(graph)
@@ -289,12 +302,19 @@ def main():
     main_graph = cooccurrences_graph.subgraph(main_nodes)
 
     start = time.time()
-    res = widest_path(cooccurrences_graph,  settings.get('hilight_path').get('source'),  settings.get('hilight_path').get('destination'))
-    print("widest path from", settings.get('hilight_path').get('source'), "to",  settings.get('hilight_path').get('destination'), ": ", res)
+    path = []
+    try:
+        path = widest_path(cooccurrences_graph,  settings.get('hilight_path').get('source'),  settings.get('hilight_path').get('destination'))
+    except:
+        path.append("null")
+        path.append("null")
+
+    print("widest path from", settings.get('hilight_path').get('source'), "to",  settings.get('hilight_path').get('destination'), ": ", path)
     print("time: ", time.time() - start)
 
-    #draw(main_graph, res)
+    draw_force_and_path(main_graph, path)
     draw_gene_functional_association(main_graph)
+    plt.show()
 
     for t in my_threads:
         t.join()
