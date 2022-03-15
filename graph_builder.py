@@ -202,7 +202,7 @@ def draw_force_and_path(graph: nx.Graph, path=[]):
     if len(path) <= 2:
         edge_colors = ["r" if u in path and v in path else "g" for u, v in graph.edges()]
     else:
-        edge_colors = ["r" if u in path and v in path and ((u, v) != (path[0], path[-1]) and (v, u) != (path[0], path[-1])) else "m" for u, v in graph.edges() ]
+        edge_colors = ["r" if u in path and v in path and ((u, v) != (path[0], path[-1]) and (v, u) != (path[0], path[-1])) else "g" for u, v in graph.edges() ]
 
     maxi = max(edgewidth)
     edgewidth = list(map( lambda x : 50.0 * (x/float(maxi)), edgewidth))
@@ -306,6 +306,19 @@ def main():
     print("widest path from", settings.get('hilight_path').get('source'), "to",  settings.get('hilight_path').get('destination'), ": ", path)
 
     draw_force_and_path(main_graph, path)
+
+    src = settings.get('hilight_path').get('source')
+    dst =  settings.get('hilight_path').get('destination')
+
+    f_value, f_dict = nx.maximum_flow(main_graph,src, dst, capacity="capacity")
+    path = []
+    for x, y in main_graph.edges():
+        if f_dict[x][y] > 0:
+            path.append(x)
+            path.append(y)
+
+    draw_force_and_path(main_graph, path)
+
     #draw_gene_functional_association(main_graph)
     plt.show()
 
