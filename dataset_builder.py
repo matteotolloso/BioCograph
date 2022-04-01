@@ -9,7 +9,7 @@ import requests
 
 def build_dataset(pubMedFilePath : str , pathToSave : str) -> dict:
 
-    articlesStr : typing.List[str] = []
+    articlesStr : list[str] = []
     content = ''
     with open(pubMedFilePath,'r') as file:
         content = file.read()

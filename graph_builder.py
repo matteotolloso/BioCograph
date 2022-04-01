@@ -1,12 +1,11 @@
-import typing
 from builtins import dict
+from operator import index
 import networkx as nx
-from itertools import combinations, starmap
+from itertools import combinations
 import matplotlib.pyplot as plt
 from tabulate import tabulate
 import json
 from queue import PriorityQueue
-import time
 import threading
 
  
@@ -71,6 +70,7 @@ def build_cooccurrences_graph(articles : dict, settings : dict) -> nx.Graph:
     thesaurus : dict = settings.get("thresaurs")
     alw_pres : list = settings.get('always_present')
     bbent_types : dict = settings.get('bioBERT_entity_types')
+
 
     graph = nx.Graph()
 
@@ -199,11 +199,27 @@ def draw_force_and_path(graph: nx.Graph, path=[]):
     #edges
     edgewidth = [ (graph[u][v]['capacity'] * 0.8) for u, v in graph.edges()]
     edge_colors = []
+    for u, v in graph.edges():
+        index_u : int
+        index_v : int
+        try:
+            index_u = path.index(u)
+            index_v = path.index(v)
+        except:
+            edge_colors.append("g")
+            continue
+        
+        if abs(index_v - index_u) == 1:
+            edge_colors.append("r")
+        else:
+            edge_colors.append("g")
+   
+    '''
     if len(path) <= 2:
         edge_colors = ["r" if u in path and v in path else "g" for u, v in graph.edges()]
     else:
         edge_colors = ["r" if u in path and v in path and ((u, v) != (path[0], path[-1]) and (v, u) != (path[0], path[-1])) else "g" for u, v in graph.edges() ]
-
+    '''
     maxi = max(edgewidth)
     edgewidth = list(map( lambda x : 50.0 * (x/float(maxi)), edgewidth))
     nx.draw_networkx_edges(graph, pos, alpha=0.3, width=edgewidth, edge_color=edge_colors)
@@ -222,7 +238,7 @@ def draw_force_and_path(graph: nx.Graph, path=[]):
 
     # Title/legend
     font = {"color": "k", "fontweight": "bold", "fontsize": 20}
-    ax.set_title("Path between \""+path[0]+ "\" and \""+ path[-1] + "\"."+
+    ax.set_title("Widest path between \""+path[0]+ "\" and \""+ path[-1] + "\"."+
     "\nNodes position calculated using Fruchterman-Reingold force-directed algorithm.", font)
     # Change font color for legend
     font["color"] = "r"
@@ -263,17 +279,32 @@ def load_articles(settings : dict):
                 articles.update(json.loads(f.read()))
     return articles
 
+def normalize_articles(articles : dict, thresaurs : dict):
+    
+    #associa ad un nome il nuome normalizzato
+    inverse_thresaurus = {}
+    for (k, v) in thresaurs.items():
+        for i in v:
+            inverse_thresaurus[i.lower()] = k.lower()
+
+    for art_id in articles.keys():
+        for ent in articles[art_id].get('bioBERT_entities'):
+            ent[0] = ent[0].lower()
+            if ent[0] in inverse_thresaurus.keys():
+                ent[0] = inverse_thresaurus[ent[0]]
 
 
 def main():
 
     settings = load_settings()
     articles = load_articles(settings)
+    normalize_articles(articles, settings.get('thresaurs'))
 
     cooccurrences_graph : nx.Graph = build_cooccurrences_graph(articles, settings)
 
     print('Grafo delle co-occorrenze:\n\tNodi: ', len(cooccurrences_graph.nodes), '\n\tArchi: ', len(cooccurrences_graph.edges))
 
+    #calcoli sul grafo
     my_threads = []
     my_threads.append(threading.Thread(target=connected_components, args=(cooccurrences_graph,)))
     my_threads.append(threading.Thread(target=clusetring, args=(cooccurrences_graph,)))
@@ -286,45 +317,40 @@ def main():
     with open('./results/nodes.txt', 'w') as file:
             file.write(tabulate(nodes, headers=['Entity', 'Number of occurrences'], tablefmt='orgtbl'))
 
-    main_nodes = []
-    for i in range( min(settings.get('numb_graph_nodes'), len(cooccurrences_graph.nodes()))):
-        main_nodes.append(nodes[i][0])
     
-    for n in settings.get('always_present'):
-        if n not in main_nodes: 
-            main_nodes.append(n)
-
-    main_graph = cooccurrences_graph.subgraph(main_nodes)
-
+    source = settings.get('hilight_path').get('source')
+    destination = settings.get('hilight_path').get('destination')
     path = []
     try:
-        path = widest_path(cooccurrences_graph,  settings.get('hilight_path').get('source'),  settings.get('hilight_path').get('destination'))
+        path = widest_path(cooccurrences_graph,  source,  destination)
+        print("widest path from", source, "to",  destination, ": ", path)
     except: # there isn't a path between this two nodes (or the nodes are invalid)
-        path.append("null")
-        path.append("null")
+        print('Non esiste un percorso tra ', source, ' e ', destination)
 
-    print("widest path from", settings.get('hilight_path').get('source'), "to",  settings.get('hilight_path').get('destination'), ": ", path)
 
-    draw_force_and_path(main_graph, path)
+    view_nodes = []
+    # in view_nodes ci saranno i nodi che devono essere visualizzati
+    # cioè i nodi più pesanti, quelli in always_present e quelli nel path
+    for i in range( min(settings.get('numb_graph_nodes'), len(cooccurrences_graph.nodes()))):
+        view_nodes.append(nodes[i][0])
+    for n in settings.get('always_present'):
+        if n not in view_nodes: 
+            view_nodes.append(n)
+    view_nodes += path
+    view_nodes = list(set(view_nodes))
 
-    src = settings.get('hilight_path').get('source')
-    dst =  settings.get('hilight_path').get('destination')
+    # sottografo che deve essere visualizzato, indotto dai nodi che devono essere visualizzati
+    view_graph = cooccurrences_graph.subgraph(view_nodes)
 
-    f_value, f_dict = nx.maximum_flow(main_graph,src, dst, capacity="capacity")
-    path = []
-    for x, y in main_graph.edges():
-        if f_dict[x][y] > 0:
-            path.append(x)
-            path.append(y)
+    draw_force_and_path(view_graph, path)
 
-    draw_force_and_path(main_graph, path)
-
-    #draw_gene_functional_association(main_graph)
-    plt.show()
+    draw_gene_functional_association(view_graph)
 
     for t in my_threads:
         t.join()
 
+    plt.show()
+    
 
 if __name__ == "__main__":
     main()

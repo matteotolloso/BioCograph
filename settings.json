@@ -2,7 +2,7 @@
     "dataset": {
         "./annotated_dataset/dataset_SON.json" : true,
         "./annotated_dataset/dataset_ZTTK.json" : true,
-        "./annotated_dataset/dataset_nonspecifi.json" : false,
+        "./annotated_dataset/dataset_nonspecifi.json" : true,
         "./annotated_dataset/dataset_brainoligo.json" : false,
         "./annotated_dataset/dataset_Replicatio.json" : false, 
         "./annotated_dataset/dataset_Splicingof.json" : false
@@ -14,18 +14,18 @@
     "bioBERT": true, 
     
     "bioBERT_entity_types" : {
-        "gene" : true, 
-        "disease" : true,
+        "gene" : false, 
+        "disease" : false,
         "species" : false,
-        "drug" : false,
+        "drug" : true,
         "mutation" : false
     },
     
     "numb_graph_nodes": 70,  
-    "always_present" : [],
+    "always_present" : ["zttk"],
     "hilight_path": {
         "source" : "zttk",
-        "destination" : "down syndrome"
+        "destination" : "autism"
     },
     
     "check_tags": [ ],
@@ -38,11 +38,13 @@
             "kiaa1019",
             "c21orf50",
             "dbp5",
-            "son"
+            "son",
+            "nre binding protein"
         ],
         "zttk": [
             "zttk", 
-            "zhu-tokita-takenouchi-kim syndrome"
+            "zhu-tokita-takenouchi-kim syndrome",
+            "zttk syndrome"
         ],
         "oligodendroglioma": [
             "oligodendroglioma"
