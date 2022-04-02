@@ -1,5 +1,6 @@
 from builtins import dict
 from operator import index
+import string
 import networkx as nx
 from itertools import combinations
 import matplotlib.pyplot as plt
@@ -11,7 +12,7 @@ import threading
  
 # Function to return the maximum weight
 # in the widest path of the given graph
-def widest_path(graph : nx.Graph, src, target):
+def widest_path(graph : nx.Graph, src, target) -> list:
     # To keep track of widest distance
     widest  = {}
     for key in graph.nodes():
@@ -53,12 +54,23 @@ def widest_path(graph : nx.Graph, src, target):
     path = []
     while current != src:
         path.append(current)
-        current = parent[current]
+        try:
+            current = parent[current]
+        except:
+            print('path not found between', src, 'and', target)
+            return []
+
     path.append(src)
     path.reverse()
 
-    return path
- 
+    return path 
+
+def widest_set(graph : nx.Graph, endpoints : list ) -> set:
+    widest_set = []
+    for u, v in combinations(endpoints, 2):
+        widest_set += widest_path(graph, u, v)
+    widest_set = set(widest_set)
+    return widest_set
 
 def build_cooccurrences_graph(articles : dict, settings : dict) -> nx.Graph:
     
@@ -69,6 +81,7 @@ def build_cooccurrences_graph(articles : dict, settings : dict) -> nx.Graph:
     bbent : bool = settings.get('bioBERT')
     thesaurus : dict = settings.get("thresaurs")
     alw_pres : list = settings.get('always_present')
+    main_nodes : list = settings.get('main_nodes')
     bbent_types : dict = settings.get('bioBERT_entity_types')
 
 
@@ -87,13 +100,11 @@ def build_cooccurrences_graph(articles : dict, settings : dict) -> nx.Graph:
         if bbent:
             ents = art.get('bioBERT_entities') #list of touples (name, type)
             for ent in ents:
-                ent[0] = ent[0].lower()
-                if ent[0] in alw_pres:
+                if (ent[0] in alw_pres) or (ent[0] in main_nodes):
                     terms.append(ent[0])
                 elif bbent_types.get(ent[1]) :
                     terms.append(ent[0])
 
-        terms = list(map(lambda x : x.lower(), terms))
         terms = list(set(terms))
 
         #remove check tags
@@ -189,9 +200,9 @@ def draw_gene_functional_association(graph : nx.Graph):
     plt.axis("off")
     plt.draw()
 
-def draw_force_and_path(graph: nx.Graph, path=[]):
+def my_draw(graph: nx.Graph, main_nodes = [], hilight=[]):
     
-    fig, ax = plt.subplots(figsize=(20, 15))
+    fig, ax = plt.subplots(figsize=(17, 12))
     
     #layout
     pos = nx.spring_layout(graph, weight='capacity', seed=1)
@@ -199,27 +210,30 @@ def draw_force_and_path(graph: nx.Graph, path=[]):
     #edges
     edgewidth = [ (graph[u][v]['capacity'] * 0.8) for u, v in graph.edges()]
     edge_colors = []
-    for u, v in graph.edges():
-        index_u : int
-        index_v : int
-        try:
-            index_u = path.index(u)
-            index_v = path.index(v)
-        except:
-            edge_colors.append("g")
-            continue
-        
-        if abs(index_v - index_u) == 1:
-            edge_colors.append("r")
-        else:
-            edge_colors.append("g")
-   
-    '''
-    if len(path) <= 2:
-        edge_colors = ["r" if u in path and v in path else "g" for u, v in graph.edges()]
+    if len(hilight) == 2:
+        for u, v in graph.edges():
+            index_u : int
+            index_v : int
+            try:
+                index_u = hilight.index(u)
+                index_v = hilight.index(v)
+            except:
+                edge_colors.append("g")
+                continue
+            
+            if abs(index_v - index_u) == 1:
+                edge_colors.append("r")
+            else:
+                edge_colors.append("g") 
+    elif len(hilight) > 2:
+        for u, v in graph.edges():
+            if u in hilight and v in hilight:
+                edge_colors.append("r")
+            else:
+                edge_colors.append("g")
     else:
-        edge_colors = ["r" if u in path and v in path and ((u, v) != (path[0], path[-1]) and (v, u) != (path[0], path[-1])) else "g" for u, v in graph.edges() ]
-    '''
+        edge_colors = ["g" for u, v in graph.edges()]
+    
     maxi = max(edgewidth)
     edgewidth = list(map( lambda x : 50.0 * (x/float(maxi)), edgewidth))
     nx.draw_networkx_edges(graph, pos, alpha=0.3, width=edgewidth, edge_color=edge_colors)
@@ -228,7 +242,7 @@ def draw_force_and_path(graph: nx.Graph, path=[]):
     nodesize = [ (graph.nodes[v]['weight']* 2) for v in graph.nodes()]
     maxi = max(nodesize)
     nodesize = list(map( lambda x : 7000.0 * x/float(maxi), nodesize))
-    node_colors = ["r" if u in path else "b" for u in graph.nodes()]
+    node_colors = ["r" if u in hilight else "b" for u in graph.nodes()]
     nx.draw_networkx_nodes(graph, pos, node_size=nodesize, node_color=node_colors, alpha=0.9)
     label_options = {"ec": "k", "fc": "white", "alpha": 0.5}
     nx.draw_networkx_labels(graph, pos, font_size=10, bbox=label_options)
@@ -238,8 +252,13 @@ def draw_force_and_path(graph: nx.Graph, path=[]):
 
     # Title/legend
     font = {"color": "k", "fontweight": "bold", "fontsize": 20}
-    ax.set_title("Widest path between \""+path[0]+ "\" and \""+ path[-1] + "\"."+
-    "\nNodes position calculated using Fruchterman-Reingold force-directed algorithm.", font)
+    title : str = ""
+    if len(hilight) == 2:
+        title += "The widest path between \""+main_nodes[0]+ "\" and \""+ main_nodes[1] + "\" is: ["+ ', '.join(hilight) +"]\n"
+    elif len(hilight) > 2:
+        title+= "The widest set between {" + ', '.join(main_nodes) + "} is {" + ', '.join(hilight) + "}\n"   
+    title += "Nodes position calculated using Fruchterman-Reingold force-directed algorithm."
+    ax.set_title(title, font)
     # Change font color for legend
     font["color"] = "r"
 
@@ -267,8 +286,6 @@ def load_settings():
     with open('settings.json', 'r') as f:
         cont = f.read()
         settings = json.loads(cont)
-    settings.get('always_present').append(settings.get('hilight_path').get('source'))
-    settings.get('always_present').append(settings.get('hilight_path').get('destination'))
     return settings
 
 def load_articles(settings : dict):
@@ -317,34 +334,39 @@ def main():
     with open('./results/nodes.txt', 'w') as file:
             file.write(tabulate(nodes, headers=['Entity', 'Number of occurrences'], tablefmt='orgtbl'))
 
-    
-    source = settings.get('hilight_path').get('source')
-    destination = settings.get('hilight_path').get('destination')
-    path = []
-    try:
-        path = widest_path(cooccurrences_graph,  source,  destination)
-        print("widest path from", source, "to",  destination, ": ", path)
-    except: # there isn't a path between this two nodes (or the nodes are invalid)
-        print('Non esiste un percorso tra ', source, ' e ', destination)
+    view_nodes = [] # nodi che devono essere effettivamente visualizzati
 
-
-    view_nodes = []
     # in view_nodes ci saranno i nodi che devono essere visualizzati
     # cioè i nodi più pesanti, quelli in always_present e quelli nel path
     for i in range( min(settings.get('numb_graph_nodes'), len(cooccurrences_graph.nodes()))):
         view_nodes.append(nodes[i][0])
     for n in settings.get('always_present'):
-        if n not in view_nodes: 
-            view_nodes.append(n)
-    view_nodes += path
+        view_nodes.append(n)
+
+    main_nodes = settings.get('main_nodes') # nodi da cui partono le ricerche
+    hilight_nodes = [] # nodi che saranno colorati diversamente
+    
+    if len(main_nodes) == 2: # cerco un path
+        path = widest_path(cooccurrences_graph,  main_nodes[0],  main_nodes[1])
+        print("Widest path from", main_nodes[0], "to",  main_nodes[1], ": ", path)
+        hilight_nodes += path
+    elif len(main_nodes) > 2:  # cerco tutte le coppie di path
+        #set dei nodi che appartengono al path tra due dei nodi in main_nodes
+        set_nodes = widest_set(cooccurrences_graph, main_nodes)
+        print("Widest set from ", ', '.join(main_nodes), ':', set_nodes)
+        hilight_nodes += list(set_nodes)
+    else:
+        print('hilight è vuoto')
+
+    view_nodes += hilight_nodes # gli hilight_nodes vengono aggiunti alla lista dei nodi da visualizzare
     view_nodes = list(set(view_nodes))
 
     # sottografo che deve essere visualizzato, indotto dai nodi che devono essere visualizzati
     view_graph = cooccurrences_graph.subgraph(view_nodes)
 
-    draw_force_and_path(view_graph, path)
+    my_draw(view_graph, main_nodes, hilight_nodes)
 
-    draw_gene_functional_association(view_graph)
+    #draw_gene_functional_association(view_graph)
 
     for t in my_threads:
         t.join()
