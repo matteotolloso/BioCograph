@@ -26,7 +26,7 @@ class Settings:
             if k not in self._settings:
                 print('Missing key: ' + k)
                 return False
-        print('Settings checked')
+        print('Settings check ok')
         self.checked = True
         return True
         

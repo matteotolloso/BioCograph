@@ -8,6 +8,7 @@ from tabulate import tabulate
 import json
 from queue import PriorityQueue
 import threading
+import settings
 
  
 # Function to return the maximum weight
@@ -205,8 +206,10 @@ def my_draw(graph: nx.Graph, main_nodes = [], hilight=[]):
     fig, ax = plt.subplots(figsize=(17, 12))
     
     #layout
-    pos = nx.spring_layout(graph, weight='capacity', seed=1)
-
+    #pos = nx.spring_layout(graph, weight='capacity', seed=1)
+    #pos = nx.shell_layout(graph,rotate=15, nlist=[[n for n in main_nodes], [n for n in hilight if n not in main_nodes], [n for n in graph.nodes if n not in main_nodes and n not in hilight]])
+    #pos = nx.nx_agraph.graphviz_layout(graph)
+    pos = nx.nx_pydot.pydot_layout(graph)
     #edges
     edgewidth = [ (graph[u][v]['capacity'] * 0.8) for u, v in graph.edges()]
     edge_colors = []
@@ -281,12 +284,6 @@ def save_cooccurences(graph : nx.Graph):
     with open('./results/cooccurrences.txt', 'w') as file:
             file.write(tabulate(cooccurrences_list,  headers=['Entity', 'Entity', 'Number of cooccurrences'],  tablefmt='orgtbl'))
 
-def load_settings():
-    settings = {}
-    with open('settings.json', 'r') as f:
-        cont = f.read()
-        settings = json.loads(cont)
-    return settings
 
 def load_articles(settings : dict):
     articles = {}
@@ -309,6 +306,13 @@ def normalize_articles(articles : dict, thresaurs : dict):
             ent[0] = ent[0].lower()
             if ent[0] in inverse_thresaurus.keys():
                 ent[0] = inverse_thresaurus[ent[0]]
+
+def load_settings():
+    settings = {}
+    with open('settings.json', 'r') as f:
+        cont = f.read()
+        settings = json.loads(cont)
+    return settings
 
 
 def main():
