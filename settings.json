@@ -14,20 +14,17 @@
     "bioBERT": true, 
     
     "bioBERT_entity_types" : {
-        "gene" : false, 
-        "disease" : false,
+        "gene" : true, 
+        "disease" : true,
         "species" : false,
-        "drug" : true,
+        "drug" : false,
         "mutation" : false
     },
     
-    "numb_graph_nodes": 70,  
+    "numb_graph_nodes": 20,  
     "always_present" : ["zttk"],
-    "hilight_path": {
-        "source" : "zttk",
-        "destination" : "autism"
-    },
-    
+    "main_nodes": ["zttk", "son", "autism", "tumor"],
+
     "check_tags": [ ],
     
     "thresaurs": {
