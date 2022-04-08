@@ -8,7 +8,7 @@ from tabulate import tabulate
 import json
 from queue import PriorityQueue
 import threading
-import settings
+import settings_class
 
  
 # Function to return the maximum weight
@@ -101,9 +101,7 @@ def build_cooccurrences_graph(articles : dict, settings : dict) -> nx.Graph:
         if bbent:
             ents = art.get('bioBERT_entities') #list of touples (name, type)
             for ent in ents:
-                if (ent[0] in alw_pres) or (ent[0] in main_nodes):
-                    terms.append(ent[0])
-                elif bbent_types.get(ent[1]) :
+                if (ent[0] in alw_pres) or (ent[0] in main_nodes) or (bbent_types.get(ent[1]) ):
                     terms.append(ent[0])
 
         terms = list(set(terms))
@@ -206,10 +204,11 @@ def my_draw(graph: nx.Graph, main_nodes = [], hilight=[]):
     fig, ax = plt.subplots(figsize=(17, 12))
     
     #layout
-    #pos = nx.spring_layout(graph, weight='capacity', seed=1)
+    pos = nx.spring_layout(graph, weight='capacity', seed=1)
     #pos = nx.shell_layout(graph,rotate=15, nlist=[[n for n in main_nodes], [n for n in hilight if n not in main_nodes], [n for n in graph.nodes if n not in main_nodes and n not in hilight]])
     #pos = nx.nx_agraph.graphviz_layout(graph)
-    pos = nx.nx_pydot.pydot_layout(graph)
+    #pos = nx.nx_pydot.pydot_layout(graph)
+
     #edges
     edgewidth = [ (graph[u][v]['capacity'] * 0.8) for u, v in graph.edges()]
     edge_colors = []
@@ -254,7 +253,7 @@ def my_draw(graph: nx.Graph, main_nodes = [], hilight=[]):
     nx.draw_networkx_labels(graph, pos, font_size=10, bbox=label_options)
 
     # Title/legend
-    font = {"color": "k", "fontweight": "bold", "fontsize": 20}
+    font = {"color": "k", "fontweight": "bold", "fontsize": 15}
     title : str = ""
     if len(hilight) == 2:
         title += "The widest path between \""+main_nodes[0]+ "\" and \""+ main_nodes[1] + "\" is: ["+ ', '.join(hilight) +"]\n"
@@ -294,18 +293,26 @@ def load_articles(settings : dict):
     return articles
 
 def normalize_articles(articles : dict, thresaurs : dict):
-    
-    #associa ad un nome il nuome normalizzato
+    # thresaurs: associa al nome principale una lista di sinonimi
+    # inverse_thresaurus: associa ad un sinonimo il nome principale
+
     inverse_thresaurus = {}
     for (k, v) in thresaurs.items():
         for i in v:
             inverse_thresaurus[i.lower()] = k.lower()
 
-    for art_id in articles.keys():
-        for ent in articles[art_id].get('bioBERT_entities'):
-            ent[0] = ent[0].lower()
-            if ent[0] in inverse_thresaurus.keys():
-                ent[0] = inverse_thresaurus[ent[0]]
+   
+
+    for paper_id in articles:  # for each paper
+        entities_list = articles[paper_id]['bioBERT_entities'] # list of entities
+        normalized_entities_list = []
+        for entity in entities_list: # list of touple (entity, type)
+            if (entity[0].lower() in inverse_thresaurus) and (entity[0].lower() not in normalized_entities_list):
+                normalized_entities_list.append( (inverse_thresaurus[entity[0].lower()], entity[1] )    )
+            else:
+                normalized_entities_list.append( (entity[0].lower() , entity[1]) )
+        articles[paper_id]['bioBERT_entities'] = normalized_entities_list
+            
 
 def load_settings():
     settings = {}
@@ -320,6 +327,9 @@ def main():
     settings = load_settings()
     articles = load_articles(settings)
     normalize_articles(articles, settings.get('thresaurs'))
+    # Attenzione: le entità vengono normalizzate prima che il grafo venga creato
+    # quindi nel caso delle entità di bioBERT, la normalizzazione non tiene conto
+    # del tipo di entità (es. "gene" e "disease")
 
     cooccurrences_graph : nx.Graph = build_cooccurrences_graph(articles, settings)
 
@@ -338,6 +348,8 @@ def main():
     with open('./results/nodes.txt', 'w') as file:
             file.write(tabulate(nodes, headers=['Entity', 'Number of occurrences'], tablefmt='orgtbl'))
 
+    
+    
     view_nodes = [] # nodi che devono essere effettivamente visualizzati
 
     # in view_nodes ci saranno i nodi che devono essere visualizzati
@@ -349,7 +361,10 @@ def main():
 
     main_nodes = settings.get('main_nodes') # nodi da cui partono le ricerche
     hilight_nodes = [] # nodi che saranno colorati diversamente
-    
+
+    # non posso lavorare su nodi che non sono nel grafo
+    main_nodes = list(filter(lambda x: x in cooccurrences_graph.nodes(), main_nodes))
+
     if len(main_nodes) == 2: # cerco un path
         path = widest_path(cooccurrences_graph,  main_nodes[0],  main_nodes[1])
         print("Widest path from", main_nodes[0], "to",  main_nodes[1], ": ", path)
