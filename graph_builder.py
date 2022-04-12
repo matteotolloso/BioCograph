@@ -349,7 +349,6 @@ def main():
             file.write(tabulate(nodes, headers=['Entity', 'Number of occurrences'], tablefmt='orgtbl'))
 
     
-    
     view_nodes = [] # nodi che devono essere effettivamente visualizzati
 
     # in view_nodes ci saranno i nodi che devono essere visualizzati

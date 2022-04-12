@@ -2,12 +2,13 @@ import json
 import os
 
 class Settings:
-    def __init__(self):
+    def __init__(self, path : str):
         self.checked = False
         self._settings = {}
         self._keys = ['dataset', 'MeSH', 'RNnumber', 'OtherTerms',\
                     'bioBERT', 'bioBERT_entity_types', 'numb_graph_nodes',\
                     'always_present', 'main_nodes', 'check_tags', 'thresaurs']
+        self.load(path)
         
     def load(self, path : str):
         if os.path.exists(path):
