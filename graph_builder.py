@@ -10,7 +10,7 @@ import json
 from queue import PriorityQueue
 import threading
 from dataset_class import Dataset
-from graph_class import Cograph
+from cograph_class import Cograph
 import settings_class
 
  
