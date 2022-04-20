@@ -1,4 +1,5 @@
 from builtins import dict
+from filecmp import dircmp
 from operator import index
 import string
 import networkx as nx
@@ -8,6 +9,8 @@ from tabulate import tabulate
 import json
 from queue import PriorityQueue
 import threading
+from dataset_class import Dataset
+from graph_class import Cograph
 import settings_class
 
  
@@ -321,8 +324,33 @@ def load_settings():
         settings = json.loads(cont)
     return settings
 
+def get_inverse_thresaurs(thresaurs : dict):
+    inverse_thresaurus = {}
+    for (k, v) in thresaurs.items():
+        for i in v:
+            inverse_thresaurus[i.lower()] = k.lower()
+    return inverse_thresaurus
+
 
 def main():
+
+    settings = load_settings()
+    my_graph = Cograph()
+    inverse_thresaurus = get_inverse_thresaurs(settings.get('thresaurs'))
+    datasets =[]
+    
+    for path, bool in settings.get('dataset').items():
+        if bool:
+            curr_dataset = Dataset(path)
+            curr_dataset.normalize(inverse_thresaurus)
+            my_graph.add_dataset(curr_dataset, settings)
+            datasets.append(curr_dataset)
+
+
+
+
+
+    exit()
 
     settings = load_settings()
     articles = load_articles(settings)

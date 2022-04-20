@@ -1,6 +1,10 @@
 import networkx as nx
 from itertools import combinations
 import matplotlib.pyplot as plt
+from queue import PriorityQueue
+from dataset_class import Dataset
+
+
 
 
 class Cograph:
@@ -22,19 +26,19 @@ class Cograph:
         bbent_types : dict = settings.get('bioBERT_entity_types')
 
         for art in papers:
-            terms = []
+            terms = [] # list of touples (name, type)
             # extract the types of terms required
             if mh:
-                terms += art.get('MeSH')
+                terms += (art.get('MeSH'), 'unknown')
             if rn:
-                terms += art.get('RNnumber')
+                terms += (art.get('RNnumber'), 'unknown')
             if ot:
-                terms += art.get('OtherTerm')
+                terms += (art.get('OtherTerm'), 'unknown')
             if bbent:
                 ents = art.get('bioBERT_entities') #list of touples (name, type)
                 for ent in ents:
                     if (ent[0] in alw_pres) or (ent[0] in main_nodes) or (bbent_types.get(ent[1]) ):
-                        terms.append(ent[0])
+                        terms.append(ent)
 
             terms = list(set(terms))
 
@@ -43,35 +47,31 @@ class Cograph:
             
             #TODO attenzione in questo modo alcuni sinonimi vengono esclusi 
             
-            # merge synonyms
-            for key in thesaurus.keys(): # for all key in thesaurus 
-                for pos, term in enumerate(terms): # for all terms in this article
-                    for syn in thesaurus[key]:  # for all synonyms
-                        if syn in term: #if the target is contained in the term
-                            terms[pos] = key  #replace the term with the synonymous
-                            break
-            
             terms = list(set(terms))
             
             if not terms:
                 continue
             
             for a, b in list(combinations(terms, 2)):
-                if not self._nxGraph.has_node(a):
-                    self._nxGraph.add_node(a, weight=1)
+                if not self._nxGraph.has_node(a[0]):
+                    self._nxGraph.add_node(a[0], weight=1, type=a[1])
                 else:
-                    self._nxGraph.nodes[a]['weight'] += 1
+                    self._nxGraph.nodes[a[0]]['weight'] += 1
                 
-                if not self._nxGraph.has_node(b):
-                    self._nxGraph.add_node(b, weight=1)
+                if not self._nxGraph.has_node(b[0]):
+                    self._nxGraph.add_node(b[0], weight=1)
                 else:
-                    self._nxGraph.nodes[b]['weight'] += 1
+                    self._nxGraph.nodes[b[0]]['weight'] += 1
                 
-                if self._nxGraph.has_edge(a, b):
-                    self._nxGraph[a][b]['capacity'] += 1
+                if self._nxGraph.has_edge(a[0], b[0]):
+                    self._nxGraph[a[0]][b[0]]['capacity'] += 1
                 else:
-                    self._nxGraph.add_edge(a, b, capacity=1)
+                    self._nxGraph.add_edge(a[0], b[0], capacity=1)
     
+
+    def add_dataset(self, dataset : Dataset, settings):
+        self.add_dataset(self, dataset.get_papers(), settings)
+
 
     def draw(self, main_nodes : 'list[str]' = [], hilight : 'list[str]' =[]) -> None:
     
@@ -142,3 +142,64 @@ class Cograph:
         ax.margins(0.1, 0.05)
         fig.tight_layout()
         plt.axis("off")
+
+    def widest_path(self, src, target) -> list:
+        # To keep track of widest distance
+        widest  = {}
+        for key in self._nxGraph.nodes():
+            widest[key] = -10**9
+        
+        # To get the path at the end of the algorithm
+        parent = {}
+    
+        # Use of Minimum Priority Queue to keep track minimum
+        # widest distance vertex so far in the algorithm
+        pri_queue = PriorityQueue()
+        pri_queue.put((0, src))
+        widest[src] = 10**9
+        while (not pri_queue.empty()):
+
+            current_src = pri_queue.get()[1] # second element of the tuple
+
+            for vertex in self._nxGraph.neighbors(current_src):
+
+                # Finding the widest distance to the vertex
+                # using current_source vertex's widest distance
+                # and its widest distance so far
+                width = max(widest[vertex], min(widest[current_src], self._nxGraph[current_src][vertex]['capacity']))
+    
+                # Relaxation of edge and adding into Priority Queue
+                if (width > widest[vertex]):
+    
+                    # Updating bottle-neck distance
+                    widest[vertex] = width
+    
+                    # To keep track of parent
+                    parent[vertex] = current_src
+    
+                    # Adding the relaxed edge in the priority queue
+                    # greater width -> greater priority -> lower value
+                    pri_queue.put((width * -1, vertex))
+
+        current = target
+        path = []
+        while current != src:
+            path.append(current)
+            try:
+                current = parent[current]
+            except:
+                print('path not found between', src, 'and', target)
+                return []
+
+        path.append(src)
+        path.reverse()
+
+        return path 
+    
+    
+    def widest_set(self, endpoints : list ) -> set:
+        widest_set = []
+        for u, v in combinations(endpoints, 2):
+            widest_set += self.widest_path(u, v)
+        widest_set = set(widest_set)
+        return widest_set
