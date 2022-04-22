@@ -2,10 +2,9 @@ import networkx as nx
 from itertools import combinations
 import matplotlib.pyplot as plt
 from queue import PriorityQueue
+
+from sqlalchemy import false
 from dataset_class import Dataset
-
-
-
 
 class Cograph:
 
@@ -13,17 +12,17 @@ class Cograph:
         self._nxGraph = nx.Graph()
     
     
-    def add_dataset(self, papers : 'list[dict]', settings : dict) -> None:
+    def add_dataset(self, 
+                    dataset : 'Dataset', 
+                    check_tags=[],
+                    rn=False,
+                    mh=False,
+                    ot=False,
+                    bbent=False,
+                    alw_pres=[],
+                    bbent_types=[]) -> None:
     
-        check_tags : list = settings.get('check_tags')
-        rn : bool = settings.get('RNnumber')
-        mh : bool = settings.get('MeSH')
-        ot : bool = settings.get('OtherTerms')
-        bbent : bool = settings.get('bioBERT')
-        thesaurus : dict = settings.get("thresaurs")
-        alw_pres : list = settings.get('always_present')
-        main_nodes : list = settings.get('main_nodes')
-        bbent_types : dict = settings.get('bioBERT_entity_types')
+        papers = dataset.papers_list
 
         for art in papers:
             terms = [] # list of touples (name, type)
@@ -37,7 +36,7 @@ class Cograph:
             if bbent:
                 ents = art.get('bioBERT_entities') #list of touples (name, type)
                 for ent in ents:
-                    if (ent[0] in alw_pres) or (ent[0] in main_nodes) or (bbent_types.get(ent[1]) ):
+                    if (ent[0] in alw_pres)  or (bbent_types.get(ent[1]) ):
                         terms.append(ent)
 
             terms = list(set(terms))
@@ -67,10 +66,6 @@ class Cograph:
                     self._nxGraph[a[0]][b[0]]['capacity'] += 1
                 else:
                     self._nxGraph.add_edge(a[0], b[0], capacity=1)
-    
-
-    def add_dataset(self, dataset : Dataset, settings):
-        self.add_dataset(self, dataset.get_papers(), settings)
 
 
     def draw(self, main_nodes : 'list[str]' = [], hilight : 'list[str]' =[]) -> None:
@@ -197,9 +192,15 @@ class Cograph:
         return path 
     
     
-    def widest_set(self, endpoints : list ) -> set:
+    def widest_set(self, endpoints : 'list[str]' ) -> 'set[str]':
         widest_set = []
         for u, v in combinations(endpoints, 2):
             widest_set += self.widest_path(u, v)
         widest_set = set(widest_set)
         return widest_set
+    
+    def get_neighbors(self, nodes : 'list[str]' ) -> 'list[str]':
+        neighbors = []
+        for node in nodes:
+            neighbors += self._nxGraph.neighbors(node)
+        return list(set(neighbors))

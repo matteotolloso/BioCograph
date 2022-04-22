@@ -334,19 +334,33 @@ def get_inverse_thresaurs(thresaurs : dict):
 
 def main():
 
-    settings = load_settings()
+    settings = load_settings() # loaded ad a dict, TODO: use settingsclass
+    bbent_types : dict = settings.get('bioBERT_types')
+    alw_pres :list = settings.get('always_present')
     my_graph = Cograph()
     inverse_thresaurus = get_inverse_thresaurs(settings.get('thresaurs'))
-    datasets =[]
+    datasets : 'list[Dataset]' = [] # list of dataset
     
     for path, bool in settings.get('dataset').items():
         if bool:
-            curr_dataset = Dataset(path)
-            curr_dataset.normalize(inverse_thresaurus)
-            my_graph.add_dataset(curr_dataset, settings)
+            curr_dataset = Dataset(path) # create the dataset
+            curr_dataset.normalize(inverse_thresaurus) # normalize entities
+            my_graph.add_dataset(curr_dataset, # add dataset to graph
+                                bbent=True,
+                                bbent_types=bbent_types,
+                                alw_pres=alw_pres) 
             datasets.append(curr_dataset)
 
+    # i have a graph with all and only bb entities types selected and always present nodes
 
+    widest_set = my_graph.widest_set(settings.get('main_nodes'))
+    neighbors = my_graph.get_neighbors(widest_set)
+    settings.get('always_present').update(neighbors) # add neighbors to always present nodes
+    
+
+
+    my_graph.draw()
+    plt.show()  
 
 
 

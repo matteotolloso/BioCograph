@@ -6,6 +6,7 @@ from sys import argv
 import sys
 import typing
 import requests
+import time
 
 def build_dataset(pubMedFilePath : str , pathToSave : str) -> dict:
 
@@ -53,9 +54,23 @@ def build_dataset(pubMedFilePath : str , pathToSave : str) -> dict:
     i = 0
     for id in dict.keys():
         i+=1
-        print('processing article', i, 'of', len(dict.keys()))
+        print('processing paper', i, 'of', len(dict.keys()))
         url = base_url + id
-        response = requests.get(url, verify=False).json()
+        response = ''
+        
+        for j in range(6):
+            try:
+                response = requests.get(url, verify=False).json()
+                break
+            except Exception as e:
+                print(e)
+                print('waiting', 2**j, 'seconds')
+                time.sleep(2**j)
+        
+        if response == '':
+            print('error')
+            exit()
+
         denotations = response[0].get('denotations')
         for den in denotations:
             begin = den.get('span').get('begin')
@@ -63,7 +78,7 @@ def build_dataset(pubMedFilePath : str , pathToSave : str) -> dict:
             entity_type = den.get('obj')
             entity_name = response[0].get('text')[begin:end]
             dict[id].get('bioBERT_entities').append((entity_name, entity_type))
-        
+
     dataset_string_json = json.dumps(dict, indent=4)
 
     with open(pathToSave, 'w') as file:

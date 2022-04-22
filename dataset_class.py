@@ -23,6 +23,3 @@ class Dataset:
             self._papers[paper_id]['bioBERT_entities'] = normalized_entities_list
         self.papers_list = [i for i in self._papers.values()] #upgrade list
         
-    def get_papers(self):
-        return list(self.papers_list)
-
