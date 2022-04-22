@@ -1,29 +1,36 @@
 {
     "dataset": {
-        "./annotated_dataset/dataset_SON.json" : true,
+        "./annotated_dataset/dataset_SON.json" : false,
         "./annotated_dataset/dataset_ZTTK.json" : true,
-        "./annotated_dataset/dataset_nonspecifi.json" : true,
+        "./annotated_dataset/dataset_nonspecifi.json" : false,
         "./annotated_dataset/dataset_brainoligo.json" : false,
-        "./annotated_dataset/dataset_Replicatio.json" : false, 
+        "./annotated_dataset/dataset_Replicatio.json" : false,
         "./annotated_dataset/dataset_Splicingof.json" : false
     },
     
-    "MeSH": false,  
-    "RNnumber": false,  
-    "OtherTerms": false,  
-    "bioBERT": true, 
+    "MeSH": false,
+    "RNnumber": false,
+    "OtherTerms": false,
+    "bioBERT": true,
     
     "bioBERT_entity_types" : {
-        "gene" : true, 
+        "gene" : false,
         "disease" : true,
         "species" : false,
         "drug" : false,
         "mutation" : false
     },
     
-    "numb_graph_nodes": 20,  
-    "always_present" : ["zttk"],
-    "main_nodes": ["zttk", "son", "autism", "tumor"],
+    "numb_graph_nodes": 50,
+    "always_present" : [ ],
+    "main_nodes": ["duodenal atresia", "hydrocephalus, congenital, 1", "gastroparesis" ],
+    "bioBERT_entity_types_induced_nodes": {
+        "gene" : false,
+        "disease" : true,
+        "species" : false,
+        "drug" : false,
+        "mutation" : false
+    },
 
     "check_tags": [ ],
     
@@ -55,11 +62,19 @@
         ],
         "mental retardation": [
             "mental retardation",
-            "mentally retarded"
+            "mentally retarded", 
+            "mr"
         ],
         "down syndrome" : [
-            "down's syndrome",
-            "ds"
+            "down's syndrome", 
+            "ds", 
+            "trisomy 21"
+        ],
+        "intellectual disability" : [
+            "id"
+        ],
+        "hydrocephalus, congenital, 1": [
+            "hyc1"
         ]
     }
 }
