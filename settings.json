@@ -1,11 +1,12 @@
 {
     "dataset": {
-        "./annotated_dataset/dataset_SON.json" : false,
+        "./annotated_dataset/dataset_SON.json" : true,
         "./annotated_dataset/dataset_ZTTK.json" : true,
         "./annotated_dataset/dataset_nonspecifi.json" : false,
         "./annotated_dataset/dataset_brainoligo.json" : false,
         "./annotated_dataset/dataset_Replicatio.json" : false,
-        "./annotated_dataset/dataset_Splicingof.json" : false
+        "./annotated_dataset/dataset_Splicingof.json" : false,
+        "./annotated_dataset/new-SPG17-set.json" : false
     },
     
     "MeSH": false,
@@ -14,23 +15,38 @@
     "bioBERT": true,
     
     "bioBERT_entity_types" : {
-        "gene" : false,
+        "gene" : true,
         "disease" : true,
-        "species" : false,
-        "drug" : false,
-        "mutation" : false
+        "species" : true,
+        "drug" : true,
+        "mutation" : true,
+        "miRNA" : true,
+        "pathway" : true
     },
     
-    "numb_graph_nodes": 50,
-    "always_present" : [ ],
-    "main_nodes": ["duodenal atresia", "hydrocephalus, congenital, 1", "gastroparesis" ],
-    "bioBERT_entity_types_induced_nodes": {
+    "widest_set": ["son" ],
+    
+    "bioBERT_entity_types_widest_set" : {
+        "gene" : true,
+        "disease" : true,
+        "species" : false,
+        "drug" : false,
+        "mutation" : false,
+        "miRNA" : false,
+        "pathway" : false
+    },
+    "bioBERT_entity_types_second_layer" : {
         "gene" : false,
         "disease" : true,
         "species" : false,
         "drug" : false,
-        "mutation" : false
+        "mutation" : false,
+        "miRNA" : false,
+        "pathway" : false
     },
+
+    "numb_graph_nodes": 170,
+    "always_present" : [ ],
 
     "check_tags": [ ],
     
@@ -43,12 +59,14 @@
             "c21orf50",
             "dbp5",
             "son",
-            "nre binding protein"
+            "nre binding protein",
+            "son gene"
         ],
         "zttk": [
             "zttk", 
             "zhu-tokita-takenouchi-kim syndrome",
-            "zttk syndrome"
+            "zttk syndrome",
+            "zhu-tokita-takenouchi-kim (zttk) syndrome"
         ],
         "oligodendroglioma": [
             "oligodendroglioma"
@@ -75,6 +93,15 @@
         ],
         "hydrocephalus, congenital, 1": [
             "hyc1"
+        ],
+        "spg17": [
+            "spastic paraplegia 17",
+            "spg17",
+            "silver syndrome",
+            "silver-russell syndrome",
+            "rss",
+            "russell-silver syndrome",
+            "srs"
         ]
     }
 }

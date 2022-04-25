@@ -1,0 +1,306 @@
+| Entity                                               | Entity                                                        |   Number of cooccurrences |
+|------------------------------------------------------+---------------------------------------------------------------+---------------------------|
+| zttk                                                 | intellectual disability                                       |                         4 |
+| zttk                                                 | dysmorphic features                                           |                         3 |
+| zttk                                                 | hypotonia                                                     |                         3 |
+| zttk                                                 | seizures                                                      |                         2 |
+| zttk                                                 | facial features                                               |                         2 |
+| zttk                                                 | son                                                           |                         2 |
+| zttk                                                 | facial dysmorphism                                            |                         2 |
+| seizures                                             | dysmorphic features                                           |                         2 |
+| dysmorphic features                                  | intellectual disability                                       |                         2 |
+| dysmorphic features                                  | hypotonia                                                     |                         2 |
+| multisystemic disorder                               | abnormal brain imaging                                        |                         1 |
+| multisystemic disorder                               | zttk                                                          |                         1 |
+| multisystemic disorder                               | seizures                                                      |                         1 |
+| multisystemic disorder                               | dysmorphic features                                           |                         1 |
+| multisystemic disorder                               | congenital anomalies                                          |                         1 |
+| multisystemic disorder                               | intellectual disability                                       |                         1 |
+| abnormal brain imaging                               | zttk                                                          |                         1 |
+| abnormal brain imaging                               | seizures                                                      |                         1 |
+| abnormal brain imaging                               | dysmorphic features                                           |                         1 |
+| abnormal brain imaging                               | congenital anomalies                                          |                         1 |
+| abnormal brain imaging                               | intellectual disability                                       |                         1 |
+| zttk                                                 | congenital anomalies                                          |                         1 |
+| zttk                                                 | motor retardation                                             |                         1 |
+| zttk                                                 | growth and development delay                                  |                         1 |
+| zttk                                                 | phenotypic abnormalities                                      |                         1 |
+| zttk                                                 | intellectual disability syndrome                              |                         1 |
+| zttk                                                 | visceral malformations                                        |                         1 |
+| zttk                                                 | dendritic spine abnormalities                                 |                         1 |
+| zttk                                                 | neuronal migration defects                                    |                         1 |
+| zttk                                                 | brain malformation                                            |                         1 |
+| zttk                                                 | congenital anomaly syndrome                                   |                         1 |
+| zttk                                                 | musculoskeletal abnormalities                                 |                         1 |
+| zttk                                                 | neural abnormalities                                          |                         1 |
+| zttk                                                 | visual abnormalities                                          |                         1 |
+| zttk                                                 | delayed psychomotor development                               |                         1 |
+| zttk                                                 | dental abnormalities                                          |                         1 |
+| zttk                                                 | disability                                                    |                         1 |
+| zttk                                                 | multisystem developmental disorder                            |                         1 |
+| zttk                                                 | skin and nails abnormalities                                  |                         1 |
+| zttk                                                 | retronychia of the toenails                                   |                         1 |
+| zttk                                                 | gastroparesis                                                 |                         1 |
+| zttk                                                 | intellectual and psychomotor disability                       |                         1 |
+| zttk                                                 | infections of the respiratory tract and internal ear          |                         1 |
+| zttk                                                 | intestinal malrotation                                        |                         1 |
+| zttk                                                 | asymmetry of ventricles                                       |                         1 |
+| zttk                                                 | hypoplastic left heart syndrome                               |                         1 |
+| zttk                                                 | feeding difficulties                                          |                         1 |
+| zttk                                                 | hlhs                                                          |                         1 |
+| zttk                                                 | duodenal atresia                                              |                         1 |
+| zttk                                                 | febrile seizures                                              |                         1 |
+| zttk                                                 | ventriculomegaly                                              |                         1 |
+| zttk                                                 | developmental and speech delay                                |                         1 |
+| zttk                                                 | growth hormone deficiency                                     |                         1 |
+| zttk                                                 | palmar crease                                                 |                         1 |
+| zttk                                                 | autosomal dominant genetic disorder                           |                         1 |
+| zttk                                                 | developmental delay                                           |                         1 |
+| zttk                                                 | facial abnormalities                                          |                         1 |
+| zttk                                                 | intellectual disabilities                                     |                         1 |
+| zttk                                                 | esotropia                                                     |                         1 |
+| zttk                                                 | neonatal hypotonia                                            |                         1 |
+| zttk                                                 | abnormalities in the heart, genitourinary or skeletal systems |                         1 |
+| seizures                                             | congenital anomalies                                          |                         1 |
+| seizures                                             | intellectual disability                                       |                         1 |
+| seizures                                             | developmental delay                                           |                         1 |
+| seizures                                             | hypotonia                                                     |                         1 |
+| seizures                                             | facial abnormalities                                          |                         1 |
+| seizures                                             | intellectual disabilities                                     |                         1 |
+| seizures                                             | facial dysmorphism                                            |                         1 |
+| seizures                                             | esotropia                                                     |                         1 |
+| seizures                                             | neonatal hypotonia                                            |                         1 |
+| seizures                                             | abnormalities in the heart, genitourinary or skeletal systems |                         1 |
+| dysmorphic features                                  | congenital anomalies                                          |                         1 |
+| dysmorphic features                                  | gastroparesis                                                 |                         1 |
+| dysmorphic features                                  | intellectual and psychomotor disability                       |                         1 |
+| dysmorphic features                                  | infections of the respiratory tract and internal ear          |                         1 |
+| dysmorphic features                                  | intestinal malrotation                                        |                         1 |
+| dysmorphic features                                  | asymmetry of ventricles                                       |                         1 |
+| dysmorphic features                                  | hypoplastic left heart syndrome                               |                         1 |
+| dysmorphic features                                  | feeding difficulties                                          |                         1 |
+| dysmorphic features                                  | hlhs                                                          |                         1 |
+| dysmorphic features                                  | duodenal atresia                                              |                         1 |
+| dysmorphic features                                  | febrile seizures                                              |                         1 |
+| dysmorphic features                                  | ventriculomegaly                                              |                         1 |
+| dysmorphic features                                  | developmental and speech delay                                |                         1 |
+| dysmorphic features                                  | developmental delay                                           |                         1 |
+| dysmorphic features                                  | facial abnormalities                                          |                         1 |
+| dysmorphic features                                  | intellectual disabilities                                     |                         1 |
+| dysmorphic features                                  | facial dysmorphism                                            |                         1 |
+| dysmorphic features                                  | esotropia                                                     |                         1 |
+| dysmorphic features                                  | neonatal hypotonia                                            |                         1 |
+| dysmorphic features                                  | abnormalities in the heart, genitourinary or skeletal systems |                         1 |
+| congenital anomalies                                 | intellectual disability                                       |                         1 |
+| intellectual disability                              | facial features                                               |                         1 |
+| intellectual disability                              | motor retardation                                             |                         1 |
+| intellectual disability                              | growth and development delay                                  |                         1 |
+| intellectual disability                              | visceral malformations                                        |                         1 |
+| intellectual disability                              | son                                                           |                         1 |
+| intellectual disability                              | dendritic spine abnormalities                                 |                         1 |
+| intellectual disability                              | neuronal migration defects                                    |                         1 |
+| intellectual disability                              | facial dysmorphism                                            |                         1 |
+| intellectual disability                              | brain malformation                                            |                         1 |
+| intellectual disability                              | congenital anomaly syndrome                                   |                         1 |
+| intellectual disability                              | musculoskeletal abnormalities                                 |                         1 |
+| intellectual disability                              | neural abnormalities                                          |                         1 |
+| intellectual disability                              | gastroparesis                                                 |                         1 |
+| intellectual disability                              | intellectual and psychomotor disability                       |                         1 |
+| intellectual disability                              | infections of the respiratory tract and internal ear          |                         1 |
+| intellectual disability                              | hypotonia                                                     |                         1 |
+| intellectual disability                              | intestinal malrotation                                        |                         1 |
+| intellectual disability                              | asymmetry of ventricles                                       |                         1 |
+| intellectual disability                              | hypoplastic left heart syndrome                               |                         1 |
+| intellectual disability                              | feeding difficulties                                          |                         1 |
+| intellectual disability                              | hlhs                                                          |                         1 |
+| intellectual disability                              | duodenal atresia                                              |                         1 |
+| intellectual disability                              | febrile seizures                                              |                         1 |
+| intellectual disability                              | ventriculomegaly                                              |                         1 |
+| intellectual disability                              | developmental and speech delay                                |                         1 |
+| facial features                                      | motor retardation                                             |                         1 |
+| facial features                                      | growth and development delay                                  |                         1 |
+| facial features                                      | hypotonia                                                     |                         1 |
+| facial features                                      | visual abnormalities                                          |                         1 |
+| facial features                                      | delayed psychomotor development                               |                         1 |
+| facial features                                      | dental abnormalities                                          |                         1 |
+| facial features                                      | disability                                                    |                         1 |
+| facial features                                      | multisystem developmental disorder                            |                         1 |
+| facial features                                      | skin and nails abnormalities                                  |                         1 |
+| facial features                                      | retronychia of the toenails                                   |                         1 |
+| motor retardation                                    | growth and development delay                                  |                         1 |
+| son                                                  | phenotypic abnormalities                                      |                         1 |
+| son                                                  | intellectual disability syndrome                              |                         1 |
+| son                                                  | visceral malformations                                        |                         1 |
+| son                                                  | dendritic spine abnormalities                                 |                         1 |
+| son                                                  | neuronal migration defects                                    |                         1 |
+| son                                                  | facial dysmorphism                                            |                         1 |
+| son                                                  | brain malformation                                            |                         1 |
+| son                                                  | congenital anomaly syndrome                                   |                         1 |
+| son                                                  | musculoskeletal abnormalities                                 |                         1 |
+| son                                                  | neural abnormalities                                          |                         1 |
+| phenotypic abnormalities                             | intellectual disability syndrome                              |                         1 |
+| visceral malformations                               | dendritic spine abnormalities                                 |                         1 |
+| visceral malformations                               | neuronal migration defects                                    |                         1 |
+| visceral malformations                               | facial dysmorphism                                            |                         1 |
+| visceral malformations                               | brain malformation                                            |                         1 |
+| visceral malformations                               | congenital anomaly syndrome                                   |                         1 |
+| visceral malformations                               | musculoskeletal abnormalities                                 |                         1 |
+| visceral malformations                               | neural abnormalities                                          |                         1 |
+| dendritic spine abnormalities                        | neuronal migration defects                                    |                         1 |
+| dendritic spine abnormalities                        | facial dysmorphism                                            |                         1 |
+| dendritic spine abnormalities                        | brain malformation                                            |                         1 |
+| dendritic spine abnormalities                        | congenital anomaly syndrome                                   |                         1 |
+| dendritic spine abnormalities                        | musculoskeletal abnormalities                                 |                         1 |
+| dendritic spine abnormalities                        | neural abnormalities                                          |                         1 |
+| neuronal migration defects                           | facial dysmorphism                                            |                         1 |
+| neuronal migration defects                           | brain malformation                                            |                         1 |
+| neuronal migration defects                           | congenital anomaly syndrome                                   |                         1 |
+| neuronal migration defects                           | musculoskeletal abnormalities                                 |                         1 |
+| neuronal migration defects                           | neural abnormalities                                          |                         1 |
+| facial dysmorphism                                   | brain malformation                                            |                         1 |
+| facial dysmorphism                                   | congenital anomaly syndrome                                   |                         1 |
+| facial dysmorphism                                   | musculoskeletal abnormalities                                 |                         1 |
+| facial dysmorphism                                   | neural abnormalities                                          |                         1 |
+| facial dysmorphism                                   | developmental delay                                           |                         1 |
+| facial dysmorphism                                   | hypotonia                                                     |                         1 |
+| facial dysmorphism                                   | facial abnormalities                                          |                         1 |
+| facial dysmorphism                                   | intellectual disabilities                                     |                         1 |
+| facial dysmorphism                                   | esotropia                                                     |                         1 |
+| facial dysmorphism                                   | neonatal hypotonia                                            |                         1 |
+| facial dysmorphism                                   | abnormalities in the heart, genitourinary or skeletal systems |                         1 |
+| brain malformation                                   | congenital anomaly syndrome                                   |                         1 |
+| brain malformation                                   | musculoskeletal abnormalities                                 |                         1 |
+| brain malformation                                   | neural abnormalities                                          |                         1 |
+| congenital anomaly syndrome                          | musculoskeletal abnormalities                                 |                         1 |
+| congenital anomaly syndrome                          | neural abnormalities                                          |                         1 |
+| musculoskeletal abnormalities                        | neural abnormalities                                          |                         1 |
+| hypotonia                                            | visual abnormalities                                          |                         1 |
+| hypotonia                                            | delayed psychomotor development                               |                         1 |
+| hypotonia                                            | dental abnormalities                                          |                         1 |
+| hypotonia                                            | disability                                                    |                         1 |
+| hypotonia                                            | multisystem developmental disorder                            |                         1 |
+| hypotonia                                            | skin and nails abnormalities                                  |                         1 |
+| hypotonia                                            | retronychia of the toenails                                   |                         1 |
+| hypotonia                                            | gastroparesis                                                 |                         1 |
+| hypotonia                                            | intellectual and psychomotor disability                       |                         1 |
+| hypotonia                                            | infections of the respiratory tract and internal ear          |                         1 |
+| hypotonia                                            | intestinal malrotation                                        |                         1 |
+| hypotonia                                            | asymmetry of ventricles                                       |                         1 |
+| hypotonia                                            | hypoplastic left heart syndrome                               |                         1 |
+| hypotonia                                            | feeding difficulties                                          |                         1 |
+| hypotonia                                            | hlhs                                                          |                         1 |
+| hypotonia                                            | duodenal atresia                                              |                         1 |
+| hypotonia                                            | febrile seizures                                              |                         1 |
+| hypotonia                                            | ventriculomegaly                                              |                         1 |
+| hypotonia                                            | developmental and speech delay                                |                         1 |
+| hypotonia                                            | developmental delay                                           |                         1 |
+| hypotonia                                            | facial abnormalities                                          |                         1 |
+| hypotonia                                            | intellectual disabilities                                     |                         1 |
+| hypotonia                                            | esotropia                                                     |                         1 |
+| hypotonia                                            | neonatal hypotonia                                            |                         1 |
+| hypotonia                                            | abnormalities in the heart, genitourinary or skeletal systems |                         1 |
+| visual abnormalities                                 | delayed psychomotor development                               |                         1 |
+| visual abnormalities                                 | dental abnormalities                                          |                         1 |
+| visual abnormalities                                 | disability                                                    |                         1 |
+| visual abnormalities                                 | multisystem developmental disorder                            |                         1 |
+| visual abnormalities                                 | skin and nails abnormalities                                  |                         1 |
+| visual abnormalities                                 | retronychia of the toenails                                   |                         1 |
+| delayed psychomotor development                      | dental abnormalities                                          |                         1 |
+| delayed psychomotor development                      | disability                                                    |                         1 |
+| delayed psychomotor development                      | multisystem developmental disorder                            |                         1 |
+| delayed psychomotor development                      | skin and nails abnormalities                                  |                         1 |
+| delayed psychomotor development                      | retronychia of the toenails                                   |                         1 |
+| dental abnormalities                                 | disability                                                    |                         1 |
+| dental abnormalities                                 | multisystem developmental disorder                            |                         1 |
+| dental abnormalities                                 | skin and nails abnormalities                                  |                         1 |
+| dental abnormalities                                 | retronychia of the toenails                                   |                         1 |
+| disability                                           | multisystem developmental disorder                            |                         1 |
+| disability                                           | skin and nails abnormalities                                  |                         1 |
+| disability                                           | retronychia of the toenails                                   |                         1 |
+| multisystem developmental disorder                   | skin and nails abnormalities                                  |                         1 |
+| multisystem developmental disorder                   | retronychia of the toenails                                   |                         1 |
+| skin and nails abnormalities                         | retronychia of the toenails                                   |                         1 |
+| gastroparesis                                        | intellectual and psychomotor disability                       |                         1 |
+| gastroparesis                                        | infections of the respiratory tract and internal ear          |                         1 |
+| gastroparesis                                        | intestinal malrotation                                        |                         1 |
+| gastroparesis                                        | asymmetry of ventricles                                       |                         1 |
+| gastroparesis                                        | hypoplastic left heart syndrome                               |                         1 |
+| gastroparesis                                        | feeding difficulties                                          |                         1 |
+| gastroparesis                                        | hlhs                                                          |                         1 |
+| gastroparesis                                        | duodenal atresia                                              |                         1 |
+| gastroparesis                                        | febrile seizures                                              |                         1 |
+| gastroparesis                                        | ventriculomegaly                                              |                         1 |
+| gastroparesis                                        | developmental and speech delay                                |                         1 |
+| intellectual and psychomotor disability              | infections of the respiratory tract and internal ear          |                         1 |
+| intellectual and psychomotor disability              | intestinal malrotation                                        |                         1 |
+| intellectual and psychomotor disability              | asymmetry of ventricles                                       |                         1 |
+| intellectual and psychomotor disability              | hypoplastic left heart syndrome                               |                         1 |
+| intellectual and psychomotor disability              | feeding difficulties                                          |                         1 |
+| intellectual and psychomotor disability              | hlhs                                                          |                         1 |
+| intellectual and psychomotor disability              | duodenal atresia                                              |                         1 |
+| intellectual and psychomotor disability              | febrile seizures                                              |                         1 |
+| intellectual and psychomotor disability              | ventriculomegaly                                              |                         1 |
+| intellectual and psychomotor disability              | developmental and speech delay                                |                         1 |
+| infections of the respiratory tract and internal ear | intestinal malrotation                                        |                         1 |
+| infections of the respiratory tract and internal ear | asymmetry of ventricles                                       |                         1 |
+| infections of the respiratory tract and internal ear | hypoplastic left heart syndrome                               |                         1 |
+| infections of the respiratory tract and internal ear | feeding difficulties                                          |                         1 |
+| infections of the respiratory tract and internal ear | hlhs                                                          |                         1 |
+| infections of the respiratory tract and internal ear | duodenal atresia                                              |                         1 |
+| infections of the respiratory tract and internal ear | febrile seizures                                              |                         1 |
+| infections of the respiratory tract and internal ear | ventriculomegaly                                              |                         1 |
+| infections of the respiratory tract and internal ear | developmental and speech delay                                |                         1 |
+| intestinal malrotation                               | asymmetry of ventricles                                       |                         1 |
+| intestinal malrotation                               | hypoplastic left heart syndrome                               |                         1 |
+| intestinal malrotation                               | feeding difficulties                                          |                         1 |
+| intestinal malrotation                               | hlhs                                                          |                         1 |
+| intestinal malrotation                               | duodenal atresia                                              |                         1 |
+| intestinal malrotation                               | febrile seizures                                              |                         1 |
+| intestinal malrotation                               | ventriculomegaly                                              |                         1 |
+| intestinal malrotation                               | developmental and speech delay                                |                         1 |
+| asymmetry of ventricles                              | hypoplastic left heart syndrome                               |                         1 |
+| asymmetry of ventricles                              | feeding difficulties                                          |                         1 |
+| asymmetry of ventricles                              | hlhs                                                          |                         1 |
+| asymmetry of ventricles                              | duodenal atresia                                              |                         1 |
+| asymmetry of ventricles                              | febrile seizures                                              |                         1 |
+| asymmetry of ventricles                              | ventriculomegaly                                              |                         1 |
+| asymmetry of ventricles                              | developmental and speech delay                                |                         1 |
+| hypoplastic left heart syndrome                      | feeding difficulties                                          |                         1 |
+| hypoplastic left heart syndrome                      | hlhs                                                          |                         1 |
+| hypoplastic left heart syndrome                      | duodenal atresia                                              |                         1 |
+| hypoplastic left heart syndrome                      | febrile seizures                                              |                         1 |
+| hypoplastic left heart syndrome                      | ventriculomegaly                                              |                         1 |
+| hypoplastic left heart syndrome                      | developmental and speech delay                                |                         1 |
+| feeding difficulties                                 | hlhs                                                          |                         1 |
+| feeding difficulties                                 | duodenal atresia                                              |                         1 |
+| feeding difficulties                                 | febrile seizures                                              |                         1 |
+| feeding difficulties                                 | ventriculomegaly                                              |                         1 |
+| feeding difficulties                                 | developmental and speech delay                                |                         1 |
+| hlhs                                                 | duodenal atresia                                              |                         1 |
+| hlhs                                                 | febrile seizures                                              |                         1 |
+| hlhs                                                 | ventriculomegaly                                              |                         1 |
+| hlhs                                                 | developmental and speech delay                                |                         1 |
+| duodenal atresia                                     | febrile seizures                                              |                         1 |
+| duodenal atresia                                     | ventriculomegaly                                              |                         1 |
+| duodenal atresia                                     | developmental and speech delay                                |                         1 |
+| febrile seizures                                     | ventriculomegaly                                              |                         1 |
+| febrile seizures                                     | developmental and speech delay                                |                         1 |
+| ventriculomegaly                                     | developmental and speech delay                                |                         1 |
+| growth hormone deficiency                            | palmar crease                                                 |                         1 |
+| growth hormone deficiency                            | autosomal dominant genetic disorder                           |                         1 |
+| palmar crease                                        | autosomal dominant genetic disorder                           |                         1 |
+| developmental delay                                  | facial abnormalities                                          |                         1 |
+| developmental delay                                  | intellectual disabilities                                     |                         1 |
+| developmental delay                                  | esotropia                                                     |                         1 |
+| developmental delay                                  | neonatal hypotonia                                            |                         1 |
+| developmental delay                                  | abnormalities in the heart, genitourinary or skeletal systems |                         1 |
+| facial abnormalities                                 | intellectual disabilities                                     |                         1 |
+| facial abnormalities                                 | esotropia                                                     |                         1 |
+| facial abnormalities                                 | neonatal hypotonia                                            |                         1 |
+| facial abnormalities                                 | abnormalities in the heart, genitourinary or skeletal systems |                         1 |
+| intellectual disabilities                            | esotropia                                                     |                         1 |
+| intellectual disabilities                            | neonatal hypotonia                                            |                         1 |
+| intellectual disabilities                            | abnormalities in the heart, genitourinary or skeletal systems |                         1 |
+| esotropia                                            | neonatal hypotonia                                            |                         1 |
+| esotropia                                            | abnormalities in the heart, genitourinary or skeletal systems |                         1 |
+| neonatal hypotonia                                   | abnormalities in the heart, genitourinary or skeletal systems |                         1 |
