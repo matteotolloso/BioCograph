@@ -41,6 +41,7 @@ def main():
     work_graph.add_dataset(dataset, bbent_types = settings.get('bioBERT_entity_types')) 
 
     work_graph.save_nodes_to_path("./results/nodes.txt")
+    work_graph.save_edges_to_path("./results/edges.txt")
 
     widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
     
@@ -53,18 +54,20 @@ def main():
     remaining_nodes -= len(showing_nodes)
     showing_nodes += work_graph.get_main_nodes(max=remaining_nodes)
 
-    nodes_colors = {}
+    nodes_layer = {}
     for n in showing_nodes:
         if n in widest_set:
-            nodes_colors[n] = 'red'
+            nodes_layer[n] = 'first'
         elif n in neighbors:
-           nodes_colors[n] = 'orange'
+           nodes_layer[n] = 'second'
         else:
-            nodes_colors[n] = 'green'
+            nodes_layer[n] = 'third'
             
     
-    work_graph.draw(showing_nodes=showing_nodes,node_colors=nodes_colors)
+    work_graph.draw( showing_nodes=showing_nodes, layout='shell', nodes_layer=nodes_layer)
 
+    work_graph.export_cytoscape_data("./results/cytoskape_format.json")
+    
     plt.show()  
 
 

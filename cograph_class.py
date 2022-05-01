@@ -1,10 +1,12 @@
 from genericpath import exists
+from locale import normalize
 from platform import node
 import networkx as nx
 from itertools import combinations
 import matplotlib.pyplot as plt
 from queue import PriorityQueue
 from tabulate import tabulate
+import json
 
 from sqlalchemy import desc, false
 from dataset_class import Dataset
@@ -22,7 +24,8 @@ class Cograph:
                     ot=False,
                     bbent=True,
                     bbent_types = 'all',
-                    alw_pres=[] # TODO remove?
+                    alw_pres=[], # TODO remove?
+                    normalize = True
                     ) -> None:
     
         papers = dataset.get_list()
@@ -72,35 +75,64 @@ class Cograph:
                     self._nxGraph[a[0]][b[0]]['capacity'] += paper['weight']
                 else:
                     self._nxGraph.add_edge(a[0], b[0], capacity=paper['weight'])
+        
+        # new capacity is the old capacity divided by the sum of the weights of the nodes
+        # it is a value between 0 and 1, it is 1 if the nodes occours always together
+        #TODO problem: nodes that appear few time in the same papers has an high capacity
+        if normalize: 
+            for a, b in self._nxGraph.edges:
+                self._nxGraph[a][b]['capacity'] = self._nxGraph[a][b]['capacity'] / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
 
-    def draw(self, showing_nodes : 'list[str]' = [], node_colors : dict = {}) -> None:
+    def draw(self, showing_nodes : 'list[str]' = [], nodes_layer : dict = {}, layout: str = 'spring') -> None:
     
         fig, ax = plt.subplots(figsize=(17, 12))
 
         graph_to_draw = self._nxGraph.subgraph(showing_nodes)
         
         #layout
-        pos = nx.spring_layout(graph_to_draw, weight='capacity', seed=1)
-        #pos = nx.shell_layout(graph,rotate=15, nlist=[[n for n in main_nodes], [n for n in hilight if n not in main_nodes], [n for n in graph.nodes if n not in main_nodes and n not in hilight]])
+        pos = []
+        
+        if layout == 'spring':
+            pos = nx.spring_layout(graph_to_draw, weight='capacity', seed=1)
+        
+        elif layout == 'shell':
+            # position based on the node layer
+            first_list = [n if nodes_layer[n] == 'first' else None for n in graph_to_draw.nodes]
+            second_list = [n if nodes_layer[n] == 'second' else None for n in graph_to_draw.nodes]
+            third_list = [n if nodes_layer[n] == 'third' else None for n in graph_to_draw.nodes]
+            pos = nx.shell_layout(graph_to_draw,rotate=0, nlist=[first_list, second_list, third_list])
+        
         #pos = nx.nx_agraph.graphviz_layout(graph)
         #pos = nx.nx_pydot.pydot_layout(graph)
 
         #edges
-        edge_colors = ['gray' for u, v in graph_to_draw.edges()]
-        
-        edgewidth = [graph_to_draw[u][v]['capacity'] for u, v in graph_to_draw.edges()]
-        maxi = max(edgewidth)
-        edgewidth = list(map( lambda x : 50.0 * (x/float(maxi)), edgewidth))
+        edge_colors = []
+        for u, v in graph_to_draw.edges():
+            c = 1 - graph_to_draw[u][v]['capacity']*50
+            edge_colors.append( [c, c, c] )
+
+
+        edgewidth = [5 for u, v in graph_to_draw.edges()]
         nx.draw_networkx_edges(graph_to_draw, pos, alpha=0.3, width=edgewidth, edge_color=edge_colors)
         
         #nodes
-
+        # TODO nodesize not used
         nodesize = [ (graph_to_draw.nodes[v]['weight']* 2) for v in graph_to_draw.nodes()]
         maxi = max(nodesize)
         nodesize = list(map( lambda x : 7000.0 * x/float(maxi), nodesize))
         
-        node_colors = [node_colors[n] for n in graph_to_draw.nodes()] # transform dict into list
-        nx.draw_networkx_nodes(graph_to_draw, pos, node_size=nodesize, node_color=node_colors, alpha=0.9)
+        #color based on the node layer
+        # transform dict of layer into list of colors
+        node_color = [] 
+        for n in graph_to_draw.nodes():
+            if nodes_layer[n] == 'first':
+                node_color.append('red')
+            elif nodes_layer[n] == 'second':
+                node_color.append('yellow')
+            else:
+                node_color.append('green')
+
+        nx.draw_networkx_nodes(graph_to_draw, pos, node_color=node_color, alpha=0.9)
         
         label_options = {"ec": "k", "fc": "white", "alpha": 0.5}
         nx.draw_networkx_labels(graph_to_draw, pos, font_size=10, bbox=label_options)
@@ -256,3 +288,17 @@ class Cograph:
         nodes.sort(key = lambda x:x[1], reverse=True)
         with open(path, 'w') as file:
             file.write(tabulate(nodes, headers=['Entity', 'Number of occurrences'], tablefmt='orgtbl'))
+
+    def save_edges_to_path(self, path : str):
+        cooccurrences_list = list(self._nxGraph.edges.data('capacity'))
+        cooccurrences_list.sort(key = lambda x:x[2], reverse=True)
+        with open(path, 'w') as file:
+                file.write(tabulate(cooccurrences_list,  headers=['Entity', 'Entity', 'Number of cooccurrences'],  tablefmt='orgtbl'))
+
+    def export_cytoscape_data(self, path : str) -> None:
+        res = nx.cytoscape_data(self._nxGraph)
+        with open(path, 'w') as f:
+            f.write(json.dumps(res))
+    
+    
+    

@@ -24,7 +24,7 @@
         "pathway" : true
     },
     
-    "widest_set": ["son" ],
+    "widest_set": ["zttk", "son"],
     
     "bioBERT_entity_types_widest_set" : {
         "gene" : true,
@@ -36,8 +36,8 @@
         "pathway" : false
     },
     "bioBERT_entity_types_second_layer" : {
-        "gene" : false,
-        "disease" : true,
+        "gene" : true,
+        "disease" : false,
         "species" : false,
         "drug" : false,
         "mutation" : false,
@@ -45,7 +45,7 @@
         "pathway" : false
     },
 
-    "numb_graph_nodes": 170,
+    "numb_graph_nodes": 100,
     "always_present" : [ ],
 
     "check_tags": [ ],
@@ -60,7 +60,13 @@
             "dbp5",
             "son",
             "nre binding protein",
-            "son gene"
+            "son gene",
+            "mutant son genes",
+            "mutant son protein",
+            "son target genes", 
+            "human wild-type son", 
+            "son target genes"
+            
         ],
         "zttk": [
             "zttk", 
