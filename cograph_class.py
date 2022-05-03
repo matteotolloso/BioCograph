@@ -1,3 +1,5 @@
+import math
+from re import A
 import networkx as nx
 from itertools import combinations
 import matplotlib.pyplot as plt
@@ -7,6 +9,7 @@ import json
 from colorsys import hsv_to_rgb
 from sqlalchemy import desc, false
 from dataset_class import Dataset
+
 
 class Cograph:
 
@@ -78,7 +81,7 @@ class Cograph:
         #TODO problem: nodes that appear few time in the same papers has an high capacity
         if normalize: 
             for (a, b) in self._nxGraph.edges:
-                self._nxGraph[a][b]['capacity'] = self._nxGraph[a][b]['capacity'] / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
+                self._nxGraph[a][b]['capacity'] = 2 * self._nxGraph[a][b]['capacity'] / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
 
     def draw(self, showing_nodes : 'list[str]' = [], nodes_layer : dict = {}, layout: str = 'spring') -> None:
     
@@ -97,7 +100,7 @@ class Cograph:
             first_list = [n if nodes_layer[n] == 'first' else None for n in graph_to_draw.nodes]
             second_list = [n if nodes_layer[n] == 'second' else None for n in graph_to_draw.nodes]
             third_list = [n if nodes_layer[n] == 'third' else None for n in graph_to_draw.nodes]
-            pos = nx.shell_layout(graph_to_draw,rotate=0, nlist=[first_list, second_list, third_list])
+            pos = nx.shell_layout(graph_to_draw, nlist=[first_list, second_list, third_list])
         
         #pos = nx.nx_agraph.graphviz_layout(graph)
         #pos = nx.nx_pydot.pydot_layout(graph)
@@ -149,13 +152,75 @@ class Cograph:
         fig.tight_layout()
         plt.axis("off")
 
-    def widest_path(self, src, target, bbent_types = 'all') -> 'list[str]':
+    def widest_path(self, s, t, bbent_types = 'all') -> list:
+        """
+        find the widest path from s to t
+        assunig 0 == -infinity and 1 == infinity
+        """
+
+        if s not in self._nxGraph.nodes or t not in self._nxGraph.nodes:
+            print('node not in graph')
+            return []
+
+        p = {}  #parent
+        b = {}  #bandwidth
+        f = []  #frontier
+
+        for n in self._nxGraph.nodes:
+            p[n] = None
+            b[n] = 0 #assuming all edges have capacity greater than 0 ([0, 1])
+
+        b[s] = 1    
+
+        for w in self._nxGraph.neighbors(s):
+            p[w] = s  #s is the parent of w
+            b[w] = self._nxGraph[s][w]['capacity'] #capacity is the bandwidth to w (because is a neighbor of s)
+            # append w to the frontier only if it is of the right type
+            if (bbent_types == 'all') or (bbent_types.get(self._nxGraph.nodes[w]['type'])):
+                f.append(w)
+        
+        while True:
+            u = max(f, key = lambda x: b[x]) # node with the maximum bandwidth
+            f.remove(u)
+
+            for w in self._nxGraph.neighbors(u):
+                if b[w] == 0:
+                    p[w] = u
+                    b[w] = min(b[u], self._nxGraph[u][w]['capacity'])
+                    # append w to the frontier only if it is of the right type or if it is the target
+                    if (bbent_types == 'all') or (bbent_types.get(self._nxGraph.nodes[w]['type'])) or w == t:
+                        f.append(w)
+                elif (w in f) and (b[w] < min(b[u], self._nxGraph[u][w]['capacity'])):
+                    p[w] = u
+                    b[w] = min(b[u], self._nxGraph[u][w]['capacity'])
+                else:
+                    print("error widest path")
+            
+            if (b[t] > 0) and (t not in f):
+                # i arrived to the target with the maximum bandwidth
+                break
+
+            if f == []:
+                # there is no path from s to t
+                return []   
+                
+        # build the path
+        path = [t]
+        while t != s:
+            t = p[t]
+            path.append(t)
+        path.reverse()
+        return path
+
+        
+    
+    def _old_widest_path(self, src, target, bbent_types = 'all') -> 'list[str]':
         #TODO problem: non deterministic
                 
         # To keep track of widest distance
         widest  = {}
         for key in self._nxGraph.nodes():
-            widest[key] = -10**9
+            widest[key] = -(10**9)
         
         # To get the path at the end of the algorithm
         parent = {}
@@ -237,8 +302,16 @@ class Cograph:
             return []
 
         widest_set = []
+        
         for u, v in combinations(endpoints, 2):
-            widest_set += self.widest_path(u, v, bbent_types=bbent_types)
+            a =self.widest_path(u, v, bbent_types=bbent_types)
+            widest_set += a
+            print(u, v, a)
+
+        for n in endpoints: # add the endpoints
+            if n in self._nxGraph.nodes:
+                widest_set.append(n)
+
         widest_set = list(set(widest_set))
         return widest_set
     
@@ -295,6 +368,10 @@ class Cograph:
         """ Convert val in range minval..maxval to the range 0..120 degrees which
         correspond to the colors Red and Green in the HSV colorspace.
         """
+        avg = (minval + maxval) / 2.0
+        val = (val-avg)*(-1) + avg
+
+        
         h = (float(val-minval) / float(maxval-minval)) * 120
 
         # Convert hsv color (h,1,1) to its rgb equivalent.

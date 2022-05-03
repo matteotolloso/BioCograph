@@ -1,71 +1,1219 @@
-| Entity                                                        |   Number of occurrences |
-|---------------------------------------------------------------+-------------------------|
-| zttk                                                          |                      85 |
-| son                                                           |                      79 |
-| intellectual disability                                       |                      49 |
-| hypotonia                                                     |                      43 |
-| dysmorphic features                                           |                      41 |
-| facial dysmorphism                                            |                      30 |
-| seizures                                                      |                      22 |
-| son haploinsufficiency                                        |                      20 |
-| febrile seizures                                              |                      19 |
-| hlhs                                                          |                      19 |
-| son gene mutation                                             |                      19 |
-| iga                                                           |                      19 |
-| intellectual and psychomotor disability                       |                      19 |
-| gastroparesis                                                 |                      19 |
-| hypoplastic left heart syndrome                               |                      19 |
-| asymmetry of ventricles                                       |                      19 |
-| feeding difficulties                                          |                      19 |
-| ventriculomegaly                                              |                      19 |
-| son mutations                                                 |                      19 |
-| developmental and speech delay                                |                      19 |
-| duodenal atresia                                              |                      19 |
-| intestinal malrotation                                        |                      19 |
-| infections of the respiratory tract and internal ear          |                      19 |
-| facial features                                               |                      16 |
-| congenital anomaly syndrome                                   |                      16 |
-| dendritic spine abnormalities                                 |                      16 |
-| mice                                                          |                      16 |
-| son insufficiency                                             |                      16 |
-| mouse                                                         |                      16 |
-| neuronal migration defects                                    |                      16 |
-| musculoskeletal abnormalities                                 |                      16 |
-| visceral malformations                                        |                      16 |
-| truncated son protein                                         |                      16 |
-| neural abnormalities                                          |                      16 |
-| zttk syndrome gene                                            |                      16 |
-| brain malformation                                            |                      16 |
-| levetiracetam                                                 |                      14 |
-| developmental delay                                           |                      14 |
-| intellectual disabilities                                     |                      14 |
-| neonatal hypotonia                                            |                      14 |
-| p. arg1778serfs*11                                            |                      14 |
-| facial abnormalities                                          |                      14 |
-| abnormalities in the heart, genitourinary or skeletal systems |                      14 |
-| c.5334_5335delag                                              |                      14 |
-| esotropia                                                     |                      14 |
-| multisystem developmental disorder                            |                      10 |
-| visual abnormalities                                          |                      10 |
-| disability                                                    |                      10 |
-| retronychia of the toenails                                   |                      10 |
-| dental abnormalities                                          |                      10 |
-| delayed psychomotor development                               |                      10 |
-| skin and nails abnormalities                                  |                      10 |
-| abnormal brain imaging                                        |                       8 |
-| multisystemic disorder                                        |                       8 |
-| c.5753_5756del                                                |                       8 |
-| congenital anomalies                                          |                       8 |
-| growth hormone deficiency                                     |                       8 |
-| amino                                                         |                       8 |
-| palmar crease                                                 |                       8 |
-| p.ser1766leufs*7                                              |                       8 |
-| growth hormone                                                |                       8 |
-| autosomal dominant genetic disorder                           |                       8 |
-| son variants                                                  |                       8 |
-| motor retardation                                             |                       6 |
-| c.394c>t                                                      |                       6 |
-| p.q132x                                                       |                       6 |
-| growth and development delay                                  |                       6 |
-| phenotypic abnormalities                                      |                       4 |
-| intellectual disability syndrome                              |                       4 |
+| Entity                                                             |   Number of occurrences |
+|--------------------------------------------------------------------+-------------------------|
+| son                                                                |                    1480 |
+| yeast                                                              |                     432 |
+| gle1                                                               |                     401 |
+| saccharomyces cerevisiae                                           |                     298 |
+| atp                                                                |                     252 |
+| dead-box protein                                                   |                     204 |
+| inositol hexakisphosphate                                          |                     193 |
+| nup159                                                             |                     173 |
+| mex67                                                              |                     161 |
+| npc                                                                |                     157 |
+| mouse                                                              |                     157 |
+| atpase                                                             |                     148 |
+| dead-box proteins                                                  |                     128 |
+| ip6                                                                |                     123 |
+| ddx19                                                              |                     118 |
+| intellectual disability                                            |                     118 |
+| dead-box                                                           |                     110 |
+| rat8                                                               |                     107 |
+| dbp                                                                |                     103 |
+| zttk                                                               |                      98 |
+| rat                                                                |                      97 |
+| dbp5 atpase                                                        |                      93 |
+| dbp5p                                                              |                      92 |
+| adp                                                                |                      85 |
+| mtr2                                                               |                      85 |
+| n                                                                  |                      85 |
+| helicase                                                           |                      83 |
+| rna helicase                                                       |                      83 |
+| insp6                                                              |                      81 |
+| dead-box protein dbp5                                              |                      74 |
+| cancer                                                             |                      72 |
+| nucleotide                                                         |                      70 |
+| ip(6)                                                              |                      69 |
+| erf1                                                               |                      66 |
+| leukemia                                                           |                      63 |
+| helicases                                                          |                      63 |
+| ipk1                                                               |                      62 |
+| mex67p                                                             |                      62 |
+| nuclear                                                            |                      61 |
+| rat8p                                                              |                      61 |
+| nup42                                                              |                      59 |
+| nucleotides                                                        |                      59 |
+| nab2                                                               |                      58 |
+| gfp                                                                |                      58 |
+| gfd1                                                               |                      58 |
+| drosophila                                                         |                      58 |
+| zinc                                                               |                      56 |
+| rna helicases                                                      |                      54 |
+| nup116                                                             |                      53 |
+| rna helicase dbp5                                                  |                      52 |
+| rats                                                               |                      52 |
+| musculoskeletal abnormalities                                      |                      51 |
+| los4                                                               |                      51 |
+| arabidopsis                                                        |                      51 |
+| ejc                                                                |                      51 |
+| eif4a                                                              |                      50 |
+| developmental delay                                                |                      49 |
+| nxf1                                                               |                      48 |
+| dead-box atpase                                                    |                      48 |
+| amino acid                                                         |                      48 |
+| lrf                                                                |                      48 |
+| comp gene promoter                                                 |                      48 |
+| comp                                                               |                      48 |
+| comp gene                                                          |                      48 |
+| hdac1                                                              |                      48 |
+| carboxy                                                            |                      47 |
+| insp(6)                                                            |                      47 |
+| mice                                                               |                      46 |
+| son protein                                                        |                      45 |
+| glycine                                                            |                      44 |
+| uap56                                                              |                      44 |
+| dead-box family                                                    |                      44 |
+| hdac6                                                              |                      43 |
+| ada                                                                |                      43 |
+| down syndrome                                                      |                      43 |
+| facial dysmorphism                                                 |                      43 |
+| hypotonia                                                          |                      43 |
+| erf3                                                               |                      42 |
+| nups                                                               |                      42 |
+| dbp5 mutants                                                       |                      42 |
+| c                                                                  |                      42 |
+| schizosaccharomyces pombe                                          |                      42 |
+| mex67-5                                                            |                      42 |
+| dysmorphic features                                                |                      41 |
+| gle1 mutants                                                       |                      41 |
+| plasmodium falciparum                                              |                      41 |
+| gfd1p                                                              |                      41 |
+| tumor                                                              |                      40 |
+| congenital malformations                                           |                      40 |
+| atg                                                                |                      40 |
+| tap                                                                |                      40 |
+| nup159p                                                            |                      40 |
+| human ddx19                                                        |                      38 |
+| rat8-2                                                             |                      38 |
+| dead-box protein 5                                                 |                      36 |
+| mif4g domain                                                       |                      36 |
+| mif4g                                                              |                      36 |
+| eif4g                                                              |                      36 |
+| magoh                                                              |                      36 |
+| y14                                                                |                      36 |
+| epilepsy                                                           |                      35 |
+| malformations of the cerebral cortex                               |                      35 |
+| vision problems                                                    |                      35 |
+| ctif                                                               |                      35 |
+| slip1                                                              |                      35 |
+| histone mrnas                                                      |                      35 |
+| human dbp5                                                         |                      35 |
+| arginine                                                           |                      35 |
+| serine                                                             |                      35 |
+| alpha-fetoprotein                                                  |                      35 |
+| rabbit                                                             |                      35 |
+| rna-dependent atpase                                               |                      34 |
+| son haploinsufficiency                                             |                      34 |
+| nuclear pore complex                                               |                      34 |
+| npc proteins                                                       |                      34 |
+| s. cerevisiae                                                      |                      33 |
+| dead-box atpases                                                   |                      32 |
+| vitamin d                                                          |                      32 |
+| eif4aiii                                                           |                      32 |
+| dead-box rna helicase dbp5                                         |                      31 |
+| mrna export factor dbp5                                            |                      31 |
+| eif3                                                               |                      31 |
+| murine                                                             |                      30 |
+| asp-glu-ala-asp                                                    |                      30 |
+| translation initiation factor elf-4a                               |                      30 |
+| helc                                                               |                      30 |
+| helicase c                                                         |                      30 |
+| d. discoideum                                                      |                      30 |
+| dead-box-containing proteins                                       |                      30 |
+| helc gene                                                          |                      30 |
+| xenopus vasa-like protein                                          |                      30 |
+| saccharomyces cerevisiae gene dbp5 [2]                             |                      30 |
+| dead-box helicases                                                 |                      30 |
+| homologous dead-box proteins                                       |                      30 |
+| dictyostelium discoideum                                           |                      30 |
+| helc protein                                                       |                      30 |
+| xvlp                                                               |                      30 |
+| dead-box rna helicases                                             |                      30 |
+| xenopus laevis                                                     |                      30 |
+| prp8 [7]                                                           |                      30 |
+| amino-acid                                                         |                      30 |
+| vasa                                                               |                      30 |
+| sox5                                                               |                      29 |
+| dead-box helicase                                                  |                      29 |
+| dead-box rna helicase                                              |                      29 |
+| oct4                                                               |                      29 |
+| eef2                                                               |                      29 |
+| deacetylase                                                        |                      29 |
+| cartilage oligomeric matrix protein gene                           |                      29 |
+| chondrosarcoma                                                     |                      29 |
+| poz                                                                |                      29 |
+| aggrecan                                                           |                      29 |
+| multiple epiphyseal dysplasia                                      |                      29 |
+| leukemia/lymphoma-related factor                                   |                      29 |
+| trichostatin a                                                     |                      29 |
+| comp-specific reporter gene                                        |                      29 |
+| lymphoma                                                           |                      29 |
+| alcian blue                                                        |                      29 |
+| histone deacetylase-1                                              |                      29 |
+| morphogenetic protein-2                                            |                      29 |
+| collagen types ii, ix, x, and xi                                   |                      29 |
+| hdac                                                               |                      29 |
+| human cartilage oligomeric matrix protein                          |                      29 |
+| bone morphogenetic protein-2                                       |                      29 |
+| poxvirus zinc finger                                               |                      29 |
+| pseudoachondroplasia                                               |                      29 |
+| p15                                                                |                      29 |
+| atpases                                                            |                      28 |
+| phosphate                                                          |                      28 |
+| phosphorus                                                         |                      28 |
+| gle1 mrna export factor                                            |                      28 |
+| gle1 variants                                                      |                      28 |
+| glfg lethal 1                                                      |                      28 |
+| 6-pentakisphosphate 2-kinase                                       |                      28 |
+| gle1-insp(6)                                                       |                      28 |
+| ipk1 low-phytic-acid mutation                                      |                      28 |
+| phytate                                                            |                      28 |
+| los4 atpase                                                        |                      28 |
+| insp                                                               |                      28 |
+| inositol                                                           |                      28 |
+| gle1 proteins                                                      |                      28 |
+| arabidopsis thaliana                                               |                      28 |
+| 6-pentakisphosphate                                                |                      28 |
+| phytic acid                                                        |                      28 |
+| osmotically responsive genes 4                                     |                      28 |
+| phytic-acid                                                        |                      28 |
+| arabidopsis thaliana gle1 variants                                 |                      28 |
+| myo-inositol-1,2,3,4,5,6-hexakisphosphate                          |                      28 |
+| importin beta                                                      |                      27 |
+| ded1                                                               |                      27 |
+| gle1p                                                              |                      27 |
+| ran effectors                                                      |                      27 |
+| xpo1-1                                                             |                      27 |
+| rss1-                                                              |                      27 |
+| nup42p                                                             |                      27 |
+| ymr255w                                                            |                      27 |
+| rat7p                                                              |                      27 |
+| rat7deltan                                                         |                      27 |
+| rat8-2 allele of dbp5                                              |                      27 |
+| xpo1p                                                              |                      27 |
+| gsp1p                                                              |                      27 |
+| rat7-1                                                             |                      27 |
+| rat7pdeltan                                                        |                      27 |
+| ran                                                                |                      27 |
+| xpo1-                                                              |                      27 |
+| rip1p                                                              |                      27 |
+| nup214                                                             |                      26 |
+| negative regulatory element-binding protein                        |                      26 |
+| gtp                                                                |                      26 |
+| human uap56                                                        |                      25 |
+| ssn2                                                               |                      25 |
+| med13                                                              |                      25 |
+| pas                                                                |                      25 |
+| ubiquitin                                                          |                      25 |
+| msn2                                                               |                      25 |
+| atg24                                                              |                      25 |
+| snx4                                                               |                      25 |
+| sorting nexin                                                      |                      25 |
+| aim                                                                |                      25 |
+| scaffold protein atg11                                             |                      25 |
+| autophagy-related                                                  |                      25 |
+| nitrogen                                                           |                      25 |
+| ckm                                                                |                      25 |
+| atg17                                                              |                      25 |
+| phosphoinositide inositol hexaphosphate                            |                      25 |
+| rim15                                                              |                      25 |
+| cdk8 kinase module                                                 |                      25 |
+| atg8 interacting motif                                             |                      25 |
+| atg20                                                              |                      25 |
+| dexd/h-box proteins                                                |                      25 |
+| nanog                                                              |                      25 |
+| mitoxantrone                                                       |                      25 |
+| ellipticine                                                        |                      25 |
+| nogalamycin                                                        |                      25 |
+| dapi                                                               |                      25 |
+| novobiocin                                                         |                      25 |
+| genistein                                                          |                      25 |
+| di-amidino-2-phenylindole                                          |                      25 |
+| nucleic acid-dependent atpase                                      |                      25 |
+| camptothecin                                                       |                      25 |
+| distamycin                                                         |                      25 |
+| plasmodium falciparum helicase                                     |                      25 |
+| cyclophosphamide                                                   |                      25 |
+| ethidium bromide                                                   |                      25 |
+| aphidicolin                                                        |                      25 |
+| daunorubicin                                                       |                      25 |
+| pfd66                                                              |                      25 |
+| actinomycin d                                                      |                      25 |
+| nalidixic acid                                                     |                      25 |
+| vp-16                                                              |                      25 |
+| netropsin                                                          |                      25 |
+| leukemic                                                           |                      25 |
+| green fluorescent protein                                          |                      25 |
+| karyopherins                                                       |                      25 |
+| glfg region                                                        |                      25 |
+| tetrapeptide glycine                                               |                      25 |
+| mtr2p                                                              |                      25 |
+| glfg regions                                                       |                      25 |
+| kap95p                                                             |                      25 |
+| leucine                                                            |                      25 |
+| nup100                                                             |                      25 |
+| glfg                                                               |                      25 |
+| nup116p                                                            |                      25 |
+| nup100p                                                            |                      25 |
+| karyopherin transport factor kap95p                                |                      25 |
+| gle2-gfp                                                           |                      25 |
+| glfg domain                                                        |                      25 |
+| gle1-gfp                                                           |                      25 |
+| saccharomyces cerevisiae nuclear pore complex (npc) proteins       |                      25 |
+| pred54                                                             |                      24 |
+| c21orf11                                                           |                      24 |
+| pred44                                                             |                      24 |
+| hc21                                                               |                      24 |
+| c21orf70                                                           |                      24 |
+| c21orf57                                                           |                      24 |
+| c21orf7                                                            |                      24 |
+| c21orf66                                                           |                      24 |
+| genetic disorders                                                  |                      24 |
+| gcfc                                                               |                      24 |
+| gc-rich sequence dna-binding factor candidate                      |                      24 |
+| c21orf69                                                           |                      24 |
+| pred12                                                             |                      24 |
+| preds                                                              |                      24 |
+| c21orf15                                                           |                      24 |
+| c21orf58                                                           |                      24 |
+| pred31                                                             |                      24 |
+| c21orf68                                                           |                      24 |
+| pred34                                                             |                      24 |
+| c21orf67                                                           |                      24 |
+| pred56                                                             |                      24 |
+| hc21 transcriptome                                                 |                      24 |
+| c21orf63                                                           |                      24 |
+| hc21 genes                                                         |                      24 |
+| ip 6                                                               |                      23 |
+| karyopherin                                                        |                      23 |
+| nup107-160 complex                                                 |                      23 |
+| nup160                                                             |                      23 |
+| ran-gtpase                                                         |                      23 |
+| dbps                                                               |                      23 |
+| mos3                                                               |                      23 |
+| sar1                                                               |                      23 |
+| nup96                                                              |                      23 |
+| npl3                                                               |                      23 |
+| cryophyte                                                          |                      23 |
+| sar3                                                               |                      23 |
+| rli1                                                               |                      23 |
+| dbp5's atpase                                                      |                      23 |
+| multisystem developmental disorder                                 |                      23 |
+| telomerase                                                         |                      22 |
+| flna                                                               |                      22 |
+| psmd3                                                              |                      22 |
+| id syndrome                                                        |                      22 |
+| wdr62                                                              |                      22 |
+| pfkl                                                               |                      22 |
+| pck2                                                               |                      22 |
+| idh2                                                               |                      22 |
+| tubg1                                                              |                      22 |
+| dd                                                                 |                      22 |
+| malformation of the spine, brain, and eyes                         |                      22 |
+| acy1                                                               |                      22 |
+| pnkp                                                               |                      22 |
+| intellectual-disability syndrome                                   |                      22 |
+| seizures                                                           |                      22 |
+| acute myeloid leukemia                                             |                      22 |
+| rat8-2 allele                                                      |                      22 |
+| gle1-2                                                             |                      22 |
+| inositol-1,3,4,5,6-pentakisphosphate 2-kinase                      |                      22 |
+| phe-gly                                                            |                      22 |
+| nup116deltaipk1delta                                               |                      22 |
+| nup42deltaipk1delta double mutants                                 |                      22 |
+| inositol 1,3,4,5,6-pentakisphosphate                               |                      22 |
+| gle1-mrna                                                          |                      22 |
+| gle2                                                               |                      22 |
+| ipk1-4                                                             |                      22 |
+| ipk2                                                               |                      22 |
+| inositides                                                         |                      22 |
+| mss4                                                               |                      22 |
+| phosphatidylinositol 4,5-bisphosphate                              |                      22 |
+| inositol-1,3,4,5,6-pentakisphosphate                               |                      22 |
+| mouse mammary tumor virus long terminal repeat                     |                      22 |
+| mammary tumor                                                      |                      22 |
+| son mutation                                                       |                      21 |
+| hepatitis b virus                                                  |                      21 |
+| setd8                                                              |                      21 |
+| hepatoma                                                           |                      21 |
+| sp40,40                                                            |                      21 |
+| differentiation antigen glial fibrillary                           |                      21 |
+| astrocytomas                                                       |                      21 |
+| nm23                                                               |                      21 |
+| glioma                                                             |                      21 |
+| gfap                                                               |                      21 |
+| ran binding protein-2                                              |                      21 |
+| chaperonin                                                         |                      21 |
+| acidic protein                                                     |                      21 |
+| complement inhibitory molecule                                     |                      21 |
+| calnexin                                                           |                      21 |
+| nucleoside diphosphate kinase b                                    |                      21 |
+| "cancer testis antigens"                                           |                      21 |
+| nucleoside diphosphate                                             |                      21 |
+| tcp-1                                                              |                      21 |
+| igg antibodies                                                     |                      21 |
+| astrocytoma                                                        |                      21 |
+| bax-inhibitor 1                                                    |                      21 |
+| gliomas                                                            |                      21 |
+| ejc proteins                                                       |                      21 |
+| erythroleukemia                                                    |                      21 |
+| exon junction complex                                              |                      21 |
+| srm160                                                             |                      21 |
+| ref                                                                |                      21 |
+| rnps1                                                              |                      21 |
+| aly                                                                |                      21 |
+| ejc)                                                               |                      21 |
+| exon junction complex proteins                                     |                      21 |
+| sm proteins                                                        |                      21 |
+| human beta-globin gene                                             |                      21 |
+| human beta-globin transcripts                                      |                      21 |
+| (                                                                  |                      21 |
+| neurodegenerative diseases                                         |                      20 |
+| dbp5 mutant                                                        |                      20 |
+| estrogens                                                          |                      20 |
+| nonreceptor estrogen-binding protein                               |                      20 |
+| estrone                                                            |                      20 |
+| alpha-fp                                                           |                      20 |
+| estrogen                                                           |                      20 |
+| estriol                                                            |                      20 |
+| liver sebp                                                         |                      20 |
+| non-receptor estrogen-binding protein                              |                      20 |
+| estradiol                                                          |                      20 |
+| hexestrol                                                          |                      20 |
+| estrogen-binding protein                                           |                      20 |
+| blood alpha-fp                                                     |                      20 |
+| sebp                                                               |                      20 |
+| ovarian nrebp                                                      |                      20 |
+| 3h-estradiol                                                       |                      20 |
+| androgens                                                          |                      20 |
+| zebrafish                                                          |                      19 |
+| middle domain of initiation factor 4g                              |                      19 |
+| slip1-binding proteins                                             |                      19 |
+| eif3g                                                              |                      19 |
+| slbp                                                               |                      19 |
+| cbp80/20-dependent translation initiation factor                   |                      19 |
+| zebrafish slip1                                                    |                      19 |
+| translation initiation factor eif3g                                |                      19 |
+| stem-loop binding protein                                          |                      19 |
+| sbm                                                                |                      19 |
+| mrna-export factor dbp5                                            |                      19 |
+| sbm-containing proteins                                            |                      19 |
+| slip1 homodimer                                                    |                      19 |
+| slip1-binding motif                                                |                      19 |
+| amppnp                                                             |                      19 |
+| inositol hexaphosphate                                             |                      19 |
+| superfamily 2 dead-box atpase dbp5                                 |                      19 |
+| hexakisphosphate                                                   |                      19 |
+| superfamily 1 and                                                  |                      19 |
+| dead-box atpase complex                                            |                      19 |
+| superfamily 2 rna helicases                                        |                      19 |
+| eif4g-like activators                                              |                      19 |
+| nup214 in vertebrates                                              |                      19 |
+| gle1(insp6)                                                        |                      19 |
+| messenger-rna-protein complex                                      |                      19 |
+| chironomus tentans                                                 |                      19 |
+| nup42deltafg                                                       |                      19 |
+| nup159deltafg mutant                                               |                      19 |
+| fg domain                                                          |                      19 |
+| fg                                                                 |                      19 |
+| nup42 fg domain                                                    |                      19 |
+| phenylalanine                                                      |                      19 |
+| nup159 fg domains                                                  |                      19 |
+| fg domains                                                         |                      19 |
+| znf143                                                             |                      19 |
+| ifngr2                                                             |                      19 |
+| ap5b1                                                              |                      19 |
+| mthfr                                                              |                      19 |
+| lce3d                                                              |                      19 |
+| il12b                                                              |                      19 |
+| il1rl1                                                             |                      19 |
+| c1orf141                                                           |                      19 |
+| znf683                                                             |                      19 |
+| syne2                                                              |                      19 |
+| tnip1                                                              |                      19 |
+| nfkbia                                                             |                      19 |
+| lce3e                                                              |                      19 |
+| ccdc129                                                            |                      19 |
+| zfyve16                                                            |                      19 |
+| aim2                                                               |                      19 |
+| tmc6                                                               |                      19 |
+| casr                                                               |                      19 |
+| psoriasis                                                          |                      19 |
+| comp promoter                                                      |                      19 |
+| sox9                                                               |                      19 |
+| lrf repressor                                                      |                      19 |
+| sox6 transcription factors                                         |                      19 |
+| sox9 activator                                                     |                      19 |
+| histone deacetylase 1                                              |                      19 |
+| p300                                                               |                      19 |
+| sox6                                                               |                      19 |
+| p300 coactivators                                                  |                      19 |
+| cbp                                                                |                      19 |
+| cartilage oligomeric matrix protein                                |                      19 |
+| histone acetylase                                                  |                      19 |
+| hlhs                                                               |                      19 |
+| asymmetry of ventricles                                            |                      19 |
+| iga                                                                |                      19 |
+| gastroparesis                                                      |                      19 |
+| son gene mutation                                                  |                      19 |
+| intestinal malrotation                                             |                      19 |
+| intellectual and psychomotor disability                            |                      19 |
+| infections of the respiratory tract and internal ear               |                      19 |
+| feeding difficulties                                               |                      19 |
+| duodenal atresia                                                   |                      19 |
+| hypoplastic left heart syndrome                                    |                      19 |
+| son mutations                                                      |                      19 |
+| febrile seizures                                                   |                      19 |
+| developmental and speech delay                                     |                      19 |
+| ventriculomegaly                                                   |                      19 |
+| dbp5's                                                             |                      18 |
+| ctd                                                                |                      18 |
+| ddx19b                                                             |                      18 |
+| nup42-ctd                                                          |                      18 |
+| ddx19b recombinant proteins                                        |                      18 |
+| rna-dependent dead-box protein                                     |                      18 |
+| hddx19b                                                            |                      18 |
+| hgle1b                                                             |                      18 |
+| nup42 carboxy-terminal domain                                      |                      18 |
+| intellectual disability syndrome                                   |                      18 |
+| human son gene                                                     |                      18 |
+| gfp reporter construct                                             |                      18 |
+| wnt receptor                                                       |                      18 |
+| hmg1/2-like protein                                                |                      18 |
+| hmg1/2-like dna-binding protein                                    |                      18 |
+| lin-17                                                             |                      18 |
+| hmg1-like protein                                                  |                      18 |
+| hmg protein son-1                                                  |                      18 |
+| class hmg protein                                                  |                      18 |
+| hmg protein pop-1                                                  |                      18 |
+| caenorhabditis elegans                                             |                      18 |
+| spd                                                                |                      18 |
+| wnt signaling pathway                                              |                      18 |
+| son-1                                                              |                      18 |
+| lef                                                                |                      18 |
+| tcf                                                                |                      18 |
+| son-1 mutation                                                     |                      18 |
+| lin-17 mutants                                                     |                      18 |
+| wnt                                                                |                      18 |
+| pop-1                                                              |                      18 |
+| 10 microg dbp                                                      |                      17 |
+| bone defect                                                        |                      17 |
+| vitamin-d binding protein                                          |                      17 |
+| critical bone defect                                               |                      17 |
+| bm-dbp                                                             |                      17 |
+| bmp                                                                |                      17 |
+| vitamin-d                                                          |                      17 |
+| vitamin d-binding protein                                          |                      17 |
+| bone defects                                                       |                      17 |
+| dbp-50                                                             |                      17 |
+| bm                                                                 |                      17 |
+| dbp-10                                                             |                      17 |
+| pseudarthroses                                                     |                      17 |
+| reca domains                                                       |                      17 |
+| cwc22                                                              |                      17 |
+| reca1 domain                                                       |                      17 |
+| translation initiation factor 4g                                   |                      17 |
+| reca2                                                              |                      17 |
+| human eif4aiii                                                     |                      17 |
+| mif4g domains                                                      |                      17 |
+| cef1                                                               |                      17 |
+| mrna-protein (mrnp) complexes                                      |                      16 |
+| r256d                                                              |                      16 |
+| nup42delta                                                         |                      16 |
+| adp release factors                                                |                      16 |
+| r259d                                                              |                      16 |
+| gle1-ip(6)                                                         |                      16 |
+| uridyl                                                             |                      16 |
+| histone transcripts                                                |                      16 |
+| heteroheptameric lsm1-7 complex                                    |                      16 |
+| histone messenger rna (mrna)                                       |                      16 |
+| histones                                                           |                      16 |
+| eri1                                                               |                      16 |
+| uridines                                                           |                      16 |
+| histone mrna                                                       |                      16 |
+| cbp80/20                                                           |                      16 |
+| terminal uridyl transferases                                       |                      16 |
+| lsm1-7                                                             |                      16 |
+| helicase upf1                                                      |                      16 |
+| facial features                                                    |                      16 |
+| saccharomyces cerevisiae gfd1 protein                              |                      16 |
+| nab2-n                                                             |                      16 |
+| suppressor of rat8-2                                               |                      16 |
+| y34a                                                               |                      16 |
+| nab2 rna-binding mutant                                            |                      16 |
+| gfd1 mutants                                                       |                      16 |
+| poly(a) rna-                                                       |                      16 |
+| nab2 n-terminal domain                                             |                      16 |
+| gfd1 residues 126-150                                              |                      16 |
+| son insufficiency                                                  |                      16 |
+| brain malformation                                                 |                      16 |
+| zttk syndrome gene                                                 |                      16 |
+| dendritic spine abnormalities                                      |                      16 |
+| neural abnormalities                                               |                      16 |
+| congenital anomaly syndrome                                        |                      16 |
+| visceral malformations                                             |                      16 |
+| neuronal migration defects                                         |                      16 |
+| truncated son protein                                              |                      16 |
+| human gene son                                                     |                      16 |
+| interleukin-4                                                      |                      16 |
+| il-2 receptor complex                                              |                      16 |
+| interleukin (il)-4                                                 |                      16 |
+| protein kinase c                                                   |                      16 |
+| il-4 receptor                                                      |                      16 |
+| cd25 gene                                                          |                      16 |
+| cd25                                                               |                      16 |
+| 55-kda alpha-subunit                                               |                      16 |
+| il-4                                                               |                      16 |
+| camp/protein kinase a                                              |                      16 |
+| camp                                                               |                      16 |
+| forskolin                                                          |                      16 |
+| pka                                                                |                      16 |
+| pkc                                                                |                      16 |
+| nre-bp                                                             |                      16 |
+| cd25 promoter                                                      |                      16 |
+| ampkalpha                                                          |                      15 |
+| growth hormone secretagogue-receptor                               |                      15 |
+| mouse homolog of human negative regulatory element-binding protein |                      15 |
+| ghs-r                                                              |                      15 |
+| ghs-r promoter                                                     |                      15 |
+| nrebp binding sequence                                             |                      15 |
+| ob-rb                                                              |                      15 |
+| amp-activated protein kinase alpha                                 |                      15 |
+| leptin                                                             |                      15 |
+| amp                                                                |                      15 |
+| ob gene                                                            |                      15 |
+| ghrelin                                                            |                      15 |
+| laahd                                                              |                      15 |
+| congenital contracture syndrome 1                                  |                      15 |
+| arthrogryposis                                                     |                      15 |
+| laahd disease                                                      |                      15 |
+| human gle1 genes                                                   |                      15 |
+| gle1 mutations                                                     |                      15 |
+| lccs-1                                                             |                      15 |
+| lccs-1 mutations                                                   |                      15 |
+| anterior horn cell disease                                         |                      15 |
+| monkey                                                             |                      15 |
+| eif2b                                                              |                      15 |
+| 40s ribosomal subunit                                              |                      15 |
+| eif5                                                               |                      15 |
+| eif1a                                                              |                      15 |
+| eef1a                                                              |                      15 |
+| eef3                                                               |                      15 |
+| eif1                                                               |                      15 |
+| trna(i)                                                            |                      15 |
+| eif4f                                                              |                      15 |
+| eif2                                                               |                      15 |
+| [35s]methionine                                                    |                      15 |
+| dexh/d box family                                                  |                      15 |
+| drosophila homolog of uap56                                        |                      15 |
+| dexh/d box protein                                                 |                      15 |
+| rna helicase a                                                     |                      15 |
+| hel                                                                |                      15 |
+| drosophila homolog of dbp5                                         |                      15 |
+| rha                                                                |                      15 |
+| recombinant nab2                                                   |                      15 |
+| recombinant gfd1                                                   |                      15 |
+| gle1 mutant                                                        |                      15 |
+| yeast mrna-binding protein nab2                                    |                      15 |
+| n-terminal nab2                                                    |                      15 |
+| n-terminal nab2 domain                                             |                      15 |
+| adpnp                                                              |                      15 |
+| ejc core                                                           |                      15 |
+| mln51                                                              |                      15 |
+| box atpase eif4aiii                                                |                      15 |
+| adp-aif                                                            |                      15 |
+| leukemogenesis                                                     |                      15 |
+| aml1                                                               |                      15 |
+| eto                                                                |                      15 |
+| nhr4 domain                                                        |                      15 |
+| nhr4-interacting protein                                           |                      15 |
+| aml                                                                |                      15 |
+| nhr3                                                               |                      15 |
+| eto9a                                                              |                      15 |
+| nhr4                                                               |                      15 |
+| dbp gene                                                           |                      15 |
+| gc-globulin                                                        |                      15 |
+| afamin                                                             |                      15 |
+| afp                                                                |                      15 |
+| alb gene                                                           |                      15 |
+| albumin                                                            |                      15 |
+| afm                                                                |                      15 |
+| vitamin d binding protein                                          |                      15 |
+| albumin multigene cluster                                          |                      15 |
+| alpha-albumin                                                      |                      15 |
+| alb                                                                |                      15 |
+| equine herpesvirus                                                 |                      15 |
+| eicp0 promoter of equine herpesvirus 1                             |                      15 |
+| na                                                                 |                      15 |
+| late glycoprotein k gk(-83/+14) promoters                          |                      15 |
+| eicp0 protein                                                      |                      15 |
+| early thymidine kinase tk(-215/+97)                                |                      15 |
+| (32)p                                                              |                      15 |
+| nrebp-binding site                                                 |                      15 |
+| immediate-early ie                                                 |                      15 |
+| eicp0 promoter                                                     |                      15 |
+| eicp0                                                              |                      15 |
+| nb oligonucleotide                                                 |                      15 |
+| tlc1 in s. cerevisiae                                              |                      15 |
+| telomerases                                                        |                      15 |
+| tlc1                                                               |                      15 |
+| telomerase rna tlc1                                                |                      15 |
+| est proteins                                                       |                      15 |
+| xpo1-1 double mutant                                               |                      15 |
+| xpo1                                                               |                      15 |
+| ran gtpase                                                         |                      15 |
+| tlc1 rnas                                                          |                      15 |
+| crm1                                                               |                      15 |
+| cakut genes                                                        |                      14 |
+| congenital abnormalities of the kidney and urinary tract           |                      14 |
+| hypertension                                                       |                      14 |
+| splicing factor son                                                |                      14 |
+| cakut                                                              |                      14 |
+| renal cysts                                                        |                      14 |
+| kidney abnormalities                                               |                      14 |
+| electrolyte disturbances                                           |                      14 |
+| unilateral renal hypoplasia                                        |                      14 |
+| urinary tract infections                                           |                      14 |
+| kidney anomalies                                                   |                      14 |
+| dbp5 molecules                                                     |                      14 |
+| pretc                                                              |                      14 |
+| termination complex                                                |                      14 |
+| erf1(agq) mutant protein                                           |                      14 |
+| translation elongation factors eef1                                |                      14 |
+| human protein ddx19                                                |                      14 |
+| human dead-box rna-helicase ddx19                                  |                      14 |
+| rna helicase ddx19                                                 |                      14 |
+| human rna helicase ddx19                                           |                      14 |
+| tc                                                                 |                      14 |
+| esotropia                                                          |                      14 |
+| c.5334_5335delag                                                   |                      14 |
+| facial abnormalities                                               |                      14 |
+| levetiracetam                                                      |                      14 |
+| neonatal hypotonia                                                 |                      14 |
+| p. arg1778serfs*11                                                 |                      14 |
+| intellectual disabilities                                          |                      14 |
+| abnormalities in the heart, genitourinary or skeletal systems      |                      14 |
+| dead box protein                                                   |                      14 |
+| zds1p                                                              |                      14 |
+| zds2                                                               |                      14 |
+| yeast protein zds1p                                                |                      14 |
+| zds1                                                               |                      14 |
+| poly(a)+ export defects                                            |                      14 |
+| rat8-2 ts allele                                                   |                      14 |
+| dbp5-2                                                             |                      14 |
+| rat8 mutant                                                        |                      14 |
+| nuclear pore-associated dead-box protein                           |                      14 |
+| rat8-1 allele                                                      |                      14 |
+| eukaryotic initiation factor 4a                                    |                      14 |
+| oct                                                                |                      14 |
+| nbp complex                                                        |                      14 |
+| mmtv long terminal repeat                                          |                      14 |
+| otf-1                                                              |                      14 |
+| t-cell and kidney tumors                                           |                      14 |
+| mmtv ltr                                                           |                      14 |
+| mammary gland enhancer factors                                     |                      14 |
+| nf-1                                                               |                      14 |
+| bal 31 deletion mutants                                            |                      14 |
+| nbp                                                                |                      14 |
+| bal 31                                                             |                      14 |
+| itf2b protein                                                      |                      14 |
+| itf2b                                                              |                      14 |
+| immunoglobulin transcription factor 2b                             |                      14 |
+| il-2 receptor alpha gene                                           |                      14 |
+| transcription factor 4                                             |                      14 |
+| hiv-1                                                              |                      14 |
+| aids                                                               |                      14 |
+| full-length tcf4 cdna                                              |                      14 |
+| il-2ralpha gene                                                    |                      14 |
+| human il-2 receptor alpha                                          |                      14 |
+| nre                                                                |                      14 |
+| tcf4                                                               |                      14 |
+| il-2ralpha                                                         |                      14 |
+| rna                                                                |                      13 |
+| saccharomyces cerevisiae dbp5 atpase                               |                      13 |
+| p(i)                                                               |                      13 |
+| ippk                                                               |                      13 |
+| nxf1-mrnp complexes                                                |                      13 |
+| mex67 in yeast                                                     |                      13 |
+| mex67-containing mrnp                                              |                      13 |
+| dead family                                                        |                      13 |
+| nuclear export factor rbm15                                        |                      13 |
+| human nxf1-binding protein rbm15                                   |                      13 |
+| mrna export receptor nxf1                                          |                      13 |
+| rbm15                                                              |                      13 |
+| ip(                                                                |                      13 |
+| dn                                                                 |                      13 |
+| wild-type dbp5                                                     |                      13 |
+| dbp5 primary sequence                                              |                      13 |
+| atpase activator gle1                                              |                      13 |
+| reca-like fold                                                     |                      13 |
+| dexd/h-box rna-dependent atpase dbp5                               |                      13 |
+| gln                                                                |                      13 |
+| ydbp5p                                                             |                      13 |
+| hdbp5 mutants                                                      |                      13 |
+| hdbp5                                                              |                      13 |
+| can                                                                |                      13 |
+| glu                                                                |                      13 |
+| wes                                                                |                      13 |
+| gnomad                                                             |                      13 |
+| c.5230delc                                                         |                      13 |
+| mouse stra8 promoter                                               |                      13 |
+| fum                                                                |                      13 |
+| stra8                                                              |                      13 |
+| fd                                                                 |                      13 |
+| rex1                                                               |                      13 |
+| gsc marker gene                                                    |                      13 |
+| son genes                                                          |                      13 |
+| son factors                                                        |                      13 |
+| stella                                                             |                      13 |
+| nanos2                                                             |                      13 |
+| wingless mutations                                                 |                      13 |
+| son enhancer trap                                                  |                      13 |
+| son(2205) mutant                                                   |                      13 |
+| wingless                                                           |                      13 |
+| son(2205)                                                          |                      13 |
+| p element                                                          |                      13 |
+| winged-helix gene                                                  |                      13 |
+| cut                                                                |                      13 |
+| notch signaling pathway                                            |                      13 |
+| notch                                                              |                      13 |
+| son of                                                             |                      13 |
+| mos                                                                |                      13 |
+| son gene protein                                                   |                      13 |
+| sds                                                                |                      13 |
+| pps-3-neo                                                          |                      13 |
+| p92son                                                             |                      13 |
+| son-protein 943-963                                                |                      13 |
+| myc genes                                                          |                      13 |
+| son cdna                                                           |                      13 |
+| son-protein                                                        |                      13 |
+| polyacrylamide                                                     |                      13 |
+| mg2+                                                               |                      12 |
+| nucleoporin proteins                                               |                      12 |
+| ntpases                                                            |                      12 |
+| nup42 mutant                                                       |                      12 |
+| rbfox2                                                             |                      12 |
+| glioblastoma                                                       |                      12 |
+| hnrnp a2b1                                                         |                      12 |
+| rbfox2-targeted cassette                                           |                      12 |
+| ptbp1 transcript                                                   |                      12 |
+| gbm                                                                |                      12 |
+| glioblastoma multiforme                                            |                      12 |
+| ptbp2                                                              |                      12 |
+| ptbp1                                                              |                      12 |
+| brain tumors                                                       |                      12 |
+| mpx                                                                |                      12 |
+| brain and spinal malformations                                     |                      12 |
+| gene son                                                           |                      12 |
+| lcr                                                                |                      12 |
+| hspc                                                               |                      12 |
+| cd41                                                               |                      12 |
+| hematopoietic disorders                                            |                      12 |
+| lck                                                                |                      12 |
+| morpholinos                                                        |                      12 |
+| son binding motifs                                                 |                      12 |
+| slc2a1                                                             |                      12 |
+| ge                                                                 |                      12 |
+| glut1                                                              |                      12 |
+| sox2                                                               |                      12 |
+| glucose                                                            |                      12 |
+| glut1 gene                                                         |                      12 |
+| glut1 promoter                                                     |                      12 |
+| glucose transporter 1                                              |                      12 |
+| glut1 enhancer                                                     |                      12 |
+| gle1-4 mutant                                                      |                      12 |
+| initiation factor ded1                                             |                      12 |
+| ded1 atpase                                                        |                      12 |
+| ded1-120 mutant                                                    |                      12 |
+| polyadenosine-rna-binding protein                                  |                      12 |
+| polyadenosine                                                      |                      12 |
+| nab2-c437s mutant                                                  |                      12 |
+| nab2 variants                                                      |                      12 |
+| nab2 zn fingers                                                    |                      12 |
+| zn                                                                 |                      12 |
+| c437s                                                              |                      12 |
+| yra1                                                               |                      12 |
+| fe/s protein                                                       |                      12 |
+| dbp5 interacting protein                                           |                      12 |
+| atp binding cassette (abc) protein                                 |                      12 |
+| hdac6 reporter transcripts                                         |                      12 |
+| sr-like protein                                                    |                      12 |
+| ubiquitin zinc finger                                              |                      12 |
+| hdac6 mrna                                                         |                      12 |
+| serine-arginine rich (sr) splicing factors                         |                      12 |
+| hdac6 pre-mrna                                                     |                      12 |
+| rat renin gene                                                     |                      12 |
+| plasma renin                                                       |                      12 |
+| mouse renin gene                                                   |                      12 |
+| tfd                                                                |                      12 |
+| nre transcription factor                                           |                      12 |
+| nreb                                                               |                      12 |
+| renin gene                                                         |                      12 |
+| hepatic renin mrna                                                 |                      12 |
+| nre tfd                                                            |                      12 |
+| renin                                                              |                      12 |
+| dhh1p                                                              |                      12 |
+| dhh1 gene                                                          |                      12 |
+| dhh1                                                               |                      12 |
+| mutant dbp5                                                        |                      12 |
+| ded1 alleles                                                       |                      12 |
+| ste13p                                                             |                      12 |
+| xp54                                                               |                      12 |
+| cytoplasmic dexd/h-box protein                                     |                      12 |
+| gle1-ip6                                                           |                      11 |
+| export protein gle1                                                |                      11 |
+| dbp5 rnp                                                           |                      11 |
+| abce1                                                              |                      11 |
+| erf3-gdp                                                           |                      11 |
+| gdp                                                                |                      11 |
+| nmd3                                                               |                      11 |
+| atpase stimulating factor                                          |                      11 |
+| ribosomal transport factors                                        |                      11 |
+| rna-helicase                                                       |                      11 |
+| rsv                                                                |                      11 |
+| g8863c                                                             |                      11 |
+| hiv                                                                |                      11 |
+| gag                                                                |                      11 |
+| dominant-negative dbp5                                             |                      11 |
+| dr                                                                 |                      11 |
+| rous sarcoma                                                       |                      11 |
+| rsv gag protein                                                    |                      11 |
+| rous sarcoma virus                                                 |                      11 |
+| ribonucleotide                                                     |                      11 |
+| "sr- type" proteins                                                |                      11 |
+| glycinamide ribonucleotide formyltransferase gene                  |                      11 |
+| son locus                                                          |                      11 |
+| gart                                                               |                      11 |
+| mouse son gene                                                     |                      11 |
+| mouse son locus                                                    |                      11 |
+| donson                                                             |                      11 |
+| purine                                                             |                      11 |
+| human hepatitis b virus                                            |                      11 |
+| nrebp protein                                                      |                      11 |
+| hbv core promoter                                                  |                      11 |
+| nrebp cdna                                                         |                      11 |
+| sonb                                                               |                      11 |
+| amino acids                                                        |                      11 |
+| sona                                                               |                      11 |
+| nf-kappab-binding sites                                            |                      11 |
+| nf-kappab                                                          |                      11 |
+| ifn-beta gene                                                      |                      11 |
+| nrf                                                                |                      11 |
+| ifn-beta promoter                                                  |                      11 |
+| ifn-beta                                                           |                      11 |
+| nf-kappab proteins                                                 |                      11 |
+| nf-kappab-repressing factor                                        |                      11 |
+| nf-kappab- binding sites                                           |                      11 |
+| nrf antisense rna                                                  |                      11 |
+| interferon-beta                                                    |                      11 |
+| dlg4                                                               |                      10 |
+| ppm1d                                                              |                      10 |
+| tlk2                                                               |                      10 |
+| trip12                                                             |                      10 |
+| syncrip                                                            |                      10 |
+| tcf20                                                              |                      10 |
+| smad6                                                              |                      10 |
+| rac1                                                               |                      10 |
+| sub2                                                               |                      10 |
+| nxt1                                                               |                      10 |
+| human nxf1                                                         |                      10 |
+| pi(3,4)p2                                                          |                      10 |
+| pi(4)p                                                             |                      10 |
+| nuclear speckle protein                                            |                      10 |
+| polymerase ii foci                                                 |                      10 |
+| phosphatidylinositol phosphate                                     |                      10 |
+| nuclear pip                                                        |                      10 |
+| pips                                                               |                      10 |
+| pi(4,5)p2                                                          |                      10 |
+| phosphatidylinositol phosphates                                    |                      10 |
+| fibrillarin                                                        |                      10 |
+| hepatitis b virus x protein                                        |                      10 |
+| core promoter                                                      |                      10 |
+| 5-aza-2'dc                                                         |                      10 |
+| dnmt1                                                              |                      10 |
+| hbc                                                                |                      10 |
+| dna methyltransferase 1                                            |                      10 |
+| c-1619                                                             |                      10 |
+| hbx                                                                |                      10 |
+| hbx-positive hbv cccdna                                            |                      10 |
+| polyadenlyate-binding protein pab1                                 |                      10 |
+| mir-23a                                                            |                      10 |
+| gata-2 protein                                                     |                      10 |
+| microrna 23a~27a~24-2 cluster                                      |                      10 |
+| mir-23a~27a~24-2 cluster                                           |                      10 |
+| mir-27a                                                            |                      10 |
+| gata-2                                                             |                      10 |
+| gata-2 mrna                                                        |                      10 |
+| 3'-                                                                |                      10 |
+| mex67 mutation                                                     |                      10 |
+| nuclear export factor yra1p                                        |                      10 |
+| yra1p                                                              |                      10 |
+| dead-box atpase dbp5p                                              |                      10 |
+| dbp5 allele                                                        |                      10 |
+| adenosine nucleotides                                              |                      10 |
+| phosphodiester                                                     |                      10 |
+| saccharomyces cerevisiae dead-box protein                          |                      10 |
+| rat8-2p                                                            |                      10 |
+| pab1p                                                              |                      10 |
+| wild-type rat8p                                                    |                      10 |
+| gsh                                                                |                      10 |
+| caspase                                                            |                      10 |
+| caspases                                                           |                      10 |
+| dpb-5                                                              |                      10 |
+| caspase-9                                                          |                      10 |
+| rotenone                                                           |                      10 |
+| acetate                                                            |                      10 |
+| 3-(4-(benzo[d]thiazol-2-yl)-1-phenyl-1h-pyrazol-3-yl) phenyl       |                      10 |
+| benzothiazole                                                      |                      10 |
+| nip1-1                                                             |                      10 |
+| eif3 mutant                                                        |                      10 |
+| mrna export factor gle1                                            |                      10 |
+| initiation factor eif3                                             |                      10 |
+| disability                                                         |                      10 |
+| delayed psychomotor development                                    |                      10 |
+| skin and nails abnormalities                                       |                      10 |
+| visual abnormalities                                               |                      10 |
+| retronychia of the toenails                                        |                      10 |
+| dental abnormalities                                               |                      10 |
+| dbp5 mutations                                                     |                      10 |
+| transcription factor iih                                           |                      10 |
+| rna pol ii largest subunit                                         |                      10 |
+| hyperextensible joints                                             |                      10 |
+| curly hair                                                         |                      10 |
+| facial                                                             |                      10 |
+| congenital heart disease                                           |                      10 |
+| multiple congenital anomalies                                      |                      10 |
+| micrognathia                                                       |                      10 |
+| haploinsufficiency of son                                          |                      10 |
+| congenital thrombocytopenia                                        |                      10 |
+| braddock-carey syndrome                                            |                      10 |
+| eukaryotic termination factor erf1                                 |                       9 |
+| nmd                                                                |                       9 |
+| nucleo-cytoplasmic protein dbp5                                    |                       9 |
+| ifnbeta-1 mrna                                                     |                       9 |
+| poly(i:c)                                                          |                       9 |
+| ip6 synthetic enzyme                                               |                       9 |
+| mrna export protein dbp5                                           |                       9 |
+| cytoplasmic nucleoporin nup214                                     |                       9 |
+| ush1g                                                              |                       9 |
+| sans                                                               |                       9 |
+| usher syndrome                                                     |                       9 |
+| ciliopathy protein sans                                            |                       9 |
+| cofactor son                                                       |                       9 |
+| sf3b1                                                              |                       9 |
+| sans deficiency                                                    |                       9 |
+| prpfs                                                              |                       9 |
+| deaf-blindness                                                     |                       9 |
+| ciliopathy                                                         |                       9 |
+| nuclear pore protein gle1                                          |                       9 |
+| gle1 point mutant                                                  |                       9 |
+| dexd/h-box atpase dbp5                                             |                       9 |
+| dexd/h-box protein dbp5                                            |                       9 |
+| nuclear-pore protein gle1                                          |                       9 |
+| son3 transcript                                                    |                       9 |
+| gallin                                                             |                       9 |
+| son3 sequence                                                      |                       9 |
+| nbrf                                                               |                       9 |
+| proto-oncogene mos                                                 |                       9 |
+| son3 region                                                        |                       9 |
+| proto-oncogene myc                                                 |                       9 |
+| son3                                                               |                       9 |
+| ip                                                                 |                       9 |
+| serine-arginine-rich (sr) proteins                                 |                       9 |
+| cholesterol                                                        |                       9 |
+| sr protein                                                         |                       9 |
+| integrin                                                           |                       9 |
+| histone deacetylase 4                                              |                       9 |
+| brachydactyly mental retardation syndrome                          |                       9 |
+| hdac4                                                              |                       9 |
+| brachydactyly type e                                               |                       9 |
+| bdmr                                                               |                       9 |
+| skeletal anomalies                                                 |                       9 |
+| autism spectrum disorder                                           |                       9 |
+| familial bdmr                                                      |                       9 |
+| behavioral abnormalities                                           |                       9 |
+| rna-binding protein nab2                                           |                       8 |
+| congenital anomalies                                               |                       8 |
+| c.5753_5756del                                                     |                       8 |
+| abnormal brain imaging                                             |                       8 |
+| multisystemic disorder                                             |                       8 |
+| dead box                                                           |                       8 |
+| export factor dbp5                                                 |                       8 |
+| c.tentans                                                          |                       8 |
+| ct-dbp5                                                            |                       8 |
+| ct                                                                 |                       8 |
+| dead box helicase                                                  |                       8 |
+| nup159 ntd                                                         |                       8 |
+| nucleic acid dependent atpase                                      |                       8 |
+| homologue of dbp5                                                  |                       8 |
+| p. falciparum                                                      |                       8 |
+| dibutyl phthalate                                                  |                       8 |
+| poly(vinyl chloride)                                               |                       8 |
+| dep                                                                |                       8 |
+| phthalates                                                         |                       8 |
+| diethyl phthalate                                                  |                       8 |
+| phthalate                                                          |                       8 |
+| oxygen                                                             |                       8 |
+| pvc                                                                |                       8 |
+| mitogen-activated protein kinase                                   |                       8 |
+| mapk                                                               |                       8 |
+| ductal adenocarcinomas                                             |                       8 |
+| pancreatic cancer                                                  |                       8 |
+| mapk-associated molecules                                          |                       8 |
+| growth hormone deficiency                                          |                       8 |
+| palmar crease                                                      |                       8 |
+| autosomal dominant genetic disorder                                |                       8 |
+| amino                                                              |                       8 |
+| p.ser1766leufs*7                                                   |                       8 |
+| growth hormone                                                     |                       8 |
+| son variants                                                       |                       8 |
+| dead box proteins                                                  |                       8 |
+| steroid hormone receptor                                           |                       8 |
+| mmtv nre-binding protein 1                                         |                       8 |
+| mnbp-1                                                             |                       8 |
+| ltk(-)                                                             |                       8 |
+| steroid                                                            |                       8 |
+| mouse mammary tumor virus (mmtv) long terminal repeat              |                       8 |
+| sc35                                                               |                       7 |
+| telomere biology disorders                                         |                       7 |
+| htert mrna                                                         |                       7 |
+| htert                                                              |                       7 |
+| htert exon 2                                                       |                       7 |
+| mrna export receptor mex67                                         |                       7 |
+| poly(a) binding protein nab2                                       |                       7 |
+| f                                                                  |                       7 |
+| interferon response factor 3                                       |                       7 |
+| gbf1                                                               |                       7 |
+| type i interferon                                                  |                       7 |
+| son dna-binding protein                                            |                       7 |
+| francisella tularensis                                             |                       7 |
+| f. tularensis                                                      |                       7 |
+| trex                                                               |                       7 |
+| trex-2 complexes                                                   |                       7 |
+| histone                                                            |                       7 |
+| mll complex                                                        |                       7 |
+| mll                                                                |                       7 |
+| full-length son                                                    |                       7 |
+| menin                                                              |                       7 |
+| mrna (messenger rna)/protein complex                               |                       7 |
+| mkl1                                                               |                       7 |
+| activator of srf                                                   |                       7 |
+| importin-beta                                                      |                       7 |
+| srf                                                                |                       7 |
+| rna export factor ddx19                                            |                       7 |
+| obesity                                                            |                       7 |
+| cafe-au-lait spots                                                 |                       7 |
+| medulloblastoma                                                    |                       7 |
+| cancer syndrome                                                    |                       7 |
+| skin alterations                                                   |                       7 |
+| neoplasm                                                           |                       7 |
+| malignant brain tumor                                              |                       7 |
+| metastatic medulloblastoma                                         |                       7 |
+| atp-dependent rna helicase                                         |                       7 |
+| dbp5 gene                                                          |                       7 |
+| cytosolic rna helicase                                             |                       7 |
+| palpebral fissures                                                 |                       7 |
+| itsn1                                                              |                       7 |
+| runx1                                                              |                       7 |
+| rcan1                                                              |                       7 |
+| sod1                                                               |                       7 |
+| dscr                                                               |                       7 |
+| dead-box protein (dbp                                              |                       6 |
+| sfii) helicases                                                    |                       6 |
+| superfamily ii (                                                   |                       6 |
+| alanine                                                            |                       6 |
+| c.394c>t                                                           |                       6 |
+| growth and development delay                                       |                       6 |
+| p.q132x                                                            |                       6 |
+| motor retardation                                                  |                       6 |
+| scaffolding                                                        |                       6 |
+| small nuclear ribonuclear protein                                  |                       6 |
+| rnai                                                               |                       6 |
+| serine-arginine rich protein splicing factors                      |                       6 |
+| atpase dbp5                                                        |                       6 |
+| rna export factor mex67                                            |                       6 |
+| fluorescent ntf2                                                   |                       6 |
+| hrp36                                                              |                       6 |
+| hnrnp a1 homolog                                                   |                       6 |
+| ser/arg (sr)-related protein                                       |                       6 |
+| arg                                                                |                       6 |
+| ser                                                                |                       6 |
+| sr proteins                                                        |                       6 |
+| rna polymerase ii                                                  |                       6 |
+| c. tentans homolog of mammalian hnrnp a1                           |                       5 |
+| c. tentans                                                         |                       5 |
+| recombinant hrp36                                                  |                       5 |
+| nuclease                                                           |                       5 |
+| lithium 3,5-diiodosalicylate                                       |                       5 |
+| dek protein                                                        |                       5 |
+| sap                                                                |                       5 |
+| 3,5-diiodosalicylate/nuclease                                      |                       5 |
+| human insulin receptor gene                                        |                       5 |
+| insulinopenic diabetes                                             |                       5 |
+| vanadate                                                           |                       5 |
+| insulin                                                            |                       5 |
+| liver receptor                                                     |                       5 |
+| insulin receptor                                                   |                       5 |
+| feeding                                                            |                       5 |
+| brain anomalies                                                    |                       5 |
+| multisystem disorder                                               |                       5 |
+| obese                                                              |                       5 |
+| small son gene transcript                                          |                       5 |
+| son gene tandem                                                    |                       5 |
+| sc35 mab                                                           |                       4 |
+| ns                                                                 |                       4 |
+| srrm2                                                              |                       4 |
+| nuclear transport factor 2                                         |                       4 |
+| ntf2                                                               |                       4 |
+| tnpo3                                                              |                       4 |
+| clk1 kinase                                                        |                       4 |
+| clk1                                                               |                       4 |
+| malat1 lncrna                                                      |                       4 |
+| prdm14                                                             |                       4 |
+| e4f1                                                               |                       4 |
+| med24                                                              |                       4 |
+| aneuploidy                                                         |                       4 |
+| mad2                                                               |                       4 |
+| son deficiency                                                     |                       4 |
+| rna/dna-binding protein son                                        |                       4 |
+| flim                                                               |                       4 |
+| dbp5 helicase                                                      |                       4 |
+| sbp                                                                |                       4 |
+| dog                                                                |                       4 |
+| cat                                                                |                       4 |
+| tff3                                                               |                       4 |
+| dscr1                                                              |                       4 |
+| [                                                                  |                       4 |
+| son pseudogenes                                                    |                       4 |
+| son pseudogene                                                     |                       4 |
+| phenotypic abnormalities                                           |                       4 |
+| hepatitis                                                          |                       3 |
+| influenza                                                          |                       3 |
+| malat1                                                             |                       3 |
+| srsf2                                                              |                       3 |
+| rodent                                                             |                       3 |
+| kiaa1118                                                           |                       3 |
+| parental obesity                                                   |                       3 |
+| childhood obesity                                                  |                       3 |
+| nuclear-pore-associated mrna export factor                         |                       3 |
+| importin                                                           |                       3 |
+| nuclear transport receptor kap104                                  |                       3 |
+| son gene small transcript                                          |                       3 |
+| smaller son gene transcript                                        |                       3 |
+| speckle marker protein                                             |                       2 |
+| actin                                                              |                       2 |
+| son sequences                                                      |                       2 |
+| human son                                                          |                       2 |
+| bp                                                                 |                       2 |
+| mex67 mutant                                                       |                       2 |
+| dead-box protein dbp5p                                             |                       2 |
+| sodium                                                             |                       2 |

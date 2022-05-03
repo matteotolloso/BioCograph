@@ -1,6 +1,6 @@
 {
     "dataset": {
-        "./annotated_dataset/dataset_SON.json" : false,
+        "./annotated_dataset/dataset_SON.json" : true,
         "./annotated_dataset/dataset_ZTTK.json" : true,
         "./annotated_dataset/dataset_nonspecifi.json" : false,
         "./annotated_dataset/dataset_brainoligo.json" : false,
@@ -24,7 +24,7 @@
         "pathway" : true
     },
     
-    "widest_set": ["zttk", "intellectual disability"],
+    "widest_set": ["zttk", "epilepsy"],
     
     "bioBERT_entity_types_widest_set" : {
         "gene" : true,
@@ -37,15 +37,15 @@
     },
     "bioBERT_entity_types_second_layer" : {
         "gene" : false,
-        "disease" : true,
+        "disease" : false,
         "species" : false,
-        "drug" : false,
+        "drug" : true,
         "mutation" : false,
         "miRNA" : false,
         "pathway" : false
     },
 
-    "numb_graph_nodes": 20,
+    "numb_graph_nodes": 50,
     "always_present" : [ ],
 
     "check_tags": [ ],
