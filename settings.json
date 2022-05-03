@@ -1,6 +1,6 @@
 {
     "dataset": {
-        "./annotated_dataset/dataset_SON.json" : true,
+        "./annotated_dataset/dataset_SON.json" : false,
         "./annotated_dataset/dataset_ZTTK.json" : true,
         "./annotated_dataset/dataset_nonspecifi.json" : false,
         "./annotated_dataset/dataset_brainoligo.json" : false,
@@ -24,18 +24,9 @@
         "pathway" : true
     },
     
-    "widest_set": ["zttk", "son"],
+    "widest_set": ["zttk", "intellectual disability"],
     
     "bioBERT_entity_types_widest_set" : {
-        "gene" : true,
-        "disease" : true,
-        "species" : false,
-        "drug" : false,
-        "mutation" : false,
-        "miRNA" : false,
-        "pathway" : false
-    },
-    "bioBERT_entity_types_second_layer" : {
         "gene" : true,
         "disease" : false,
         "species" : false,
@@ -44,8 +35,17 @@
         "miRNA" : false,
         "pathway" : false
     },
+    "bioBERT_entity_types_second_layer" : {
+        "gene" : false,
+        "disease" : true,
+        "species" : false,
+        "drug" : false,
+        "mutation" : false,
+        "miRNA" : false,
+        "pathway" : false
+    },
 
-    "numb_graph_nodes": 100,
+    "numb_graph_nodes": 20,
     "always_present" : [ ],
 
     "check_tags": [ ],
@@ -65,14 +65,16 @@
             "mutant son protein",
             "son target genes", 
             "human wild-type son", 
-            "son target genes"
+            "son target genes",
+            "nuclear protein son"
             
         ],
         "zttk": [
             "zttk", 
             "zhu-tokita-takenouchi-kim syndrome",
             "zttk syndrome",
-            "zhu-tokita-takenouchi-kim (zttk) syndrome"
+            "zhu-tokita-takenouchi-kim (zttk) syndrome",
+            "zhu-tokita-takenouchi-kim (zttk, omim"
         ],
         "oligodendroglioma": [
             "oligodendroglioma"

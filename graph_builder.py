@@ -45,8 +45,6 @@ def main():
 
     widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
     
-    #TODO: mimimum capacity to edges is not implemented yet
-    #in must be relative to the number of nodes in the graph
     neighbors = work_graph.get_neighbors(widest_set, bbent_types = settings.get('bioBERT_entity_types_second_layer'), max = remaining_nodes) # seocnd layer with only selected types of entities
     
     showing_nodes = widest_set + neighbors

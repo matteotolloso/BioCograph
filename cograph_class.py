@@ -1,13 +1,10 @@
-from genericpath import exists
-from locale import normalize
-from platform import node
 import networkx as nx
 from itertools import combinations
 import matplotlib.pyplot as plt
 from queue import PriorityQueue
 from tabulate import tabulate
 import json
-
+from colorsys import hsv_to_rgb
 from sqlalchemy import desc, false
 from dataset_class import Dataset
 
@@ -80,7 +77,7 @@ class Cograph:
         # it is a value between 0 and 1, it is 1 if the nodes occours always together
         #TODO problem: nodes that appear few time in the same papers has an high capacity
         if normalize: 
-            for a, b in self._nxGraph.edges:
+            for (a, b) in self._nxGraph.edges:
                 self._nxGraph[a][b]['capacity'] = self._nxGraph[a][b]['capacity'] / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
 
     def draw(self, showing_nodes : 'list[str]' = [], nodes_layer : dict = {}, layout: str = 'spring') -> None:
@@ -107,9 +104,12 @@ class Cograph:
 
         #edges
         edge_colors = []
+        max_cap_edge : float = max(graph_to_draw.edges.data('capacity'), key = lambda x: x[2])
+        min_cap_edge : float = min(graph_to_draw.edges.data('capacity'), key = lambda x: x[2])
+        max_cap_edge = max_cap_edge[2]
+        min_cap_edge = min_cap_edge[2]
         for u, v in graph_to_draw.edges():
-            c = 1 - graph_to_draw[u][v]['capacity']*50
-            edge_colors.append( [c, c, c] )
+            edge_colors.append(self.pseudocolor(graph_to_draw[u][v]['capacity'], min_cap_edge, max_cap_edge ))
 
 
         edgewidth = [5 for u, v in graph_to_draw.edges()]
@@ -150,14 +150,7 @@ class Cograph:
         plt.axis("off")
 
     def widest_path(self, src, target, bbent_types = 'all') -> 'list[str]':
-
-        if self._nxGraph.has_node(src) and self._nxGraph.has_node(target):
-            type1 = self._nxGraph.nodes[src]['type']
-            type2 = self._nxGraph.nodes[target]['type']
-            if ( not bbent_types.get(type1)) or (not bbent_types.get(type2)):
-                print('impossible to find a path between', src, 'and', target, 'that passes only through', bbent_types,\
-                'because', src, 'has type', type1, 'and', target, 'has type', type2)
-                return []
+        #TODO problem: non deterministic
                 
         # To keep track of widest distance
         widest  = {}
@@ -185,10 +178,11 @@ class Cograph:
                 return []
             
             if bbent_types != 'all':
-                # at least one neighbor must have the type wanted, otherwise a path does not exist for me
+                # at least one neighbor must have the type wanted or to be the target, 
+                # otherwise a path does not exist for me
                 exists = False
                 for neighbor in neighbors:
-                    if  bbent_types.get( self._nxGraph.nodes[neighbor]['type'] ) : # if node type is in the wanted types
+                    if  bbent_types.get( self._nxGraph.nodes[neighbor]['type']  or neighbor == target) : # if node type is in the wanted types
                         exists = True
                         break
                 if not exists:
@@ -197,7 +191,8 @@ class Cograph:
 
             for vertex in neighbors:
 
-                if(not bbent_types.get( self._nxGraph.nodes[vertex]['type'] ) ): # if node type is not in the wanted types
+                if (not bbent_types.get( self._nxGraph.nodes[vertex]['type'] )) and (not vertex == target):
+                    # if the neighbor is not in the wanted types and is not the target
                     continue # skip this neighbor
 
 
@@ -236,13 +231,7 @@ class Cograph:
     
     def widest_set(self, endpoints : 'list[str]', bbent_types = 'all' ) -> 'list[str]':
         if len(endpoints) == 1:
-            
-            if (bbent_types != 'all') and (not bbent_types.get(self._nxGraph.nodes[endpoints[0]]['type'])):
-                print(endpoints[0], 'has type', self._nxGraph.nodes[endpoints[0]]['type'], 'and is not in the wanted types', bbent_types)
-                return []
-            
             return endpoints
-        
         
         if len(endpoints) <= 0:
             return []
@@ -254,6 +243,7 @@ class Cograph:
         return widest_set
     
     def get_neighbors(self, nodes_from : 'list[str]', max : int, bbent_types = 'all') -> 'list[str]':
+        #TODO REBUILD IN ORDER TO USE THE NORMALIZED EDGE WEIGHTS
         if max <= 0:
             return []
 
@@ -300,5 +290,17 @@ class Cograph:
         with open(path, 'w') as f:
             f.write(json.dumps(res))
     
+    
+    def pseudocolor(self, val, minval, maxval):
+        """ Convert val in range minval..maxval to the range 0..120 degrees which
+        correspond to the colors Red and Green in the HSV colorspace.
+        """
+        h = (float(val-minval) / float(maxval-minval)) * 120
+
+        # Convert hsv color (h,1,1) to its rgb equivalent.
+        # Note: hsv_to_rgb() function expects h to be in the range 0..1 not 0..360
+        r, g, b = hsv_to_rgb(h/360, 1., 1.)
+        return r, g, b
+        
     
     
