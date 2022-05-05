@@ -115,7 +115,7 @@ class Cograph:
             edge_colors.append(self.pseudocolor(graph_to_draw[u][v]['capacity'], min_cap_edge, max_cap_edge ))
 
 
-        edgewidth = [5 for u, v in graph_to_draw.edges()]
+        edgewidth = [3 for u, v in graph_to_draw.edges()]
         nx.draw_networkx_edges(graph_to_draw, pos, alpha=0.3, width=edgewidth, edge_color=edge_colors)
         
         #nodes
@@ -172,32 +172,37 @@ class Cograph:
 
         b[s] = 1    
 
-        for w in self._nxGraph.neighbors(s):
+        neighbors = self._nxGraph.neighbors(s)
+        if (bbent_types != 'all'):
+            neighbors = list(filter(lambda x: bbent_types.get(self._nxGraph.nodes[x]['type']), neighbors))
+
+        for w in neighbors:
             p[w] = s  #s is the parent of w
             b[w] = self._nxGraph[s][w]['capacity'] #capacity is the bandwidth to w (because is a neighbor of s)
-            # append w to the frontier only if it is of the right type
-            if (bbent_types == 'all') or (bbent_types.get(self._nxGraph.nodes[w]['type'])):
-                f.append(w)
+            # append w to the frontier 
+            f.append(w)
         
         while True:
             u = max(f, key = lambda x: b[x]) # node with the maximum bandwidth
             f.remove(u)
 
-            for w in self._nxGraph.neighbors(u):
+            neighbors = self._nxGraph.neighbors(u)
+            if (bbent_types != 'all'):
+                neighbors = list(filter(lambda x: bbent_types.get(self._nxGraph.nodes[x]['type']), neighbors))
+            
+            for w in neighbors:
                 if b[w] == 0:
                     p[w] = u
                     b[w] = min(b[u], self._nxGraph[u][w]['capacity'])
-                    # append w to the frontier only if it is of the right type or if it is the target
-                    if (bbent_types == 'all') or (bbent_types.get(self._nxGraph.nodes[w]['type'])) or w == t:
-                        f.append(w)
+                    # append w to the frontier 
+                    f.append(w)
                 elif (w in f) and (b[w] < min(b[u], self._nxGraph[u][w]['capacity'])):
                     p[w] = u
                     b[w] = min(b[u], self._nxGraph[u][w]['capacity'])
-                else:
-                    print("error widest path")
+            
             
             if (b[t] > 0) and (t not in f):
-                # i arrived to the target with the maximum bandwidth
+                #arrived to the target with the maximum bandwidth
                 break
 
             if f == []:
@@ -212,88 +217,6 @@ class Cograph:
         path.reverse()
         return path
 
-        
-    
-    def _old_widest_path(self, src, target, bbent_types = 'all') -> 'list[str]':
-        #TODO problem: non deterministic
-                
-        # To keep track of widest distance
-        widest  = {}
-        for key in self._nxGraph.nodes():
-            widest[key] = -(10**9)
-        
-        # To get the path at the end of the algorithm
-        parent = {}
-    
-        # Use of Minimum Priority Queue to keep track minimum
-        # widest distance vertex so far in the algorithm
-        pri_queue = PriorityQueue()
-        pri_queue.put((0, src))
-        widest[src] = 10**9
-        while (not pri_queue.empty()):
-
-            current_src = pri_queue.get()[1] # second element of the tuple
-
-            neighbors = []
-            
-            try:
-                neighbors = self._nxGraph.neighbors(current_src)
-            except:
-                print('path not found between', src, 'and', target)
-                return []
-            
-            if bbent_types != 'all':
-                # at least one neighbor must have the type wanted or to be the target, 
-                # otherwise a path does not exist for me
-                exists = False
-                for neighbor in neighbors:
-                    if  bbent_types.get( self._nxGraph.nodes[neighbor]['type']  or neighbor == target) : # if node type is in the wanted types
-                        exists = True
-                        break
-                if not exists:
-                    print('path not found between', src, 'and', target, 'through only', bbent_types)
-                    return []
-
-            for vertex in neighbors:
-
-                if (not bbent_types.get( self._nxGraph.nodes[vertex]['type'] )) and (not vertex == target):
-                    # if the neighbor is not in the wanted types and is not the target
-                    continue # skip this neighbor
-
-
-                # Finding the widest distance to the vertex
-                # using current_source vertex's widest distance
-                # and its widest distance so far
-                width = max(widest[vertex], min(widest[current_src], self._nxGraph[current_src][vertex]['capacity']))
-    
-                # Relaxation of edge and adding into Priority Queue
-                if (width > widest[vertex]):
-    
-                    # Updating bottle-neck distance
-                    widest[vertex] = width
-    
-                    # To keep track of parent
-                    parent[vertex] = current_src
-    
-                    # Adding the relaxed edge in the priority queue
-                    # greater width -> greater priority -> lower value
-                    pri_queue.put((width * -1, vertex))
-
-        current = target
-        path = []
-        while current != src:
-            path.append(current)
-            try:
-                current = parent[current]
-            except:
-                print('path not found between', src, 'and', target)
-                return []
-
-        path.append(src)
-        path.reverse()
-
-        return path 
-    
     def widest_set(self, endpoints : 'list[str]', bbent_types = 'all' ) -> 'list[str]':
         if len(endpoints) == 1:
             return endpoints
@@ -315,26 +238,24 @@ class Cograph:
         widest_set = list(set(widest_set))
         return widest_set
     
-    def get_neighbors(self, nodes_from : 'list[str]', max : int, bbent_types = 'all') -> 'list[str]':
-        #TODO REBUILD IN ORDER TO USE THE NORMALIZED EDGE WEIGHTS
-        if max <= 0:
+    def get_neighbors(self, nodes_from : 'list[str]', max_for_node : int, bbent_types = 'all') -> 'list[str]':
+        # for each node in nodes_from, get the first max_neighbors based on the edge capacity
+        
+        if max_for_node <= 0:
             return []
+        
+        result = []
 
-        neighbors = []
-        for node in nodes_from: # for all nodes
-            curr_neighbors = self._nxGraph.neighbors(node) # get all neighbors
-            for n in curr_neighbors:
-                if bbent_types == 'all' or bbent_types.get( self._nxGraph.nodes[n]['type'] ): # add to list if type is in wanted types
-                    neighbors.append(n)
+        for n in nodes_from: # for each node in nodes_from
+            neighbors = list(self._nxGraph.neighbors(n)) # get the neighbors of n
+            neighbors = list(filter(lambda x: bbent_types.get(self._nxGraph.nodes[x]['type']), neighbors)) # filter the neighbors by the types wanted
+            neighbors.sort(key=lambda x: self._nxGraph[n][x]['capacity'], reverse=True) # sort the neighbors by capacity from source
+            neighbors = neighbors[:max_for_node] # get the first max_neighbors
+            result+=neighbors
+        
+        result = list(set(result))
 
-        neighbors = list(set(neighbors))
-       
-        if len(neighbors) > max:
-            node_importance = [(n, self._nxGraph.nodes[n]['weight']) for n in neighbors]
-            node_importance.sort(key=lambda tup: tup[1], reverse = True) # sort by importance
-            neighbors = [tup[0] for tup in node_importance[:max]] # take only the first max nodes
-
-        return neighbors
+        return result
     
     def get_nodes(self):
         return list(self._nxGraph.nodes())

@@ -1,12 +1,13 @@
 {
     "dataset": {
-        "./annotated_dataset/dataset_SON.json" : true,
-        "./annotated_dataset/dataset_ZTTK.json" : true,
+        "./annotated_dataset/son.json" : true,
+        "./annotated_dataset/zttk.json" : true,
+        "./annotated_dataset/spg17.json" : true,
+
         "./annotated_dataset/dataset_nonspecifi.json" : false,
         "./annotated_dataset/dataset_brainoligo.json" : false,
         "./annotated_dataset/dataset_Replicatio.json" : false,
-        "./annotated_dataset/dataset_Splicingof.json" : false,
-        "./annotated_dataset/new-SPG17-set.json" : false
+        "./annotated_dataset/dataset_Splicingof.json" : false
     },
     
     "MeSH": false,
@@ -23,10 +24,24 @@
         "miRNA" : true,
         "pathway" : true
     },
+
+    "layout" : "shell",
     
-    "widest_set": ["zttk", "epilepsy"],
+    "widest_set": [ "zttk", "spg17", "birc6"],
     
     "bioBERT_entity_types_widest_set" : {
+        "gene" : true,
+        "disease" : true,
+        "species" : false,
+        "drug" : false,
+        "mutation" : false,
+        "miRNA" : false,
+        "pathway" : false
+    },
+
+    "max_neighbors_for_node": 3,
+
+    "bioBERT_entity_types_second_layer" : {
         "gene" : true,
         "disease" : false,
         "species" : false,
@@ -35,18 +50,8 @@
         "miRNA" : false,
         "pathway" : false
     },
-    "bioBERT_entity_types_second_layer" : {
-        "gene" : false,
-        "disease" : false,
-        "species" : false,
-        "drug" : true,
-        "mutation" : false,
-        "miRNA" : false,
-        "pathway" : false
-    },
 
-    "numb_graph_nodes": 50,
-    "always_present" : [ ],
+    "num_other_relevant_nodes" : 5,
 
     "check_tags": [ ],
     
@@ -66,8 +71,9 @@
             "son target genes", 
             "human wild-type son", 
             "son target genes",
-            "nuclear protein son"
-            
+            "nuclear protein son",
+            "son mutations", 
+            "son gene mutation"
         ],
         "zttk": [
             "zttk", 
@@ -109,7 +115,20 @@
             "silver-russell syndrome",
             "rss",
             "russell-silver syndrome",
-            "srs"
+            "srs",
+            "silver-russell (srs) syndromes",
+            "russell-silver syndromes"
+        ],
+        "growth hormone": [
+            "growth hormone",
+            "gh"
+        ],
+        "angelman syndrome": [
+            "angelman syndromes"
+        ], 
+        "carboxymethyllysine-hemoglobin": [
+            "cml-hb"
         ]
+        
     }
 }

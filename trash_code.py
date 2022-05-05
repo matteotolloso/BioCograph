@@ -394,3 +394,84 @@ def normalize_articles(articles : dict, thresaurs : dict):
                 normalized_entities_list.append( (entity[0].lower() , entity[1]) )
         articles[paper_id]['bioBERT_entities'] = normalized_entities_list
        
+
+def _old_widest_path(self, src, target, bbent_types = 'all') -> 'list[str]':
+        #TODO problem: non deterministic
+                
+        # To keep track of widest distance
+        widest  = {}
+        for key in self._nxGraph.nodes():
+            widest[key] = -(10**9)
+        
+        # To get the path at the end of the algorithm
+        parent = {}
+    
+        # Use of Minimum Priority Queue to keep track minimum
+        # widest distance vertex so far in the algorithm
+        pri_queue = PriorityQueue()
+        pri_queue.put((0, src))
+        widest[src] = 10**9
+        while (not pri_queue.empty()):
+
+            current_src = pri_queue.get()[1] # second element of the tuple
+
+            neighbors = []
+            
+            try:
+                neighbors = self._nxGraph.neighbors(current_src)
+            except:
+                print('path not found between', src, 'and', target)
+                return []
+            
+            if bbent_types != 'all':
+                # at least one neighbor must have the type wanted or to be the target, 
+                # otherwise a path does not exist for me
+                exists = False
+                for neighbor in neighbors:
+                    if  bbent_types.get( self._nxGraph.nodes[neighbor]['type']  or neighbor == target) : # if node type is in the wanted types
+                        exists = True
+                        break
+                if not exists:
+                    print('path not found between', src, 'and', target, 'through only', bbent_types)
+                    return []
+
+            for vertex in neighbors:
+
+                if (not bbent_types.get( self._nxGraph.nodes[vertex]['type'] )) and (not vertex == target):
+                    # if the neighbor is not in the wanted types and is not the target
+                    continue # skip this neighbor
+
+
+                # Finding the widest distance to the vertex
+                # using current_source vertex's widest distance
+                # and its widest distance so far
+                width = max(widest[vertex], min(widest[current_src], self._nxGraph[current_src][vertex]['capacity']))
+    
+                # Relaxation of edge and adding into Priority Queue
+                if (width > widest[vertex]):
+    
+                    # Updating bottle-neck distance
+                    widest[vertex] = width
+    
+                    # To keep track of parent
+                    parent[vertex] = current_src
+    
+                    # Adding the relaxed edge in the priority queue
+                    # greater width -> greater priority -> lower value
+                    pri_queue.put((width * -1, vertex))
+
+        current = target
+        path = []
+        while current != src:
+            path.append(current)
+            try:
+                current = parent[current]
+            except:
+                print('path not found between', src, 'and', target)
+                return []
+
+        path.append(src)
+        path.reverse()
+
+        return path 
+    

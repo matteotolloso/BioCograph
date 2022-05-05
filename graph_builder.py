@@ -27,7 +27,6 @@ def main():
 
     settings = load_settings() # loaded ad a dict, TODO: use settingsclass
     inverse_thresaurus = get_inverse_thresaurs(settings.get('thresaurs'))
-    remaining_nodes = settings.get('numb_graph_nodes')
     dataset = Dataset() 
 
     for k, v in settings.get('dataset').items():
@@ -45,12 +44,11 @@ def main():
 
     widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
     
-    neighbors = work_graph.get_neighbors(widest_set, bbent_types = settings.get('bioBERT_entity_types_second_layer'), max = remaining_nodes) # seocnd layer with only selected types of entities
+    neighbors = work_graph.get_neighbors(widest_set, bbent_types = settings.get('bioBERT_entity_types_second_layer'), max_for_node = settings.get('max_neighbors_for_node')) # seocnd layer with only selected types of entities
     
     showing_nodes = widest_set + neighbors
 
-    remaining_nodes -= len(showing_nodes)
-    showing_nodes += work_graph.get_main_nodes(max=remaining_nodes)
+    showing_nodes += work_graph.get_main_nodes(max=settings.get('num_other_relevant_nodes'))
 
     nodes_layer = {}
     for n in showing_nodes:
@@ -62,7 +60,7 @@ def main():
             nodes_layer[n] = 'third'
             
     
-    work_graph.draw( showing_nodes=showing_nodes, layout='shell', nodes_layer=nodes_layer)
+    work_graph.draw( showing_nodes=showing_nodes, layout=settings.get('layout'), nodes_layer=nodes_layer)
 
     work_graph.export_cytoscape_data("./results/cytoskape_format.json")
     
