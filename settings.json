@@ -2,7 +2,8 @@
     "dataset": {
         "./annotated_dataset/son.json" : true,
         "./annotated_dataset/zttk.json" : true,
-        "./annotated_dataset/spg17.json" : true,
+        "./annotated_dataset/spg17.json" : false,
+        "./annotated_dataset/top_5_son_related_protein.json" : true,
 
         "./annotated_dataset/dataset_nonspecifi.json" : false,
         "./annotated_dataset/dataset_brainoligo.json" : false,
@@ -27,7 +28,7 @@
 
     "layout" : "shell",
     
-    "widest_set": [ "zttk", "spg17", "birc6"],
+    "widest_set": ["son", "zttk"],
     
     "bioBERT_entity_types_widest_set" : {
         "gene" : true,
@@ -39,7 +40,7 @@
         "pathway" : false
     },
 
-    "max_neighbors_for_node": 3,
+    "max_neighbors_for_node": 4,
 
     "bioBERT_entity_types_second_layer" : {
         "gene" : true,
