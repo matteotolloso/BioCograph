@@ -14,7 +14,7 @@
     "MeSH": false,
     "RNnumber": false,
     "OtherTerms": false,
-    "bioBERT": true,
+    "bioBERT": false,
     
     "bioBERT_entity_types" : {
         "gene" : true,
@@ -23,7 +23,8 @@
         "drug" : true,
         "mutation" : true,
         "miRNA" : true,
-        "pathway" : true
+        "pathway" : true,
+        "unknown" : true
     },
 
     "layout" : "shell",
@@ -33,26 +34,28 @@
     "bioBERT_entity_types_widest_set" : {
         "gene" : true,
         "disease" : true,
-        "species" : false,
-        "drug" : false,
-        "mutation" : false,
-        "miRNA" : false,
-        "pathway" : false
+        "species" : true,
+        "drug" : true,
+        "mutation" : true,
+        "miRNA" : true,
+        "pathway" : true,
+        "unknown" : true
     },
 
-    "max_neighbors_for_node": 4,
+    "max_neighbors_for_node": 10,
 
     "bioBERT_entity_types_second_layer" : {
         "gene" : true,
-        "disease" : false,
-        "species" : false,
-        "drug" : false,
-        "mutation" : false,
-        "miRNA" : false,
-        "pathway" : false
+        "disease" : true,
+        "species" : true,
+        "drug" : true,
+        "mutation" : true,
+        "miRNA" : true,
+        "pathway" : true,
+        "unknown" : true
     },
 
-    "num_other_relevant_nodes" : 5,
+    "num_other_relevant_nodes" : 0,
 
     "check_tags": [ ],
     
@@ -74,7 +77,9 @@
             "son target genes",
             "nuclear protein son",
             "son mutations", 
-            "son gene mutation"
+            "son gene mutation",
+            "human son",
+            "son sequences"
         ],
         "zttk": [
             "zttk", 
@@ -129,6 +134,10 @@
         ], 
         "carboxymethyllysine-hemoglobin": [
             "cml-hb"
+        ], 
+        "rest compressor 2": [
+            "rcor2",
+            "rest corepressor 2"
         ]
         
     }

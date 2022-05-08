@@ -23,7 +23,7 @@ class Cograph:
                     mh=False,
                     ot=False,
                     bbent=True,
-                    bbent_types = 'all',
+                    bbent_types = {},
                     alw_pres=[], # TODO remove?
                     normalize = True
                     ) -> None:
@@ -34,22 +34,25 @@ class Cograph:
             terms = [] # list of touples (name, type)
             # extract the types of terms required
             if mh:
-                terms += (paper.get('MeSH'), 'unknown')
+                for t in paper.get('MeSH'):
+                    terms.append((t, 'unknown'))
             if rn:
-                terms += (paper.get('RNnumber'), 'unknown')
+                for t in paper.get('RNnumber'):
+                    terms.append((t, 'unknown'))
             if ot:
-                terms += (paper.get('OtherTerm'), 'unknown')
+                for t in paper.get('OtherTerm'):
+                    terms.append((t, 'unknown'))
             if bbent:
                 ents = paper.get('bioBERT_entities') #list of touples (name, type)
                 for ent in ents:
-                    if (bbent_types == 'all') or(ent[0] in alw_pres)  or (bbent_types.get(ent[1]) ):
+                    if (bbent_types.get(ent[1])) or (ent[0] in alw_pres) :
                         terms.append(ent)
 
+            # the same term that occurs more than once in the same paper is only added once
             terms = list(set(terms))
-            
-            #TODO attenzione in questo modo alcuni sinonimi vengono esclusi ?
+
                         
-            if not terms:
+            if not terms or len(terms) == 1:
                 continue
             
             for a, b in list(combinations(terms, 2)):
@@ -85,6 +88,10 @@ class Cograph:
 
     def draw(self, showing_nodes : 'list[str]' = [], nodes_layer : dict = {}, layout: str = 'spring') -> None:
     
+        if len(showing_nodes) <= 0:
+            print("no nodes to show")
+            return
+        
         fig, ax = plt.subplots(figsize=(17, 12))
 
         graph_to_draw = self._nxGraph.subgraph(showing_nodes)
@@ -152,7 +159,7 @@ class Cograph:
         fig.tight_layout()
         plt.axis("off")
 
-    def widest_path(self, s, t, bbent_types = 'all') -> list:
+    def widest_path(self, s, t, bbent_types = {}) -> list:
         """
         find the widest path from s to t
         assunig 0 == -infinity and 1 == infinity
@@ -173,8 +180,7 @@ class Cograph:
         b[s] = 1    
 
         neighbors = self._nxGraph.neighbors(s)
-        if (bbent_types != 'all'):
-            neighbors = list(filter(lambda x: bbent_types.get(self._nxGraph.nodes[x]['type']), neighbors))
+        neighbors = list(filter(lambda x: bbent_types.get(self._nxGraph.nodes[x]['type']) or x == t, neighbors))
 
         for w in neighbors:
             p[w] = s  #s is the parent of w
@@ -187,8 +193,7 @@ class Cograph:
             f.remove(u)
 
             neighbors = self._nxGraph.neighbors(u)
-            if (bbent_types != 'all'):
-                neighbors = list(filter(lambda x: bbent_types.get(self._nxGraph.nodes[x]['type']), neighbors))
+            neighbors = list(filter(lambda x: bbent_types.get(self._nxGraph.nodes[x]['type']) or x == t, neighbors))
             
             for w in neighbors:
                 if b[w] == 0:
@@ -217,7 +222,7 @@ class Cograph:
         path.reverse()
         return path
 
-    def widest_set(self, endpoints : 'list[str]', bbent_types = 'all' ) -> 'list[str]':
+    def widest_set(self, endpoints : 'list[str]', bbent_types = {}) -> 'list[str]':
         if len(endpoints) == 1:
             return endpoints
         
@@ -227,9 +232,9 @@ class Cograph:
         widest_set = []
         
         for u, v in combinations(endpoints, 2):
-            a =self.widest_path(u, v, bbent_types=bbent_types)
-            widest_set += a
-            print(u, v, a)
+            wp =self.widest_path(u, v, bbent_types=bbent_types)
+            widest_set += wp
+            print("wildest path from",u,"to", v, wp)
 
         for n in endpoints: # add the endpoints
             if n in self._nxGraph.nodes:
@@ -238,7 +243,7 @@ class Cograph:
         widest_set = list(set(widest_set))
         return widest_set
     
-    def get_neighbors(self, nodes_from : 'list[str]', max_for_node : int, bbent_types = 'all') -> 'list[str]':
+    def get_neighbors(self, nodes_from : 'list[str]', max_for_node : int, bbent_types = {}) -> 'list[str]':
         # for each node in nodes_from, get the first max_neighbors based on the edge capacity
         
         if max_for_node <= 0:
