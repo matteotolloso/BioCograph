@@ -1,9 +1,9 @@
 {
     "dataset": {
-        "./annotated_dataset/son.json" : true,
+        "./annotated_dataset/son.json" : false,
         "./annotated_dataset/zttk.json" : true,
         "./annotated_dataset/spg17.json" : false,
-        "./annotated_dataset/top_5_son_related_protein.json" : true,
+        "./annotated_dataset/top_5_son_related_protein.json" : false,
 
         "./annotated_dataset/dataset_nonspecifi.json" : false,
         "./annotated_dataset/dataset_brainoligo.json" : false,
@@ -24,25 +24,26 @@
         "mutation" : true,
         "miRNA" : true,
         "pathway" : true,
-        "unknown" : true
+        "unknown" : false
     },
 
-    "layout" : "shell",
+    "layout" : "spring",
     
     "widest_set": ["son", "zttk"],
     
     "bioBERT_entity_types_widest_set" : {
         "gene" : true,
         "disease" : true,
-        "species" : true,
+        "species" : false,
         "drug" : true,
-        "mutation" : true,
-        "miRNA" : true,
-        "pathway" : true,
-        "unknown" : true
+        "mutation" : false,
+        "miRNA" : false,
+        "pathway" : false,
+        "unknown" : false
     },
 
-    "max_neighbors_for_node": 10,
+    "max_neighbors_for_node": 20,
+    "percentage_of_showing_edges" : 0.3,
 
     "bioBERT_entity_types_second_layer" : {
         "gene" : true,
@@ -52,7 +53,7 @@
         "mutation" : true,
         "miRNA" : true,
         "pathway" : true,
-        "unknown" : true
+        "unknown" : false
     },
 
     "num_other_relevant_nodes" : 0,

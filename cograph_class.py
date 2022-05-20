@@ -13,8 +13,16 @@ from dataset_class import Dataset
 
 class Cograph:
 
-    def __init__(self) -> None:
-        self._nxGraph = nx.Graph()
+    def __init__(self, cograph = None) -> None:
+        if type(cograph) == Cograph:
+            self._nxGraph = nx.Graph(cograph.get_nxGraph())
+        elif type(cograph) == nx.Graph:
+            self._nxGraph = nx.Graph(cograph)
+        else:
+            self._nxGraph = nx.Graph()
+         
+    def get_nxGraph(self):
+        return self._nxGraph
     
     
     def add_dataset(self, 
@@ -86,7 +94,7 @@ class Cograph:
             for (a, b) in self._nxGraph.edges:
                 self._nxGraph[a][b]['capacity'] = 2 * self._nxGraph[a][b]['capacity'] / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
 
-    def draw(self, showing_nodes : 'list[str]' = [], nodes_layer : dict = {}, layout: str = 'spring') -> None:
+    def draw(self, showing_nodes : 'list[str]' = [], nodes_layer : dict = {}, layout: str = 'spring', percentage = 0.1) -> None:
     
         if len(showing_nodes) <= 0:
             print("no nodes to show")
@@ -95,6 +103,7 @@ class Cograph:
         fig, ax = plt.subplots(figsize=(17, 12))
 
         graph_to_draw = self._nxGraph.subgraph(showing_nodes)
+        graph_to_draw = nx.Graph(graph_to_draw)
         
         #layout
         pos = []
@@ -108,16 +117,21 @@ class Cograph:
             second_list = [n if nodes_layer[n] == 'second' else None for n in graph_to_draw.nodes]
             third_list = [n if nodes_layer[n] == 'third' else None for n in graph_to_draw.nodes]
             pos = nx.shell_layout(graph_to_draw, nlist=[first_list, second_list, third_list])
-        
-        #pos = nx.nx_agraph.graphviz_layout(graph)
-        #pos = nx.nx_pydot.pydot_layout(graph)
 
         #edges
+        edges : list = list(graph_to_draw.edges.data('capacity'))
+        edges.sort(key = lambda x: x[2])
+        index_for_split = int( round(len(edges)*(1- percentage)))
+        edges_to_remove = edges[ 0 : index_for_split]
+        edges = edges[index_for_split : len(edges)] # take only the most capacity edges 
+
+        for a, b, _ in edges_to_remove:
+            graph_to_draw.remove_edge(a, b)
+
+        max_cap_edge : float = edges[len(edges)-1][2]
+        min_cap_edge : float = edges[0][2]
+
         edge_colors = []
-        max_cap_edge : float = max(graph_to_draw.edges.data('capacity'), key = lambda x: x[2])
-        min_cap_edge : float = min(graph_to_draw.edges.data('capacity'), key = lambda x: x[2])
-        max_cap_edge = max_cap_edge[2]
-        min_cap_edge = min_cap_edge[2]
         for u, v in graph_to_draw.edges():
             edge_colors.append(self.pseudocolor(graph_to_draw[u][v]['capacity'], min_cap_edge, max_cap_edge ))
 
@@ -158,6 +172,7 @@ class Cograph:
         ax.margins(0.1, 0.05)
         fig.tight_layout()
         plt.axis("off")
+        return Cograph(graph_to_draw)
 
     def widest_path(self, s, t, bbent_types = {}) -> list:
         """
@@ -297,7 +312,7 @@ class Cograph:
         avg = (minval + maxval) / 2.0
         val = (val-avg)*(-1) + avg
 
-        
+        #TODO possible divide by zero exception
         h = (float(val-minval) / float(maxval-minval)) * 120
 
         # Convert hsv color (h,1,1) to its rgb equivalent.

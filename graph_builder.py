@@ -60,9 +60,9 @@ def main():
             nodes_layer[n] = 'third'
             
     
-    work_graph.draw( showing_nodes=showing_nodes, layout=settings.get('layout'), nodes_layer=nodes_layer)
+    showing_graph : Cograph = work_graph.draw( showing_nodes=showing_nodes, layout=settings.get('layout'), nodes_layer=nodes_layer, percentage = settings.get('percentage_of_showing_edges'))
 
-    work_graph.export_cytoscape_data("./results/cytoskape_format.json")
+    showing_graph.export_cytoscape_data("./results/cytoskape_format.json")
     
     plt.show()  
 
