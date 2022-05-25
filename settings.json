@@ -1,8 +1,8 @@
 {
     "dataset": {
-        "./annotated_dataset/son.json" : false,
+        "./annotated_dataset/son.json" : true,
         "./annotated_dataset/zttk.json" : true,
-        "./annotated_dataset/spg17.json" : false,
+        "./annotated_dataset/spg17.json" : true,
         "./annotated_dataset/top_5_son_related_protein.json" : false,
 
         "./annotated_dataset/dataset_nonspecifi.json" : false,
@@ -14,7 +14,7 @@
     "MeSH": false,
     "RNnumber": false,
     "OtherTerms": false,
-    "bioBERT": false,
+    "bioBERT": true,
     
     "bioBERT_entity_types" : {
         "gene" : true,
@@ -29,21 +29,21 @@
 
     "layout" : "spring",
     
-    "widest_set": ["son", "zttk"],
+    "widest_set": ["epilepsy", "zttk"],
     
     "bioBERT_entity_types_widest_set" : {
         "gene" : true,
-        "disease" : true,
+        "disease" : false,
         "species" : false,
-        "drug" : true,
+        "drug" : false,
         "mutation" : false,
         "miRNA" : false,
         "pathway" : false,
         "unknown" : false
     },
 
-    "max_neighbors_for_node": 20,
-    "percentage_of_showing_edges" : 0.3,
+    "max_neighbors_for_node": 2,
+    "percentage_of_showing_edges" : 1,
 
     "bioBERT_entity_types_second_layer" : {
         "gene" : true,

@@ -42,6 +42,11 @@ def main():
     work_graph.save_nodes_to_path("./results/nodes.txt")
     work_graph.save_edges_to_path("./results/edges.txt")
 
+    work_graph.disease_rank(source="zttk", path_to_save="./results/disease_rank.txt")
+    
+
+    return
+    
     widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
     
     neighbors = work_graph.get_neighbors(widest_set, bbent_types = settings.get('bioBERT_entity_types_second_layer'), max_for_node = settings.get('max_neighbors_for_node')) # seocnd layer with only selected types of entities

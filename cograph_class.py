@@ -1,5 +1,7 @@
 import math
+from pprint import pprint
 from re import A
+import re
 import networkx as nx
 from itertools import combinations
 import matplotlib.pyplot as plt
@@ -93,6 +95,40 @@ class Cograph:
         if normalize: 
             for (a, b) in self._nxGraph.edges:
                 self._nxGraph[a][b]['capacity'] = 2 * self._nxGraph[a][b]['capacity'] / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
+
+    def disease_rank(self, source, path_to_save) -> list:
+        if not self._nxGraph.has_node(source):
+            print(source, 'not in graph')
+            return []
+
+        #shortest path considering the capacity of the edges as a distance
+        #in this case a greater capacity means more correlation, so a shorter path
+        #to enable this we use 1-capacity as the distance (capacity is a value between 0 and 1) 
+        
+        def _weight(a, b, attr):
+            return 1 - attr['capacity']
+
+        rank = []
+        for n in self._nxGraph.nodes:
+            if self._nxGraph.nodes[n]['type'] == 'disease':
+                path = []
+                try:
+                    path = nx.shortest_path(self._nxGraph, source=source, target=n, weight=_weight)
+                except nx.exception.NetworkXNoPath:
+                    continue
+                
+                path_weight = 0
+                for i in range(len(path)-1):    
+                    path_weight += self._nxGraph[path[i]][path[i+1]]['capacity']
+                rank.append((n, path_weight))
+        
+        rank.sort(key = lambda x:x[1], reverse=True)
+        with open(path_to_save, 'w') as file:
+            file.write('Disease rank from ' + source + '\n')
+            file.write(tabulate(rank,  headers=['Entity', 'Path weight'],  tablefmt='orgtbl'))
+
+        return rank
+
 
     def draw(self, showing_nodes : 'list[str]' = [], nodes_layer : dict = {}, layout: str = 'spring', percentage = 0.1) -> None:
     
