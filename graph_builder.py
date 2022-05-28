@@ -33,17 +33,22 @@ def main():
         if v:
             dataset.add_from_path(k)
     
+    print('Start normalization')
     dataset.normalize(inverse_thresaurus)
+    print('End normalization')
 
     work_graph = Cograph()
     
+    print('Start graph building')
     work_graph.add_dataset(dataset, bbent_types = settings.get('bioBERT_entity_types')) 
+    print('End graph building')
 
     work_graph.save_nodes_to_path("./results/nodes.txt")
     work_graph.save_edges_to_path("./results/edges.txt")
 
+    print('Start disease ranking')
     work_graph.disease_rank(source="zttk", path_to_save="./results/disease_rank.txt")
-
+    print('End disease ranking')
     
     widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
     

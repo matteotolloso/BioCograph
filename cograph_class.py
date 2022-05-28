@@ -113,7 +113,7 @@ class Cograph:
         for n in self._nxGraph.nodes:
             
             if (self._nxGraph.nodes[n]['type'] == 'disease') and n != source:
-                
+                print('calculating path from', source, 'to', n)
                 flow : float
                 try:
                     flow, _ = nx.maximum_flow(self._nxGraph, source, n, capacity='capacity')
