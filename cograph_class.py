@@ -96,6 +96,7 @@ class Cograph:
             for (a, b) in self._nxGraph.edges:
                 self._nxGraph[a][b]['capacity'] = 2 * self._nxGraph[a][b]['capacity'] / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
 
+    
     def disease_rank(self, source, path_to_save) -> list:
         if not self._nxGraph.has_node(source):
             print(source, 'not in graph')
@@ -110,22 +111,21 @@ class Cograph:
 
         rank = []
         for n in self._nxGraph.nodes:
-            if self._nxGraph.nodes[n]['type'] == 'disease':
-                path = []
-                try:
-                    path = nx.shortest_path(self._nxGraph, source=source, target=n, weight=_weight)
-                except nx.exception.NetworkXNoPath:
-                    continue
+            
+            if (self._nxGraph.nodes[n]['type'] == 'disease') and n != source:
                 
-                path_weight = 0
-                for i in range(len(path)-1):    
-                    path_weight += self._nxGraph[path[i]][path[i+1]]['capacity']
-                rank.append((n, path_weight))
+                flow : float
+                try:
+                    flow, _ = nx.maximum_flow(self._nxGraph, source, n, capacity='capacity')
+                except nx.exception.NetworkXUnbounded:
+                    continue
+ 
+                rank.append((n, flow))
         
         rank.sort(key = lambda x:x[1], reverse=True)
         with open(path_to_save, 'w') as file:
             file.write('Disease rank from ' + source + '\n')
-            file.write(tabulate(rank,  headers=['Entity', 'Path weight'],  tablefmt='orgtbl'))
+            file.write(tabulate(rank,  headers=['Entity', 'Flow'],  tablefmt='orgtbl'))
 
         return rank
 

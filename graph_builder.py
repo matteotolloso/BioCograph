@@ -43,9 +43,7 @@ def main():
     work_graph.save_edges_to_path("./results/edges.txt")
 
     work_graph.disease_rank(source="zttk", path_to_save="./results/disease_rank.txt")
-    
 
-    return
     
     widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
     
