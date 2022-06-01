@@ -29,30 +29,30 @@
 
     "layout" : "spring",
     
-    "widest_set": ["zttk"],
+    "widest_set": [ "son"],
     
     "bioBERT_entity_types_widest_set" : {
-        "gene" : false,
+        "gene" : true,
         "disease" : true,
-        "species" : false,
-        "drug" : false,
-        "mutation" : false,
-        "miRNA" : false,
-        "pathway" : false,
+        "species" : true,
+        "drug" : true,
+        "mutation" : true,
+        "miRNA" : true,
+        "pathway" : true,
         "unknown" : false
     },
 
-    "max_neighbors_for_node": 10,
-    "percentage_of_showing_edges" : 1,
+    "max_neighbors_for_node": 20,
+    "percentage_of_showing_edges" : 0.5,
 
     "bioBERT_entity_types_second_layer" : {
-        "gene" : false,
+        "gene" : true,
         "disease" : true,
-        "species" : false,
-        "drug" : false,
-        "mutation" : false,
-        "miRNA" : false,
-        "pathway" : false,
+        "species" : true,
+        "drug" : true,
+        "mutation" : true,
+        "miRNA" : true,
+        "pathway" : true,
         "unknown" : false
     },
 
@@ -80,7 +80,11 @@
             "son mutations", 
             "son gene mutation",
             "human son",
-            "son sequences"
+            "son sequences", 
+            "dead-box protein dbp5p", 
+            "bp", 
+            "sbp", 
+            "human dbp5"
         ],
         "zttk": [
             "zttk", 
@@ -110,7 +114,9 @@
             "trisomy 21"
         ],
         "intellectual disability" : [
-            "id"
+            "id", 
+            "intellectual disability syndrome",
+            "intellectual disabilities"
         ],
         "hydrocephalus, congenital, 1": [
             "hyc1"

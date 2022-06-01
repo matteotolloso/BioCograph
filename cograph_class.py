@@ -9,7 +9,6 @@ from queue import PriorityQueue
 from tabulate import tabulate
 import json
 from colorsys import hsv_to_rgb
-from sqlalchemy import desc, false
 from dataset_class import Dataset
 
 
@@ -35,7 +34,6 @@ class Cograph:
                     bbent=True,
                     bbent_types = {},
                     alw_pres=[], # TODO remove?
-                    normalize = True
                     ) -> None:
     
         papers = dataset.get_list()
@@ -85,17 +83,20 @@ class Cograph:
                         print('inconsistency detected:', b[0], 'has type', self._nxGraph.nodes[b[0]]['type'], 'while', b[0], 'has type', b[1])
                 
                 if self._nxGraph.has_edge(a[0], b[0]):
-                    self._nxGraph[a[0]][b[0]]['capacity'] += paper['weight']
+                    self._nxGraph[a[0]][b[0]]['capacity_0'] += paper['weight']
                 else:
-                    self._nxGraph.add_edge(a[0], b[0], capacity=paper['weight'])
+                    self._nxGraph.add_edge(a[0], b[0], capacity_0=paper['weight'])
         
         # new capacity is the old capacity divided by the sum of the weights of the nodes
         # it is a value between 0 and 1, it is 1 if the nodes occours always together
-        #TODO problem: nodes that appear few time in the same papers has an high capacity
-        if normalize: 
-            for (a, b) in self._nxGraph.edges:
-                self._nxGraph[a][b]['capacity'] = 2 * self._nxGraph[a][b]['capacity'] / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
-
+         
+        for (a, b) in self._nxGraph.edges:
+            #self._nxGraph[a][b]['capacity_1'] = 2 * self._nxGraph[a][b]['capacity_0'] / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
+            self._nxGraph[a][b]['capacity'] = max(self._nxGraph[a][b]['capacity_0'] / self._nxGraph.nodes[a]['weight'] ,\
+                                                    self._nxGraph[a][b]['capacity_0'] / self._nxGraph.nodes[b]['weight'])
+        
+            
+    
     
     def disease_rank(self, source, path_to_save) -> list:
         if not self._nxGraph.has_node(source):
@@ -106,9 +107,34 @@ class Cograph:
         #in this case a greater capacity means more correlation, so a shorter path
         #to enable this we use 1-capacity as the distance (capacity is a value between 0 and 1) 
         
-        def _weight(a, b, attr):
-            return 1 - attr['capacity']
+        if True:    # rank with the shortest path
+            def _weight(a, b, attr):
+                return 1 - attr['capacity']
+  
+            path_dict = nx.shortest_path(self._nxGraph, source = source, weight=_weight)
+             
+            rank = []
+            #for each node
+            for node, path in path_dict.items():
+                if self._nxGraph.nodes[node]['type'] == 'disease':
+                    #calculate length of the path
+                    if len(path) == 1:
+                        continue
+                    length = 0
+                    for i in range(len(path) - 1):
+                        length += self._nxGraph[path[i]][path[i+1]]['capacity']
+                    rank.append((node, length))
 
+            rank.sort(key=lambda x: x[1], reverse=True)
+
+            with open(path_to_save, 'w') as file:
+                file.write('Disease rank from ' + source + '\n')
+                file.write(tabulate(rank,  headers=['Entity', 'Rank'],  tablefmt='orgtbl'))
+            
+            return rank
+        
+        
+        # rank with max flow (computational problem)
         rank = []
         for n in self._nxGraph.nodes:
             
@@ -125,7 +151,7 @@ class Cograph:
         rank.sort(key = lambda x:x[1], reverse=True)
         with open(path_to_save, 'w') as file:
             file.write('Disease rank from ' + source + '\n')
-            file.write(tabulate(rank,  headers=['Entity', 'Flow'],  tablefmt='orgtbl'))
+            file.write(tabulate(rank,  headers=['Entity', 'Score'],  tablefmt='orgtbl'))
 
         return rank
 

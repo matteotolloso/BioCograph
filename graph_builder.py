@@ -43,8 +43,11 @@ def main():
     work_graph.add_dataset(dataset, bbent_types = settings.get('bioBERT_entity_types')) 
     print('End graph building')
 
+    print('Start graph saving')
     work_graph.save_nodes_to_path("./results/nodes.txt")
     work_graph.save_edges_to_path("./results/edges.txt")
+    print('End graph saving')
+
 
     print('Start disease ranking')
     work_graph.disease_rank(source="zttk", path_to_save="./results/disease_rank.txt")
