@@ -15,21 +15,14 @@
     "RNnumber": false,
     "OtherTerms": false,
     "bioBERT": true,
-    
-    "bioBERT_entity_types" : {
-        "gene" : true,
-        "disease" : true,
-        "species" : true,
-        "drug" : true,
-        "mutation" : true,
-        "miRNA" : true,
-        "pathway" : true,
-        "unknown" : false
-    },
 
-    "layout" : "spring",
+    "normalization_type" : 2,
+
+    "rank_source" : "son",
+    "rank_type" : "disease", 
+    "rank_algorithm" : "max_flow",
     
-    "widest_set": [ "son"],
+    "widest_set": ["son"],
     
     "bioBERT_entity_types_widest_set" : {
         "gene" : true,
@@ -42,10 +35,7 @@
         "unknown" : false
     },
 
-    "max_neighbors_for_node": 20,
-    "percentage_of_showing_edges" : 0.5,
-
-    "bioBERT_entity_types_second_layer" : {
+    "bioBERT_entity_types_neighbors" : {
         "gene" : true,
         "disease" : true,
         "species" : true,
@@ -55,10 +45,12 @@
         "pathway" : true,
         "unknown" : false
     },
+    
+    "max_neighbors_for_node": 20,
+    "percentage_of_showing_edges" : 1,
+    "layout" : "spring",
 
     "num_other_relevant_nodes" : 0,
-
-    "check_tags": [ ],
     
     "thresaurs": {
         "son": [
@@ -145,6 +137,9 @@
         "rest compressor 2": [
             "rcor2",
             "rest corepressor 2"
+        ], 
+        "nasopharyngeal carcinoma" : [
+            "npc"
         ]
         
     }

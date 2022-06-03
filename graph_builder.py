@@ -33,29 +33,27 @@ def main():
         if v:
             dataset.add_from_path(k)
     
-    print('Start normalization')
+    print('Normalization')
     dataset.normalize(inverse_thresaurus)
-    print('End normalization')
-
+    
     work_graph = Cograph()
     
-    print('Start graph building')
-    work_graph.add_dataset(dataset, bbent_types = settings.get('bioBERT_entity_types')) 
-    print('End graph building')
+    print('Graph building')
+    work_graph.add_dataset(dataset, norm_type=settings.get('normalization_type')) 
+    
 
-    print('Start graph saving')
+    print('Graph saving')
     work_graph.save_nodes_to_path("./results/nodes.txt")
     work_graph.save_edges_to_path("./results/edges.txt")
-    print('End graph saving')
+    
 
+    print('Disease ranking')
+    work_graph.disease_rank(source=settings.get('rank_source'), rank_type=settings.get('rank_type'), algorithm=settings.get('rank_algorithm'),  path_to_save="./results/disease_rank.txt")
 
-    print('Start disease ranking')
-    work_graph.disease_rank(source="zttk", path_to_save="./results/disease_rank.txt")
-    print('End disease ranking')
     
     widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
     
-    neighbors = work_graph.get_neighbors(widest_set, bbent_types = settings.get('bioBERT_entity_types_second_layer'), max_for_node = settings.get('max_neighbors_for_node')) # seocnd layer with only selected types of entities
+    neighbors = work_graph.get_neighbors(widest_set, bbent_types = settings.get('bioBERT_entity_types_neighbors'), max_for_node = settings.get('max_neighbors_for_node')) # second layer with only selected types of entities
     
     showing_nodes = widest_set + neighbors
 

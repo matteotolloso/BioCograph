@@ -32,8 +32,7 @@ class Cograph:
                     mh=False,
                     ot=False,
                     bbent=True,
-                    bbent_types = {},
-                    alw_pres=[], # TODO remove?
+                    norm_type=1,
                     ) -> None:
     
         papers = dataset.get_list()
@@ -53,8 +52,7 @@ class Cograph:
             if bbent:
                 ents = paper.get('bioBERT_entities') #list of touples (name, type)
                 for ent in ents:
-                    if (bbent_types.get(ent[1])) or (ent[0] in alw_pres) :
-                        terms.append(ent)
+                    terms.append(ent)
 
             # the same term that occurs more than once in the same paper is only added once
             terms = list(set(terms))
@@ -90,15 +88,19 @@ class Cograph:
         # new capacity is the old capacity divided by the sum of the weights of the nodes
         # it is a value between 0 and 1, it is 1 if the nodes occours always together
          
-        for (a, b) in self._nxGraph.edges:
-            #self._nxGraph[a][b]['capacity_1'] = 2 * self._nxGraph[a][b]['capacity_0'] / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
-            self._nxGraph[a][b]['capacity'] = max(self._nxGraph[a][b]['capacity_0'] / self._nxGraph.nodes[a]['weight'] ,\
-                                                    self._nxGraph[a][b]['capacity_0'] / self._nxGraph.nodes[b]['weight'])
-        
+        if norm_type == 1:
+            for (a, b) in self._nxGraph.edges:
+                self._nxGraph[a][b]['capacity'] = (2 * self._nxGraph[a][b]['capacity_0']) / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
+
+        if norm_type == 2: 
+            for (a, b) in self._nxGraph.edges:
+                self._nxGraph[a][b]['capacity'] = max(self._nxGraph[a][b]['capacity_0'] / self._nxGraph.nodes[a]['weight'] ,\
+                                                        self._nxGraph[a][b]['capacity_0'] / self._nxGraph.nodes[b]['weight'])
+            
             
     
     
-    def disease_rank(self, source, path_to_save) -> list:
+    def disease_rank(self, source, rank_type='disease', algorithm='shortest_path', path_to_save='.') -> list:
         if not self._nxGraph.has_node(source):
             print(source, 'not in graph')
             return []
@@ -107,16 +109,16 @@ class Cograph:
         #in this case a greater capacity means more correlation, so a shorter path
         #to enable this we use 1-capacity as the distance (capacity is a value between 0 and 1) 
         
-        if True:    # rank with the shortest path
+        rank = []
+        if algorithm == 'shortest_path':    # rank with the shortest path
             def _weight(a, b, attr):
                 return 1 - attr['capacity']
   
             path_dict = nx.shortest_path(self._nxGraph, source = source, weight=_weight)
              
-            rank = []
             #for each node
             for node, path in path_dict.items():
-                if self._nxGraph.nodes[node]['type'] == 'disease':
+                if self._nxGraph.nodes[node]['type'] == rank_type:
                     #calculate length of the path
                     if len(path) == 1:
                         continue
@@ -126,34 +128,31 @@ class Cograph:
                     rank.append((node, length))
 
             rank.sort(key=lambda x: x[1], reverse=True)
-
-            with open(path_to_save, 'w') as file:
-                file.write('Disease rank from ' + source + '\n')
-                file.write(tabulate(rank,  headers=['Entity', 'Rank'],  tablefmt='orgtbl'))
-            
-            return rank
         
         
         # rank with max flow (computational problem)
-        rank = []
-        for n in self._nxGraph.nodes:
+        if algorithm == 'max_flow':
+            for n in self._nxGraph.nodes:
+                
+                if (self._nxGraph.nodes[n]['type'] == rank_type) and n != source:
+                    print('calculating path from', source, 'to', n)
+                    flow : float
+                    try:
+                        flow, _ = nx.maximum_flow(self._nxGraph, source, n, capacity='capacity')
+                    except nx.exception.NetworkXUnbounded:
+                        continue
+    
+                    rank.append((n, flow))
             
-            if (self._nxGraph.nodes[n]['type'] == 'disease') and n != source:
-                print('calculating path from', source, 'to', n)
-                flow : float
-                try:
-                    flow, _ = nx.maximum_flow(self._nxGraph, source, n, capacity='capacity')
-                except nx.exception.NetworkXUnbounded:
-                    continue
- 
-                rank.append((n, flow))
-        
-        rank.sort(key = lambda x:x[1], reverse=True)
+            rank.sort(key = lambda x:x[1], reverse=True)
+      
+
         with open(path_to_save, 'w') as file:
             file.write('Disease rank from ' + source + '\n')
-            file.write(tabulate(rank,  headers=['Entity', 'Score'],  tablefmt='orgtbl'))
-
+            file.write(tabulate(rank,  headers=['Entity', 'Rank'],  tablefmt='orgtbl'))
+                    
         return rank
+    
 
 
     def draw(self, showing_nodes : 'list[str]' = [], nodes_layer : dict = {}, layout: str = 'spring', percentage = 0.1) -> None:
