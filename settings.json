@@ -1,8 +1,8 @@
 {
     "dataset": {
-        "./annotated_dataset/son.json" : true,
-        "./annotated_dataset/zttk.json" : true,
-        "./annotated_dataset/spg17.json" : false,
+        "./annotated_dataset/son.json" : false,
+        "./annotated_dataset/zttk.json" : false,
+        "./annotated_dataset/spg17.json" : true,
         "./annotated_dataset/top_5_son_related_protein.json" : false,
 
         "./annotated_dataset/dataset_nonspecifi.json" : false,
@@ -18,8 +18,8 @@
 
     "normalization_type" : 2,
 
-    "rank_source" : "son",
-    "rank_type" : "disease", 
+    "rank_source" : "",
+    "rank_type" : "gene", 
     "rank_algorithm" : "max_flow",
     
     "widest_set": ["son"],
@@ -52,7 +52,8 @@
 
     "num_other_relevant_nodes" : 0,
     
-    "thresaurs": {
+    "_thesaurus" : {},
+    "thesaurus": {
         "son": [
             "nrebp",
             "dbp-5",

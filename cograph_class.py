@@ -87,7 +87,11 @@ class Cograph:
         
         # new capacity is the old capacity divided by the sum of the weights of the nodes
         # it is a value between 0 and 1, it is 1 if the nodes occours always together
-         
+
+        if norm_type == 0:
+            for (a, b) in self._nxGraph.edges:
+                self._nxGraph[a][b]['capacity'] = self._nxGraph[a][b]['capacity_0'] 
+        
         if norm_type == 1:
             for (a, b) in self._nxGraph.edges:
                 self._nxGraph[a][b]['capacity'] = (2 * self._nxGraph[a][b]['capacity_0']) / (self._nxGraph.nodes[a]['weight'] + self._nxGraph.nodes[b]['weight'])
@@ -148,7 +152,7 @@ class Cograph:
       
 
         with open(path_to_save, 'w') as file:
-            file.write('Disease rank from ' + source + '\n')
+            file.write('Disease rank from ' + source + ' to all ' + rank_type + ' using ' + algorithm + '\n')
             file.write(tabulate(rank,  headers=['Entity', 'Rank'],  tablefmt='orgtbl'))
                     
         return rank
