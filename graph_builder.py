@@ -17,7 +17,7 @@ def load_settings():
 
 def get_inverse_thresaurs(thresaurs : dict):
     inverse_thresaurus = {}
-    for (k, v) in thresaurs.items():
+    for (k, v) in thresaurs.items(): 
         for i in v:
             inverse_thresaurus[i] = k
     return inverse_thresaurus
@@ -26,7 +26,7 @@ def get_inverse_thresaurs(thresaurs : dict):
 def main():
 
     settings = load_settings() # loaded ad a dict, TODO: use settingsclass
-    inverse_thresaurus = get_inverse_thresaurs(settings.get('thresaurs'))
+    inverse_thresaurus = get_inverse_thresaurs(settings.get('thesaurus'))
     dataset = Dataset() 
 
     for k, v in settings.get('dataset').items():
@@ -43,8 +43,8 @@ def main():
     
 
     print('Graph saving')
-    work_graph.save_nodes_to_path("./results/nodes.txt")
-    work_graph.save_edges_to_path("./results/edges.txt")
+    #work_graph.save_nodes_to_path("./results/nodes.txt")
+    #work_graph.save_edges_to_path("./results/edges.txt")
     
 
     print('Disease ranking')
