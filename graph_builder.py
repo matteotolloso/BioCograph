@@ -5,7 +5,10 @@ import json
 from dataset_class import Dataset
 from cograph_class import Cograph
 import settings_class
-
+import networkx as nx
+import stats
+from collections import Counter
+import numpy as np
  
     
 def load_settings():
@@ -40,7 +43,7 @@ def main():
     
     print('Graph building')
     work_graph.add_dataset(dataset, norm_type=settings.get('normalization_type')) 
-    
+
 
     print('Graph saving')
     #work_graph.save_nodes_to_path("./results/nodes.txt")
