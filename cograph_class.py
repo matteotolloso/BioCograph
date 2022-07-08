@@ -98,8 +98,7 @@ class Cograph:
 
         if norm_type == 2: 
             for (a, b) in self._nxGraph.edges:
-                self._nxGraph[a][b]['capacity'] = max(self._nxGraph[a][b]['capacity_0'] / self._nxGraph.nodes[a]['weight'] ,\
-                                                        self._nxGraph[a][b]['capacity_0'] / self._nxGraph.nodes[b]['weight'])
+                self._nxGraph[a][b]['capacity'] = max(self._nxGraph[a][b]['capacity_0'] / self._nxGraph.nodes[a]['weight'] , self._nxGraph[a][b]['capacity_0'] / self._nxGraph.nodes[b]['weight'])
             
             
     
@@ -136,18 +135,16 @@ class Cograph:
         
         # rank with max flow (computational problem)
         if algorithm == 'max_flow':
-            for n in self._nxGraph.nodes:
-                
-                if (self._nxGraph.nodes[n]['type'] == rank_type) and n != source:
-                    print('calculating path from', source, 'to', n)
-                    flow : float
-                    try:
-                        flow, _ = nx.maximum_flow(self._nxGraph, source, n, capacity='capacity')
-                    except nx.exception.NetworkXUnbounded:
-                        continue
-    
-                    rank.append((n, flow))
             
+            T = nx.gomory_hu_tree(self._nxGraph)
+
+            def minimum_edge_weight_in_shortest_path(T, u, v):
+                path = nx.shortest_path(T, u, v, weight="weight")
+                return min((T[u][v]["weight"], (u, v)) for (u, v) in zip(path, path[1:]))
+                    
+            for n in self._nxGraph.nodes:
+                if (self._nxGraph.nodes[n]['type'] == rank_type) and n != source:
+                    rank.append((n, minimum_edge_weight_in_shortest_path(T, source, n)[0]))
             rank.sort(key = lambda x:x[1], reverse=True)
       
 
@@ -314,13 +311,17 @@ class Cograph:
         for u, v in combinations(endpoints, 2):
             wp =self.widest_path(u, v, bbent_types=bbent_types)
             widest_set += wp
-            print("wildest path from",u,"to", v, wp)
+            print("\small{"+u+"} & \small{"+v+"} & \\footnotesize{",wp,"} \\\\")
 
         for n in endpoints: # add the endpoints
             if n in self._nxGraph.nodes:
                 widest_set.append(n)
 
         widest_set = list(set(widest_set))
+        print('WS:', widest_set)
+        for n in widest_set:
+            self._nxGraph.nodes[n]['wp'] = True
+
         return widest_set
     
     def get_neighbors(self, nodes_from : 'list[str]', max_for_node : int, bbent_types = {}) -> 'list[str]':

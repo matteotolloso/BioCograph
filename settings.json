@@ -1,14 +1,14 @@
 {
     "dataset": {
-        "./annotated_dataset/son.json" : false,
-        "./annotated_dataset/zttk.json" : false,
+        "./annotated_dataset/son.json" : true,
+        "./annotated_dataset/zttk.json" : true,
         "./annotated_dataset/spg17.json" : true,
-        "./annotated_dataset/top_5_son_related_protein.json" : false,
+        "./annotated_dataset/top_5_son_related_protein.json" : true,
 
-        "./annotated_dataset/dataset_nonspecifi.json" : false,
-        "./annotated_dataset/dataset_brainoligo.json" : false,
-        "./annotated_dataset/dataset_Replicatio.json" : false,
-        "./annotated_dataset/dataset_Splicingof.json" : false
+        "./annotated_dataset/dataset_nonspecifi.json" : true,
+        "./annotated_dataset/dataset_brainoligo.json" : true,
+        "./annotated_dataset/dataset_Replicatio.json" : true,
+        "./annotated_dataset/dataset_Splicingof.json" : true
     },
     
     "MeSH": false,
@@ -16,14 +16,17 @@
     "OtherTerms": false,
     "bioBERT": true,
 
-    "normalization_type" : 2,
+    "normalization_type" : 1,
 
     "rank_source" : "",
-    "rank_type" : "gene", 
-    "rank_algorithm" : "max_flow",
+    "rank_type" : "disease", 
+    "rank_algorithm" : "shortest_path",
     
-    "widest_set": ["son"],
-    
+    "_widest_set": ["spg17", "son", "u2afbp", "srsf7", "tfpi", "ncbp2", "birc6", "zttk", "mental retardation", "hepatitis b", "oligodendroglioma"],
+
+    "widest_set": ["zttk", "son", "spg17", "mental retardation", "hepatitis b", "oligodendroglioma"],
+    "__widest_set": [],
+
     "bioBERT_entity_types_widest_set" : {
         "gene" : true,
         "disease" : true,
@@ -36,13 +39,13 @@
     },
 
     "bioBERT_entity_types_neighbors" : {
-        "gene" : true,
+        "gene" : false,
         "disease" : true,
-        "species" : true,
-        "drug" : true,
-        "mutation" : true,
-        "miRNA" : true,
-        "pathway" : true,
+        "species" : false,
+        "drug" : false,
+        "mutation" : false,
+        "miRNA" : false,
+        "pathway" : false,
         "unknown" : false
     },
     
@@ -77,7 +80,28 @@
             "dead-box protein dbp5p", 
             "bp", 
             "sbp", 
-            "human dbp5"
+            "human dbp5",
+            "son dna-binding protein",
+            "son pseudogenes",
+            "son pseudogene",
+            "human gene son",
+            "cofactor son",
+            "son binding motifs",
+            "son gene protein",
+            "son-protein 943-963",
+            "son-protein",
+            "son cdna",
+            "human son gene",
+            "truncated son protein",
+            "zttk syndrome gene",
+            "son variants",
+            "son genes",
+            "son factors",
+            "son-1 mutation",
+            "son-1 mutant",
+            "son-1",
+            "rna/dna-binding protein son"
+
         ],
         "zttk": [
             "zttk", 
@@ -123,7 +147,9 @@
             "russell-silver syndrome",
             "srs",
             "silver-russell (srs) syndromes",
-            "russell-silver syndromes"
+            "russell-silver syndromes",
+            "silver",
+            "\"spg17"
         ],
         "growth hormone": [
             "growth hormone",
@@ -141,6 +167,21 @@
         ], 
         "nasopharyngeal carcinoma" : [
             "npc"
+        ],
+        "u2afbp": [
+            "u2afbp-rs",
+            "u2afbpl",
+            "u2afbpl gene"
+        ],
+        "tfpi": [
+            "tfpi",
+            "tfpi gene",
+            "tissue factor pathway inhibitor",
+            "tissue factor",
+            "tf"
+        ],
+        "splicing of primary transcript RNA":[
+            "splicing of RNA"
         ]
         
     }
