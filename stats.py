@@ -32,8 +32,23 @@ def main():
 
     num_list = []
 
-    for ds_name , eneble in settings.get('dataset').items():
-        add_dataset(ds_name, all_papaers)
+    for ds_name , enable in settings.get('dataset').items():
+        if enable:
+            add_dataset(ds_name, all_papaers)
+    
+    count = 0
+    print(len(all_papaers))
+    for pmid, info in all_papaers.items():
+        ents = info.get('bioBERT_entities')
+        for e in ents:
+            print(e[0])
+            if e[0] == 'son':
+                conunt += 1
+                break
+
+    print(count)
+    return
+    
     
     for pmid, info in all_papaers.items(): # k:pubmedId, v:dict of informations
         num_ent = len(info.get('bioBERT_entities'))

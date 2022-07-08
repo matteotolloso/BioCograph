@@ -53,9 +53,9 @@ def main():
     print('Disease ranking')
     work_graph.disease_rank(source=settings.get('rank_source'), rank_type=settings.get('rank_type'), algorithm=settings.get('rank_algorithm'),  path_to_save="./results/disease_rank.txt")
 
-    
-    widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
-    
+    #widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
+    widest_set = settings.get('widest_set')
+
     neighbors = work_graph.get_neighbors(widest_set, bbent_types = settings.get('bioBERT_entity_types_neighbors'), max_for_node = settings.get('max_neighbors_for_node')) # second layer with only selected types of entities
     
     showing_nodes = widest_set + neighbors
