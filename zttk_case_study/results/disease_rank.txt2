@@ -1,0 +1,164 @@
+Disease rank from zttk to all disease using max_flow
+| Entity                                                        |     Rank |
+|---------------------------------------------------------------+----------|
+| intellectual disability                                       | 5.84503  |
+| nasopharyngeal carcinoma                                      | 5.84503  |
+| cancer                                                        | 4.91568  |
+| leukemia                                                      | 3.19055  |
+| tumor                                                         | 2.5276   |
+| hypotonia                                                     | 2.31132  |
+| dysmorphic features                                           | 2.18895  |
+| congenital malformations                                      | 1.98659  |
+| developmental delay                                           | 1.98144  |
+| musculoskeletal abnormalities                                 | 1.96034  |
+| son haploinsufficiency                                        | 1.95833  |
+| facial dysmorphism                                            | 1.87755  |
+| hepatoma                                                      | 1.77446  |
+| hepatitis b virus                                             | 1.77446  |
+| mammary tumor                                                 | 1.76299  |
+| leukemic                                                      | 1.72545  |
+| down syndrome                                                 | 1.70017  |
+| acute myeloid leukemia                                        | 1.67792  |
+| facial features                                               | 1.64167  |
+| seizures                                                      | 1.5      |
+| multisystem developmental disorder                            | 1.45849  |
+| vision problems                                               | 1.37944  |
+| malformations of the cerebral cortex                          | 1.37944  |
+| epilepsy                                                      | 1.37944  |
+| neurodegenerative diseases                                    | 1.24495  |
+| astrocytoma                                                   | 1        |
+| astrocytomas                                                  | 1        |
+| gliomas                                                       | 1        |
+| glioma                                                        | 1        |
+| erythroleukemia                                               | 1        |
+| nmd                                                           | 1        |
+| glioblastoma multiforme                                       | 1        |
+| glioblastoma                                                  | 1        |
+| brain tumors                                                  | 1        |
+| gbm                                                           | 1        |
+| ciliopathy                                                    | 1        |
+| sans deficiency                                               | 1        |
+| deaf-blindness                                                | 1        |
+| usher syndrome                                                | 1        |
+| dr                                                            | 1        |
+| rous sarcoma                                                  | 1        |
+| rsv                                                           | 1        |
+| bone defect                                                   | 1        |
+| bm                                                            | 1        |
+| bone defects                                                  | 1        |
+| critical bone defect                                          | 1        |
+| pseudarthroses                                                | 1        |
+| wes                                                           | 1        |
+| brachydactyly type e                                          | 1        |
+| behavioral abnormalities                                      | 1        |
+| bdmr                                                          | 1        |
+| brachydactyly mental retardation syndrome                     | 1        |
+| familial bdmr                                                 | 1        |
+| autism spectrum disorder                                      | 1        |
+| skeletal anomalies                                            | 1        |
+| ns                                                            | 1        |
+| telomere biology disorders                                    | 1        |
+| hepatitis                                                     | 1        |
+| influenza                                                     | 1        |
+| brain and spinal malformations                                | 1        |
+| hematopoietic disorders                                       | 1        |
+| abnormal brain imaging                                        | 1        |
+| feeding                                                       | 1        |
+| multisystem disorder                                          | 1        |
+| brain anomalies                                               | 1        |
+| dictyostelium discoideum                                      | 1        |
+| son deficiency                                                | 1        |
+| aneuploidy                                                    | 1        |
+| hypoplastic left heart syndrome                               | 1        |
+| intellectual and psychomotor disability                       | 1        |
+| ventriculomegaly                                              | 1        |
+| hlhs                                                          | 1        |
+| asymmetry of ventricles                                       | 1        |
+| gastroparesis                                                 | 1        |
+| duodenal atresia                                              | 1        |
+| developmental and speech delay                                | 1        |
+| intestinal malrotation                                        | 1        |
+| febrile seizures                                              | 1        |
+| feeding difficulties                                          | 1        |
+| infections of the respiratory tract and internal ear          | 1        |
+| palpebral fissures                                            | 1        |
+| spd                                                           | 1        |
+| f                                                             | 1        |
+| growth and development delay                                  | 1        |
+| motor retardation                                             | 1        |
+| multisystemic disorder                                        | 1        |
+| congenital anomalies                                          | 1        |
+| congenital contracture syndrome 1                             | 1        |
+| lccs-1                                                        | 1        |
+| laahd disease                                                 | 1        |
+| arthrogryposis                                                | 1        |
+| anterior horn cell disease                                    | 1        |
+| neural abnormalities                                          | 1        |
+| neuronal migration defects                                    | 1        |
+| son insufficiency                                             | 1        |
+| brain malformation                                            | 1        |
+| visceral malformations                                        | 1        |
+| dendritic spine abnormalities                                 | 1        |
+| congenital anomaly syndrome                                   | 1        |
+| skin and nails abnormalities                                  | 1        |
+| visual abnormalities                                          | 1        |
+| delayed psychomotor development                               | 1        |
+| dental abnormalities                                          | 1        |
+| disability                                                    | 1        |
+| retronychia of the toenails                                   | 1        |
+| facial                                                        | 1        |
+| congenital heart disease                                      | 1        |
+| congenital thrombocytopenia                                   | 1        |
+| multiple congenital anomalies                                 | 1        |
+| curly hair                                                    | 1        |
+| haploinsufficiency of son                                     | 1        |
+| hyperextensible joints                                        | 1        |
+| braddock-carey syndrome                                       | 1        |
+| micrognathia                                                  | 1        |
+| phenotypic abnormalities                                      | 1        |
+| facial abnormalities                                          | 1        |
+| poly(a)+ export defects                                       | 1        |
+| chondrosarcoma                                                | 1        |
+| multiple epiphyseal dysplasia                                 | 1        |
+| lymphoma                                                      | 1        |
+| pseudoachondroplasia                                          | 1        |
+| aml                                                           | 1        |
+| leukemogenesis                                                | 1        |
+| pancreatic cancer                                             | 1        |
+| ductal adenocarcinomas                                        | 1        |
+| palmar crease                                                 | 1        |
+| growth hormone deficiency                                     | 1        |
+| autosomal dominant genetic disorder                           | 1        |
+| cancer syndrome                                               | 1        |
+| metastatic medulloblastoma                                    | 1        |
+| skin alterations                                              | 1        |
+| malignant brain tumor                                         | 1        |
+| medulloblastoma                                               | 1        |
+| cafe-au-lait spots                                            | 1        |
+| neoplasm                                                      | 1        |
+| t-cell and kidney tumors                                      | 1        |
+| id syndrome                                                   | 1        |
+| malformation of the spine, brain, and eyes                    | 1        |
+| intellectual-disability syndrome                              | 1        |
+| dd                                                            | 1        |
+| dn                                                            | 1        |
+| congenital abnormalities of the kidney and urinary tract      | 1        |
+| hypertension                                                  | 1        |
+| cakut                                                         | 1        |
+| unilateral renal hypoplasia                                   | 1        |
+| urinary tract infections                                      | 1        |
+| kidney abnormalities                                          | 1        |
+| kidney anomalies                                              | 1        |
+| electrolyte disturbances                                      | 1        |
+| renal cysts                                                   | 1        |
+| neonatal hypotonia                                            | 1        |
+| esotropia                                                     | 1        |
+| abnormalities in the heart, genitourinary or skeletal systems | 1        |
+| aids                                                          | 1        |
+| genetic disorders                                             | 1        |
+| psoriasis                                                     | 1        |
+| obese                                                         | 0.166667 |
+| parental obesity                                              | 0.166667 |
+| obesity                                                       | 0.166667 |
+| childhood obesity                                             | 0.166667 |
+| insulinopenic diabetes                                        | 0        |
