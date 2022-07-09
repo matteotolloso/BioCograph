@@ -2,18 +2,17 @@ from builtins import dict
 from platform import win32_edition
 import matplotlib.pyplot as plt
 import json
-from dataset_class import Dataset
-from cograph_class import Cograph
-import settings_class
+from common.dataset_class import Dataset
+from common.cograph_class import Cograph
 import networkx as nx
-import stats
+import common.stats
 from collections import Counter
 import numpy as np
  
     
 def load_settings():
     settings = {}
-    with open('settings.json', 'r') as f:
+    with open('zttk_case_study/settings.json', 'r') as f:
         cont = f.read()
         settings = json.loads(cont)
     return settings
@@ -46,15 +45,14 @@ def main():
 
 
     print('Graph saving')
-    #work_graph.save_nodes_to_path("./results/nodes.txt")
-    #work_graph.save_edges_to_path("./results/edges.txt")
+    work_graph.save_nodes_to_path("./zttk_case_study/results/nodes.txt")
+    work_graph.save_edges_to_path("./zttk_case_study/results/edges.txt")
     
 
     print('Disease ranking')
     work_graph.disease_rank(source=settings.get('rank_source'), rank_type=settings.get('rank_type'), algorithm=settings.get('rank_algorithm'),  path_to_save="./results/disease_rank.txt")
 
-    #widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
-    widest_set = settings.get('widest_set')
+    widest_set = work_graph.widest_set(settings.get('widest_set'), bbent_types = settings.get('bioBERT_entity_types_widest_set') )# widest set with only selected types of entities
 
     neighbors = work_graph.get_neighbors(widest_set, bbent_types = settings.get('bioBERT_entity_types_neighbors'), max_for_node = settings.get('max_neighbors_for_node')) # second layer with only selected types of entities
     
@@ -74,7 +72,7 @@ def main():
     
     showing_graph : Cograph = work_graph.draw( showing_nodes=showing_nodes, layout=settings.get('layout'), nodes_layer=nodes_layer, percentage = settings.get('percentage_of_showing_edges'))
 
-    showing_graph.export_cytoscape_data("./results/cytoskape_format.json")
+    showing_graph.export_cytoscape_data("./zttk_case_study/results/cytoskape_format.json")
     
     plt.show()  
 
